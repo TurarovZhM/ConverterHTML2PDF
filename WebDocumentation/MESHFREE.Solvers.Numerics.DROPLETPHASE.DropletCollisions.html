@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="search/image/favicon.ico">
+<title>DropletCollisions</title>
+<link href="search/css/bootstrap.css" rel="stylesheet">
+<link href="search/css/fraunhofer.css" rel="stylesheet">
+<script type="text/javascript" src="search/js/jquery-1.12.0.js"></script>
+<script src="search/js/bootstrap.min.js"></script>
+<script src="search/js/custom.js"></script>
+</head>
+<body>
+	<div class="fh-wrapper">
+		<div class="header">
+			<div class="row visible-xs" id="main-menu-top">
+				    <div class="row search-nav-icon">
+					    <div class="col-md-12">
+					<!-- for search and navigation icon -->
+						  <div id="nav-top" class="nav-top-btn"></div>
+						  <div id="search-btn-index-top-icon" class="search-icon"></div>
+					    </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-md-12">
+					    <nav class="navbar navbar-inverse">
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						      </button>
+						    </div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					      </nav>
+					</div>
+				      <div class="search-top">
+					      <form id="search-form-index-top" >
+						  <input type="text" name="queryString" id="search-text-index-top" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						  <button type="submit" class="btn" id="search-btn-index-top"></button>
+					      </form>
+				    </div>
+				</div>
+			</div>
+			<div class="row header-row">
+				<div class="col-sm-4">
+					<div class="row">
+					   <a href="MESHFREE.html">
+						  <img class="logo img-responsive" alt="" src="search/image/MESHFREE_Logo.png"/>
+					   </a>
+					</div>
+					<div class= "row company_name">
+						Simulate with complex geometries and complex physics
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="row header-search-row hidden-xs">
+						<div class="search">
+						  <form id="search-form-index-header" >
+						      <input type="text" name="queryString" id="search-text-index-header" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						      <button type="submit" class="btn" id="search-btn-index-header"><i class="glyphicon glyphicon-search"></i></button>
+						  </form>
+						</div>
+					</div>
+					<div class="row main_menu hidden-xs" id="main-menu-bottom">
+					  <nav class="navbar navbar-inverse">
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						    <span class="sr-only">Toggle navigation</span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						  </button>
+						</div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					  </nav>
+					</div>
+				</div>
+			</div>
+		</div>
+     <div class="breadcrumbs">
+	  <div class="row breadcrumb">
+	    <div class="col-md-12">
+		<ul>
+<li><a href="MESHFREE.html">MESHFREE</a></li>
+<li><a href="MESHFREE.Solvers.html">Solvers</a></li>
+<li><a href="MESHFREE.Solvers.Numerics.html">Numerics</a></li>
+<li><a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a></li>
+<li><a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.DropletCollisions.html">DropletCollisions</a></li>
+		</ul>
+	    </div>
+	  </div>
+	</div>
+		<div class="border-vertical">
+		  <div class="row">
+		    <div class="col-md-12 content">
+		    	<div class="jumbotron">
+<h1>DropletCollisions</h1><p> DROPLETPHASE - Modeling of collisions between droplets </p>
+		    	</div>
+			<div class="description">
+                                                                                                                                    
+   
+  Through the use of 
+  <ul><li> 
+  </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.PhysicalProperties.ParticleInteraction___PHYP___.html">ParticleInteraction</a> 
+  </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.DROPLETPHASE__BC__.BC_v.%25BND_COLLISION%25.html">%BND_COLLISION%</a> 
+  </li></ul> 
+  one may define the parameters of a collision model between droplets and boundaries. In this case, droplets will, assuming sensible choices of parameters, no longer pass through each other and behave more closely to granular matter. 
+  <h2 class="customh2"> Repulsive Normal Forces </h2> 
+  The two parameters k_n, e_n in 
+  <div class="note"> <div class="code"> 
+  ParticleInteraction(<span style="color:#0B6121;">$Material$</span>) = (k_n, e_n) 
+  <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.DROPLETPHASE__BC__.BC_v.html">BC_v</a>(<span style="color:#0B6121;">$BC1$</span>) = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.DROPLETPHASE__BC__.BC_v.%25BND_COLLISION%25.html">%BND_COLLISION%</a>, k_n, e_n) 
+  
+ </div> </div> 
+  determine the constants <span lang="latex-inline"><img src="368af428a52a6f67e1e3276eb1e2ed8e.png" alt=" k_n" class="latex" border="0"></span> and <span lang="latex-inline"><img src="2defb9b0d15d84e3e6926be5d006456c.png" alt=" c_n" class="latex" border="0"></span> within the linear spring-damper model 
+  <div lang="latex"><img src="93b3b9439bca5b9db44e3e90e4cde76d.png" alt=" 
+  \mathbf{f}_{ij}^n = \begin{cases} -\left[ k_n \delta_{ij} - c_n (\mathbf{v}_{ij}\cdot\mathbf{n}_{ij}) \right] \mathbf{n}_{ij} & \delta_{ij}>0 \\ 0 & \text{else} \end{cases} 
+" class="latex" border="0"></div> 
+  which is employed to calculate forces along contact normal <span lang="latex-inline"><img src="de7f22dc2388b16fb4b4c82848ff8223.png" alt=" \mathbf{n}_{ij}" class="latex" border="0"></span> from overlap <span lang="latex-inline"><img src="cfca7673a4353f468bf852266ad5e551.png" alt=" \delta_{ij}" class="latex" border="0"></span> and relative velocity <span lang="latex-inline"><img src="9d436fec8dce05b1d4989c83e54aca4e.png" alt=" \mathbf{v}_{ij}" class="latex" border="0"></span>. In particular, e_n represents the coefficient of restitution, i.e. the ratio of post- to pre-collisional velocity, from which the damper constant <span lang="latex-inline"><img src="2defb9b0d15d84e3e6926be5d006456c.png" alt=" c_n" class="latex" border="0"></span> is calculated internally. 
+   
+  <b> Defaults: </b> 
+  <ul><li> 
+  </li><li> If e_n is set to a negative value, the damping coefficient c_n will be set to the absolute value of e_n. 
+  </li><li> If k_n is set to zero or a negative value, no collision forces will be calculated. 
+  </li></ul> 
+  <b> Notes: </b> 
+  <ul><li> 
+  </li><li> Interacting <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> particles are allowed to have different size and spring stiffness, however the coefficient of restitution must be identical. 
+  </li><li> During the separation phase, the damper force might produce attractive contributions which lead to a reversal of sign. By default, this is prevented by setting the total force to zero as soon as the attractive damper force becomes larger in magnitude than the repulsive elastic force. See <a href="MESHFREE.InputFiles.USER_common_variables.__Parameters__.DP_UseOnlyRepulsiveContactForce___UCV___.html">DP_UseOnlyRepulsiveContactForce</a>. 
+  </li></ul> 
+   
+  <div id="images"> 
+     <a style="display:inline-block; text-decoration:none; margin:0em 2em;"> 
+       <figure style="text-align: center;"> 
+          <img src='../Pictures/DROPLETPHASE_ParticleWallCollision.png' alt='Here should be a picture' class="img-responsive" style="max-width:25em" /> 
+          <figcaption>Figure: Sketch of Particle-Wall contact model</figcaption> 
+       </figure> 
+       <figure style="text-align: center;"> 
+          <img src='../Pictures/DROPLETPHASE_ParticleParticleColl.png' alt='Here should be a picture' class="img-responsive" style="max-width:25em" /> 
+          <figcaption>Figure: Sketch of Particle-Particle contact model</figcaption> 
+       </figure> 
+     </a> 
+  </div> 
+   
+   
+  <h2 class="customh2"> Attractive normal forces </h2> 
+  The two parameters E_a, R_a in 
+  <div class="note"> <div class="code"> 
+  ParticleInteraction(<span style="color:#0B6121;">$Material$</span>) = (k_n, e_n, E_a, R_a) 
+  <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.DROPLETPHASE__BC__.BC_v.html">BC_v</a>(<span style="color:#0B6121;">$BC1$</span>) = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.DROPLETPHASE__BC__.BC_v.%25BND_COLLISION%25.html">%BND_COLLISION%</a>, k_n, e_n, E_a, R_a) 
+  
+ </div> </div> 
+  are reserved for attractive forces along the normal direction. While R_a determines the range of adhesive forces (relative to the particle diameter <span lang="latex-inline"><img src="9fc17dae6b85f0f1f76869c83c102987.png" alt=" D_i" class="latex" border="0"></span>), E_a determines the energy level of the adhesive potential 
+  <div lang="latex"><img src="62457cac0f979cddfca7147535927f6d.png" alt=" 
+  \mathbf{f}_{ij}^{a} = \begin{cases} -k_{a} \delta_{ij} \mathbf{n}_{ij} & -\frac{1}{2}R_{a}D_i<\delta_{ij}<0\\ \left[-2F_{max}^{a}-k_{a} \delta_{ij}\right] \mathbf{n}_{ij} & -R_{a}D_i<\delta_{ij}<-\frac{1}{2}R_{a}D_i \\ 0 & \text{else} \end{cases} 
+" class="latex" border="0"></div> 
+  i.e. <span lang="latex-inline"><img src="1b32b237e6617724c0c26545ec4b4e62.png" alt=" k_{a}" class="latex" border="0"></span> and <span lang="latex-inline"><img src="5c2f120804099d62711249651e1edaa6.png" alt=" F_{max}^{a}" class="latex" border="0"></span> are chosen so that the integral over this force expression is given by E_a: <span lang="latex-inline"><img src="c9a52464dc1e2afa6041f3a19748eeee.png" alt=" F_{max}^{a}=2\frac{E_a}{R_{a}D_i}" class="latex" border="0"></span> 
+   
+  <img src=  ../Pictures/DROPLETPHASE_ParticleInteraction_AttractiveForces_200dpi.png alt="Here should be a picture" class="img-responsive"> 
+  <span style="color:red"> TODO: Let Hiwi replace this by tikz drawing and make it available in public docu? </span> 
+  <span style="color:red"> TODO: Add plot for repulsive force? Only spring? Or multiple lines for different impact velocities? </span> 
+   
+  <b> Defaults: </b> 
+  <ul><li> 
+  </li><li> If E_a is set to zero or a negative value, no attractive forces will be calculated. 
+  </li><li> If R_a is set to zero or a negative value, it is overwritten by the default value of one. 
+  </li></ul> 
+   
+  <h2 class="customh2"> Frictional forces </h2> 
+  The parameter mu in 
+  <div class="note"> <div class="code"> 
+  ParticleInteraction(<span style="color:#0B6121;">$Material$</span>) = (k_n, e_n, E_a, R_a, mu) 
+  <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.DROPLETPHASE__BC__.BC_v.html">BC_v</a>(<span style="color:#0B6121;">$BC1$</span>) = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.DROPLETPHASE__BC__.BC_v.%25BND_COLLISION%25.html">%BND_COLLISION%</a>, k_n, e_n, E_a, R_a, mu) 
+  
+ </div> </div> 
+  determines the coefficient of friction <span lang="latex-inline"><img src="9bd620f1c7ae6f25bcf02b98823ed30b.png" alt=" \mu" class="latex" border="0"></span> in Coulombs law of friction 
+  <div lang="latex"><img src="a6434e7035615109898d3a2f0a1b15fe.png" alt=" 
+  \mathbf{f}_{ij}^t = -\mu \lVert \mathbf{f}_{ij}^n \rVert \mathbf{t}_{ij} 
+" class="latex" border="0"></div> 
+  which is used to calculate forces along the tangential direction <span lang="latex-inline"><img src="daf626d1ecf7dae572c3579da16063d2.png" alt=" \mathbf{t}_{ij}" class="latex" border="0"></span> due to friction between the particles or between partciles and boundaries. 
+   
+  <b> Defaults: </b> 
+  <ul><li> 
+  </li><li> If mu is set to zero or a negative value, no friction forces will be calculated. 
+  </li></ul> 
+  <b> Notes: </b> 
+  <ul><li> 
+  </li><li> The coefficients of friction must be identical for all interacting <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> particles. 
+  </li></ul> 
+   
+  <h2 class="customh2"> Important notes </h2> 
+  <ul><li> 
+  </li><li> The stability of a simulation of interacting droplets can be improved by decreasing the value of <a href="MESHFREE.InputFiles.USER_common_variables.__Parameters__.COEFF_dt_d30___UCV___.html">COEFF_dt_d30</a> 
+  </li><li> If the <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> timestep becomes too small, one may use a subcycling as described in <a href="MESHFREE.InputFiles.USER_common_variables.__Parameters__.COMP_DropletphaseSubcycles___UCV___.html">COMP_DropletphaseSubcycles</a> 
+  </li></ul> 
+                  
+	      			</div>
+	      		</div>
+		</div>
+	</div>
+<div class="blank-class-outer-top">
+	<div class="border-vertical">
+		<div class="row reference">
+	      		<div class="col-md-12">
+		 		<div class="table-responsive">
+			  		<table class="table">
+			  		<tr><th>This item is referenced in: </th><th></th></tr>
+<tr><td><a href="MESHFREE.GettingStarted.SpecialCases.BasicPhysics.CollidingDropletsInCone.html">CollidingDropletsInCone</a></td> <td>  Colliding droplets in cone geometry  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.__Parameters__.COMP_DropletphaseSubcycles___UCV___.html">COMP_DropletphaseSubcycles</a></td> <td>  number of subcycles for DROPLETPHASE (UCV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.DROPLETPHASE__BC__.BC_v.%25BND_COLLISION%25.html">%BND_COLLISION%</a></td> <td>  velocity boundary condition to represent collisions </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.PhysicalProperties.ParticleInteraction___PHYP___.html">ParticleInteraction</a></td> <td>  defines the dynamics of particle-particle interaction within the DROPLETPHASE as material property  </td></tr>    
+<tr><td><a href="MESHFREE.Releases.Beta.html">Beta</a></td> <td>  Release notes for the MESHFREE beta executables </td></tr>    
+<tr><td><a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a></td> <td>  Explicit solver for droplets which may interact and collect as water films along boundaries </td></tr>    
+		  			</table>
+				</div>
+	      		</div>
+		</div>
+	</div>
+</div>
+	<div class="blank-class-outer-top footer">
+	  <div class="border-vertical">
+	    <div class="row">
+	      <div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fortran/Solver/BasicSolver/DropletPhase/F_of_t_and_Y_DROPLETPHASE.f90">../../FPM_src/FPM_fortran/Solver/BasicSolver/DropletPhase/F_of_t_and_Y_DROPLETPHASE.f90</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="blank-class-outer footer visible-md visible-lg">
+  <div class="border-vertical">
+    <div class="row">
+	      <div class="col-md-6">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-small visible-xs visible-sm">
+    <div class="blank-class-outer">
+      <div class="blank-class-inner">
+	<div class="row ">
+		<div class="col-md-12">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-left-right">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

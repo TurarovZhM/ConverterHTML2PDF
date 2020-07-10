@@ -1,0 +1,15 @@
+#!/bin/csh -f
+#grep -i --no-filename '!\$FPMDOCU' compile_FPMfree_double/*.f90 compile_FPMfree_double/*.F compile_FPMfree_double/*.h > FPM_documentation
+#grep -i '!\$FPMDOCU' compile_FPMfree_double/*.f90 compile_FPMfree_double/*.F compile_FPMfree_double/*.h > FPM_documentation
+rm *.html
+grep --include=\*.{f90,cpp,h,fpmdocu} -rnw '../../FPM_src' -e '!\$FPMDOCU' -e '!\$FPMINTDOCU' > FPM_documentation
+grep --include=\*.{fpmdocu,FPMDOCU} -rnw '../../FPM_src' -e 'xxxxxxxxxxxxxxxxx' --invert-match >> FPM_documentation
+src/main_FPMDOCU.x
+rm --force FPM_documentation
+
+./makeSearchIndex.sh
+
+#cp FPM.* /media/Windows7_OS/Users/kuhnert/Desktop/FPMDOCU/.
+#cp FPM /media/Windows7_OS/Users/kuhnert/Desktop/FPMDOCU/. 
+
+

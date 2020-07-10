@@ -1,0 +1,585 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="search/image/favicon.ico">
+<title>USER_common_variables___CollidingDropletsInCone___</title>
+<link href="search/css/bootstrap.css" rel="stylesheet">
+<link href="search/css/fraunhofer.css" rel="stylesheet">
+<script type="text/javascript" src="search/js/jquery-1.12.0.js"></script>
+<script src="search/js/bootstrap.min.js"></script>
+<script src="search/js/custom.js"></script>
+</head>
+<body>
+	<div class="fh-wrapper">
+		<div class="header">
+			<div class="row visible-xs" id="main-menu-top">
+				    <div class="row search-nav-icon">
+					    <div class="col-md-12">
+					<!-- for search and navigation icon -->
+						  <div id="nav-top" class="nav-top-btn"></div>
+						  <div id="search-btn-index-top-icon" class="search-icon"></div>
+					    </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-md-12">
+					    <nav class="navbar navbar-inverse">
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						      </button>
+						    </div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					      </nav>
+					</div>
+				      <div class="search-top">
+					      <form id="search-form-index-top" >
+						  <input type="text" name="queryString" id="search-text-index-top" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						  <button type="submit" class="btn" id="search-btn-index-top"></button>
+					      </form>
+				    </div>
+				</div>
+			</div>
+			<div class="row header-row">
+				<div class="col-sm-4">
+					<div class="row">
+					   <a href="MESHFREE.html">
+						  <img class="logo img-responsive" alt="" src="search/image/MESHFREE_Logo.png"/>
+					   </a>
+					</div>
+					<div class= "row company_name">
+						Simulate with complex geometries and complex physics
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="row header-search-row hidden-xs">
+						<div class="search">
+						  <form id="search-form-index-header" >
+						      <input type="text" name="queryString" id="search-text-index-header" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						      <button type="submit" class="btn" id="search-btn-index-header"><i class="glyphicon glyphicon-search"></i></button>
+						  </form>
+						</div>
+					</div>
+					<div class="row main_menu hidden-xs" id="main-menu-bottom">
+					  <nav class="navbar navbar-inverse">
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						    <span class="sr-only">Toggle navigation</span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						  </button>
+						</div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					  </nav>
+					</div>
+				</div>
+			</div>
+		</div>
+     <div class="breadcrumbs">
+	  <div class="row breadcrumb">
+	    <div class="col-md-12">
+		<ul>
+<li><a href="MESHFREE.html">MESHFREE</a></li>
+<li><a href="MESHFREE.GettingStarted.html">GettingStarted</a></li>
+<li><a href="MESHFREE.GettingStarted.SpecialCases.html">SpecialCases</a></li>
+<li><a href="MESHFREE.GettingStarted.SpecialCases.BasicPhysics.html">BasicPhysics</a></li>
+<li><a href="MESHFREE.GettingStarted.SpecialCases.BasicPhysics.CollidingDropletsInCone.html">CollidingDropletsInCone</a></li>
+<li><a href="MESHFREE.GettingStarted.SpecialCases.BasicPhysics.CollidingDropletsInCone.USER_common_variables___CollidingDropletsInCone___.html">USER_common_variables</a></li>
+		</ul>
+	    </div>
+	  </div>
+	</div>
+		<div class="border-vertical">
+		  <div class="row">
+		    <div class="col-md-12 content">
+		    	<div class="jumbotron">
+<h1>USER_common_variables</h1><p> Colliding droplets in cone geometry: USER_common_variables.dat </p>
+		    	</div>
+			<div class="description">
+   
+ <div class="code"> 
+ <span style="color:#FACC2E;">################################################################################ </span>
+ <span style="color:#FACC2E;"># Example setup to showcase capabilities of <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> solver in resolving </span>
+ <span style="color:#FACC2E;"># collisions </span>
+ <span style="color:#FACC2E;"># </span>
+ <span style="color:#FACC2E;"># <a href="MESHFREE.Solvers.Geometry.html">Geometry</a>: </span>
+ <span style="color:#FACC2E;">#  - Cone geometry with tip pointing in the direction of gravity </span>
+ <span style="color:#FACC2E;">#  - Simple cube geometry for initialization of <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> </span>
+ <span style="color:#FACC2E;">#    (only active during filling) </span>
+ <span style="color:#FACC2E;"># </span>
+ <span style="color:#FACC2E;"># Physical setup: </span>
+ <span style="color:#FACC2E;">#   1) <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> (material <span style="color:#0B6121;">$DUST$</span>): </span>
+ <span style="color:#FACC2E;">#        - Particles initially filled with random size in a cube positioned </span>
+ <span style="color:#FACC2E;">#          above the cone side wall </span>
+ <span style="color:#FACC2E;">#        - Particles fall due to gravitational force </span>
+ <span style="color:#FACC2E;">#        - P-P- and P-W-Collisions considered </span>
+ <span style="color:#FACC2E;">#        - Random perturbance of normal vector at walls can be enabled </span>
+ <span style="color:#FACC2E;">#          (ScatteringSwitch) </span>
+ <span style="color:#FACC2E;">#        - Monitorpoints are created to track the energy dissipated at </span>
+ <span style="color:#FACC2E;">#          boundary elements </span>
+ <span style="color:#FACC2E;">#   2) <a href="MESHFREE.Solvers.Numerics.LIQUID.html">LIQUID</a> (material <span style="color:#0B6121;">$AIR$</span>): </span>
+ <span style="color:#FACC2E;">#        - Dynamics of this phase not relevant in this setup. </span>
+ <span style="color:#FACC2E;">#          Therefore not computed </span>
+ <span style="color:#FACC2E;">#        - No coupling with <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> </span>
+ <span style="color:#FACC2E;"># </span>
+ <span style="color:#FACC2E;"># Observed behavior: </span>
+ <span style="color:#FACC2E;">#  - The particles fall onto the side wall and slide downwards where they </span>
+ <span style="color:#FACC2E;">#    finally gather in the cone tip </span>
+ <span style="color:#FACC2E;">#  - Enabling the ScatteringSwitch has similar effect to particle-wall friction </span>
+ <span style="color:#FACC2E;">################################################################################ </span>
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;">#c  Switches </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.html">begin_alias{</a>"SwitchAlias"} 
+    <span style="color:#FACC2E;"># SWITCH SCATTERING AT COLLISION BOUNDARIES ON/OFF </span>
+    <span style="color:#FACC2E;">#"ScatteringSwitch" = "Off" </span>
+    "ScatteringSwitch" = "On" 
+   
+    <span style="color:#FACC2E;"># SWITCH COLLISION MODEL TIMESTEP RESTRICTION ON/OFF </span>
+    <span style="color:#FACC2E;">#"DtCollSwitch" = "Off" </span>
+    "DtCollSwitch" = "On" 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_alias.html">end_alias</a> 
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;">#c  DUST specific Section </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.html">begin_alias{</a>"DustParameters"} 
+    "DustDensity" = "2600.0" <span style="color:#FACC2E;"># material density of dust </span>
+    "InitD30"     = "0.0005" <span style="color:#FACC2E;"># mean particle diameter </span>
+    "D30sigma"    = "0.0001" <span style="color:#FACC2E;"># deviation from mean particle diameter in random particle size assignment </span>
+    "frac_dtcoll" = "0.2"    <span style="color:#FACC2E;"># Choose dt_dust<frac_dtcoll*dt_coll, where dt_coll=sqrt(m/kn) </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_alias.html">end_alias</a> 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.html">begin_alias{</a>"CollisionParameters"} 
+    "kn_pp" = "1.0"    <span style="color:#FACC2E;"># spring stiffness (P-P-Collision) </span>
+    "en_pp" = "0.5"    <span style="color:#FACC2E;"># coefficient of restitution (P-P-Collision) </span>
+    "Ea_pp" = "0.0"    <span style="color:#FACC2E;"># adhesive potential difference relative to particle mass (P-P-Collision) </span>
+    "Ra_pp" = "0.0"    <span style="color:#FACC2E;"># range of adhesive potential relative to particle diameter (P-P-Collision) </span>
+    "mu_pp" = "0.0"    <span style="color:#FACC2E;"># friction coefficient (P-P-Collision) </span>
+   
+    "kn_pw" = "2.0"    <span style="color:#FACC2E;"># spring stiffness (P-W-Collision) </span>
+    "en_pw" = "0.5"    <span style="color:#FACC2E;"># coefficient of restitution (P-W-Collision) </span>
+    "Ea_pw" = "0.0"    <span style="color:#FACC2E;"># adhesive potential difference relative to particle mass (P-W-Collision) </span>
+    "Ra_pw" = "0.0"    <span style="color:#FACC2E;"># range of adhesive potential relative to particle diameter (P-W-Collision) </span>
+    "mu_pw" = "0.3"    <span style="color:#FACC2E;"># friction coefficient (P-W-Collision) </span>
+    "SF_pw" = "0.1"    <span style="color:#FACC2E;"># SplitFactor setting fraction of total dissipated energy in collision dissipated at wall </span>
+    "theta_pw" = "0.785398163397" <span style="color:#FACC2E;"># pi/4 # wall roughness, i.e. maximum angle of random perturbance of normals (in radians) </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_alias.html">end_alias</a> 
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;"># Boundary condition for modelling the collisions: </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_selection{.html">begin_selection{</a>"ScatteringSwitch"} 
+    <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.case{.html">case{</a>"On"} 
+       <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.html">BC_v</a>(<span style="color:#0B6121;">$wallt$</span>) = ( <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.DROPLETPHASE__BC__.BC_v.%25BND_COLLISION%25.html">%BND_COLLISION%</a>, <span style="color:#8A0808;">&kn_pw&</span>, <span style="color:#8A0808;">&en_pw&</span>, <span style="color:#8A0808;">&Ea_pw&</span>, <span style="color:#8A0808;">&Ra_pw&</span>, <span style="color:#8A0808;">&mu_pw&</span> , <span style="color:#8A0808;">&SF_pw&</span>, <span style="color:#8A0808;">&theta_pw&</span>) 
+    <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.case{.html">case{</a>"Off"} 
+       <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.html">BC_v</a>(<span style="color:#0B6121;">$wallt$</span>) = ( <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.DROPLETPHASE__BC__.BC_v.%25BND_COLLISION%25.html">%BND_COLLISION%</a>, <span style="color:#8A0808;">&kn_pw&</span>, <span style="color:#8A0808;">&en_pw&</span>, <span style="color:#8A0808;">&Ea_pw&</span>, <span style="color:#8A0808;">&Ra_pw&</span>, <span style="color:#8A0808;">&mu_pw&</span> , <span style="color:#8A0808;">&SF_pw&</span>) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_selection.html">end_selection</a> 
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;"># Definition of Particle Interaction as physical property of the dust: </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+   
+ ParticleInteraction(<span style="color:#0B6121;">$DUST$</span>) = (<span style="color:#8A0808;">&kn_pp&</span>, <span style="color:#8A0808;">&en_pp&</span>, <span style="color:#8A0808;">&Ea_pp&</span>, <span style="color:#8A0808;">&Ra_pp&</span>, <span style="color:#8A0808;">&mu_pp&</span>) 
+   
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_selection{.html">begin_selection{</a>"DtCollSwitch"} 
+    <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.case{.html">case{</a>"On"} 
+       COEFF_dt_d30 = 0.1 <span style="color:#FACC2E;"># larger value of COEFF_dt_d30 sufficient when using dtcoll </span>
+       COMP_DropletphaseSubcycles = 200      uppper bound for subcycles in <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> 
+       <span style="color:#FACC2E;">#------------------------------------------------ </span>
+       <span style="color:#FACC2E;"># Time step restriction: Accurate reproduction </span>
+       <span style="color:#FACC2E;"># of collisions independent of spring stiffness </span>
+       <span style="color:#FACC2E;"># and particle mass requires dt<sqrt(m/k) </span>
+       <span style="color:#FACC2E;">#------------------------------------------------ </span>
+       <a href="MESHFREE.InputFiles.USER_common_variables.TimeControl.DELT_dt_AddCond.html">DELT_dt_AddCond</a>(<span style="color:#0B6121;">$DUST$</span>) = [ <span style="color:#8A0808;">&frac_dtcoll&</span>*min(equn{<span style="color:#0B6121;">$DUST_dt_coll_pw$</span>},equn{<span style="color:#0B6121;">$DUST_dt_coll_pp$</span>}) ] 
+       <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"DUST_dt_coll_pw"} <span style="color:#FACC2E;">### dt<sqrt(m/k) condition from spring-damper model </span>
+          sqrt(equn{<span style="color:#0B6121;">$MassParticle$</span>}/<span style="color:#8A0808;">&kn_pw&</span>) 
+       <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+       <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"DUST_dt_coll_pp"} <span style="color:#FACC2E;">### dt<sqrt(m/k) condition from spring-damper model </span>
+          sqrt(equn{<span style="color:#0B6121;">$MassParticle$</span>}/<span style="color:#8A0808;">&kn_pp&</span>) 
+       <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+    <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.case{.html">case{</a>"Off"} 
+       COEFF_dt_d30 = 0.005 <span style="color:#FACC2E;"># COEFF_dt_d30 criterion needs to be more stringent when not using dtcoll </span>
+       COMP_DropletphaseSubcycles = 200      uppper bound for subcycles in <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_selection.html">end_selection</a> 
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;">#c  Solver Section </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ KOP(1) =  <a href="MESHFREE.Solvers.Numerics.LIQUID.html">LIQUID</a> <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.LAGRANGE.html">LAGRANGE</a> V:NONE  <a href="MESHFREE.Solvers.Numerics.LIQUID.Scheme.vp-.html">vp-</a> T:NONE 
+ KOP(2) =  <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> H:MIN_FACTOR(0.1) 
+ <span style="color:#FACC2E;"># The H:MIN_FACTOR allows the smoothing length to be adapted if particles accumulate. </span>
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;">#c  Saving Section </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ restart = (0) 
+ restart_step_size = (0,%RESTART_sequence%) 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_choose_meth.html">SAVE_choose_meth</a> = 'TIME' 
+ <span style="color:#FACC2E;">#SAVE_format(1) = 'ENSIGHT6 BINARY N--T ONLY:PARTICLES' </span>
+ <span style="color:#FACC2E;">#SAVE_format(1) = 'ENSIGHT6 BINARY NN-T' </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.html">SAVE_format</a>(1) = 'ENSIGHT6 BINARY N--T' 
+   
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_first.html">SAVE_first</a>(1) = 0                           <span style="color:#FACC2E;"># when to save first (after 0 time cycles) </span>
+ <a href="MESHFREE.Releases.__DeprecatedItems__.SAVE_intervall.html">SAVE_intervall</a>(1) = .002                      <span style="color:#FACC2E;"># saving interval    (every 1 time cycles) </span>
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_file.html">SAVE_file</a> = 'bench_cone' 
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_path.html">SAVE_path</a> = './bench_cone' 
+   
+ <span style="color:#FACC2E;">## GENERAL </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a>  = ( %SAVE_scalar%, [Y<a href="MESHFREE.Indices.General___indices___.%25ind_dt%25.html">%ind_dt%</a>], "dt" ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a>  = ( %SAVE_scalar%, [Y<a href="MESHFREE.Indices.General___indices___.%25ind_dt_local%25.html">%ind_dt_local%</a>], "dt_local" ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a>  = ( %SAVE_vector%, [Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_v(1)%25.html">%ind_v(1)%</a>], [Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_v(2)%25.html">%ind_v(2)%</a>], [Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_v(3)%25.html">%ind_v(3)%</a>], "velocity" ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a>  = ( %SAVE_scalar%, [Y<a href="MESHFREE.Indices.General___indices___.%25ind_h%25.html">%ind_h%</a>], "h" ) 
+ <span style="color:#FACC2E;">#SAVE_ITEM  = ( %SAVE_scalar%, [Y<a href="MESHFREE.Indices.General___indices___.%25ind_kob%25.html">%ind_kob%</a>], "kob" ) </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a>  = ( %SAVE_scalar%, [Y<a href="MESHFREE.Indices.General___indices___.%25ind_cham%25.html">%ind_cham%</a>], "chamber" ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a>  = ( %SAVE_vector%, [Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_g(1)%25.html">%ind_g(1)%</a>], [Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_g(2)%25.html">%ind_g(2)%</a>], [Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_g(3)%25.html">%ind_g(3)%</a>], "gravity" ) 
+   
+ <span style="color:#FACC2E;">## <a href="MESHFREE.Solvers.Numerics.LIQUID.html">LIQUID</a> </span>
+ <span style="color:#FACC2E;">#SAVE_ITEM  = ( %SAVE_scalar%, [Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_p%25.html">%ind_p%</a>],                "HydrostaticPressure" ) </span>
+ <span style="color:#FACC2E;">#SAVE_ITEM  = ( %SAVE_scalar%, [Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_p_dyn%25.html">%ind_p_dyn%</a>],            "DynamicPressure" ) </span>
+ <span style="color:#FACC2E;">#SAVE_ITEM  = ( %SAVE_scalar%, [Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_p_dyn%25.html">%ind_p_dyn%</a> + Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_p%25.html">%ind_p%</a>], "TotalPressure" ) </span>
+   
+ <span style="color:#FACC2E;">## <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a> = ( %SAVE_scalar%, [Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_d30%25.html">%ind_d30%</a>], "D30" ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a> = ( %SAVE_scalar%, [Y<a href="MESHFREE.Indices.General___indices___.%25ind_OrganizeDTB%25.html">%ind_OrganizeDTB%</a>], "ind_OrganizeDTB" ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a> = ( %SAVE_scalar%, [Y<a href="MESHFREE.Indices.General___indices___.%25ind_dtb%25.html">%ind_dtb%</a> ], "distance_to_boundary" ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a> = ( %SAVE_scalar%, [Y%indU_wasPushedBack%], "waspushedback" ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a> = ( %SAVE_vector%, [Y<a href="MESHFREE.Indices.General___indices___.%25ind_sha(1)%25.html">%ind_sha(1)%</a>], [Y<a href="MESHFREE.Indices.General___indices___.%25ind_sha(2)%25.html">%ind_sha(2)%</a>], [Y<a href="MESHFREE.Indices.General___indices___.%25ind_sha(3)%25.html">%ind_sha(3)%</a>], "wall_normal" ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a> = ( %SAVE_scalar%, [0.5*Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_d30%25.html">%ind_d30%</a> - Y<a href="MESHFREE.Indices.General___indices___.%25ind_dtb%25.html">%ind_dtb%</a> ], "wall_overlap" ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a> = ( %SAVE_scalar%, [Y<a href="MESHFREE.Indices.General___indices___.%25ind_sha(1)%25.html">%ind_sha(1)%</a>*Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_v(1)%25.html">%ind_v(1)%</a> +  Y<a href="MESHFREE.Indices.General___indices___.%25ind_sha(2)%25.html">%ind_sha(2)%</a>*Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_v(2)%25.html">%ind_v(2)%</a> + Y<a href="MESHFREE.Indices.General___indices___.%25ind_sha(3)%25.html">%ind_sha(3)%</a>*Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_v(3)%25.html">%ind_v(3)%</a>], "normal_velocity" ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a> = ( %SAVE_scalar%, [Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_diss%25.html">%ind_diss%</a> ], "ind_diss" ) 
+   
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;">#c  Time Step Control Section </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.TimeControl.DELT_dt_variable.html">DELT_dt_variable</a> = 1            <span style="color:#FACC2E;"># use variable time step size (0: would mean fix the time step size to <a href="MESHFREE.InputFiles.USER_common_variables.TimeControl.DELT_dt.html">DELT_dt</a> ) </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.TimeControl.DELT_dt_start.html">DELT_dt_start</a>    = 0.00000001   <span style="color:#FACC2E;"># fix starting time step size </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.TimeControl.DELT_dt.html">DELT_dt</a>          = 5e-2         <span style="color:#FACC2E;"># upper limit of time step size </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.TimeControl.Tstart.html">Tstart</a>           = 0            <span style="color:#FACC2E;"># starting time of the simulation </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.TimeControl.Tend.html">Tend</a>             = 4            <span style="color:#FACC2E;"># finishing time of the simulation </span>
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;">#c  <a href="MESHFREE.Solvers.Numerics.LIQUID.Algorithms___liquid___.VolumeCorrection.RepresentativeMassAlgorithm.Smoothing.html">Smoothing</a> Length Section </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.USER_h_funct.html">USER_h_funct</a> = 'DSCR' 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.SMOOTH_LENGTH.html">SMOOTH_LENGTH</a>(<span style="color:#0B6121;">$P_Drop$</span>) = (  <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.SMOOTH_LENGTH.%25H_constant%25.html">%H_constant%</a>, 0.003 ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.SMOOTH_LENGTH.html">SMOOTH_LENGTH</a>(<span style="color:#0B6121;">$P_Liq$</span>)  = (  <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.SMOOTH_LENGTH.%25H_constant%25.html">%H_constant%</a>, 0.05 ) 
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;">#c   Boundary Elements Section </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.html">begin_boundary_elements{</a>} 
+   <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.html">include{</a>cube.msh}, <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.scale{.html">scale{</a>0.02 , 0.02 , 0.02}, <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.offset{.html">offset{</a> -0.03, 0.0, 0.045} 
+   <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.manipulate{.html">manipulate{</a>"front"} <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.revOrient{.html">revOrient{</a>} 
+   <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.html">include{</a>Cone.msh}, <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.scale{.html">scale{</a>0.01} 
+   <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.PlainBoundaryElements.BND_point.html">BND_point</a> <span style="color:#8A0808;">&dummy_point2&</span> 0.0 0.0 0.0 
+   <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.PlainBoundaryElements.BND_point.html">BND_point</a> <span style="color:#8A0808;">&dummy_point1&</span> 0.0 0.0 0.0 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_boundary_elements.html">end_boundary_elements</a> 
+   
+   
+ <span style="color:#FACC2E;">#ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccrdp </span>
+ <span style="color:#FACC2E;">#c   Physical Properties Section </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+  density(<span style="color:#0B6121;">$AIR$</span>)    = 10             <span style="color:#FACC2E;"># density in kg/(m³) </span>
+  cv(<span style="color:#0B6121;">$AIR$</span>)         = 1500.0         <span style="color:#FACC2E;"># heat capacity in Nm/()Kg*K)) </span>
+  lambda(<span style="color:#0B6121;">$AIR$</span>)     = 2.0            <span style="color:#FACC2E;"># heat conductivity in W/(mK)) </span>
+  eta(<span style="color:#0B6121;">$AIR$</span>)        = 0.1            <span style="color:#FACC2E;"># viscosity in Pa*s </span>
+  mue(<span style="color:#0B6121;">$AIR$</span>)        = 0.0            <span style="color:#FACC2E;"># shear modulus Pa </span>
+  sigma(<span style="color:#0B6121;">$AIR$</span>)      = 0.0            <span style="color:#FACC2E;"># surface tension in N/m </span>
+  heatsource(<span style="color:#0B6121;">$AIR$</span>) = 0.0            <span style="color:#FACC2E;"># heat source W/(m³) </span>
+  <span style="color:#FACC2E;">#gravity(<span style="color:#0B6121;">$AIR$</span>)    = (0.0, 0.0, -9.81)  # gravity in m/s² </span>
+   
+  density(<span style="color:#0B6121;">$DUST$</span>)    = <span style="color:#8A0808;">&DustDensity&</span>             <span style="color:#FACC2E;"># density in kg/(m³) </span>
+  gravity(<span style="color:#0B6121;">$DUST$</span>)    = (0.0, 0, -9.81)             <span style="color:#FACC2E;"># gravity in m/s² </span>
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;">#c   Boundary Condition Section </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.html">BC_T</a>(<span style="color:#0B6121;">$wall$</span>)        = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_DIRICH%25.html">%BND_DIRICH%</a>, 500.0) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.html">BC_T</a>(<span style="color:#0B6121;">$in$</span>)          = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_DIRICH%25.html">%BND_DIRICH%</a>, 500.0) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.html">BC_T</a>(<span style="color:#0B6121;">$out$</span>)         = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_DIRICH%25.html">%BND_DIRICH%</a>, 500.0) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.html">BC_T</a>(<span style="color:#0B6121;">$wallt$</span>)       = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_DIRICH%25.html">%BND_DIRICH%</a>, 500.0) 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_p.html">BC_p</a>(<span style="color:#0B6121;">$wall$</span>)        = ( <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_wall%25.html">%BND_wall%</a> )                 <span style="color:#FACC2E;"># standard wall pressure condition </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_p.html">BC_p</a>(<span style="color:#0B6121;">$in$</span>)          = ( <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_wall%25.html">%BND_wall%</a> )                 <span style="color:#FACC2E;"># for pressure <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.BC.html">BC</a>, inflow and wall boundaries behave in the same way </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_p.html">BC_p</a>(<span style="color:#0B6121;">$out$</span>)         = ( <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_DIRICH%25.html">%BND_DIRICH%</a>, 0.0 )          <span style="color:#FACC2E;"># fix the pressure to be 0 at the outlfow boundary </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_p.html">BC_p</a>(<span style="color:#0B6121;">$wallt$</span>)       = ( <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_wall%25.html">%BND_wall%</a> )                 <span style="color:#FACC2E;"># standard wall pressure condition </span>
+   
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.html">BC_v</a>(<span style="color:#0B6121;">$in$</span>)         = ( <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_inflow%25.html">%BND_inflow%</a>, 3, 0, 0 ) <span style="color:#FACC2E;"># inflow velocity prescribed </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.html">BC_v</a>(<span style="color:#0B6121;">$out$</span>)        = ( <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_NEUMANN%25.html">%BND_NEUMANN%</a>, 0,0,0,0,0,0 ) <span style="color:#FACC2E;"># standard Neumann condition at the outflow (i.e. keep the velocity free, but fix dv/dn=0) </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.html">BC_v</a>(<span style="color:#0B6121;">$wall$</span>)       = ( <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_wall_nosl%25.html">%BND_wall_nosl%</a> ) <span style="color:#FACC2E;">#( <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_slip%25.html">%BND_slip%</a> ) </span>
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;">#c   Initial Condition Section </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a>(<span style="color:#0B6121;">$DUST$</span>,%ind_v(1)%) = 0.0 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a>(<span style="color:#0B6121;">$DUST$</span>,%ind_v(2)%) = 0.0 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a>(<span style="color:#0B6121;">$DUST$</span>,%ind_v(3)%) = 0.0 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a>(<span style="color:#0B6121;">$DUST$</span>,%ind_diss%) = 0.0 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a>(<span style="color:#0B6121;">$DUST$</span>,%ind_d30%)  = [ nrand(<span style="color:#8A0808;">&InitD30&</span>,<span style="color:#8A0808;">&D30sigma&</span>) ] 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a>(<span style="color:#0B6121;">$DUST$</span>,%ind_Vi%)   = equn(<span style="color:#0B6121;">$VolumeParticle$</span>) 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a>(<span style="color:#0B6121;">$AIR$</span>,%ind_v(1)%) =    0.0 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a>(<span style="color:#0B6121;">$AIR$</span>,%ind_v(2)%) =    0.0 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a>(<span style="color:#0B6121;">$AIR$</span>,%ind_v(3)%) =    0.0 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a>(<span style="color:#0B6121;">$AIR$</span>,%ind_p%) =       0.0 
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;">#c   Move Section </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.MOVE.html">MOVE</a>(<span style="color:#0B6121;">$NO_MOVE$</span>) = ( <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_velocity%25.html">%MOVE_velocity%</a>, 0.0, 0.0, 0 ) 
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;">#c   Active Section </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.html">ACTIVE</a>(<span style="color:#0B6121;">$init_always$</span>)   = ( <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.%25ACTIVE_init%25.html">%ACTIVE_init%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.%25ACTIVE_always%25.html">%ACTIVE_always%</a> ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.html">ACTIVE</a>(<span style="color:#0B6121;">$noinit_always$</span>)   = ( <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.%25ACTIVE_noinit%25.html">%ACTIVE_noinit%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.%25ACTIVE_always%25.html">%ACTIVE_always%</a> ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.html">ACTIVE</a>(<span style="color:#0B6121;">$nofill_always$</span>) = ( <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.%25ACTIVE_nofill%25.html">%ACTIVE_nofill%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.%25ACTIVE_always%25.html">%ACTIVE_always%</a> ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.html">ACTIVE</a>(<span style="color:#0B6121;">$init_never$</span>) = ( <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.%25ACTIVE_init%25.html">%ACTIVE_init%</a> ) 
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;">#c   Alias Section </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+   
+ <span style="color:#FACC2E;"># DUST PHASE: </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.html">begin_alias{</a>} 
+    "dummy_point1" = "ACTIVE$init_always$ SMOOTH_LENGTH$P_Drop$ CHAMBER2 MOVE$NO_MOVE$" 
+   
+    <span style="color:#FACC2E;">### Aliases from cube.msh </span>
+    "init_dust" = "            BC$wall$  ACTIVE$init_never$ IDENT%BND_wall%  MAT$DUST$  TOUCH%TOUCH_reflection%  MOVE$NO_MOVE$  CHAMBER2 " 
+    "bottom"    = " &init_dust& " 
+    "in"        = " &init_dust& " 
+    "out"       = " &init_dust& " 
+    "top"       = " &init_dust& " 
+    "front"     = " &init_dust& " 
+    "back"      = " &init_dust& " 
+   
+    <span style="color:#FACC2E;">### Aliases from Cone.msh </span>
+    "wall_dust" = "            BC$wallt$  ACTIVE$noinit_always$ IDENT%BND_wall%  MAT$DUST$  TOUCH%TOUCH_reflection%  MOVE$NO_MOVE$  CHAMBER2 POSTPROCESS$PP_Cone$" 
+    "wall2"     = " &wall_dust& " 
+    "round2"    = " &wall_dust& " 
+    "upper2"    = " &wall_dust& " 
+    "bottom2"   = " &wall_dust& " 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_alias.html">end_alias</a> 
+   
+ <span style="color:#FACC2E;">#AIR PHASE </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.html">begin_alias{</a>} 
+    "dummy_point2" = "ACTIVE$init_always$ SMOOTH_LENGTH$P_Liq$ CHAMBER1 MOVE$NO_MOVE$" 
+   
+    <span style="color:#FACC2E;">### Aliases from Cone.msh </span>
+    "wall_air" = "            BC$wall$  ACTIVE$init_always$ IDENT%BND_wall_nosl%  MAT$AIR$  TOUCH%TOUCH_always%  MOVE$NO_MOVE$  LAYER0  CHAMBER1 " 
+    "wall2"    = " &wall_air& " 
+    "round2"   = " &wall_air& " 
+    "upper2"   = " &wall_air& " 
+    "bottom2"  = " &wall_air& " 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_alias.html">end_alias</a> 
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;">#c   Integration and Event Section </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$volumetotal$</span>)     = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_INT%25.html">%INTEGRATION_INT%</a>, [1], <span style="color:#0B6121;">$DUST$</span>, %INTEGRATION_Header%, "Volume of Dust Particles") 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$masstotal$</span>)       = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_INT%25.html">%INTEGRATION_INT%</a>, [Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_r%25.html">%ind_r%</a>], <span style="color:#0B6121;">$DUST$</span>, %INTEGRATION_Header%, "Mass of Dust Particles") 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$max_v$</span>)           = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25MAXIMUM_INT%25.html">%MAXIMUM_INT%</a>, [equn(<span style="color:#0B6121;">$MagnitudeVelocity$</span>)], <span style="color:#0B6121;">$DUST$</span>, %INTEGRATION_Header%, "Maximum Velocity of Dust Particles") 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$maxNbNb$</span>)         = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25MAXIMUM_INT%25.html">%MAXIMUM_INT%</a>, [Y<a href="MESHFREE.Indices.General___indices___.%25ind_nbRegularNeighbors%25.html">%ind_nbRegularNeighbors%</a> ], <span style="color:#0B6121;">$DUST$</span>, %INTEGRATION_Header%, "Maximum Number of Neighbors (DUST)") 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$minNbNb$</span>)         = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25MINIMUM_INT%25.html">%MINIMUM_INT%</a>, [Y<a href="MESHFREE.Indices.General___indices___.%25ind_nbRegularNeighbors%25.html">%ind_nbRegularNeighbors%</a> ], <span style="color:#0B6121;">$DUST$</span>, %INTEGRATION_Header%, "Minimum Number of Neighbors (DUST)") 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$minlocdt$</span>)        = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25MINIMUM_INT%25.html">%MINIMUM_INT%</a>, [Y<a href="MESHFREE.Indices.General___indices___.%25ind_dt_local%25.html">%ind_dt_local%</a> ], <span style="color:#0B6121;">$DUST$</span>, %INTEGRATION_Header%, "Minimum prop timestep") 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$kineticEnergy$</span>)   = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_INT%25.html">%INTEGRATION_INT%</a>, [equn(<span style="color:#0B6121;">$KineticEnergy$</span>)], <span style="color:#0B6121;">$DUST$</span>, %INTEGRATION_Header%, "Kinetic Energy in System") 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$potentialEnergy$</span>) = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_INT%25.html">%INTEGRATION_INT%</a>, [equn(<span style="color:#0B6121;">$PotentialEnergy$</span>)], <span style="color:#0B6121;">$DUST$</span>, %INTEGRATION_Header%, "Potential Energy in System") 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$dissEnergy$</span>)      = (<a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_INT%25.html">%INTEGRATION_INT%</a>, [Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_diss%25.html">%ind_diss%</a>/equn(<span style="color:#0B6121;">$VolumeParticle$</span>)], <span style="color:#0B6121;">$DUST$</span>, %INTEGRATION_Header%, "Energy dissipated by particles in System") 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$totalEnergy$</span>)     = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE%25.html">%PUBLICVALUE%</a>, [integ(<span style="color:#0B6121;">$potentialEnergy$</span>) + integ(<span style="color:#0B6121;">$kineticEnergy$</span>) + integ(<span style="color:#0B6121;">$dissEnergy$</span>) + integ(<span style="color:#0B6121;">$diss_BE_sum$</span>)], %INTEGRATION_Header%, "Total Energy in System") 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$NbWasPushedBack$</span>) = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_INT%25.html">%INTEGRATION_INT%</a>, [equn(<span style="color:#0B6121;">$WasPushedBack$</span>)/integ(<span style="color:#0B6121;">$volumetotal$</span>)], <span style="color:#0B6121;">$DUST$</span>, %INTEGRATION_Header%, "Number of Pushed back particles") 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$diss_BE_sum$</span>)     = (<a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25BE_INTEGRATION_DIRECT%25.html">%BE_INTEGRATION_DIRECT%</a>, [max(BEmon(<span style="color:#0B6121;">$Diss_BE$</span>), 0.0 )/BEArea(1) ], <span style="color:#0B6121;">$PP_Cone$</span>, %INTEGRATION_Header%, "Energy dissipated by BEs" ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$diss_BE_nb$</span>)      = (<a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25BE_INTEGRATION_DIRECT%25.html">%BE_INTEGRATION_DIRECT%</a>, [ (BEmon(<span style="color:#0B6121;">$Diss_BE$</span>) > 0.0)/BEarea(1) ], <span style="color:#0B6121;">$PP_Cone$</span>, %INTEGRATION_Header%, "nb of BEs") 
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;">#c Creation of Monitorpoints for tracking the dissipated </span>
+ <span style="color:#FACC2E;">#c energy to the boundary elements </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.MONITORPOINTS.MONITORPOINTS_CREATION.html">MONITORPOINTS_CREATION</a>(<span style="color:#0B6121;">$DUST$</span>)=( <a href="MESHFREE.InputFiles.USER_common_variables.MONITORPOINTS.MONITORPOINTS_CREATION.%25MONITORPOINTS_CREATION_AtBoundary%25.html">%MONITORPOINTS_CREATION_AtBoundary%</a>, [Y<a href="MESHFREE.Indices.DROPLETPHASE___indices___.%25ind_diss_BE%25.html">%ind_diss_BE%</a>]) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_BE_MONITOR_ITEM.html">SAVE_BE_MONITOR_ITEM</a>(<span style="color:#0B6121;">$Diss_BE$</span>) = (<a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_BE_MONITOR_ITEM.%25CUMU_SIMULATION%25.html">%CUMU_SIMULATION%</a>, [Y<a href="MESHFREE.Indices.DROPLETPHASE___indices___.%25ind_diss_BE%25.html">%ind_diss_BE%</a>], "dissBE") 
+ <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_MONITOR_ITEM.html">SAVE_MONITOR_ITEM</a> = (%SAVE_scalar%, [Y<a href="MESHFREE.Indices.DROPLETPHASE___indices___.%25ind_diss_BE%25.html">%ind_diss_BE%</a>], "Energy_dissipated_by_BE") 
+   
+ <span style="color:#FACC2E;"># immediate deletion of Monitor points for performance reasons </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.MONITORPOINTS.MONITORPOINTS_DELETION.html">MONITORPOINTS_DELETION</a>(<span style="color:#0B6121;">$DUST$</span>)= ([1]) 
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <span style="color:#FACC2E;">#c   Equation Section </span>
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.CODI.CODI_eq.html">CODI_eq</a>(<span style="color:#0B6121;">$DUST$</span>,%indU_wasPushedBack%) = [Y%indU_wasPushedBack% + equn(<span style="color:#0B6121;">$WasPushedBack$</span>)] 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.html">begin_alias{</a>"Constants"} 
+    "pi" = "3.14159265359" 
+    "piover6" = "0.52359877559" 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_alias.html">end_alias</a> 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"MagnitudeVelocity"} 
+    sqrt(Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_v(1)%25.html">%ind_v(1)%</a>**2+Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_v(2)%25.html">%ind_v(2)%</a>**2+Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_v(3)%25.html">%ind_v(3)%</a>**2) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"VolumeParticle"} 
+    <span style="color:#8A0808;">&piover6&</span>*Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_d30%25.html">%ind_d30%</a>*Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_d30%25.html">%ind_d30%</a>*Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_d30%25.html">%ind_d30%</a> 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"MassParticle"} 
+    Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_r%25.html">%ind_r%</a>*Y<a href="MESHFREE.Indices.General___indices___.%25ind_Vi%25.html">%ind_Vi%</a> 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"KineticEnergy"} 
+    0.5*Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_r%25.html">%ind_r%</a>*equn(<span style="color:#0B6121;">$MagnitudeVelocity$</span>)*equn(<span style="color:#0B6121;">$MagnitudeVelocity$</span>) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"PotentialEnergy"} 
+    -Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_r%25.html">%ind_r%</a>*Y<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_g(3)%25.html">%ind_g(3)%</a> *Y<a href="MESHFREE.Indices.General___indices___.%25ind_x(3)%25.html">%ind_x(3)%</a> 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"WasPushedBack"} 
+    if ( int(Y<a href="MESHFREE.Indices.General___indices___.%25ind_OrganizeDTB%25.html">%ind_OrganizeDTB%</a>) = %ORGANIZE_WasPushedBackFromBoundary% ) :: 1 
+    else :: 0 
+    endif 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+ 
+ </div> 
+
+	      			</div>
+	      		</div>
+		</div>
+	</div>
+	<div class="blank-class-outer-top footer">
+	  <div class="border-vertical">
+	    <div class="row">
+	      <div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.BasicPhysics.CollidingDropletsInCone.fpmdocu">../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.BasicPhysics.CollidingDropletsInCone.fpmdocu</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="blank-class-outer footer visible-md visible-lg">
+  <div class="border-vertical">
+    <div class="row">
+	      <div class="col-md-6">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-small visible-xs visible-sm">
+    <div class="blank-class-outer">
+      <div class="blank-class-inner">
+	<div class="row ">
+		<div class="col-md-12">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-left-right">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

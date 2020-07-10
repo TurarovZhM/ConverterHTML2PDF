@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="search/image/favicon.ico">
+<title>USER_common_variables</title>
+<link href="search/css/bootstrap.css" rel="stylesheet">
+<link href="search/css/fraunhofer.css" rel="stylesheet">
+<script type="text/javascript" src="search/js/jquery-1.12.0.js"></script>
+<script src="search/js/bootstrap.min.js"></script>
+<script src="search/js/custom.js"></script>
+</head>
+<body>
+	<div class="fh-wrapper">
+		<div class="header">
+			<div class="row visible-xs" id="main-menu-top">
+				    <div class="row search-nav-icon">
+					    <div class="col-md-12">
+					<!-- for search and navigation icon -->
+						  <div id="nav-top" class="nav-top-btn"></div>
+						  <div id="search-btn-index-top-icon" class="search-icon"></div>
+					    </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-md-12">
+					    <nav class="navbar navbar-inverse">
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						      </button>
+						    </div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					      </nav>
+					</div>
+				      <div class="search-top">
+					      <form id="search-form-index-top" >
+						  <input type="text" name="queryString" id="search-text-index-top" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						  <button type="submit" class="btn" id="search-btn-index-top"></button>
+					      </form>
+				    </div>
+				</div>
+			</div>
+			<div class="row header-row">
+				<div class="col-sm-4">
+					<div class="row">
+					   <a href="MESHFREE.html">
+						  <img class="logo img-responsive" alt="" src="search/image/MESHFREE_Logo.png"/>
+					   </a>
+					</div>
+					<div class= "row company_name">
+						Simulate with complex geometries and complex physics
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="row header-search-row hidden-xs">
+						<div class="search">
+						  <form id="search-form-index-header" >
+						      <input type="text" name="queryString" id="search-text-index-header" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						      <button type="submit" class="btn" id="search-btn-index-header"><i class="glyphicon glyphicon-search"></i></button>
+						  </form>
+						</div>
+					</div>
+					<div class="row main_menu hidden-xs" id="main-menu-bottom">
+					  <nav class="navbar navbar-inverse">
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						    <span class="sr-only">Toggle navigation</span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						  </button>
+						</div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					  </nav>
+					</div>
+				</div>
+			</div>
+		</div>
+     <div class="breadcrumbs">
+	  <div class="row breadcrumb">
+	    <div class="col-md-12">
+		<ul>
+<li><a href="MESHFREE.html">MESHFREE</a></li>
+<li><a href="MESHFREE.InputFiles.html">InputFiles</a></li>
+<li><a href="MESHFREE.InputFiles.USER_common_variables.html">USER_common_variables</a></li>
+		</ul>
+	    </div>
+	  </div>
+	</div>
+		<div class="border-vertical">
+		  <div class="row">
+		    <div class="col-md-12 content">
+		    	<div class="jumbotron">
+<h1>USER_common_variables</h1><p> defines the simulation model: geometry, boundary conditions, material parameters, etc. </p>
+		    	</div>
+			<div class="description">
+   
+  The file USER_common_variables.dat contains the definition of the simulation model, i.e. all physical and geometrical behaviour of the fluid phases, boundary conditions, and parts. The file is structured in sections and there is no certain ordering of these sections required. 
+   
+  <h2 class="customh2"> Necessary sections in USER_common_variables.dat </h2> 
+  A simulation model consists at least of the following sections: 
+  <ul><li> </li><li> <b>Solver</b> section: <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.html">KindOfProblem</a>, selection of the solver to be used for each simulation chamber (chamber = phase). 
+  </li><li> <b>Physical Properties</b> Section: <a href="MESHFREE.InputFiles.USER_common_variables.PhysicalProperties.html">PhysicalProperties</a>, to define material properties. 
+  </li><li> <b>Boundary Elements</b> section: <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.html">BoundaryElements</a>, to include geometry data into the simulation model. 
+  </li><li> <b>Active</b> Section: <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.html">ACTIVE</a>, to define the active/visibility flags for the boundaries. (Active always or only in the beginning? Shall point cloud filling happen from this boundary element?) 
+  </li><li> <b>Move</b> Section: <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.MOVE.html">MOVE</a>, to define movement of the boundary elements. 
+  </li><li> <b>Boundary conditions</b> Section: <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.html">BoundaryConditions</a>, to define boundary conditions for quantities of computation, usually velocity, pressure and temperature. 
+  </li><li> <b>Initial conditions</b> Section: <a href="MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a>, to define initial conditions. 
+  </li><li> <b>Time Step Control</b> Section: <a href="MESHFREE.InputFiles.USER_common_variables.TimeControl.html">TimeControl</a>, to define simulation time parameters (start/end time, time step sizes). 
+  </li><li> <b>Smoothing Length</b> Section: <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.html">SmoothingLength</a>, for specifying the level of discretization for the simulation. 
+  </li><li> <b>Alias</b> Section: the <a href="MESHFREE.InputFiles.USER_common_variables.ALIAS.AliasForGeometryItems.html">AliasForGeometryItems</a> section combines the definitions of the previous sections and attaches them to the boundary elements. 
+  </li><li> <b>Saving</b> Section: the <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.html">SAVE</a> section specifies the format for the simulation results and which quantities shall be stored. </li></ul> 
+   
+  <h2 class="customh2"> Syntax of USER_common_variables.dat </h2> 
+  The file USER_common_variables.dat (UCV) has its own scripting syntax to define the simulation model. An overview over this syntax can be found in <a href="MESHFREE.InputFiles.USER_common_variables.__GeneralRemarks__.html">__GeneralRemarks__</a>. 
+  A general overview over all supported keywords is found in <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.html">__overview_of_syntax_elements__</a>. 
+  A quick reference to all predefined variables and constants can be found in <a href="MESHFREE.Indices.html">Indices</a> and <a href="MESHFREE.__Constants__.html">__Constants__</a>, respectively. 
+  A reference to all parameters that can be defined in both common_varables (CV) as well as UCV can be found in <a href="MESHFREE.InputFiles.USER_common_variables.__Parameters__.html">__Parameters__</a>. 
+   
+  <h2 class="customh2"> Equations and <a href="MESHFREE.InputFiles.USER_common_variables.Curves.html">Curves</a> </h2> 
+  A powerful feature of <a href="MESHFREE.html">MESHFREE</a> is that the user is very flexible in including measurement data and dependencies between quantities into the simulation model: 
+  <ul><li> 
+  </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.Curves.html">Curves</a> - tabular value depending on one or two variables, ideal for measurement data. 
+  </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.html">Equations</a> - ideal for physical relations. 
+  </li></ul> 
+  These can for example be flexibly included in evaluating a <a href="MESHFREE.InputFiles.USER_common_variables.__GeneralRemarks__.RightHandSideExpression.html">RightHandSideExpression</a>. 
+   
+  <h2 class="customh2"> Postprocessing </h2> 
+  <a href="MESHFREE.html">MESHFREE</a> offers some features for immediate postprocessing of computation results: 
+  <ul><li> </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> offers features to calculate integrals over the simulation domain and the boundaries at the end of the timestep. 
+  </li><li> <a href="MESHFREE.Indices.UserDefinedIndices.html">UserDefinedIndices</a> allow the user to define additional <a href="MESHFREE.html">MESHFREE</a> internal variables. </li></ul> 
+
+	      			</div>
+	      		</div>
+		</div>
+	</div>
+<div class="blank-class-outer-top">
+	<div class="border-vertical">
+		<div class="row reference">
+	      		<div class="col-md-12">
+		 		<div class="table-responsive">
+			  		<table class="table">
+			  		<tr><th>List of members: </th><th></th></tr>
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.__GeneralRemarks__.html">__GeneralRemarks__</a></td> <td>  general remarks upon the syntax within UCV files </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.html">__overview_of_syntax_elements__</a></td> <td>  shows all possible syntax in USER_common_variables </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.__Parameters__.html">__Parameters__</a></td> <td>  CV-parameters that can also be set in UCV </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.AbaqusInterpolation.html">AbaqusInterpolation</a></td> <td>  abaqus mesh interpolation </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.html">ACTIVE</a></td> <td>  sets active flags for boundary aliases </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.ALIAS.html">ALIAS</a></td> <td>  alias definitions within a begin_alias-end_alias-block </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.html">BoundaryConditions</a></td> <td>  definition of physical boundary conditions for boundary elements </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.html">BoundaryElements</a></td> <td>  definition of the boundary elements to be used during simulation </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.BUBBLES.html">BUBBLES</a></td> <td> BUBBLES</td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.CODI.html">CODI</a></td> <td>  solve additional COnvection-DIffusion-problems (CODI) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.COMP_DropletphaseParcels.html">COMP_DropletphaseParcels</a></td> <td>  (experimental / Under development) cluster particles together in DROPLETPHASE </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.ConsistencyChecksAtStartup.html">ConsistencyChecksAtStartup</a></td> <td>  check the physical/mathematical consistency for user-given input data </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.COUPLING.html">COUPLING</a></td> <td>  couple the running MESHFREE simulation to another, currently running simulation </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.Curves.html">Curves</a></td> <td>  define curves in the input file </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.DropletSource.html">DropletSource</a></td> <td>  generate a sequence of spherical droplets </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.html">Equations</a></td> <td>  define functions, equations, and algebraic expressions </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a></td> <td>  events defined for the point cloud </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.include_Ucv{.html">include_Ucv{</a></td> <td>  include a file in UCV-format </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a></td> <td>  prescribe initial data conditions </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a></td> <td>  integration of the simulation results </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.html">KindOfProblem</a></td> <td>  Solver Selection for a simulation chamber </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.Loops.html">Loops</a></td> <td>  loop over a block of lines in the input file </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.MEMORIZE.html">MEMORIZE</a></td> <td>  memorize functionality </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.MONITORPOINTS.html">MONITORPOINTS</a></td> <td>  monitor points due to user-defined conditions </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.MOVE.html">MOVE</a></td> <td>  move parts of the boundary by an explicit statement </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.NumericalControl.html">NumericalControl</a></td> <td>  numerical control options </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.ODE.html">ODE</a></td> <td>  solver for ordinary differential equations (ODE) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.PhysicalProperties.html">PhysicalProperties</a></td> <td>  define physical properties of a material </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.PointCloudQualityCheck.html">PointCloudQualityCheck</a></td> <td>  check the quality of a read in point cloud </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a></td> <td>  select/mark MESHFREE points by reducing the point cloud </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.ReadInPointCloud.html">ReadInPointCloud</a></td> <td>  read in an already existing point cloud from file </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.RepeatCurrentTimeStep.html">RepeatCurrentTimeStep</a></td> <td>  repeat the current time step with different parameters or reduced pointcloud </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.RESTART.html">RESTART</a></td> <td>  control the restart functionality </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.SAVE.html">SAVE</a></td> <td>  save computational results in different formats </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.Selection.html">Selection</a></td> <td>  Switch/Case-type selection statement </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.html">SmoothingLength</a></td> <td>  define the smoothing length by a set of commands </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.TimeControl.html">TimeControl</a></td> <td>  time control options </td></tr>    
+		  			</table>
+				</div>
+	      		</div>
+		</div>
+	</div>
+</div>
+	<div class="blank-class-outer-top footer">
+	  <div class="border-vertical">
+	    <div class="row">
+	      <div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_liquid/USER_read_common_variables.f90">../../FPM_src/FPM_liquid/USER_read_common_variables.f90</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="blank-class-outer footer visible-md visible-lg">
+  <div class="border-vertical">
+    <div class="row">
+	      <div class="col-md-6">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-small visible-xs visible-sm">
+    <div class="blank-class-outer">
+      <div class="blank-class-inner">
+	<div class="row ">
+		<div class="col-md-12">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-left-right">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="search/image/favicon.ico">
+<title>Ucv_VolumeCorrection</title>
+<link href="search/css/bootstrap.css" rel="stylesheet">
+<link href="search/css/fraunhofer.css" rel="stylesheet">
+<script type="text/javascript" src="search/js/jquery-1.12.0.js"></script>
+<script src="search/js/bootstrap.min.js"></script>
+<script src="search/js/custom.js"></script>
+</head>
+<body>
+	<div class="fh-wrapper">
+		<div class="header">
+			<div class="row visible-xs" id="main-menu-top">
+				    <div class="row search-nav-icon">
+					    <div class="col-md-12">
+					<!-- for search and navigation icon -->
+						  <div id="nav-top" class="nav-top-btn"></div>
+						  <div id="search-btn-index-top-icon" class="search-icon"></div>
+					    </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-md-12">
+					    <nav class="navbar navbar-inverse">
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						      </button>
+						    </div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					      </nav>
+					</div>
+				      <div class="search-top">
+					      <form id="search-form-index-top" >
+						  <input type="text" name="queryString" id="search-text-index-top" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						  <button type="submit" class="btn" id="search-btn-index-top"></button>
+					      </form>
+				    </div>
+				</div>
+			</div>
+			<div class="row header-row">
+				<div class="col-sm-4">
+					<div class="row">
+					   <a href="MESHFREE.html">
+						  <img class="logo img-responsive" alt="" src="search/image/MESHFREE_Logo.png"/>
+					   </a>
+					</div>
+					<div class= "row company_name">
+						Simulate with complex geometries and complex physics
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="row header-search-row hidden-xs">
+						<div class="search">
+						  <form id="search-form-index-header" >
+						      <input type="text" name="queryString" id="search-text-index-header" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						      <button type="submit" class="btn" id="search-btn-index-header"><i class="glyphicon glyphicon-search"></i></button>
+						  </form>
+						</div>
+					</div>
+					<div class="row main_menu hidden-xs" id="main-menu-bottom">
+					  <nav class="navbar navbar-inverse">
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						    <span class="sr-only">Toggle navigation</span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						  </button>
+						</div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					  </nav>
+					</div>
+				</div>
+			</div>
+		</div>
+     <div class="breadcrumbs">
+	  <div class="row breadcrumb">
+	    <div class="col-md-12">
+		<ul>
+<li><a href="MESHFREE.html">MESHFREE</a></li>
+<li><a href="MESHFREE.GettingStarted.html">GettingStarted</a></li>
+<li><a href="MESHFREE.GettingStarted.SpecialCases.html">SpecialCases</a></li>
+<li><a href="MESHFREE.GettingStarted.SpecialCases.WaterManagement.html">WaterManagement</a></li>
+<li><a href="MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.html">RainOnSimplePlate</a></li>
+<li><a href="MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.html">SophisticatedVolumeControl</a></li>
+<li><a href="MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.Ucv_VolumeCorrection.html">Ucv_VolumeCorrection</a></li>
+		</ul>
+	    </div>
+	  </div>
+	</div>
+		<div class="border-vertical">
+		  <div class="row">
+		    <div class="col-md-12 content">
+		    	<div class="jumbotron">
+<h1>Ucv_VolumeCorrection</h1><p> implementation of the volume correction as a Ucv-procedure </p>
+		    	</div>
+			<div class="description">
+   
+ <div class="code"> 
+ <span style="color:#FACC2E;">#------------------------------------------------------------------------- </span>
+ <span style="color:#FACC2E;"># call: </span>
+ <span style="color:#FACC2E;"># <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.include_Ucv{.html">include_Ucv{</a>Ucv_VolumeCorrection.dat} <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.parameters{.html">parameters{</a> _WEIGHT_FrS_=1.0, ... </span>
+ <span style="color:#FACC2E;">#                                                   _WEIGHT_ISO_=0.5, ... </span>
+ <span style="color:#FACC2E;">#                                                   _WEIGHT_INT_=0.0, ... </span>
+ <span style="color:#FACC2E;">#                                                   _CHAMBER_=1, ... </span>
+ <span style="color:#FACC2E;">#                                                   _MATERIAL_=Mat1, ... </span>
+ <span style="color:#FACC2E;">#                                                   _CORRECTION_=0.001, ... </span>
+ <span style="color:#FACC2E;">#                                                   _Vdot_=constant or equation } </span>
+ <span style="color:#FACC2E;"># </span>
+ <span style="color:#FACC2E;">#------------------------------------------------------------------ </span>
+ <span style="color:#FACC2E;"># parameters: </span>
+ <span style="color:#FACC2E;"># _WEIGHT_FrS_ -> weight for volume correction by "lifting" free surface points along their surface normal </span>
+ <span style="color:#FACC2E;"># _WEIGHT_ISO_ -> weight for volume correction by adapting the volume partitions of isolated points </span>
+ <span style="color:#FACC2E;"># _WEIGHT_INT_ -> weight for volume correction by providing an adapted divergence of velocity; </span>
+ <span style="color:#FACC2E;">#                 ATTENTION: this does not work yet as the divergenceV(...) functionality does not really apply for this purpose </span>
+ <span style="color:#FACC2E;"># _CHAMBER_    -> provide chamber index </span>
+ <span style="color:#FACC2E;"># _MATERIAL_   -> provide the name of the material (DO NOT PUT IT INSIDE <span style="color:#0B6121;">$...$</span>) </span>
+ <span style="color:#FACC2E;"># _CORRECTION_ -> correction volume per time step shall not exceed this partition of the total volume </span>
+ <span style="color:#FACC2E;"># _Vdot_       -> positive number, signifies the upper bound of volume per time unit to be deleted by <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> or METAPLANES, </span>
+ <span style="color:#FACC2E;">#                 the correction is based now on a target volume, that takes into account this limitation </span>
+ <span style="color:#FACC2E;">#                 it should be most probably be the same as the volume flux used for the droplet source </span>
+ <span style="color:#FACC2E;">#------------------------------------------------------------------------- </span>
+ <span style="color:#FACC2E;"># algorithm: </span>
+ <span style="color:#FACC2E;"># 1. produce current volume                                               V=sum(V_i) </span>
+ <span style="color:#FACC2E;"># 2. produce potential volume for each FPM point                          V_pot_i </span>
+ <span style="color:#FACC2E;"># 3. produce defect volume to be corrected within this time step          V_defect = min( _CORRECTION_*V , max( -_CORRECTION_*V , Vtarget-V ) ) </span>
+ <span style="color:#FACC2E;"># 4. produce factor alpha such that the defect volume is represented as   V_defect = alpha*sum( V_pot_i ) </span>
+ <span style="color:#FACC2E;"># 5. move free surface such that the defect volume partition is produced  alpha*V_pot_i = d_move*A_i*(0.3*h_i) </span>
+ <span style="color:#FACC2E;"># 6. adapt the V_i of isolated points by                                  V_i = V_i + alpha*V_pot_i </span>
+ <span style="color:#FACC2E;"># (7.) provide a divergence of velocity such that in the next time cycle, volume is corrected by expansion/depression </span>
+ <span style="color:#FACC2E;">#------------------------------------------------------------------------- </span>
+   
+ <span style="color:#FACC2E;">#--------------------------------------------------------------------------- </span>
+ <span style="color:#FACC2E;"># restrict the mass deleted at <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> or <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.METAPLANE.html">METAPLANE</a> by the given formulation for Vdot </span>
+ <span style="color:#FACC2E;"># has to be first, otherwise, in the first time cycle, dont know what is going to happen </span>
+ <span style="color:#FACC2E;">#--------------------------------------------------------------------------- </span>
+ include_Ucv{../includeFiles/Ucv_ComputeAdaptedTargetVolume.dat} <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.parameters{.html">parameters{</a> _Vdot_=_Vdot_, ... 
+                                                                             _CHAMBER_=_CHAMBER_, ... 
+                                                                             _Ncheck_=100, ... 
+                                                                             _ATV_AdaptedTarget_=<span style="color:#0B6121;">$VtargetAdapted$</span> } 
+   
+   
+ <span style="color:#FACC2E;">#--------------------------------------------------------------------------- </span>
+ <span style="color:#FACC2E;">#  algorithm implemented </span>
+ <span style="color:#FACC2E;">#--------------------------------------------------------------------------- </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_timestepfile{.html">begin_timestepfile{</a>"VOCO_chamber=_CHAMBER__material=_MATERIAL_"} 
+    <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$VOCO_time__MATERIAL_$</span>)                = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE%25.html">%PUBLICVALUE%</a>,                          [real(<a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25RealTimeSimulation%25.html">%RealTimeSimulation%</a>)],                                                                        %INTEGRATION_Header%, "time" ) 
+    <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$VOCO_trueVolume__MATERIAL_$</span>)          = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_INT%25.html">%INTEGRATION_INT%</a>,                       1,                                                                               <span style="color:#0B6121;">$_MATERIAL_$</span>,      %INTEGRATION_Header%, "VOCO_trueVolume__MATERIAL_" ) 
+    <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$VOCO_potentialVolume__MATERIAL_$</span>)     = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_INT%25.html">%INTEGRATION_INT%</a>,                      [equn(<span style="color:#0B6121;">$EQN_potentialVolume__MATERIAL_$</span>)/Y<a href="MESHFREE.Indices.General___indices___.%25ind_Vi%25.html">%ind_Vi%</a>],                               <span style="color:#0B6121;">$_MATERIAL_$</span>,      %INTEGRATION_Header%, "VOCO_potentialVolume__MATERIAL_" ) 
+    <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$VOCO_defectVolume__MATERIAL_$</span>)        = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE%25.html">%PUBLICVALUE%</a>,                          [equn(<span style="color:#0B6121;">$EQN_defectVolume__MATERIAL_$</span>)],                                                               %INTEGRATION_Header%, "VOCO_defectVolume__MATERIAL_" ) 
+    <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$VOCO_alphaCorrection__MATERIAL_$</span>)     = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE%25.html">%PUBLICVALUE%</a>,                          [integ(<span style="color:#0B6121;">$VOCO_defectVolume__MATERIAL_$</span>)/integ(<span style="color:#0B6121;">$VOCO_potentialVolume__MATERIAL_$</span>)],                    %INTEGRATION_Header%, "VOCO_alphaCorrection__MATERIAL_" ) 
+    <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$VOCO_checkFS__MATERIAL_$</span>)             = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25ASSIGN_FUNCTIONVALUE%25.html">%ASSIGN_FUNCTIONVALUE%</a>, %indU_checkFS%, [equn(<span style="color:#0B6121;">$EQN_chekFS__MATERIAL_$</span>)],                                                  <span style="color:#0B6121;">$_MATERIAL_$</span>,      %INTEGRATION_Header%, "VOCO_checkFS__MATERIAL_" ) <span style="color:#FACC2E;"># only quick visualization </span>
+    <span style="color:#FACC2E;">#INTEGRATION(<span style="color:#0B6121;">$VOCO_correctVi_INT__MATERIAL_$</span>)       = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25ASSIGN_FUNCTIONVALUE%25.html">%ASSIGN_FUNCTIONVALUE%</a>, %indU_corrVol%, [equn(<span style="color:#0B6121;">$EQN_correctionVolume_INT__MATERIAL_$</span>)],                                    <span style="color:#0B6121;">$_MATERIAL_$</span>,      %INTEGRATION_Header%, "VOCO_correctVi_INT__MATERIAL_" ) </span>
+    <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$VOCO_correct_x_FrS__MATERIAL_$</span>)       = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25ASSIGN_FUNCTIONVALUE%25.html">%ASSIGN_FUNCTIONVALUE%</a>, <a href="MESHFREE.Indices.General___indices___.%25ind_x(1)%25.html">%ind_x(1)%</a>,     [Y<a href="MESHFREE.Indices.General___indices___.%25ind_x(1)%25.html">%ind_x(1)%</a>-equn(<span style="color:#0B6121;">$EQN_distMoveFrS__MATERIAL_$</span>)*Y<a href="MESHFREE.Indices.General___indices___.%25ind_n(1)%25.html">%ind_n(1)%</a>],                     <span style="color:#0B6121;">$_MATERIAL_$</span>,      %INTEGRATION_Header%, "VOCO_correct_x_FrS__MATERIAL_" ) 
+    <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$VOCO_correct_y_FrS__MATERIAL_$</span>)       = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25ASSIGN_FUNCTIONVALUE%25.html">%ASSIGN_FUNCTIONVALUE%</a>, <a href="MESHFREE.Indices.General___indices___.%25ind_x(2)%25.html">%ind_x(2)%</a>,     [Y<a href="MESHFREE.Indices.General___indices___.%25ind_x(2)%25.html">%ind_x(2)%</a>-equn(<span style="color:#0B6121;">$EQN_distMoveFrS__MATERIAL_$</span>)*Y<a href="MESHFREE.Indices.General___indices___.%25ind_n(2)%25.html">%ind_n(2)%</a>],                     <span style="color:#0B6121;">$_MATERIAL_$</span>,      %INTEGRATION_Header%, "VOCO_correct_y_FrS__MATERIAL_" ) 
+    <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$VOCO_correct_z_FrS__MATERIAL_$</span>)       = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25ASSIGN_FUNCTIONVALUE%25.html">%ASSIGN_FUNCTIONVALUE%</a>, <a href="MESHFREE.Indices.General___indices___.%25ind_x(3)%25.html">%ind_x(3)%</a>,     [Y<a href="MESHFREE.Indices.General___indices___.%25ind_x(3)%25.html">%ind_x(3)%</a>-equn(<span style="color:#0B6121;">$EQN_distMoveFrS__MATERIAL_$</span>)*Y<a href="MESHFREE.Indices.General___indices___.%25ind_n(3)%25.html">%ind_n(3)%</a>],                     <span style="color:#0B6121;">$_MATERIAL_$</span>,      %INTEGRATION_Header%, "VOCO_correct_z_FrS__MATERIAL_" ) 
+    <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$VOCO_correctVi_ISO__MATERIAL_$</span>)       = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25ASSIGN_FUNCTIONVALUE%25.html">%ASSIGN_FUNCTIONVALUE%</a>, <a href="MESHFREE.Indices.General___indices___.%25ind_Vi%25.html">%ind_Vi%</a>,       [Y<a href="MESHFREE.Indices.General___indices___.%25ind_Vi%25.html">%ind_Vi%</a>+equn(<span style="color:#0B6121;">$EQN_correctionVolume_ISO__MATERIAL_$</span>)],                          <span style="color:#0B6121;">$_MATERIAL_$</span>,      %INTEGRATION_Header%, "VOCO_correctVi_ISO__MATERIAL_" ) 
+    <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$VOCO_adaptedTargetVolume__MATERIAL_$</span>) = ( <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE%25.html">%PUBLICVALUE%</a>,                          [integ(<span style="color:#0B6121;">$VtargetAdapted$</span>)],                                                                           %INTEGRATION_Header%, "VOCO_adaptedTargetVolume__MATERIAL_" ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_timestepfile.html">end_timestepfile</a> 
+   
+ <span style="color:#FACC2E;"># define the correction divergence of velocity -> commented out since divergenceV() will, itself, adapt the target volume </span>
+ <span style="color:#FACC2E;">#divergenceV(<span style="color:#0B6121;">$_MATERIAL_$</span>) = [ Y%indU_corrVol%/(Y<a href="MESHFREE.Indices.General___indices___.%25ind_dt%25.html">%ind_dt%</a>*Y<a href="MESHFREE.Indices.General___indices___.%25ind_Vi%25.html">%ind_Vi%</a>) ] </span>
+ <span style="color:#FACC2E;">#SAVE_ITEM = ( %SAVE_scalar%, [ Y%indU_corrVol%/(Y<a href="MESHFREE.Indices.General___indices___.%25ind_dt%25.html">%ind_dt%</a>*Y<a href="MESHFREE.Indices.General___indices___.%25ind_Vi%25.html">%ind_Vi%</a>) ], "correction_divergence" ) </span>
+   
+   
+   
+   
+   
+ <span style="color:#FACC2E;">#-------------------------------------------------------------------- </span>
+ <span style="color:#FACC2E;"># helpful equations </span>
+ <span style="color:#FACC2E;">#-------------------------------------------------------------------- </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"EQN_weight_FrS__MATERIAL_"}            <span style="color:#FACC2E;"># put given weight to regular free surface particles </span>
+    if ( (Y%ind_Organize%=%ORGANIZE_IsIsolated%) ) :: 0 
+    else :: 
+       if ( Y%ind_kob%=%BND_free% )                :: _WEIGHT_FrS_ * equn(<span style="color:#0B6121;">$EQN_chekFS__MATERIAL_$</span>) 
+       else                                        :: 0 
+       endif 
+    endif 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"EQN_weight_INT__MATERIAL_"}            <span style="color:#FACC2E;"># put given weight to bulk particles </span>
+    if ( (Y%ind_Organize%=%ORGANIZE_IsIsolated%) ) :: 0 
+    else                                           :: _WEIGHT_INT_ 
+    endif 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"EQN_weight_ISO__MATERIAL_"}            <span style="color:#FACC2E;"># put given weight to isolated particles </span>
+    if ( (Y%ind_Organize%=%ORGANIZE_IsIsolated%) ) :: _WEIGHT_ISO_ 
+    else                                           :: 0 
+    endif 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"EQN_potentialVolume__MATERIAL_"}       <span style="color:#FACC2E;"># provide potential correction volume for each FPM point </span>
+    equn(<span style="color:#0B6121;">$EQN_weight_FrS__MATERIAL_$</span>)*( (0.3*Y<a href="MESHFREE.Indices.General___indices___.%25ind_h%25.html">%ind_h%</a>)*Y<a href="MESHFREE.Indices.General___indices___.%25ind_dA%25.html">%ind_dA%</a> ) + 
+    equn(<span style="color:#0B6121;">$EQN_weight_INT__MATERIAL_$</span>)*( Y<a href="MESHFREE.Indices.General___indices___.%25ind_Vi%25.html">%ind_Vi%</a> ) + 
+    equn(<span style="color:#0B6121;">$EQN_weight_ISO__MATERIAL_$</span>)*( Y<a href="MESHFREE.Indices.General___indices___.%25ind_Vi%25.html">%ind_Vi%</a> ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"EQN_defectVolume__MATERIAL_"}          <span style="color:#FACC2E;"># defect volume to be corrected in this time step: defect volume, but restricted to </span>
+    min( _CORRECTION_*integ(<span style="color:#0B6121;">$VOCO_trueVolume__MATERIAL_$</span>) , 
+         max( -_CORRECTION_*integ(<span style="color:#0B6121;">$VOCO_trueVolume__MATERIAL_$</span>) , 
+ <span style="color:#FACC2E;">#             (real(<a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().TwoArguments.%25FPM_VOLUME_TARGET%25.html">%FPM_VOLUME_TARGET%</a>,_CHAMBER_)-real(<a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().TwoArguments.%25FPM_VOLUME_ACTUAL%25.html">%FPM_VOLUME_ACTUAL%</a>,_CHAMBER_)) </span>
+              (integ(<span style="color:#0B6121;">$VtargetAdapted$</span>)-real(<a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().TwoArguments.%25FPM_VOLUME_ACTUAL%25.html">%FPM_VOLUME_ACTUAL%</a>,_CHAMBER_)) 
+             ) 
+       ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"EQN_correctionVolume_INT__MATERIAL_"}  <span style="color:#FACC2E;"># correction volume for regular (interior) points </span>
+    integ(<span style="color:#0B6121;">$VOCO_alphaCorrection__MATERIAL_$</span>)*equn(<span style="color:#0B6121;">$EQN_weight_INT__MATERIAL_$</span>) * ( Y<a href="MESHFREE.Indices.General___indices___.%25ind_Vi%25.html">%ind_Vi%</a> ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"EQN_distMoveFrS__MATERIAL_"}           <span style="color:#FACC2E;"># correction distance for regular free surface points </span>
+    integ(<span style="color:#0B6121;">$VOCO_alphaCorrection__MATERIAL_$</span>)*equn(<span style="color:#0B6121;">$EQN_weight_FrS__MATERIAL_$</span>) * ( 0.3*Y<a href="MESHFREE.Indices.General___indices___.%25ind_h%25.html">%ind_h%</a> ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"EQN_correctionVolume_ISO__MATERIAL_"}  <span style="color:#FACC2E;"># correction volume for isolated points </span>
+    max(-0.5,min(0.5, integ(<span style="color:#0B6121;">$VOCO_alphaCorrection__MATERIAL_$</span>)*equn(<span style="color:#0B6121;">$EQN_weight_ISO__MATERIAL_$</span>) ))* ( Y<a href="MESHFREE.Indices.General___indices___.%25ind_Vi%25.html">%ind_Vi%</a> ) 
+                      <span style="color:#FACC2E;">#integ(<span style="color:#0B6121;">$VOCO_alphaCorrection__MATERIAL_$</span>)*equn(<span style="color:#0B6121;">$EQN_weight_ISO__MATERIAL_$</span>) * ( Y<a href="MESHFREE.Indices.General___indices___.%25ind_Vi%25.html">%ind_Vi%</a> ) </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a>"EQN_chekFS__MATERIAL_"}                <span style="color:#FACC2E;"># suggestion: this function emphasizes those (free surface) particles which are in a thin layer along a rigid wall </span>
+    max( -(Y<a href="MESHFREE.Indices.General___indices___.%25ind_sha(1)%25.html">%ind_sha(1)%</a>*Y<a href="MESHFREE.Indices.General___indices___.%25ind_n(1)%25.html">%ind_n(1)%</a>+Y<a href="MESHFREE.Indices.General___indices___.%25ind_sha(2)%25.html">%ind_sha(2)%</a>*Y<a href="MESHFREE.Indices.General___indices___.%25ind_n(2)%25.html">%ind_n(2)%</a>+Y<a href="MESHFREE.Indices.General___indices___.%25ind_sha(3)%25.html">%ind_sha(3)%</a>*Y<a href="MESHFREE.Indices.General___indices___.%25ind_n(3)%25.html">%ind_n(3)%</a>)*(0.1*Y<a href="MESHFREE.Indices.General___indices___.%25ind_h%25.html">%ind_h%</a>)/(Y<a href="MESHFREE.Indices.General___indices___.%25ind_dtb%25.html">%ind_dtb%</a>+0.1*Y<a href="MESHFREE.Indices.General___indices___.%25ind_h%25.html">%ind_h%</a>) , 0 ) + 0.5 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a> 
+   
+   
+   
+   
+   
+ 
+ </div> 
+   
+
+	      			</div>
+	      		</div>
+		</div>
+	</div>
+	<div class="blank-class-outer-top footer">
+	  <div class="border-vertical">
+	    <div class="row">
+	      <div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.fpmdocu">../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.fpmdocu</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="blank-class-outer footer visible-md visible-lg">
+  <div class="border-vertical">
+    <div class="row">
+	      <div class="col-md-6">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-small visible-xs visible-sm">
+    <div class="blank-class-outer">
+      <div class="blank-class-inner">
+	<div class="row ">
+		<div class="col-md-12">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-left-right">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

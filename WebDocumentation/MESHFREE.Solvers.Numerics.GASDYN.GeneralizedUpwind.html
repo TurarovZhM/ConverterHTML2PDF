@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="search/image/favicon.ico">
+<title>GeneralizedUpwind</title>
+<link href="search/css/bootstrap.css" rel="stylesheet">
+<link href="search/css/fraunhofer.css" rel="stylesheet">
+<script type="text/javascript" src="search/js/jquery-1.12.0.js"></script>
+<script src="search/js/bootstrap.min.js"></script>
+<script src="search/js/custom.js"></script>
+</head>
+<body>
+	<div class="fh-wrapper">
+		<div class="header">
+			<div class="row visible-xs" id="main-menu-top">
+				    <div class="row search-nav-icon">
+					    <div class="col-md-12">
+					<!-- for search and navigation icon -->
+						  <div id="nav-top" class="nav-top-btn"></div>
+						  <div id="search-btn-index-top-icon" class="search-icon"></div>
+					    </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-md-12">
+					    <nav class="navbar navbar-inverse">
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						      </button>
+						    </div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					      </nav>
+					</div>
+				      <div class="search-top">
+					      <form id="search-form-index-top" >
+						  <input type="text" name="queryString" id="search-text-index-top" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						  <button type="submit" class="btn" id="search-btn-index-top"></button>
+					      </form>
+				    </div>
+				</div>
+			</div>
+			<div class="row header-row">
+				<div class="col-sm-4">
+					<div class="row">
+					   <a href="MESHFREE.html">
+						  <img class="logo img-responsive" alt="" src="search/image/MESHFREE_Logo.png"/>
+					   </a>
+					</div>
+					<div class= "row company_name">
+						Simulate with complex geometries and complex physics
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="row header-search-row hidden-xs">
+						<div class="search">
+						  <form id="search-form-index-header" >
+						      <input type="text" name="queryString" id="search-text-index-header" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						      <button type="submit" class="btn" id="search-btn-index-header"><i class="glyphicon glyphicon-search"></i></button>
+						  </form>
+						</div>
+					</div>
+					<div class="row main_menu hidden-xs" id="main-menu-bottom">
+					  <nav class="navbar navbar-inverse">
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						    <span class="sr-only">Toggle navigation</span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						  </button>
+						</div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					  </nav>
+					</div>
+				</div>
+			</div>
+		</div>
+     <div class="breadcrumbs">
+	  <div class="row breadcrumb">
+	    <div class="col-md-12">
+		<ul>
+<li><a href="MESHFREE.html">MESHFREE</a></li>
+<li><a href="MESHFREE.Solvers.html">Solvers</a></li>
+<li><a href="MESHFREE.Solvers.Numerics.html">Numerics</a></li>
+<li><a href="MESHFREE.Solvers.Numerics.GASDYN.html">GASDYN</a></li>
+<li><a href="MESHFREE.Solvers.Numerics.GASDYN.GeneralizedUpwind.html">GeneralizedUpwind</a></li>
+		</ul>
+	    </div>
+	  </div>
+	</div>
+		<div class="border-vertical">
+		  <div class="row">
+		    <div class="col-md-12 content">
+		    	<div class="jumbotron">
+<h1>GeneralizedUpwind</h1><p> Generalized way of computing upwind terms </p>
+		    	</div>
+			<div class="description">
+                                                                                                           
+   
+  This section here generalizes the way of computing upwind pressure and upwind velocity, stated in <a href="MESHFREE.Solvers.Numerics.GASDYN.SimplifiedFastUpwindTerms.html">SimplifiedFastUpwindTerms</a> and <a href="MESHFREE.Solvers.Numerics.GASDYN.ClassicalUpwindTerms.html">ClassicalUpwindTerms</a> . 
+   
+  <b>Method 1:</b> original method, see <a href="MESHFREE.Solvers.Numerics.GASDYN.ClassicalUpwindTerms.html">ClassicalUpwindTerms</a> 
+  <div lang="latex"><img src="160a6bb3c09361991dd355427f9417f2.png" alt=" \begin{array}{l} 
+  \bar p_{orig}^{} = p - \frac{{\rho c}}{2}\left( {{\mathbf{v}}_{}^ +  - {\mathbf{v}}_{}^ - } \right)_{}^T{\mathbf{n}}{\text{    with }}{\mathbf{v}}_{}^ + \left( {\mathbf{x}} \right) = {\mathbf{\tilde v}}\left( {{\mathbf{x}} + \alpha h{\mathbf{n}}} \right){\text{   and  }}{\mathbf{v}}_{}^ - \left( {\mathbf{x}} \right) = {\mathbf{\tilde v}}\left( {{\mathbf{x}} - \alpha h{\mathbf{n}}} \right)\\ 
+  {\mathbf{\bar v}}_{orig}^{} = {\mathbf{v}} - \frac{1}{{2\rho c}}\left( {p_{}^ +  - p_{}^ - } \right){\mathbf{n}}{\text{    with  }}p_{}^ + \left( {\mathbf{x}} \right) = \tilde p\left( {{\mathbf{x}} + \alpha h{\mathbf{n}}} \right){\text{  and  }}p_{}^ - \left( {\mathbf{x}} \right) = \tilde p\left( {{\mathbf{x}} - \alpha h{\mathbf{n}}} \right) 
+  \end{array}" class="latex" border="0"></div> 
+  With 
+  <span lang="latex-inline"><img src="b4930318835f67032c12a1fab65f02d0.png" alt=" \alpha h" class="latex" border="0"></span> the upwind step length 
+  <span lang="latex-inline"><img src="04aa1ae508a3552751dff95d90f55c55.png" alt=" {\mathbf{n}} = \frac{1}{{\left\| {\nabla p} \right\|}}\nabla p" class="latex" border="0"></span> the upwind direction 
+   
+  <b>Method 2:</b> simplified and fast upwind quantities, see <a href="MESHFREE.Solvers.Numerics.GASDYN.SimplifiedFastUpwindTerms.html">SimplifiedFastUpwindTerms</a> 
+  <div lang="latex"><img src="4f153b5d962823dad47539195840a55d.png" alt=" \begin{array}{l} 
+  \bar p_{simp}^{} = p - \rho cL\left( {\tilde \nabla _{}^T{\mathbf{v}}} \right)\\ 
+  {\mathbf{\bar v}}_{simp}^{} = {\mathbf{v}} - \frac{L}{{\rho c}}\tilde \nabla p 
+  \end{array}" class="latex" border="0"></div> 
+  With 
+  <span lang="latex-inline"><img src="ef9b145027b1f2a1c53014d0f8b94ed9.png" alt=" L = \left\{ {\begin{array}{*{20}{c}} 
+  {{\text{either }}\beta  \cdot \Delta t \cdot c}\\ 
+  {{\text{or      }}\gamma  \cdot h{\text{     }}} 
+  \end{array}} \right." class="latex" border="0"></span> the upwind step length (needed in the Tylor series expansion) 
+  <b>Hint:</b> choosing <span lang="latex-inline"><img src="3f317130d93dd3bf364af046cd779939.png" alt=" \beta = 0.5" class="latex" border="0"></span> will lead to second order in time integration. 
+   
+  <b> Combined method </b> 
+  We can bring both methods together into one 
+  <div lang="latex"><img src="0057b92a2c7f6eb7458e3f667464dc69.png" alt=" \begin{array}{l} 
+  \bar p_{general}^{}{\rm{ }} = {\rm{ }}p{\rm{ }} - {\rm{ }}\frac{{\rho c}}{2}\left( {{\mathbf{v}}_{}^ +  - {\mathbf{v}}_{}^ - } \right)_{}^T{\mathbf{n}}{\rm{  }} - {\rm{ }}\rho cL\left( {\tilde \nabla _{}^T{\mathbf{v}}} \right)\\ 
+  {\mathbf{\bar v}}_{general}^{}{\rm{ }} = {\rm{ }}{\mathbf{v}}{\rm{ }} - {\rm{ }}\frac{1}{{2\rho c}}\left( {p_{}^ +  - p_{}^ - } \right){\mathbf{n}}{\rm{ }} - {\rm{ }}\frac{L}{{\rho c}}\tilde \nabla p 
+  \end{array}" class="latex" border="0"></div> 
+   
+  <ul><li> 
+  </li><li> Define the parameter of <span lang="latex-inline"><img src="15f38edb45ceeda8a4ce10f931c8d6a0.png" alt=" \alpha" class="latex" border="0"></span> in <a href="MESHFREE.InputFiles.common_variables.GASDYN_UpwindOffset.html">GASDYN_UpwindOffset</a>, 
+  </li><li> define the parameter of <span lang="latex-inline"><img src="c70d1c3aedac246950c6956bffd52945.png" alt=" \beta" class="latex" border="0"></span> in <a href="MESHFREE.InputFiles.common_variables.GASDYN_Upwind_Lbeta.html">GASDYN_Upwind_Lbeta</a>, 
+  </li><li> define the parameter of <span lang="latex-inline"><img src="eb7d5d337d95f0b49f27ae2773601c36.png" alt=" \gamma" class="latex" border="0"></span> in <a href="MESHFREE.InputFiles.common_variables.GASDYN_Upwind_Lgamma.html">GASDYN_Upwind_Lgamma</a>. 
+  </li></ul> 
+   
+  Upwind lengths for different solvers? 
+  <ul><li> 
+  </li><li> <b>FPM1</b> (original) 
+  <div lang="latex"><img src="1d30fda2078f58faa3c208dbd8471198.png" alt=" \begin{array}{l} 
+  \alpha  = 0.2\\ 
+  \beta  = 0\\ 
+  \gamma  = 0 
+  \end{array}" class="latex" border="0"></div> 
+   
+  </li><li> <b>FPM1</b> (simplified, currently implemented in VPS) 
+  <div lang="latex"><img src="f79599b587cdfbfd54af6d3a3037fe8d.png" alt=" \begin{array}{l} 
+  \alpha  = 0\\ 
+  \beta  = 0\\ 
+  \gamma  = 0.2 
+  \end{array}" class="latex" border="0"></div> 
+   
+  </li><li> <b>FPM3</b> 
+  <div lang="latex"><img src="0577e04811b74afcba10b51033ab8213.png" alt=" \begin{array}{l} 
+  \alpha  = 0\\ 
+  \beta  = \left\{ {\begin{array}{*{20}{c}} 
+  {0.5{\text{     }}if{\text{  }}\nabla _{}^T{\mathbf{v}} > 0{\text{  (rarefaction)}}}\\ 
+  {0{\text{       elsewise                         }}} 
+  \end{array}} \right.\\ 
+  \gamma  = \left\{ {\begin{array}{*{20}{c}} 
+  {0.0{\text{     }}if{\text{  }}\nabla _{}^T{\mathbf{v}} > 0{\text{  (rarefaction)}}}\\ 
+  {0.2{\text{       elsewise                         }}} 
+  \end{array}} \right. 
+  \end{array}" class="latex" border="0"></div> 
+  </li></ul> 
+             
+	      			</div>
+	      		</div>
+		</div>
+	</div>
+	<div class="blank-class-outer-top footer">
+	  <div class="border-vertical">
+	    <div class="row">
+	      <div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fortran/Solver/BasicSolver/Compressible/FGASDYN_UpwindQuantities_PhdKuhnert.f90">../../FPM_src/FPM_fortran/Solver/BasicSolver/Compressible/FGASDYN_UpwindQuantities_PhdKuhnert.f90</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="blank-class-outer footer visible-md visible-lg">
+  <div class="border-vertical">
+    <div class="row">
+	      <div class="col-md-6">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-small visible-xs visible-sm">
+    <div class="blank-class-outer">
+      <div class="blank-class-inner">
+	<div class="row ">
+		<div class="col-md-12">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-left-right">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

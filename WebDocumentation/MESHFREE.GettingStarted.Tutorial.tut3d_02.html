@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="search/image/favicon.ico">
+<title>tut3d_02</title>
+<link href="search/css/bootstrap.css" rel="stylesheet">
+<link href="search/css/fraunhofer.css" rel="stylesheet">
+<script type="text/javascript" src="search/js/jquery-1.12.0.js"></script>
+<script src="search/js/bootstrap.min.js"></script>
+<script src="search/js/custom.js"></script>
+</head>
+<body>
+	<div class="fh-wrapper">
+		<div class="header">
+			<div class="row visible-xs" id="main-menu-top">
+				    <div class="row search-nav-icon">
+					    <div class="col-md-12">
+					<!-- for search and navigation icon -->
+						  <div id="nav-top" class="nav-top-btn"></div>
+						  <div id="search-btn-index-top-icon" class="search-icon"></div>
+					    </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-md-12">
+					    <nav class="navbar navbar-inverse">
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						      </button>
+						    </div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					      </nav>
+					</div>
+				      <div class="search-top">
+					      <form id="search-form-index-top" >
+						  <input type="text" name="queryString" id="search-text-index-top" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						  <button type="submit" class="btn" id="search-btn-index-top"></button>
+					      </form>
+				    </div>
+				</div>
+			</div>
+			<div class="row header-row">
+				<div class="col-sm-4">
+					<div class="row">
+					   <a href="MESHFREE.html">
+						  <img class="logo img-responsive" alt="" src="search/image/MESHFREE_Logo.png"/>
+					   </a>
+					</div>
+					<div class= "row company_name">
+						Simulate with complex geometries and complex physics
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="row header-search-row hidden-xs">
+						<div class="search">
+						  <form id="search-form-index-header" >
+						      <input type="text" name="queryString" id="search-text-index-header" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						      <button type="submit" class="btn" id="search-btn-index-header"><i class="glyphicon glyphicon-search"></i></button>
+						  </form>
+						</div>
+					</div>
+					<div class="row main_menu hidden-xs" id="main-menu-bottom">
+					  <nav class="navbar navbar-inverse">
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						    <span class="sr-only">Toggle navigation</span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						  </button>
+						</div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					  </nav>
+					</div>
+				</div>
+			</div>
+		</div>
+     <div class="breadcrumbs">
+	  <div class="row breadcrumb">
+	    <div class="col-md-12">
+		<ul>
+<li><a href="MESHFREE.html">MESHFREE</a></li>
+<li><a href="MESHFREE.GettingStarted.html">GettingStarted</a></li>
+<li><a href="MESHFREE.GettingStarted.Tutorial.html">Tutorial</a></li>
+<li><a href="MESHFREE.GettingStarted.Tutorial.tut3d_02.html">tut3d_02</a></li>
+		</ul>
+	    </div>
+	  </div>
+	</div>
+		<div class="border-vertical">
+		  <div class="row">
+		    <div class="col-md-12 content">
+		    	<div class="jumbotron">
+<h1>tut3d_02</h1><p> TUTORIAL 2: flow out of a tank </p>
+		    	</div>
+			<div class="description">
+                                                                                      
+   
+ <b> Goals of this unit: </b> 
+ <ul><li> 
+ </li><li> free surfaces with boundary conditions in 3D, 
+ </li><li> formation of a proper jet, 
+ </li><li> controlling the jet (preventing infinite jet), 
+ </li><li> introduction of the gravity vector and other material properties, 
+ </li><li> activation and material specification in the alias-section. 
+ </li></ul> 
+   
+ <b> The fluid-mechanical problem </b> 
+   
+ This example shows a flow with free surface. The level of the fluid is decreasing in the draining tank because of a circular hole at the front face of the geometry, where a fluid jet will evolve. In Figure 10, geometry has been rotated such that the user can see the outlet at the bottom right side. The velocity and the flow rate of the jet depend on the depth of the fluid. 
+   
+ <img src=  ../Pictures/tut02_figure10.png alt="Here should be a picture" class="img-responsive"> 
+ <em> Figure 10: sketch of the simulation </em> 
+   
+ In Figure 10, we observe the outer container (covered by brown points), that encloses the fluid geometry. This container was created to cut the jet, ejected from the orifice hole, and will prevent the formation of an infinite jet. The boundaries of this outer container have been defined in the alias-section in the following way: 
+ <div class="note"> <div class="code"> 
+ "cut_side"      = "            BC$outflow$      ACTIVE$noinit_always$ IDENT%BND_outflow%  MAT$MatUSER$  TOUCH%TOUCH_liquid%       MOVE$NO_MOVE$  CHAMBER1  POSTPROCESS$PP_OUT$ " 
+ "cut_bottom"    = " REV_ORIENT BC$outflow$      ACTIVE$noinit_always$ IDENT%BND_outflow%  MAT$MatUSER$  TOUCH%TOUCH_liquid%       MOVE$NO_MOVE$  CHAMBER1  POSTPROCESS$PP_OUT$" 
+ 
+ </div> </div> 
+   
+ <b> Free surface detection </b> 
+   
+ As the setting contains free surfaces, we turn on the free surface detection by setting the parameter compute_FS to "YES" in either the <a href="MESHFREE.InputFiles.USER_common_variables.html">USER_common_variables</a> or the <a href="MESHFREE.InputFiles.common_variables.html">common_variables</a> file: 
+ <div class="note"> <div class="code"> 
+ <span style="color:#FACC2E;"># Set parameter compute_FS='YES' either in Ucv or cv to turn on detection of free surfaces: </span>
+ compute_FS = 'YES' 
+ 
+ </div> </div> 
+   
+ <b> Consistent geometry: </b> 
+   
+ The <a href="MESHFREE.html">MESHFREE</a> points of the jet through the outlet orifice would be deleted, if they would see any geometry part from its back-side. So, to get rid of this situation, one must prepare the geometry in such a way that any point can uniquely determine its inside/outside status regarding the geometry model (boundary elements). Figure 11 shows the proper geometry modelling (inner AND outer skin of the tank). 
+   
+ <img src=  ../Pictures/tut02_figure11.png alt="Here should be a picture" class="img-responsive"> 
+ <em> Figure 11: geometrical setup of the problem </em> 
+   
+ The outer skin prevents <a href="MESHFREE.html">MESHFREE</a> points from being deleted once they pass through the orifice hole. The outer skin of the tank is defined by: 
+ <div class="note"> <div class="code"> 
+ "plane1"        = "            BC$wall$         ACTIVE$noinit_always$ IDENT%BND_slip%     MAT$MatUSER$  TOUCH%TOUCH_liquid%       MOVE$NO_MOVE$  CHAMBER1 " 
+ "plane2"        = "            BC$wall$         ACTIVE$noinit_always$ IDENT%BND_slip%     MAT$MatUSER$  TOUCH%TOUCH_liquid%       MOVE$NO_MOVE$  CHAMBER1 " 
+ 
+ </div> </div> 
+   
+   
+ <b> Flow and boundary conditions </b> 
+   
+ In order to provoke the flow through the orifice hole (driven by hydrostatic pressure), we introduce the gravity vector: 
+ <div class="note"> <div class="code"> 
+  gravity(<span style="color:#0B6121;">$MatUSER$</span>)    = (0.0, -9.81, 0.0) 
+ 
+ </div> </div> 
+   
+ The gravity vector (body forces) is a physical property of the specified material $MatUSER$.  It is listed in the “USER_common_variables.dat” together with the other material properties such as density, viscosity and initial temperatures. 
+   
+ The relevant boundary conditions are 
+ <div class="note"> <div class="code"> 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_p.html">BC_p</a>(0)                          = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_free%25.html">%BND_free%</a>)                       <span style="color:#FACC2E;"># fallback for free surfaces </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_p.html">BC_p</a>(<span style="color:#0B6121;">$free0$</span>)                    = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_free%25.html">%BND_free%</a>) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_p.html">BC_p</a>(<span style="color:#0B6121;">$out$</span>)                      = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_DIRICH%25.html">%BND_DIRICH%</a>, 0.0) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_p.html">BC_p</a>(<span style="color:#0B6121;">$wall$</span>)                     = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_wall%25.html">%BND_wall%</a>) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_p.html">BC_p</a>(<span style="color:#0B6121;">$outflow$</span>)                  = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_wall%25.html">%BND_wall%</a>) 
+   
+                                                                                                                                <span style="color:#FACC2E;">#BC_v - velocity conditions </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.html">BC_v</a>(0)                          = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_free%25.html">%BND_free%</a>,0,0,0,0.3)             <span style="color:#FACC2E;"># fallback for free surfaces </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.html">BC_v</a>(<span style="color:#0B6121;">$free0$</span>)                    = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_free%25.html">%BND_free%</a>,0,0,0,0.3)             <span style="color:#FACC2E;"># the last number 0.3 is the inertial thickness, i.e. incorporate inertial forces into the free surface boundary conditions, see FPMDOCU </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.html">BC_v</a>(<span style="color:#0B6121;">$out$</span>)                      = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_outflow%25.html">%BND_outflow%</a>) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.html">BC_v</a>(<span style="color:#0B6121;">$wall$</span>)                     = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_slip%25.html">%BND_slip%</a>,0,0.3) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.html">BC_v</a>(<span style="color:#0B6121;">$outflow$</span>)                  = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_NEUMANN%25.html">%BND_NEUMANN%</a>, 0.0, 0.0, 0.0) 
+   
+                                                                                                                                <span style="color:#FACC2E;">#BCON_pCorr - dynamic pressure conditions </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BCON.html">BCON</a>(0,%ind_p_dyn%)             = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_free%25.html">%BND_free%</a>)                       <span style="color:#FACC2E;"># fallback for free surfaces </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BCON.html">BCON</a>(<span style="color:#0B6121;">$free0$</span>,%ind_p_dyn%)       = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_free%25.html">%BND_free%</a>) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BCON.html">BCON</a>(<span style="color:#0B6121;">$out$</span>,%ind_p_dyn%)         = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_DIRICH%25.html">%BND_DIRICH%</a>, 0.0) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BCON.html">BCON</a>(<span style="color:#0B6121;">$wall$</span>,%ind_p_dyn%)        = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_wall%25.html">%BND_wall%</a>) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BCON.html">BCON</a>(<span style="color:#0B6121;">$outflow$</span>,%ind_p_dyn%)     = (<a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_wall%25.html">%BND_wall%</a>) 
+ 
+ </div> </div> 
+   
+ The boundary index flag $free0$ defines the boundary conditions at the free surface. In the <a href="MESHFREE.InputFiles.USER_common_variables.ALIAS.html">ALIAS</a> section, the top wall is specified by the flag <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.html">ACTIVE</a>$free_surface$ (see below), which means, that the border is active during pointfilling and preparation, after start-up it is switched off, turning all points belonging to "top" automatically into free surface points. 
+ <div class="note"> <div class="code"> 
+ "top"           = "            BC$free0$        ACTIVE$free_surface$                      MAT$MatUSER$                                           CHAMBER1 " 
+ 
+ </div> </div> 
+   
+ Typically there are at least the following three <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.html">ACTIVE</a> statements present: 
+ <div class="note"> <div class="code"> 
+ <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.html">ACTIVE</a>(<span style="color:#0B6121;">$init_always$</span>)   = ( <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.%25ACTIVE_init%25.html">%ACTIVE_init%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.%25ACTIVE_always%25.html">%ACTIVE_always%</a> ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.html">ACTIVE</a>(<span style="color:#0B6121;">$free_surface$</span>)  = ( <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.%25ACTIVE_init%25.html">%ACTIVE_init%</a> ) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.html">ACTIVE</a>(<span style="color:#0B6121;">$noinit_always$</span>) = ( <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.%25ACTIVE_noinit%25.html">%ACTIVE_noinit%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.%25ACTIVE_always%25.html">%ACTIVE_always%</a>) 
+ 
+ </div> </div> 
+ The <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.html">ACTIVE</a>($init_always$) flag is used for walls which are initially filled and are active throughout the computation. For walls which are not active initially but might come into contact with the fluid (and thus become active) the <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.html">ACTIVE</a>($noinit_always$) flag is defined. Finally <a href="MESHFREE.InputFiles.USER_common_variables.ACTIVE.html">ACTIVE</a>($free_surface$) specifies surfaces which are initially filled with points and then immediately switched to the free surface boundary condition. 
+   
+   
+ <b> Use temperature to colorize the material </b> 
+   
+ We use the temperature to simply colorize the material (choosing very small heat conductivity) and isolation boundary conditions: 
+ <div class="note"> <div class="code"> 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.html">BC_T</a>(0)                          = (%BND_ROBIN%, 0.0, 0.0, 0.3)      <span style="color:#FACC2E;"># fallback for free surfaces </span>
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.html">BC_T</a>(<span style="color:#0B6121;">$free0$</span>)                    = (%BND_ROBIN%, 0.0, 0.0, 0.3) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.html">BC_T</a>(<span style="color:#0B6121;">$out$</span>)                      = (%BND_ROBIN%, 0.0, 0.0, 0.3) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.html">BC_T</a>(<span style="color:#0B6121;">$wall$</span>)                     = (%BND_ROBIN%, 0.0, 0.0, 0.3) 
+ <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.html">BC_T</a>(<span style="color:#0B6121;">$outflow$</span>)                  = (%BND_ROBIN%, 0.0, 0.0, 0.3) 
+   
+ 
+ </div> </div> 
+   
+ The temperature is initialized due to the y-component of their initial positions: 
+ <div class="note"> <div class="code"> 
+ <a href="MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a>(<span style="color:#0B6121;">$MatUSER$</span>,%ind_T%)    = [Y<a href="MESHFREE.Indices.General___indices___.%25ind_x(2)%25.html">%ind_x(2)%</a>]            <span style="color:#FACC2E;"># colorize/initialize temperature by y-values </span>
+ 
+ </div> </div> 
+   
+   
+ <b> Output files </b> 
+   
+ In the result folder, <a href="MESHFREE.html">MESHFREE</a> will generate two kinds of files. The result file starting with BE_... contains the boundary elements. With this, the user has a feedback, how FPM interpreted the geometry from the input files given in the <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.html">begin_boundary_elements{</a>} environment. The other result file contains the pointcloud together with the result items defined in the <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a> section. 
+   
+ The user can check the “free surface particles” by observing the pointcloud result file with (item "KOB"), as shown in Figure 10, there red particles are free surface particles. 
+   
+ For this tutorial we have chosen special output such that deactivated particles can be seen in ParaView. The activation status can be checked using the item “Activation” which is 0 if the particle is deactivated or it shows the number of time cycles it has been activated without interruption. 
+   
+   
+ <b> Use outer boundary as wall </b> 
+   
+ As an option, the user can switch the fluid behavior at the outflow-box by changing the boundary conditions from $outflow$ to $wall$. In this case, the jet becomes reflected as if the outer box was a wall, the liquid will flow down along the wall due to the given gravity. See the commented lines: 
+ <div class="note"> <div class="code"> 
+ <span style="color:#FACC2E;">#"cut_side"      = "            BC$wall$         ACTIVE$noinit_always$ IDENT%BND_slip%     MAT$MatUSER$  TOUCH%TOUCH_liquid%       MOVE$NO_MOVE$  CHAMBER1 " </span>
+ <span style="color:#FACC2E;">#"cut_bottom"    = " REV_ORIENT BC$wall$         ACTIVE$noinit_always$ IDENT%BND_slip%     MAT$MatUSER$  TOUCH%TOUCH_liquid%       MOVE$NO_MOVE$  CHAMBER1 " </span>
+ 
+ </div> </div> 
+   
+   
+ <b> Suggestions to explore <a href="MESHFREE.html">MESHFREE</a>: </b> 
+ <ul><li> 
+ </li><li> play with the interaction radius <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.SMOOTH_LENGTH.html">SMOOTH_LENGTH</a> 
+ </li><li> switch the boundary conditions of the out bounds from outflow to solid wall conditions 
+ </li></ul> 
+   
+ <span style="color:#f39200"> Note: </span> In order to reproduce Figures 10 and 11, load the state files tut02_figure10.pvsm and tut02_figure11.pvsm in ParaView and choose 'Search files under specified directory'. Then, select the correct data directory (<a href="MESHFREE.html">MESHFREE</a> results folder). 
+   
+
+	      			</div>
+	      		</div>
+		</div>
+	</div>
+<div class="blank-class-outer-top">
+	<div class="border-vertical">
+		<div class="row reference">
+	      		<div class="col-md-12">
+		 		<div class="table-responsive">
+			  		<table class="table">
+			  		<tr><th>List of members: </th><th></th></tr>
+<tr><td><a href="MESHFREE.GettingStarted.Tutorial.tut3d_02.USER_common_variables___tut3d_02___.html">USER_common_variables</a></td> <td>  TUTORIAL 2: flow out of a tank: USER_common_variables.dat </td></tr>    
+<tr><td><a href="MESHFREE.GettingStarted.Tutorial.tut3d_02.common_variables___tut3d_02___.html">common_variables</a></td> <td>  TUTORIAL 2: flow out of a tank: common_variables.dat </td></tr>    
+		  			</table>
+				</div>
+	      		</div>
+		</div>
+	</div>
+</div>
+	<div class="blank-class-outer-top footer">
+	  <div class="border-vertical">
+	    <div class="row">
+	      <div class="col-md-12 comprehensive-example">
+<a href="../OnlineExamples/MESHFREE.GettingStarted.Tutorial.tut3d_02">DOWNLOAD COMPREHENSIVE EXAMPLE</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="blank-class-outer-top footer">
+	  <div class="border-vertical">
+	    <div class="row">
+	      <div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.Tutorial.tut3d_02.fpmdocu">../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.Tutorial.tut3d_02.fpmdocu</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="blank-class-outer footer visible-md visible-lg">
+  <div class="border-vertical">
+    <div class="row">
+	      <div class="col-md-6">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-small visible-xs visible-sm">
+    <div class="blank-class-outer">
+      <div class="blank-class-inner">
+	<div class="row ">
+		<div class="col-md-12">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-left-right">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

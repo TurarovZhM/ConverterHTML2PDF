@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="jquery-1.12.0.js"></script>
+	<script type="text/javascript" src="web.json"></script>
+    <script type="text/javascript" src="lunr.js"></script>
+    <script type="text/javascript" src="jquery.mark.js"></script>
+    <script type="text/javascript" src="search-query.js"></script>
+	<style>
+		body {
+			width:80%;
+			margin: auto;
+			}
+		ul{
+			padding: 0px;
+			}
+		ul li {
+			list-style-type:none;
+			text-align: justify;
+			margin:0 0 20px 0; 
+		}
+		
+		ul li p{
+			margin: 0px;
+		}
+			
+		.title {
+		  font-family: monospace;
+		  font-size: 25px;
+		  font-weight: bold;
+		  color: blue;
+		  margin: 20px 0 0 0 ;
+		}
+		
+		.title a {
+			text-decoration: none;
+		}
+		
+		
+		.lunr-match-highlight{
+			background-color: #FFFF00;
+		}
+
+	</style>
+  </head>
+  <body>
+    	<div>
+		<p class="title"><a href="../FPM.html">FPM</a> :: Search</p>
+		<form id="search-form">
+	 		<input type="text" class="search-box" id="search" />
+	 		<input type="submit" class="search-button" value="Search" />
+			<ul class="search-results"></ul>
+		</form>	
+	</div>
+  </body>
+</html>

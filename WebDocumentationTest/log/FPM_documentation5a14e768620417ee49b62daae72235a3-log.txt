@@ -1,0 +1,43 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013)
+ restricted \write18 enabled.
+entering extended mode
+(./FPM_documentation-equation.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/minimal.cls
+Document Class: minimal 2001/05/25 Standard LaTeX minimal class
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+No file FPM_documentation-equation.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Misplaced alignment tab character &.
+l.6 &
+     bx& = &bx& + &Fx&\|\mathbf{v}_{{}}^{{}} - \mathbf{v}_{\beta}\|
+! Misplaced alignment tab character &.
+l.6 &bx&
+         = &bx& + &Fx&\|\mathbf{v}_{{}}^{{}} - \mathbf{v}_{\beta}\|
+! Misplaced alignment tab character &.
+l.6 &bx& = &
+            bx& + &Fx&\|\mathbf{v}_{{}}^{{}} - \mathbf{v}_{\beta}\|
+! Misplaced alignment tab character &.
+l.6 &bx& = &bx&
+                + &Fx&\|\mathbf{v}_{{}}^{{}} - \mathbf{v}_{\beta}\|
+! Misplaced alignment tab character &.
+l.6 &bx& = &bx& + &
+                   Fx&\|\mathbf{v}_{{}}^{{}} - \mathbf{v}_{\beta}\|
+! Misplaced alignment tab character &.
+l.6 &bx& = &bx& + &Fx&
+                      \|\mathbf{v}_{{}}^{{}} - \mathbf{v}_{\beta}\|
+[1] (./FPM_documentation-equation.aux) )
+(see the transcript file for additional information)
+Output written on FPM_documentation-equation.dvi (1 page, 424 bytes).
+Transcript written on FPM_documentation-equation.log.

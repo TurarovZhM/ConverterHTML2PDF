@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="search/image/favicon.ico">
+<title>tut3d_04b</title>
+<link href="search/css/bootstrap.css" rel="stylesheet">
+<link href="search/css/fraunhofer.css" rel="stylesheet">
+<script type="text/javascript" src="search/js/jquery-1.12.0.js"></script>
+<script src="search/js/bootstrap.min.js"></script>
+<script src="search/js/custom.js"></script>
+</head>
+<body>
+	<div class="fh-wrapper">
+		<div class="header">
+			<div class="row visible-xs" id="main-menu-top">
+				    <div class="row search-nav-icon">
+					    <div class="col-md-12">
+					<!-- for search and navigation icon -->
+						  <div id="nav-top" class="nav-top-btn"></div>
+						  <div id="search-btn-index-top-icon" class="search-icon"></div>
+					    </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-md-12">
+					    <nav class="navbar navbar-inverse">
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						      </button>
+						    </div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					      </nav>
+					</div>
+				      <div class="search-top">
+					      <form id="search-form-index-top" >
+						  <input type="text" name="queryString" id="search-text-index-top" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						  <button type="submit" class="btn" id="search-btn-index-top"></button>
+					      </form>
+				    </div>
+				</div>
+			</div>
+			<div class="row header-row">
+				<div class="col-sm-4">
+					<div class="row">
+					   <a href="MESHFREE.html">
+						  <img class="logo img-responsive" alt="" src="search/image/MESHFREE_Logo.png"/>
+					   </a>
+					</div>
+					<div class= "row company_name">
+						Simulate with complex geometries and complex physics
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="row header-search-row hidden-xs">
+						<div class="search">
+						  <form id="search-form-index-header" >
+						      <input type="text" name="queryString" id="search-text-index-header" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						      <button type="submit" class="btn" id="search-btn-index-header"><i class="glyphicon glyphicon-search"></i></button>
+						  </form>
+						</div>
+					</div>
+					<div class="row main_menu hidden-xs" id="main-menu-bottom">
+					  <nav class="navbar navbar-inverse">
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						    <span class="sr-only">Toggle navigation</span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						  </button>
+						</div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					  </nav>
+					</div>
+				</div>
+			</div>
+		</div>
+     <div class="breadcrumbs">
+	  <div class="row breadcrumb">
+	    <div class="col-md-12">
+		<ul>
+<li><a href="MESHFREE.html">MESHFREE</a></li>
+<li><a href="MESHFREE.GettingStarted.html">GettingStarted</a></li>
+<li><a href="MESHFREE.GettingStarted.Tutorial.html">Tutorial</a></li>
+<li><a href="MESHFREE.GettingStarted.Tutorial.tut3d_04b.html">tut3d_04b</a></li>
+		</ul>
+	    </div>
+	  </div>
+	</div>
+		<div class="border-vertical">
+		  <div class="row">
+		    <div class="col-md-12 content">
+		    	<div class="jumbotron">
+<h1>tut3d_04b</h1><p> TUTORIAL 4b: flow around a cylinder with local refinement (geometry-based) </p>
+		    	</div>
+			<div class="description">
+                                                                                                                                   
+   
+ <b>Goals of this Unit: </b> 
+ <ul><li> 
+ </li><li> attach local refinement to existing geometry items (e.g. the cylinder) 
+ </li></ul> 
+   
+ <b>The fluid-mechanical problem</b> 
+   
+ The fluid mechanical problem and the geometrical setting remains the same as in <a href="MESHFREE.GettingStarted.Tutorial.html">Tutorial</a> <a href="MESHFREE.GettingStarted.Tutorial.tut3d_03.html">tut3d_03</a> and <a href="MESHFREE.GettingStarted.Tutorial.tut3d_04a.html">tut3d_04a</a>. However, it might be desirable to have a denser particle cloud around the obstacle in the center of the flow in 3D and save computation time by thinning out the point cloud far away from the cylinder. In contrast to <a href="MESHFREE.GettingStarted.Tutorial.tut3d_04a.html">tut3d_04a</a>, the local refinement of the pointcloud is not prescribed by a virtual axis, but the smoothing length is attached to existing geometrical entities. 
+   
+ <img src=  ../Pictures/tut04_figure14.png alt="Here should be a picture" class="img-responsive"> 
+ <em> Figure 14: Local refinement of the pointcloud around the cylinder </em> 
+   
+ In order to use a variable, locally refined smoothing length the keyword 'DSCR' is needed. 
+ In this example, the local refinement is attached to the "cylinder"-geometry items given by the geometry. For this, the appropriate elements have to be flagged with the <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.SMOOTH_LENGTH.html">SMOOTH_LENGTH</a> flag: 
+   
+ <div class="note"> <div class="code"> 
+ "cylinder_1"  = " SMOOTH_LENGTH$P_0$              BC$wallCyl$  ACTIVE$init_always$    IDENT%BND_slip%       MAT$MatUSER$  TOUCH%TOUCH_always%       MOVE$NO_MOVE$  LAYER0  CHAMBER1 " 
+ "cylinder_2"  = " SMOOTH_LENGTH$P_0$  REV_ORIENT  BC$wallCyl$  ACTIVE$init_always$    IDENT%BND_slip%       MAT$MatUSER$  TOUCH%TOUCH_always%       MOVE$NO_MOVE$  LAYER0  CHAMBER1 " 
+ "cylinder_3"  = " SMOOTH_LENGTH$P_0$  REV_ORIENT  BC$wallCyl$  ACTIVE$init_always$    IDENT%BND_slip%       MAT$MatUSER$  TOUCH%TOUCH_always%       MOVE$NO_MOVE$  LAYER0  CHAMBER1 " 
+ "cylinder_4"  = " SMOOTH_LENGTH$P_0$  REV_ORIENT  BC$wallCyl$  ACTIVE$init_always$    IDENT%BND_slip%       MAT$MatUSER$  TOUCH%TOUCH_always%       MOVE$NO_MOVE$  LAYER0  CHAMBER1 " 
+ 
+ </div> </div> 
+   
+ For the boundary elements, flagged with the <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.SMOOTH_LENGTH.html">SMOOTH_LENGTH</a> flag, we define the local refinement by 
+ <div class="note"> <div class="code"> 
+ <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.USER_h_funct.html">USER_h_funct</a> = 'DSCR' 
+ <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.SMOOTH_LENGTH.html">SMOOTH_LENGTH</a>(<span style="color:#0B6121;">$P_0$</span>)    = (  <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.SMOOTH_LENGTH.%25H_spherical%25.html">%H_spherical%</a>, 0.07, 0.1, 0.2, 0.3 ) 
+ 
+ </div> </div> 
+   
+ Have a look in the <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.SMOOTH_LENGTH.html">SMOOTH_LENGTH</a> documentation in order to have the full spectrum of defining locally refined smoothing length (interaction radius). 
+ In our special case here, we use <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.SMOOTH_LENGTH.%25H_spherical%25.html">%H_spherical%</a>, allowing to refine around a point, axis, or geometry. 
+   
+ Here the minimum smoothing length at the cylinder is the first parameter, which is kept at this value in a close neighborhood around the axis (second parameter). Outside this close neighborhood, the smoothing length increases with the given increase rate up to the maximum allowed smoothing length (last two parameters). 
+   
+   
+ <b> Suggestions to explore FPM </b> 
+ <ul><li> 
+ </li><li> play around with the parameters in the smoothing length definition 
+ </li><li> try to attach the smoothing length to other boundary items 
+ </li></ul> 
+   
+ <span style="color:#f39200"> Note: </span> In order to reproduce Figure 14, load the state file tut04_figure14.pvsm in ParaView and choose 'Search files under specified directory'. Then, select the correct data directory (<a href="MESHFREE.html">MESHFREE</a> results folder). 
+   
+
+	      			</div>
+	      		</div>
+		</div>
+	</div>
+<div class="blank-class-outer-top">
+	<div class="border-vertical">
+		<div class="row reference">
+	      		<div class="col-md-12">
+		 		<div class="table-responsive">
+			  		<table class="table">
+			  		<tr><th>List of members: </th><th></th></tr>
+<tr><td><a href="MESHFREE.GettingStarted.Tutorial.tut3d_04b.USER_common_variables___tut3d_04b___.html">USER_common_variables</a></td> <td>  TUTORIAL 4b: flow around a cylinder with local refinement (geometry-based): USER_common_variables.dat </td></tr>    
+<tr><td><a href="MESHFREE.GettingStarted.Tutorial.tut3d_04b.common_variables___tut3d_04b___.html">common_variables</a></td> <td>  TUTORIAL 4b: flow around a cylinder with local refinement (geometry-based): common_variables.dat </td></tr>    
+		  			</table>
+				</div>
+	      		</div>
+		</div>
+	</div>
+</div>
+	<div class="blank-class-outer-top footer">
+	  <div class="border-vertical">
+	    <div class="row">
+	      <div class="col-md-12 comprehensive-example">
+<a href="../OnlineExamples/MESHFREE.GettingStarted.Tutorial.tut3d_04b">DOWNLOAD COMPREHENSIVE EXAMPLE</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="blank-class-outer-top footer">
+	  <div class="border-vertical">
+	    <div class="row">
+	      <div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.Tutorial.tut3d_04b.fpmdocu">../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.Tutorial.tut3d_04b.fpmdocu</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="blank-class-outer footer visible-md visible-lg">
+  <div class="border-vertical">
+    <div class="row">
+	      <div class="col-md-6">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-small visible-xs visible-sm">
+    <div class="blank-class-outer">
+      <div class="blank-class-inner">
+	<div class="row ">
+		<div class="col-md-12">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-left-right">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="search/image/favicon.ico">
+<title>PointCloudReduction</title>
+<link href="search/css/bootstrap.css" rel="stylesheet">
+<link href="search/css/fraunhofer.css" rel="stylesheet">
+<script type="text/javascript" src="search/js/jquery-1.12.0.js"></script>
+<script src="search/js/bootstrap.min.js"></script>
+<script src="search/js/custom.js"></script>
+</head>
+<body>
+	<div class="fh-wrapper">
+		<div class="header">
+			<div class="row visible-xs" id="main-menu-top">
+				    <div class="row search-nav-icon">
+					    <div class="col-md-12">
+					<!-- for search and navigation icon -->
+						  <div id="nav-top" class="nav-top-btn"></div>
+						  <div id="search-btn-index-top-icon" class="search-icon"></div>
+					    </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-md-12">
+					    <nav class="navbar navbar-inverse">
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						      </button>
+						    </div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					      </nav>
+					</div>
+				      <div class="search-top">
+					      <form id="search-form-index-top" >
+						  <input type="text" name="queryString" id="search-text-index-top" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						  <button type="submit" class="btn" id="search-btn-index-top"></button>
+					      </form>
+				    </div>
+				</div>
+			</div>
+			<div class="row header-row">
+				<div class="col-sm-4">
+					<div class="row">
+					   <a href="MESHFREE.html">
+						  <img class="logo img-responsive" alt="" src="search/image/MESHFREE_Logo.png"/>
+					   </a>
+					</div>
+					<div class= "row company_name">
+						Simulate with complex geometries and complex physics
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="row header-search-row hidden-xs">
+						<div class="search">
+						  <form id="search-form-index-header" >
+						      <input type="text" name="queryString" id="search-text-index-header" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						      <button type="submit" class="btn" id="search-btn-index-header"><i class="glyphicon glyphicon-search"></i></button>
+						  </form>
+						</div>
+					</div>
+					<div class="row main_menu hidden-xs" id="main-menu-bottom">
+					  <nav class="navbar navbar-inverse">
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						    <span class="sr-only">Toggle navigation</span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						  </button>
+						</div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					  </nav>
+					</div>
+				</div>
+			</div>
+		</div>
+     <div class="breadcrumbs">
+	  <div class="row breadcrumb">
+	    <div class="col-md-12">
+		<ul>
+<li><a href="MESHFREE.html">MESHFREE</a></li>
+<li><a href="MESHFREE.InputFiles.html">InputFiles</a></li>
+<li><a href="MESHFREE.InputFiles.USER_common_variables.html">USER_common_variables</a></li>
+<li><a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a></li>
+		</ul>
+	    </div>
+	  </div>
+	</div>
+		<div class="border-vertical">
+		  <div class="row">
+		    <div class="col-md-12 content">
+		    	<div class="jumbotron">
+<h1>PointCloudReduction</h1><p> select/mark MESHFREE points by reducing the point cloud </p>
+		    	</div>
+			<div class="description">
+                                                                                                                                    
+  <div class="note"> 
+  <a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a>(n) = ( f_Integration, f_Target, <span style="color:green"> OPTIONAL:%PointCloudReduction_UseOldTimeStep% </span> ) 
+  </div> 
+  Select <a href="MESHFREE.html">MESHFREE</a> points out of the complete point cloud that represent a certain target quantity. 
+  The algorithm aims to estabish connected subdomains. For each subdomain <span lang="latex-inline"><img src="0d0470c3718181203dbc6d3a3e2a16c1.png" alt=" j" class="latex" border="0"></span> we require: 
+  <div class="note"> 
+  <div lang="latex"><img src="543aee46319fb3d44f21313fc5bb5737.png" alt=" f_{\text{Target}} \leq \sum\limits_{i \in \Omega_{\text{sub}}(j)} f_{\text{Integration},i}" class="latex" border="0"></div> 
+  </div> 
+  Only one point out of the cluster <span lang="latex-inline"><img src="0d0470c3718181203dbc6d3a3e2a16c1.png" alt=" j" class="latex" border="0"></span> is marked. 
+   
+  The result of the <a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a> can be requested by the <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.reduct().html">reduct()</a>-functionality in <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.html">Equations</a>: 
+  <ul><li> 
+  </li><li> marked <a href="MESHFREE.html">MESHFREE</a> point in a cluster represents the value of the integral <span lang="latex-inline"><img src="9dd3640a6055e12c342302279b7dba2d.png" alt=" \sum\limits_{i \in \Omega_{\text{sub}}(j)} f_{\text{Integration},i}" class="latex" border="0"></span> 
+  <div class="note"> 
+  reduct(n, <a href="MESHFREE.__Constants__.%25EQN_Reduct_Accumulated%25___const___.html">%EQN_Reduct_Accumulated%</a>) 
+  </div> 
+  </li><li> marked <a href="MESHFREE.html">MESHFREE</a> point represents the cluster index <span lang="latex-inline"><img src="0d0470c3718181203dbc6d3a3e2a16c1.png" alt=" j" class="latex" border="0"></span> of <span lang="latex-inline"><img src="f9c5fe16476881f88a6efb8c30f56751.png" alt=" \Omega_{\text{sub}}(j)" class="latex" border="0"></span> 
+  <div class="note"> 
+  reduct(n, <a href="MESHFREE.__Constants__.%25EQN_Reduct_iCluster%25___const___.html">%EQN_Reduct_iCluster%</a>) 
+  </div> 
+  </li></ul> 
+  <span style="color:green"> %PointCloudReduction_UseOldTimeStep%: </span> <a href="MESHFREE.html">MESHFREE</a> tries to use the reduction results of the previous 
+  time step first (i.e. keep the selection status of points from the previous time step if possible). Then, it runs the reduction on top of it. 
+  Under this option, the reduction results are stored on the point cloud (in order to keep this info for the next time cycle), 
+  which requires additional memory for each <a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a> which is subject to this option. 
+   
+  <b>Examples:</b> 
+  <div class="note"> <div class="code"> 
+  <a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a>(1) = ( [1], [10] )                                                             <span style="color:#FACC2E;"># mark every 10-th <a href="MESHFREE.html">MESHFREE</a> point </span>
+  <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a> = ( <a href="MESHFREE.__Constants__.%25SAVE_scalar%25___const___.html">%SAVE_scalar%</a> , [reduct(1,%EQN_Reduct_Accumulated%)], "nbPointsRepresented" )       <span style="color:#FACC2E;"># how many points are represented by the marked point </span>
+  <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a> = ( <a href="MESHFREE.__Constants__.%25SAVE_scalar%25___const___.html">%SAVE_scalar%</a> , [reduct(1,%EQN_Reduct_iCluster%)],    "numberingClusteringIndex" )  <span style="color:#FACC2E;"># display the cluster index (index of fish scale) produced by the <a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a> </span>
+   
+  <a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a>(2) = ( [Y<a href="MESHFREE.Indices.General___indices___.%25ind_Vi%25.html">%ind_Vi%</a>], [<span style="color:#8A0808;">&Hmax&</span>^3] )                                               <span style="color:#FACC2E;"># mark <a href="MESHFREE.html">MESHFREE</a> points which represent a volume that is approximately equal to <span style="color:#8A0808;">&Hmax&</span>^3 </span>
+  <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a> = ( <a href="MESHFREE.__Constants__.%25SAVE_scalar%25___const___.html">%SAVE_scalar%</a> , [reduct(2,%EQN_Reduct_Accumulated%)], "volumeRepresented" )         <span style="color:#FACC2E;"># how many points are represented by the selected point </span>
+  <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a> = ( <a href="MESHFREE.__Constants__.%25SAVE_scalar%25___const___.html">%SAVE_scalar%</a> , [reduct(2,%EQN_Reduct_iCluster%)],    "volumeClusteringIndex" )     <span style="color:#FACC2E;"># display the cluster index (index of fish scale) produced by the <a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a> </span>
+   
+  <a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a>(3) = ( [reduct(1,%EQN_Reduct_Accumulated%)>0], [10] )                          <span style="color:#FACC2E;"># mark every 10-th <a href="MESHFREE.html">MESHFREE</a> point out of the <a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a>(1), i.e. every 100-th point </span>
+  <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a> = ( <a href="MESHFREE.__Constants__.%25SAVE_scalar%25___const___.html">%SAVE_scalar%</a> , [reduct(3,%EQN_Reduct_Accumulated%)], "volumeRepresented" )         <span style="color:#FACC2E;"># how many points are represented by the marked point </span>
+  <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_ITEM.html">SAVE_ITEM</a> = ( <a href="MESHFREE.__Constants__.%25SAVE_scalar%25___const___.html">%SAVE_scalar%</a> , [reduct(3,%EQN_Reduct_iCluster%)],    "volumeClusteringIndex" )     <span style="color:#FACC2E;"># display the cluster index (index of fish scale) produced by the <a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a> </span>
+  
+ </div> </div> 
+  result of <a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a>(1): 
+  <img src= ../Pictures/PointCloudReduction_Every10.png alt="Here should be a picture" class="img-responsive"> 
+   
+  result of <a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a>(2): 
+   
+  <img src= ../Pictures/PointCloudReduction_ConstantVol.png alt="Here should be a picture" class="img-responsive"> 
+   
+  result of <a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a>(3): 
+   
+  <img src= ../Pictures/PointCloudReduction_Every10of10.png alt="Here should be a picture" class="img-responsive"> 
+      
+	      			</div>
+	      		</div>
+		</div>
+	</div>
+	<div class="blank-class-outer-top footer">
+	  <div class="border-vertical">
+	    <div class="row">
+	      <div class="col-md-12 comprehensive-example">
+<a href="../OnlineExamples/MESHFREE.InputFiles.USER_common_variables.PointCloudReduction">DOWNLOAD COMPREHENSIVE EXAMPLE</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="blank-class-outer-top footer">
+	  <div class="border-vertical">
+	    <div class="row">
+	      <div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fortran/Core/PointcloudOrganization/PointCloudReduction/PointCloudReduction.f90">../../FPM_src/FPM_fortran/Core/PointcloudOrganization/PointCloudReduction/PointCloudReduction.f90</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="blank-class-outer footer visible-md visible-lg">
+  <div class="border-vertical">
+    <div class="row">
+	      <div class="col-md-6">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-small visible-xs visible-sm">
+    <div class="blank-class-outer">
+      <div class="blank-class-inner">
+	<div class="row ">
+		<div class="col-md-12">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-left-right">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

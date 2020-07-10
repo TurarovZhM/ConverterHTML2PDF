@@ -1,0 +1,783 @@
+@font-face {
+  font-family: "icon-font";
+  src: url("../fonts/icon-font.eot?b575c874a00f1c4a448b2d543fc3d60b");
+  src: url("../fonts/icon-font.eot?#iefix") format("embedded-opentype"), url("../fonts/icon-font.woff?b575c874a00f1c4a448b2d543fc3d60b") format("woff"), url("../fonts/icon-font.ttf?b575c874a00f1c4a448b2d543fc3d60b") format("truetype"), url("../fonts/icon-font.svg?b575c874a00f1c4a448b2d543fc3d60b#icon-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ------------------------------------ outline ------------------------------------------- */
+.fh-wrapper {
+	margin: 0 auto;
+	padding-left: 8rem;
+	padding-right: 8rem;
+	overflow-x: hidden;
+	position: relative;
+	}
+
+
+
+
+
+.fh-wrapper .row{
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+/* ------------------------------------ outline ends--------------------------------------- */
+
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+body{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-family: FrutigerLTW02,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 200;
+  color: #555;
+}
+
+.header{
+  /*border-left: 1px solid #c7cacc;*/
+  border-right: 1px solid #c7cacc;
+
+}
+
+.fh-wrapper .header .row{
+  padding-bottom: 0;
+  padding-right:0;
+}
+
+
+/* ------------------------------------- main menu ----------------------------------------- */
+/* ------------------------------------- top menu  ----------------------------------------- */
+
+#main-menu-top .navbar{
+    border:none;
+}
+
+#main-menu-top .navbar-top{
+  
+}
+
+
+
+#main-menu-top .navbar-header{
+    display:none;
+}
+
+#main-menu-top .col-md-12{
+    padding-right:0;
+}
+
+.search-icon::before{
+  content:"\f12a";  
+  font-size:3.5rem;
+  color: #1f82c0;  
+
+}
+ .search-icon{
+   border-left: 1px solid #c7cacc;
+  
+}
+
+.nav-top-btn::before{
+  content:"\f108";
+  font-size:2.5rem;
+  color: #fff;
+  
+}
+
+#nav-top, #search-btn-top-icon, #search-btn-index-top-icon{
+  
+  font-family:"icon-font";
+  width:5rem;
+  height:4rem;
+  background-color: transparent;
+  float:right;
+  vertical-align:middle;
+  text-align: center;
+  line-height: 4rem;
+  cursor:pointer;
+}
+
+#main-menu-top .search-nav-icon{
+    border-bottom: 1px solid #c7cacc;
+    margin-left:-8rem;
+    margin-right:-8rem;
+    padding-left:8rem;
+    padding-right:8rem;
+
+}
+
+#main-menu-top .nav li{
+  border-bottom: 1px solid #66bfac;
+}
+
+#nav-top{
+  background:#009374;
+}
+
+#main-menu-top .navbar-toggle{
+    margin-right: 5px;
+    padding: 4.5px 5px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+/*-------------------------------------- top menu ends ------------------------------------- */
+
+.main_menu{
+  background: #009374;  
+  margin: 0;
+  padding:0;
+  height: 4rem;
+ 
+  letter-spacing: .075em;
+  color: #fff;
+  /*display: inline-block;*/
+  display: block;
+  font-weight: bold;
+  vertical-align: middle;
+  /*padding: .8rem 1.5rem .5rem;*/
+}
+
+.main_menu a{
+	color: #fff;
+	height: 4rem;
+	text-align: center; 
+	
+
+}
+
+.main_menu .navbar{
+	border:0;
+	}
+
+	/*-------------------------------------------for search box -----------------------------------*/
+.search{
+    float:right;
+    display:block;
+  
+}
+
+.search .btn {
+    float:right;
+    color:#1f82c0;
+    font-size:3.3rem;
+    background-color: transparent;
+    position:absolute;
+    right:2.5rem;
+    padding:0;
+    top:2.5rem;
+   
+}
+
+.search-top .btn {
+    float:right;
+    color:#1f82c0;
+    font-size:3.3rem;
+    background-color: transparent;
+    position:absolute;
+    right:8rem;
+    padding:0;
+    top:0 rem;
+
+   
+}
+
+.search-top .query-string{
+    display:none;
+    line-height: 1.4rem;
+    height: 3.3rem;
+    width:97%;
+    margin-top: 5rem;  
+}
+
+.query-string{
+    display:none;
+    line-height: 1.4rem;
+    height: 3.3rem;
+    width:25rem;
+
+}
+
+.search form{
+  padding: 1.2rem 4.0rem 0 0;
+}
+
+#search-form{
+  max-width:40rem;
+}
+
+
+
+.glyphicon-search::before {
+    content: "\f12a";
+
+}
+
+.glyphicon{
+  font-family:"icon-font";
+}
+
+/*--------------------------------- search end ----------------------------------*/
+
+/*--------------------------------- main menu end -------------------------------*/
+	
+
+.content {
+  padding-bottom:2.5rem;
+  }
+  
+.content img{
+  padding-left:2rem;
+}
+
+.img-responsive {
+  max-width:50em;
+}
+
+span img{
+  padding-left:0 !important;
+}
+
+.latex-inline img{
+  display: inline;
+  padding: 0;
+}
+
+.description{
+  white-space:pre-line; 
+  text-align: justify;
+  line-height:2.2rem;
+  font-size: 1.625rem;
+  letter-spacing: 0.025em;
+}
+
+.description p{
+  text-align: justify;
+  white-space: normal;
+  max-width: 50em;
+}
+
+.jumbotron{
+  padding-left:40px;
+  padding-right:40px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  word-wrap: break-word;
+}
+
+/*......................... ucvcode mono space ........................ */
+.ucvcode {
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+/*......................... end ucvcode mono space .................... */
+
+
+
+/* ----------------------------------- for navigation bar ------------------------------------ */
+.nav li a{
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: 4rem;
+  
+}
+
+.navbar-inverse .nav li a:focus, .navbar-inverse .nav li a:active{
+   outline: none !important;
+   background: #009374;
+}
+
+/* .navbar-inverse .nav li a:hover, .navbar-inverse .nav li a:focus, .navbar-inverse .nav li a:active{ */
+.navbar-inverse .nav li a:hover{
+      background-color: #66bfac;
+	  }
+	  
+.navbar-inverse{
+    background: #009374; 
+}
+
+.navbar{
+    min-height:0;
+    margin-bottom:0;
+}
+
+/* .navbar-inverse .navbar-toggle:focus,.navbar-inverse .navbar-toggle:hover{ */
+.navbar-inverse .navbar-toggle:hover{
+    background: #66bfac;
+}
+
+.navbar-inverse .navbar-toggle{
+    border-color: #009374;
+}
+/* ----------------------------------- navigation bar ends --------------------------------- */
+
+/* ----------------------------------- main menu ends -------------------------------------- */
+
+
+
+/* -----------------------------------breadcrumbs------------------------------------------ */
+
+.breadcrumbs{
+	border-top:1px solid #c7cacc;
+	border-bottom:1px solid #c7cacc;
+	margin-left:-8rem;
+	padding-left:8rem;
+	margin-right:-8rem;
+	padding-right:8rem;
+}
+	
+
+
+
+.breadcrumb{
+  background-color: transparent;
+  border-left:1px solid #c7cacc;
+  border-right:1px solid #c7cacc;
+  margin-left: 0;
+  margin-right:0;
+  margin-top:-2px;
+  margin-bottom:-2px;
+  min-height:4.5rem;
+  padding:0;
+}
+
+.breadcrumb ul
+{
+  padding-top: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 1rem;
+  list-style-type: none;
+  margin-top:0;
+  margin-bottom:0;
+  /*height: 4.5rem;*/
+  vertical-align:middle;
+
+}
+
+.breadcrumb .col-md-12{
+   /*height:4.5rem;*/
+}
+
+.breadcrumb ul li {
+    display: inline; 
+    vertical-align: middle;
+}
+
+.breadcrumb ul li:after{
+content:'\00B7';
+padding-right:1rem;
+padding-left:1rem;}
+
+.breadcrumb ul li:last-child:after { content: none; }
+
+.breadcrumb ul li a {
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+/* -----------------------------------breadcrumbs ends------------------------------------- */
+
+
+/*------------------------------------blank class starts ---------------------------------- */
+.blank-class-outer{
+	border-top:1px solid #c7cacc;
+	border-bottom:1px solid #c7cacc;
+	margin-left:-8rem;
+	padding-left:8rem;
+	margin-right:-8rem;
+	padding-right:8rem;
+}
+
+.blank-class-inner{
+	border-left:1px solid #c7cacc;
+	border-right:1px solid #c7cacc;
+	margin-left: 0;
+	margin-right:0;
+	margin-top:-2px;
+	/*margin-bottom:-2px;*/
+	min-height:4.5rem;
+}
+
+.blank-class-outer-bottom{
+	border-bottom:1px solid #c7cacc;
+	margin-left:-8rem;
+	padding-left:8rem;
+	margin-right:-8rem;
+	padding-right:8rem;
+}
+
+.blank-class-outer-top{
+	border-top:1px solid #c7cacc;
+	margin-left:-8rem;
+	padding-left:8rem;
+	margin-right:-8rem;
+	padding-right:8rem;
+}
+
+.blank-class-outer-left-right{
+	margin-left:-8rem;
+	padding-left:8rem;
+	margin-right:-8rem;
+	padding-right:8rem;
+}
+/*------------------------------------blank class ends   ---------------------------------- */
+
+
+/*------------------------------------	logo ---------------------------------------------- */
+
+.col-sm-4 .logo{
+  max-height: 6rem;
+  /*max-width: 27rem;*/
+  margin-top: 3rem; 
+  margin-bottom: 3rem; 
+}
+
+.header-row .row{
+  padding-left:0;
+}
+/*------------------------------------  logo ends ----------------------------------------- */
+
+
+
+.header-row .col-sm-8 {
+  padding: 0;
+  border-left: 1px solid #c7cacc;
+}
+
+
+/*.col-md-4 .company_name{
+	margin-left: 1.5rem;
+	}
+*/
+.col-sm-8 .header-search-row{
+  max-height: 8rem;
+  min-height: 8rem;
+  margin: 2rem;
+}
+
+	
+.border-box{
+  border: 1px solid #c7cacc;
+}
+
+.border-vertical{
+  border-left: 1px solid #c7cacc;
+  border-right: 1px solid #c7cacc;
+}
+
+
+
+
+
+/*------------------------------------------ footer begins -------------------------------------*/
+.comprehensive-example{
+    text-align: right;
+}
+
+.reference {
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+    padding-top:2.5rem;
+}
+.reference table {
+	border-collapse: separate;
+}
+.reference table tr{
+	background-color: #f7f7f7;
+}
+
+.table-responsive table tr{
+	background-color: #f7f7f7;
+}
+
+.footer .col-md-4 {
+  border-right: 1px solid #c7cacc;
+}
+.footer .col-md-8 {
+  text-align: right;
+}
+
+.footer .col-md-2, .footer .col-md-1{
+/*   border-left: 1px solid #c7cacc; */
+  text-align: center;
+  padding-left:3px;
+  padding-right:3px;
+}
+
+.footer-border-left{
+  border-left: 1px solid #c7cacc;
+}
+
+.footer-border-right{
+  border-right: 1px solid #c7cacc;
+}
+
+.footer{
+	border-bottom:none;
+	}
+	
+.footer .row{
+    padding-top:2rem;
+    padding-bottom: 2rem;
+}
+
+.note{
+      margin-top:1rem;
+      margin-bottom: 1rem;
+      padding:1rem;
+      background-color: #F5F5F5;
+      border: 1px solid #c7cacc;
+      white-space:pre-wrap;
+      font-family: monospace;
+      font-size: 1.4rem;
+      text-align:left;
+} 
+
+
+.code{
+      margin-top:0rem;
+      margin-bottom: 0rem;
+      margin-left: -0.8em;
+      margin-right: -0.8em;
+      white-space:pre;
+      font-family: monospace;
+      font-size: 1.4rem;
+      text-align:left;
+      overflow-y: auto;
+      overflow-x: auto;
+      /*text-overflow: "<<<" ">>>";*/
+      text-overflow: ellipsis ellipsis;
+      /*min-width: 600px;*/
+      /*-ms-overflow-style: -ms-autohiding-scrollbar;*/
+
+} 
+
+/*.footer-small .col-md-12{
+      padding-top:1rem;
+      padding-bottom:1rem;
+}*/
+
+.footer-small .row{
+    padding-top:1rem;
+    padding-bottom: 1rem;
+}
+
+/*------------------------------------------ footer ends ---------------------------------------*/
+
+.comprehensive-example{
+    text-align: right;
+}
+
+
+ #custom-search-form {
+        margin:0;
+        margin-top: 5px;
+        padding: 0;
+    }
+ 
+    #custom-search-form .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    #custom-search-form button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+	
+	.index{
+		text-align: right;
+		padding-top: 1rem;
+		padding-right: 3rem;
+	}
+	
+	.index a{
+		text-decoration: underline;
+	}
+/*search box ends */
+
+/*----------------------------------- table ---------------------------------*/
+.table td a{
+		word-wrap: break-word;
+		word-break: break-word;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+}
+/*----------------------------------- table ends ----------------------------*/
+/*----------------------------------- custom table for documentation---------------------------------*/
+#customTable {
+  border-collapse: collapse;
+  max-width: 50em;
+}
+#customTable th,#customTable td{
+  border: 1px solid #c7cacc;
+}
+
+#customTable th,#customTable td{
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+#customTable th{
+  background-color: #1f82c0;
+  color: white;
+}
+/*----------------------------------- custom table for documentation ends ----------------------------*/
+
+/*----------------------------------- custom h2 for documentation starts ----------------------------*/
+.customh2 { 
+  color: #1f82c0;
+  font-weight: 200;
+  letter-spacing: .025em;
+  font-family: FrutigerLTW02,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/*----------------------------------- custom h2 for documentation ends ----------------------------*/
+
+
+/*-------------------------------- display nested numbered list--------*/
+OL { counter-reset: item; white-space: pre-line; }
+OL > LI { display: block; white-space: pre-line; }
+OL > LI:before { content: counters(item, ".") ".) "; counter-increment: item }
+
+.description UL { white-space: pre-line; }
+/*-------------------------------- end nested numbered list -----------*/
+
+
+/*--------------------------------------- condition based on window size--------------------------*/
+/* @media (min-width: 1841px) and (max-width: 2400px) { */
+@media (min-width: 1600px) and (max-width: 2400px) {
+
+	.fh-wrapper {
+	    max-width: 1500px;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+	.fh-wrapper {
+	    max-width: 1250px;
+	}
+}
+
+@media (min-width: 1120px) and (max-width: 1279px) {
+	.fh-wrapper {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1119px) {
+	.fh-wrapper {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+	.fh-wrapper {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+		word-wrap: break-word;
+		word-break: break-word;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+	}
+/*	h1{
+	  font-size: 20px;
+	}*/
+	
+		.description{
+	  font-size: 1.4rem;
+	  line-height:1.8rem;
+	}
+	
+	body{
+	  font-size: 1.4rem;
+	}
+	
+	.fh-wrapper .row{
+	  padding-left: 0;
+	  padding-right: 0;
+	}
+}
+
+@media (max-width: 479px) {
+	.fh-wrapper {
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+		
+		word-wrap: break-word;
+		word-break: break-word;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+	}
+/*	h1{
+	  font-size: 20px;
+	}*/
+	.description{
+	  font-size: 1.4rem;
+	  line-height:1.8rem;
+	}
+	
+	body{
+	  font-size: 1.4rem;
+	}
+	
+	.fh-wrapper .row{
+	  padding-left: 0;
+	  padding-right: 0;
+	}
+}
+@media (max-width: 990px) {
+      .comprehensive-example{
+	  text-align: left;
+	}
+}
+/*--------------------------------------- condition based on window size ends --------------------*/
+
+
+/*--------------------------------------- Search Page -------------------------------------------*/
+.lunr-match-highlight{
+			background-color: #FFFF00;
+		}
+.search-results{
+	text-align: justify;
+}
+/*--------------------------------------- Search Page Ends-------------------------------------------*/

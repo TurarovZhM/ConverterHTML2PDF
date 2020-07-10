@@ -1,0 +1,2 @@
+#!/bin/bash
+ifort -implicitnone -real-size 64 -DDOUBLE_PRECISION_FPM -DFPMDOCU_MAIN -fpp -traceback -O3 -I ../../../ -I ../../../FPM_src/FPM_include -I ../../../FPM_src/FPM_include/ERF -I ../../../FPM_src/FPM_include/COMMON -I ../../../FPM_src/FPM_include/CPP main_FPMDOCU.f90 -o main_FPMDOCU.x

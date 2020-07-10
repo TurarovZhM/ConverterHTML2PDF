@@ -1,0 +1,1571 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="search/image/favicon.ico">
+<title>MESHFREEdocu</title>
+<link href="search/css/bootstrap.css" rel="stylesheet">
+<link href="search/css/fraunhofer.css" rel="stylesheet">
+<script type="text/javascript" src="search/js/jquery-1.12.0.js"></script>
+<script src="search/js/bootstrap.min.js"></script>
+<script src="search/js/custom.js"></script>
+</head>
+<body><div class="fh-wrapper">
+
+<div class="breadcrumbs" id="MESHFREE.html">
+<div class="row breadcrumb">
+<div class="col-md-12">
+<ul>
+<li><a href="#MESHFREE.html">MESHFREE</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 content">
+<div class="jumbotron">
+<h1>MESHFREE</h1><p> Online Documentation for MESHFREE </p>
+</div>
+<div class="description">
+<h2 class="customh2"> General information </h2>
+<p> The original method is called 
+  <a href=" https://www.itwm.fraunhofer.de/en/departments/tv/grid-free-methods.html ">Finite Pointset Method (FPM)</a> 
+  and is an originary development of the 
+  <a href=" https://www.itwm.fraunhofer.de/en.html ">Fraunhofer Institute for Industrial Mathematics ITWM</a>. 
+  The software <b>MESHFREE</b> couples FPM and the 
+  <a href=" https://www.scai.fraunhofer.de/en/products/software-samg.html ">algebraic multigrid method implemented in SAMG</a>, 
+  an originary development of the 
+  <a href=" https://www.scai.fraunhofer.de/en.html ">Fraunhofer Institute for Algorithms and Scientific Computing SCAI</a>. 
+  </p>
+<p> FPM is the deprecated name of the numerical simulation idea, publications of which can be found for example in 
+  <a href=" https://www.meshfree.eu/en/publications.html ">https://www.meshfree.eu/en/publications.html</a>. 
+  Now and the in future, we prefer the name <em> Generalized Finite Difference Method (GFDM)</em>, 
+  as this states exactly the character of the method 
+  and avoids confusion with other ideas, also abbreviated as FPM. </p>
+<p> Note that FPM is still the name of several commercial software-instances outside of ITWM, putting the original FPM-ideas into practice. </p>
+<p> <b>MESHFREElite</b> is the original FPM-software without SAMG. </p>
+<h2 class="customh2"> How to use <a href="#MESHFREE.html">MESHFREE</a> </h2> <ul><li>
+</li><li> <p> <a href="#MESHFREE.InstallationGuide.html">InstallationGuide</a>: install the software 
+  </p> </li><li> <p> <a href="#MESHFREE.GettingStarted.html">GettingStarted</a>: first steps with <a href="#MESHFREE.html">MESHFREE</a>
+</p> </li><li> <p> <a href="#MESHFREE.Releases.html">Releases</a>: stay up-to-date with new/current developments 
+  </p> </li><li> <p> <a href="#MESHFREE.InputFiles.html">InputFiles</a>: quick reference to all items and functionalities provided to the user 
+  </p> </li><li> <p> <a href="#MESHFREE.Indices.html">Indices</a> and <a href="#MESHFREE.__Constants__.html">__Constants__</a>: quick reference to all predefined variables and constants 
+  </p> </li><li> <p> <a href="#MESHFREE.RunTimeTools.html">RunTimeTools</a>: communication with a running simulation, performance measurements 
+  </p> </li><li> <p> <a href="#MESHFREE.Solvers.html">Solvers</a>: underlying mathematical and numerical models 
+  <p> </p></p></li><li> <p> <a href="#MESHFREE.Interfaces.html">Interfaces</a>: overview of possible couplings of <a href="#MESHFREE.html">MESHFREE</a> with other tools 
+  </p> </li><li> <p> <a href="#MESHFREE.MESHFREEdocu.html">MESHFREEdocu</a>: quick reference for developers, how to contribute to this documentation 
+  </p> </li><li> <p> information on how to compile <a href="#MESHFREE.html">MESHFREE</a> at ITWM moved to <a href=" https://gitlab.itwm.fraunhofer.de/FPM/FPMsoftwareF95 ">FPMsoftwareF95</a> 
+  (information on how to work with git can be found here: <a href=" https://publicwiki-01.fraunhofer.de/FPM_Group/index.php/Version_Control_with_GIT ">Version Control with GIT</a>) 
+  </p> </li><li> <a href="#MESHFREE.Windows.html">Windows</a> version: collection of information 
+  </li></ul></div></div></div></div></div><div class="fh-wrapper">
+
+<div class="breadcrumbs" id="MESHFREE.GettingStarted.SpecialCases.BasicPhysics.Bernoulli.FlowOutOfSimpleTank.common_variables___FlowOutOfSimpleTank___.html">
+<div class="row breadcrumb">
+<div class="col-md-12">
+<ul>
+<li><a href="#MESHFREE.html">MESHFREE</a></li>
+<li><a href="#MESHFREE.GettingStarted.html">GettingStarted</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.html">SpecialCases</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.BasicPhysics.html">BasicPhysics</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.BasicPhysics.Bernoulli.html">Bernoulli</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.BasicPhysics.Bernoulli.FlowOutOfSimpleTank.html">FlowOutOfSimpleTank</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.BasicPhysics.Bernoulli.FlowOutOfSimpleTank.common_variables___FlowOutOfSimpleTank___.html">common_variables</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 content">
+<div class="jumbotron">
+<h1>common_variables</h1><p> flow of a liquid out of a tank: common_variables.dat </p>
+</div>
+<div class="description">
+ No text given due to missing "\\" in definition string 
+ <div class="code">
+<a href="#MESHFREE.InputFiles.common_variables.SIGNAL_LaunchComputationalSteering.html">SIGNAL_LaunchComputationalSteering</a> = true 
+ <span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.who_am_I.html">who_am_I</a> ='SIMCUT' </span>
+<span style="color:#FACC2E;"># SurfaceTesselation_cRadius = 0.45 </span>
+<a href="#MESHFREE.InputFiles.common_variables.COMP_TimeCheck.html">COMP_TimeCheck</a> = 1 
+ <a href="#MESHFREE.InputFiles.common_variables.COMP_CosEdgeAngle.html">COMP_CosEdgeAngle</a> = 0.5 
+ <a href="#MESHFREE.InputFiles.common_variables.COMP_CosOpenEdge.html">COMP_CosOpenEdge</a> = -0.7 
+ <a href="#MESHFREE.InputFiles.common_variables.COMP_FastBoundaryRefill.html">COMP_FastBoundaryRefill</a> = 1 
+ <span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.COMP_CosEdgeAngle.html">COMP_CosEdgeAngle</a> = -0.1 </span>
+<a href="#MESHFREE.InputFiles.common_variables.COMP_SortBEintoBoxes_Version.html">COMP_SortBEintoBoxes_Version</a> = 21 
+ <a href="#MESHFREE.InputFiles.common_variables.MPI_CommunicationMethod.html">MPI_CommunicationMethod</a> = 4 
+ <span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.BND_SearchTreeAdministration_NbTimeStepsUntilFirstSkip.html">BND_SearchTreeAdministration_NbTimeStepsUntilFirstSkip</a> = 3 </span>
+<span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.BND_SearchTreeAdministration_RefreshTreeAfterHowManyCycles.html">BND_SearchTreeAdministration_RefreshTreeAfterHowManyCycles</a> = 10 </span>
+<span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.SimCut.html">SimCut</a> = 3 </span>
+<a href="#MESHFREE.InputFiles.common_variables.nue.html">nue</a> = 3 
+   
+ <a href="#MESHFREE.InputFiles.common_variables.time_step_gain.html">time_step_gain</a> = 0.5 
+ <a href="#MESHFREE.InputFiles.common_variables.time_step_loss.html">time_step_loss</a>  = 0.999 
+ <a href="#MESHFREE.InputFiles.common_variables.eps_phyd.html">eps_phyd</a>  = 1.E-6 
+ <a href="#MESHFREE.InputFiles.common_variables.eps_p.html">eps_p</a>    = 1.E-6 
+ <a href="#MESHFREE.InputFiles.common_variables.eps_v.html">eps_v</a>     = 1.E-6 
+ <a href="#MESHFREE.InputFiles.common_variables.eps_T.html">eps_T</a>     = 1.E-6 
+ <a href="#MESHFREE.InputFiles.common_variables.SPM_N_iterations.html">SPM_N_iterations</a> = 500 
+ <a href="#MESHFREE.InputFiles.common_variables.COEFF_dt_virt.html">COEFF_dt_virt</a>    = 0.1 
+ <a href="#MESHFREE.InputFiles.common_variables.COEFF_dt.html">COEFF_dt</a>         = 0.3 
+ <span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.COMP_FillEdges.html">COMP_FillEdges</a>  = 1 </span>
+<span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.turn_down_BND_order.html">turn_down_BND_order</a> = 0.5 </span>
+<span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.RepairGeometry.html">RepairGeometry</a> = 0.1 </span>
+<a href="#MESHFREE.InputFiles.common_variables.VOLUME_correction_FreeSurface.html">VOLUME_correction_FreeSurface</a> = 0.002 
+   
+ <a href="#MESHFREE.InputFiles.common_variables.compute_LAYER.html">compute_LAYER</a>    = -1 
+   
+   
+   
+ <span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.PointDsplMethod.html">PointDsplMethod</a> = 0  # simple surface treatment </span>
+<span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.PointDsplMethod.html">PointDsplMethod</a> = 1  # surface treatment higher order, default </span>
+<a href="#MESHFREE.InputFiles.common_variables.LINEQN_solver.html">LINEQN_solver</a> = 'BCX2' 
+ <a href="#MESHFREE.InputFiles.common_variables.LINEQN_solver_ScalarSystems.html">LINEQN_solver_ScalarSystems</a> = 'BCN2' <span style="color:#FACC2E;">#'SAMG' #'BCN2' </span>
+<a href="#MESHFREE.InputFiles.common_variables.COMP_IsolatedParticles_MinNbOfNeigh.html">COMP_IsolatedParticles_MinNbOfNeigh</a> = 0 
+       <a href="#MESHFREE.InputFiles.common_variables.COMP_IsolatedParticles_MinNbOfInteriorNeigh.html">COMP_IsolatedParticles_MinNbOfInteriorNeigh</a> = 0 
+   
+ <a href="#MESHFREE.InputFiles.common_variables.N_addvar.html">N_addvar</a> = 3 
+   
+ <a href="#MESHFREE.InputFiles.common_variables.ord_eval.html">ord_eval</a>        = 3 
+ <span style="color:#FACC2E;"># <a href="#MESHFREE.Releases.__DeprecatedItems__.ord_smooth.html">ord_smooth</a>      = 3 </span>
+<span style="color:#FACC2E;"># <a href="#MESHFREE.Releases.__DeprecatedItems__.ord_convection.html">ord_convection</a>  = 3 </span>
+<a href="#MESHFREE.InputFiles.common_variables.int_part_remove.html">int_part_remove</a> = 1 
+ <a href="#MESHFREE.InputFiles.common_variables.int_part_add.html">int_part_add</a>    = 1 
+ <a href="#MESHFREE.InputFiles.common_variables.int_BND_part_remove.html">int_BND_part_remove</a> = 1 
+ <a href="#MESHFREE.InputFiles.common_variables.int_BND_part_add.html">int_BND_part_add</a>    = 1 
+   
+ <a href="#MESHFREE.InputFiles.common_variables.damping_p_corr.html">damping_p_corr</a> = 0.95 
+ <a href="#MESHFREE.InputFiles.common_variables.DIFFOP_Version.html">DIFFOP_Version</a> = 5 
+   
+ <span style="color:#FACC2E;"># ---things for geometrical organization --- </span>
+<a href="#MESHFREE.InputFiles.common_variables.rel_dist_bound.html">rel_dist_bound</a> = 0.35 
+ <a href="#MESHFREE.InputFiles.common_variables.rel_dist.html">rel_dist</a> = 0.4 
+ <a href="#MESHFREE.InputFiles.common_variables.dist_rab.html">dist_rab</a> = 0.15 
+ <a href="#MESHFREE.InputFiles.common_variables.dist_aip.html">dist_aip</a> = 0.16 
+ <a href="#MESHFREE.InputFiles.common_variables.dist_rip.html">dist_rip</a> = 0.15 
+ <a href="#MESHFREE.InputFiles.common_variables.radius_hole.html">radius_hole</a> = 0.4 
+ compute_FS = 'YES' 
+ <a href="#MESHFREE.InputFiles.common_variables.smooth_FS.html">smooth_FS</a>   = 0 
+ <a href="#MESHFREE.InputFiles.common_variables.compute_phase_boundary.html">compute_phase_boundary</a> = 'NON' 
+ <a href="#MESHFREE.InputFiles.common_variables.dist_FS_from_BND.html">dist_FS_from_BND</a> = 0.65 
+ <a href="#MESHFREE.InputFiles.common_variables.dist_FS_new_part.html">dist_FS_new_part</a> = 0.8 
+ <a href="#MESHFREE.Releases.__DeprecatedItems__.dist_BND_from_FS.html">dist_BND_from_FS</a> = 1.4 
+ <a href="#MESHFREE.InputFiles.common_variables.prec_seek_holes.html">prec_seek_holes</a> = 8 
+ <a href="#MESHFREE.InputFiles.common_variables.prec_seek_FS.html">prec_seek_FS</a> = 0 
+ <a href="#MESHFREE.InputFiles.common_variables.prec_act_BND.html">prec_act_BND</a> = 60 
+   
+   
+   
+ <a href="#MESHFREE.InputFiles.common_variables.QUICKVIEW_SaveHowOften.html">QUICKVIEW_SaveHowOften</a> = 1 
+ <a href="#MESHFREE.InputFiles.common_variables.QUICKVIEW_WhichParticles.html">QUICKVIEW_WhichParticles</a> = 2 
+   
+ <span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.cv_DateCompiled.html">cv_DateCompiled</a>                                                  = "8zZ1h&gt;Pu9Ko2U|U8w" </span>
+<span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.cv_DateCompiled_Seed.html">cv_DateCompiled_Seed</a>                                             = 81 </span>
+<span style="color:#FACC2E;"># c End of FPM Settings File </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top footer">
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.BasicPhysics.Bernoulli.FlowOutOfSimpleTank.fpmdocu">../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.BasicPhysics.Bernoulli.FlowOutOfSimpleTank.fpmdocu</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-small visible-xs visible-sm">
+<div class="blank-class-outer">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#Index.html" target="_blank">Index</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#MESHFREE.Releases.html" target="_blank">Releases</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-left-right">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="http://itwm.fraunhofer.de" target="_blank">© 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="fh-wrapper">
+
+<div class="breadcrumbs" id="MESHFREE.GettingStarted.SpecialCases.WaterCrossing.SimpleBox.DifferentTypesOfPressureBoundaryConditions.QuasiStationary.Ucv_SinglePoolWithBox___SBDTOPBC___.html">
+<div class="row breadcrumb">
+<div class="col-md-12">
+<ul>
+<li><a href="#MESHFREE.html">MESHFREE</a></li>
+<li><a href="#MESHFREE.GettingStarted.html">GettingStarted</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.html">SpecialCases</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterCrossing.html">WaterCrossing</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterCrossing.SimpleBox.html">SimpleBox</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterCrossing.SimpleBox.DifferentTypesOfPressureBoundaryConditions.html">DifferentTypesOfPressureBoundaryConditions</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterCrossing.SimpleBox.DifferentTypesOfPressureBoundaryConditions.QuasiStationary.html">QuasiStationary</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterCrossing.SimpleBox.DifferentTypesOfPressureBoundaryConditions.QuasiStationary.Ucv_SinglePoolWithBox___SBDTOPBC___.html">Ucv_SinglePoolWithBox</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 content">
+<div class="jumbotron">
+<h1>Ucv_SinglePoolWithBox</h1><p> simple box driving through a channel of water: Ucv_SinglePoolWithBox.dat </p>
+</div>
+<div class="description">
+ No text given due to missing "\\" in definition string 
+ <div class="note"> 
+ Have a special look at the parameters _CH_ (chamber index) and _BC_ (requested pressure boundary condition). 
+ These parameters are replaced with their given values in <a href="#MESHFREE.GettingStarted.SpecialCases.WaterCrossing.SimpleBox.DifferentTypesOfPressureBoundaryConditions.NonQuasiStationary.USER_common_variables___SBDTOPBC___.html">USER_common_variables</a> upon read in . 
+ </div>
+<div class="code">
+<span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+<span style="color:#FACC2E;">#c   Alias Section </span>
+<span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.html">begin_alias{</a>} 
+    "pool._CH_"                 = " BC$BC_pool._CH_$   ACTIVE$init_always$ IDENT%BND_slip%          MAT$Mat._CH_$ TOUCH%TOUCH_liquid% MOVE$no_move$   LAYER0 CHAMBER1 " 
+    "box._CH_"                  = " BC$BC_box._CH_$    ACTIVE$init_always$ IDENT%BND_slip%          MAT$Mat._CH_$ TOUCH%TOUCH_liquid% MOVE$MOVE_box$  LAYER0 CHAMBER1  SMOOTH_LENGTH$H_box$    SYMMETRYFACE1" 
+    "plane._CH_"                = " BC$BC_free._CH_$   ACTIVE$init_never$                           MAT$Mat._CH_$                                     LAYER0 CHAMBER1 " 
+   
+    "MonitorPointsDynamic._CH_" = "                    ACTIVE$init_always$                          MAT$Mat._CH_$                     MOVE$MOVE_box$  LAYER0 CHAMBER1                          POSTPROCESS$PP_MonitorPointsDynamic._CH_$ " 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_alias.html">end_alias</a> <span style="color:#FACC2E;"># </span>
+<span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+<span style="color:#FACC2E;">#c  Solver Section </span>
+<span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+ KOP(_CH_) =  <a href="#MESHFREE.AAA.Solvers.Numerics.LIQUID.html">LIQUID</a> IMPLICIT <a href="#MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.LAGRANGE.html">LAGRANGE</a> <a href="#MESHFREE.Solvers.Numerics.LIQUID.Scheme.v--.html">v--</a> <span style="color:#FACC2E;">#TURBULENCE:k-epsilon </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_timestepfile{.html">begin_timestepfile{</a>"PressureDynamic_measured_BC=_BC_"} 
+    <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> = (<a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE%25.html">%PUBLICVALUE%</a>, [real(<a href="#MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25RealTimeSimulation%25.html">%RealTimeSimulation%</a>)] , %INTEGRATION_Header%, "time" )             <span style="color:#FACC2E;"># this puts the time into the first column </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> = ( <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25POINT_APPROXIMATE%25.html">%POINT_APPROXIMATE%</a>,  [Y<a href="#MESHFREE.Indices.LIQUID___indices___.%25ind_p_dyn%25.html">%ind_p_dyn%</a>+Y<a href="#MESHFREE.Indices.LIQUID___indices___.%25ind_p%25.html">%ind_p%</a>], <span style="color:#0B6121;">$PP_MonitorPointsDynamic._CH_$</span> )        <span style="color:#FACC2E;"># this subsequently puts the values of all node points in the subsequent columns </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_timestepfile.html">end_timestepfile</a>
+<a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_timestepfile{.html">begin_timestepfile{</a>"PressureDynamic_Bernoulli_BC=_BC_"} 
+    <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> = (<a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE%25.html">%PUBLICVALUE%</a>, [real(<a href="#MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25RealTimeSimulation%25.html">%RealTimeSimulation%</a>)] , %INTEGRATION_Header%, "time" )             <span style="color:#FACC2E;"># this puts the time into the first column </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> = ( <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25POINT_APPROXIMATE%25.html">%POINT_APPROXIMATE%</a>,  [500*((<span style="color:#8A0808;">&amp;SpeedOfBox&amp;</span>^2) - (Y<a href="#MESHFREE.Indices.LIQUID___indices___.%25ind_v(2)%25.html">%ind_v(2)%</a>^2 + Y<a href="#MESHFREE.Indices.LIQUID___indices___.%25ind_v(3)%25.html">%ind_v(3)%</a>^2))], <span style="color:#0B6121;">$PP_MonitorPointsDynamic._CH_$</span> ) <span style="color:#FACC2E;"># this subsequently puts the values of all node points in the subsequent columns </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_timestepfile.html">end_timestepfile</a>
+<a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_timestepfile{.html">begin_timestepfile{</a>"PressureChorin_BC=_BC_"} 
+    <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> = (<a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE%25.html">%PUBLICVALUE%</a>, [real(<a href="#MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25RealTimeSimulation%25.html">%RealTimeSimulation%</a>)],  %INTEGRATION_Header%, "time" )             <span style="color:#FACC2E;"># this puts the time into the first column </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> = ( <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_BND_DIRECT%25.html">%INTEGRATION_BND_DIRECT%</a>,  [Y<a href="#MESHFREE.Indices.LIQUID___indices___.%25ind_p_dyn%25.html">%ind_p_dyn%</a>+Y<a href="#MESHFREE.Indices.LIQUID___indices___.%25ind_c%25.html">%ind_c%</a>], <span style="color:#0B6121;">$PP_MonitorPointsDynamic._CH_$</span> )   <span style="color:#FACC2E;"># this subsequently puts the values of all node points in the subsequent columns </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_timestepfile.html">end_timestepfile</a>
+<span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+<span style="color:#FACC2E;">#c   Boundary Elements Section </span>
+<span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.html">begin_boundary_elements{</a>} 
+    <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.html">include{</a>pool.FDNEUT}, <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.scale{.html">scale{</a><span style="color:#8A0808;">&amp;ScalingOfPool&amp;</span>}                                                            <span style="color:#FACC2E;"># red in the geometry of the water pool from file </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.html">include{</a>box.FDNEUT},  <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.scale{.html">scale{</a><span style="color:#8A0808;">&amp;ScalingOfBox&amp;</span>}, <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.offset{.html">offset{</a><span style="color:#8A0808;">&amp;InitialOffsetOfBox&amp;</span>}                               <span style="color:#FACC2E;"># red in the box from file </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.html">include{</a>MonitorPointsDynamic.inp}                                                                       <span style="color:#FACC2E;"># read in the monitor points at the front face of the box </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.PlainBoundaryElements.BND_plane.html">BND_plane</a> <span style="color:#8A0808;">&amp;plane._CH_&amp;</span>       0 0 <span style="color:#8A0808;">&amp;InitialWaterLevelAboveGround&amp;</span> 0 0 -1                                  <span style="color:#FACC2E;"># cutting plane, that cuts the water pointcloud at the free surface </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.manipulate{.html">manipulate{</a>"pool"}                 <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.applyAlias{.html">applyAlias{</a>"pool._CH_"}                                              <span style="color:#FACC2E;"># give the alias name pool._CH_ to those elements whose name is "pool" in the geometry file </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.manipulate{.html">manipulate{</a>"box"}                  <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.applyAlias{.html">applyAlias{</a>"box._CH_"}                                               <span style="color:#FACC2E;"># give the alias name box._CH_ to those elements whose name is "box" in the geometry file </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.manipulate{.html">manipulate{</a>"MonitorPointsDynamic"} <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.applyAlias{.html">applyAlias{</a>"MonitorPointsDynamic._CH_"}                              <span style="color:#FACC2E;"># ... </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.delete{.html">delete{</a>"cover"}                                                                                         <span style="color:#FACC2E;"># delete the top cover of the pool geometry </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.manipulate{.html">manipulate{</a>"pool._CH_"}                 <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.offset{.html">offset{</a> 0 , [(_CH_-1)*6], 0 }                                   <span style="color:#FACC2E;"># move the geometries such that, for better visualizing, the different chambers do not lie on top of each other </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.manipulate{.html">manipulate{</a>"box._CH_"}                  <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.offset{.html">offset{</a> 0 , [(_CH_-1)*6], 0 }                                   <span style="color:#FACC2E;"># ... </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.manipulate{.html">manipulate{</a>"MonitorPointsDynamic._CH_"} <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.offset{.html">offset{</a> 0 , [(_CH_-1)*6], 0 }                                   <span style="color:#FACC2E;"># ... </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_boundary_elements.html">end_boundary_elements</a>
+<span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+<span style="color:#FACC2E;">#c   Physical Properties Section </span>
+<span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+  density(<span style="color:#0B6121;">$Mat._CH_$</span>)    = 1000 
+  cv(<span style="color:#0B6121;">$Mat._CH_$</span>)         = 1200 
+  lambda(<span style="color:#0B6121;">$Mat._CH_$</span>)     = 5000 
+  eta(<span style="color:#0B6121;">$Mat._CH_$</span>)        = 0.000001 
+  mue(<span style="color:#0B6121;">$Mat._CH_$</span>)        = 0 
+  sigma(<span style="color:#0B6121;">$Mat._CH_$</span>)      = 0.0 
+  heatsource(<span style="color:#0B6121;">$Mat._CH_$</span>) = 0 
+  gravity(<span style="color:#0B6121;">$Mat._CH_$</span>)    = (0, 0, -10) 
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+<span style="color:#FACC2E;">#c   Boundary Condition Section </span>
+<span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.html">BC_T</a>(0)                  = (<a href="#MESHFREE.Releases.__DeprecatedItems__.%25BND_VONNEU%25.html">%BND_VONNEU%</a>, 0, 0) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.html">BC_T</a>(<span style="color:#0B6121;">$BC_free._CH_$</span>)     = (<a href="#MESHFREE.Releases.__DeprecatedItems__.%25BND_VONNEU%25.html">%BND_VONNEU%</a>, 0, 0) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.html">BC_T</a>(<span style="color:#0B6121;">$BC_pool._CH_$</span>)     = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_DIRICH%25.html">%BND_DIRICH%</a>, 0, 0) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.html">BC_T</a>(<span style="color:#0B6121;">$BC_box._CH_$</span>)      = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_DIRICH%25.html">%BND_DIRICH%</a>, 1, 0) 
+   
+   
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.html">BC_v</a>(0)                  = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_free%25.html">%BND_free%</a>,0,0,0,0.3) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.html">BC_v</a>(<span style="color:#0B6121;">$BC_free._CH_$</span>)     = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_free%25.html">%BND_free%</a>,0,0,0,0.3) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.html">BC_v</a>(<span style="color:#0B6121;">$BC_pool._CH_$</span>)     = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_slip%25.html">%BND_slip%</a>,0,0.3) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.html">BC_v</a>(<span style="color:#0B6121;">$BC_box._CH_$</span>)      = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_slip%25.html">%BND_slip%</a>,0,0.3) 
+   
+   
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_p.html">BC_p</a>(0)                  = (%BND_free_implicit%) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_p.html">BC_p</a>(<span style="color:#0B6121;">$BC_free._CH_$</span>)     = (%BND_free_implicit%) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_p.html">BC_p</a>(<span style="color:#0B6121;">$BC_pool._CH_$</span>)     = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_wall%25.html">%BND_wall%</a>,1.0) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_p.html">BC_p</a>(<span style="color:#0B6121;">$BC_box._CH_$</span>)      = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_wall%25.html">%BND_wall%</a>,1.0) 
+   
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BCON.html">BCON</a>(<span style="color:#0B6121;">$BC_pool._CH_$</span>,%ind_p_dyn%) = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_NEUMANN%25.html">%BND_NEUMANN%</a>,0) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BCON.html">BCON</a>(<span style="color:#0B6121;">$BC_box._CH_$</span>,%ind_p_dyn%)  = (%_BC_%,0,2)                                                  <span style="color:#FACC2E;"># give the desired boundary condition for the dynamic pressure at the box </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.CODI.CODI_min_max.html">CODI_min_max</a>(<span style="color:#0B6121;">$Mat._CH_$</span>,%ind_v(1)%) = ([-4.0*<span style="color:#8A0808;">&amp;SpeedOfBox&amp;</span>],[4.0*<span style="color:#8A0808;">&amp;SpeedOfBox&amp;</span>]) 
+      <a href="#MESHFREE.InputFiles.USER_common_variables.CODI.CODI_min_max.html">CODI_min_max</a>(<span style="color:#0B6121;">$Mat._CH_$</span>,%ind_v(2)%) = ([-4.0*<span style="color:#8A0808;">&amp;SpeedOfBox&amp;</span>],[4.0*<span style="color:#8A0808;">&amp;SpeedOfBox&amp;</span>]) 
+      <a href="#MESHFREE.InputFiles.USER_common_variables.CODI.CODI_min_max.html">CODI_min_max</a>(<span style="color:#0B6121;">$Mat._CH_$</span>,%ind_v(3)%) = ([-4.0*<span style="color:#8A0808;">&amp;SpeedOfBox&amp;</span>],[4.0*<span style="color:#8A0808;">&amp;SpeedOfBox&amp;</span>]) 
+   
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_k.html">BC_k</a>(0)             = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_free%25.html">%BND_free%</a>) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_k.html">BC_k</a>(<span style="color:#0B6121;">$BC_free._CH_$</span>)     = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_free%25.html">%BND_free%</a>) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_k.html">BC_k</a>(<span style="color:#0B6121;">$BC_pool._CH_$</span>)     = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_wall%25.html">%BND_wall%</a>) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_k.html">BC_k</a>(<span style="color:#0B6121;">$BC_box._CH_$</span>)      = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_wall%25.html">%BND_wall%</a>) 
+   
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_eps.html">BC_eps</a>(0)             = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_free%25.html">%BND_free%</a>) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_eps.html">BC_eps</a>(<span style="color:#0B6121;">$BC_free._CH_$</span>)     = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_free%25.html">%BND_free%</a>) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_eps.html">BC_eps</a>(<span style="color:#0B6121;">$BC_pool._CH_$</span>)     = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_wall%25.html">%BND_wall%</a>) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_eps.html">BC_eps</a>(<span style="color:#0B6121;">$BC_box._CH_$</span>)      = (<a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_wall%25.html">%BND_wall%</a>) 
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+<span style="color:#FACC2E;">#c   Initial Condition Section </span>
+<span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a>(<span style="color:#0B6121;">$Mat._CH_$</span>,%ind_v(1)%) = -<span style="color:#8A0808;">&amp;SpeedOfBox&amp;</span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a>(<span style="color:#0B6121;">$Mat._CH_$</span>,%ind_v(2)%) = 0 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.INITDATA.html">INITDATA</a>(<span style="color:#0B6121;">$Mat._CH_$</span>,%ind_v(3)%) = 0 
+   
+   
+ <span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+<span style="color:#FACC2E;">#c   volume correction </span>
+<span style="color:#FACC2E;">#cccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </span>
+<span style="color:#FACC2E;">#include_Ucv{Ucv_VolumeCorrection.dat} <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.parameters{.html">parameters{</a> _WEIGHT_FrS_=1.0, _WEIGHT_ISO_=0.0, _WEIGHT_INT_=0.0, _CHAMBER_=_CH_, _MATERIAL_=Mat._CH_, _CORRECTION_=0.001 } </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top footer">
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.WaterCrossing.SimpleBox_DifferentTypesOfPressureBoundaryConditions.QuasiStationary.fpmdocu">../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.WaterCrossing.SimpleBox_DifferentTypesOfPressureBoundaryConditions.QuasiStationary.fpmdocu</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-small visible-xs visible-sm">
+<div class="blank-class-outer">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#Index.html" target="_blank">Index</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#MESHFREE.Releases.html" target="_blank">Releases</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-left-right">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="http://itwm.fraunhofer.de" target="_blank">© 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="fh-wrapper">
+
+<div class="breadcrumbs" id="MESHFREE.GettingStarted.SpecialCases.WaterCrossing.SimpleBox.DifferentTypesOfPressureBoundaryConditions.QuasiStationary.common_variables___SBDTOPBC___.html">
+<div class="row breadcrumb">
+<div class="col-md-12">
+<ul>
+<li><a href="#MESHFREE.html">MESHFREE</a></li>
+<li><a href="#MESHFREE.GettingStarted.html">GettingStarted</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.html">SpecialCases</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterCrossing.html">WaterCrossing</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterCrossing.SimpleBox.html">SimpleBox</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterCrossing.SimpleBox.DifferentTypesOfPressureBoundaryConditions.html">DifferentTypesOfPressureBoundaryConditions</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterCrossing.SimpleBox.DifferentTypesOfPressureBoundaryConditions.QuasiStationary.html">QuasiStationary</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterCrossing.SimpleBox.DifferentTypesOfPressureBoundaryConditions.QuasiStationary.common_variables___SBDTOPBC___.html">common_variables</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 content">
+<div class="jumbotron">
+<h1>common_variables</h1><p> simple box driving through a channel of water: common_variables.dat </p>
+</div>
+<div class="description">
+ No text given due to missing "\\" in definition string 
+ <div class="note"> 
+ Change the version for dynamic pressure computation among 
+ <a href="#MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_Version.html">FLIQUID_ConsistentPressure_Version</a> = 1127 
+ <a href="#MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_Version.html">FLIQUID_ConsistentPressure_Version</a> = 1227 
+ <a href="#MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_Version.html">FLIQUID_ConsistentPressure_Version</a> = 1327 
+ Observe pressures at the front face of "box" very close to the <a href="#MESHFREE.GettingStarted.SpecialCases.BasicPhysics.Bernoulli.html">Bernoulli</a> predictions if choosing 1227 
+ Observe physically wrong pressures at the front face of "box" if choosing 1127 (since quasistationary assumtion, which is not given here) 
+ </div>
+<div class="code">
+<span style="color:#FACC2E;">#ORGANIZE_DevelopperCheck_Version = 0 </span>
+<span style="color:#FACC2E;">#CONTROL_writeUcvLines = 3 </span>
+<span style="color:#FACC2E;">#CONTROL_StopAfterReadingGeometry = 1 </span>
+<a href="#MESHFREE.InputFiles.common_variables.smooth_BND_normal.html">smooth_BND_normal</a> = 0 
+ <a href="#MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_UseDivV.html">FLIQUID_ConsistentPressure_UseDivV</a> = 0 
+ <a href="#MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_Version.html">FLIQUID_ConsistentPressure_Version</a> = 1127 
+ <a href="#MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_CoeffMM.html">FLIQUID_ConsistentPressure_CoeffMM</a> = 0.0 
+ <a href="#MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_CoeffNN.html">FLIQUID_ConsistentPressure_CoeffNN</a> = 0.0 
+   
+ <a href="#MESHFREE.InputFiles.common_variables.ORGANIZE_USER_update_boundary_particles_Version.html">ORGANIZE_USER_update_boundary_particles_Version</a> = 2 
+ <span style="color:#FACC2E;">#ORGANIZE_DevelopperCheck_Version = 3 </span>
+<a href="#MESHFREE.InputFiles.common_variables.COMP_DoOrganizeOnlyAfterHowManyCycles.html">COMP_DoOrganizeOnlyAfterHowManyCycles</a> = 1 
+   
+ <a href="#MESHFREE.InputFiles.common_variables.MPI_WeightingMethodForBisection.html">MPI_WeightingMethodForBisection</a> = 1 
+ <span style="color:#FACC2E;">#CONTROL_writeUcvLines = 3 </span>
+<a href="#MESHFREE.InputFiles.common_variables.SIGNAL_LaunchComputationalSteering.html">SIGNAL_LaunchComputationalSteering</a> = true 
+ <span style="color:#FACC2E;">#who_am_I ='SIMCUT' </span>
+<span style="color:#FACC2E;">#SurfaceTesselation_cRadius = 0.45 </span>
+<a href="#MESHFREE.InputFiles.common_variables.COMP_TimeCheck.html">COMP_TimeCheck</a> = 1 
+ <a href="#MESHFREE.InputFiles.common_variables.COMP_CosEdgeAngle.html">COMP_CosEdgeAngle</a> = 0.5 
+ <a href="#MESHFREE.InputFiles.common_variables.COMP_FastBoundaryRefill.html">COMP_FastBoundaryRefill</a> = 1 
+ <span style="color:#FACC2E;">#COMP_CosEdgeAngle = -0.1 </span>
+<a href="#MESHFREE.InputFiles.common_variables.COMP_SortBEintoBoxes_Version.html">COMP_SortBEintoBoxes_Version</a> = 21 
+ <a href="#MESHFREE.InputFiles.common_variables.MPI_CommunicationMethod.html">MPI_CommunicationMethod</a> = 4 
+ <a href="#MESHFREE.InputFiles.common_variables.BND_SearchTreeAdministration_NbTimeStepsUntilFirstSkip.html">BND_SearchTreeAdministration_NbTimeStepsUntilFirstSkip</a> = 3 
+ <a href="#MESHFREE.InputFiles.common_variables.BND_SearchTreeAdministration_RefreshTreeAfterHowManyCycles.html">BND_SearchTreeAdministration_RefreshTreeAfterHowManyCycles</a> = 100 
+   
+ <span style="color:#FACC2E;">#SimCut = 3 </span>
+<a href="#MESHFREE.InputFiles.common_variables.nue.html">nue</a> = 3 
+ <span style="color:#FACC2E;">#T_st   = 0 </span>
+<span style="color:#FACC2E;">#T_fin  = 100 </span>
+<span style="color:#FACC2E;">#read_Y = 0 </span>
+<span style="color:#FACC2E;">#freq_restart = 10 </span>
+<a href="#MESHFREE.InputFiles.common_variables.time_step_gain.html">time_step_gain</a> = 0.5 
+ <a href="#MESHFREE.InputFiles.common_variables.time_step_loss.html">time_step_loss</a>  = 0.999 
+ <a href="#MESHFREE.InputFiles.common_variables.eps_phyd.html">eps_phyd</a>  = 1.E-8 
+ <a href="#MESHFREE.InputFiles.common_variables.eps_p.html">eps_p</a>    = 1.E-8 
+ <a href="#MESHFREE.InputFiles.common_variables.eps_v.html">eps_v</a>     = 1.E-8 
+ <a href="#MESHFREE.InputFiles.common_variables.eps_T.html">eps_T</a>     = 1.E-6 
+ <a href="#MESHFREE.InputFiles.common_variables.SPM_N_iterations.html">SPM_N_iterations</a> = 5000 
+ <a href="#MESHFREE.InputFiles.common_variables.COEFF_dt_virt.html">COEFF_dt_virt</a>    = -0.03 
+ <a href="#MESHFREE.InputFiles.common_variables.COEFF_dt.html">COEFF_dt</a>         = 0.2 
+ <span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.COMP_FillEdges.html">COMP_FillEdges</a>  = 1 </span>
+<span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.turn_down_BND_order.html">turn_down_BND_order</a> = 0.5 </span>
+<span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.RepairGeometry.html">RepairGeometry</a> = 0.1 </span>
+<a href="#MESHFREE.InputFiles.common_variables.VOLUME_correction.html">VOLUME_correction</a> = 0.0 
+ <a href="#MESHFREE.InputFiles.common_variables.VOLUME_correction_FreeSurface.html">VOLUME_correction_FreeSurface</a> = 0.0 
+   
+ <a href="#MESHFREE.InputFiles.common_variables.compute_LAYER.html">compute_LAYER</a>    = -1 
+   
+   
+   
+ <span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.PointDsplMethod.html">PointDsplMethod</a> = 0  # simple surface treatment </span>
+<span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.PointDsplMethod.html">PointDsplMethod</a> = 1  # surface treatment higher order, default </span>
+<a href="#MESHFREE.InputFiles.common_variables.LINEQN_solver.html">LINEQN_solver</a> = 'BCX2' 
+ <a href="#MESHFREE.InputFiles.common_variables.LINEQN_solver_ScalarSystems.html">LINEQN_solver_ScalarSystems</a> = 'BCN2' 
+   
+       <a href="#MESHFREE.InputFiles.common_variables.COMP_IsolatedParticles_MinNbOfNeigh.html">COMP_IsolatedParticles_MinNbOfNeigh</a> = 0 
+       <a href="#MESHFREE.InputFiles.common_variables.COMP_IsolatedParticles_MinNbOfInteriorNeigh.html">COMP_IsolatedParticles_MinNbOfInteriorNeigh</a> = 0 
+   
+ <a href="#MESHFREE.InputFiles.common_variables.N_addvar.html">N_addvar</a> = 3 
+   
+ <a href="#MESHFREE.InputFiles.common_variables.ord_eval.html">ord_eval</a>        = 3 
+ <span style="color:#FACC2E;">#ord_smooth      = 3 </span>
+<span style="color:#FACC2E;">#ord_convection  = 3 </span>
+<a href="#MESHFREE.InputFiles.common_variables.int_part_remove.html">int_part_remove</a> = 1 
+ <a href="#MESHFREE.InputFiles.common_variables.int_part_add.html">int_part_add</a>    = 1 
+ <a href="#MESHFREE.InputFiles.common_variables.int_BND_part_remove.html">int_BND_part_remove</a> = 1 
+ <a href="#MESHFREE.InputFiles.common_variables.int_BND_part_add.html">int_BND_part_add</a>    = 1 
+   
+ <a href="#MESHFREE.InputFiles.common_variables.damping_p_corr.html">damping_p_corr</a> = 0.01 
+ <a href="#MESHFREE.InputFiles.common_variables.DIFFOP_Version.html">DIFFOP_Version</a> = 9 
+   
+ <a href="#MESHFREE.InputFiles.common_variables.DIFFOP_kernel_Laplace.html">DIFFOP_kernel_Laplace</a> = 3 
+ <a href="#MESHFREE.InputFiles.common_variables.DIFFOP_kernel_Gradient.html">DIFFOP_kernel_Gradient</a> = 3 
+   
+ <span style="color:#FACC2E;"># ---things for geometrical organization --- </span>
+<a href="#MESHFREE.InputFiles.common_variables.rel_dist_bound.html">rel_dist_bound</a> = 0.35 
+ <a href="#MESHFREE.InputFiles.common_variables.rel_dist.html">rel_dist</a> = 0.38 
+ <a href="#MESHFREE.InputFiles.common_variables.dist_rab.html">dist_rab</a> = 0.15 
+ <a href="#MESHFREE.InputFiles.common_variables.dist_aip.html">dist_aip</a> = 0.16 
+ <a href="#MESHFREE.InputFiles.common_variables.dist_rip.html">dist_rip</a> = 0.25 
+ <a href="#MESHFREE.InputFiles.common_variables.radius_hole.html">radius_hole</a> = 0.38 
+ compute_FS = 'YES' 
+ <a href="#MESHFREE.InputFiles.common_variables.smooth_FS.html">smooth_FS</a>   = 0 
+ <a href="#MESHFREE.InputFiles.common_variables.compute_phase_boundary.html">compute_phase_boundary</a> = 'NON' 
+ <a href="#MESHFREE.InputFiles.common_variables.dist_FS_from_BND.html">dist_FS_from_BND</a> = 0.65 
+ <a href="#MESHFREE.InputFiles.common_variables.dist_FS_new_part.html">dist_FS_new_part</a> = 0.8 
+ <a href="#MESHFREE.Releases.__DeprecatedItems__.dist_BND_from_FS.html">dist_BND_from_FS</a> = 1.4 
+ <a href="#MESHFREE.InputFiles.common_variables.prec_seek_holes.html">prec_seek_holes</a> = 8 
+ <a href="#MESHFREE.InputFiles.common_variables.prec_seek_FS.html">prec_seek_FS</a> = 0 
+ <a href="#MESHFREE.InputFiles.common_variables.prec_act_BND.html">prec_act_BND</a> = 60 
+   
+   
+   
+ <a href="#MESHFREE.InputFiles.common_variables.QUICKVIEW_SaveHowOften.html">QUICKVIEW_SaveHowOften</a> = 1 
+ <a href="#MESHFREE.InputFiles.common_variables.QUICKVIEW_WhichParticles.html">QUICKVIEW_WhichParticles</a> = 2 
+   
+ <span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.cv_DateCompiled.html">cv_DateCompiled</a>                                                  = "8zZ1h&gt;Pu9Ko2U|U8w" </span>
+<span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.common_variables.cv_DateCompiled_Seed.html">cv_DateCompiled_Seed</a>                                             = 81 </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top footer">
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.WaterCrossing.SimpleBox_DifferentTypesOfPressureBoundaryConditions.QuasiStationary.fpmdocu">../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.WaterCrossing.SimpleBox_DifferentTypesOfPressureBoundaryConditions.QuasiStationary.fpmdocu</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-small visible-xs visible-sm">
+<div class="blank-class-outer">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#Index.html" target="_blank">Index</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#MESHFREE.Releases.html" target="_blank">Releases</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-left-right">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="http://itwm.fraunhofer.de" target="_blank">© 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="fh-wrapper">
+
+<div class="breadcrumbs" id="MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.html">
+<div class="row breadcrumb">
+<div class="col-md-12">
+<ul>
+<li><a href="#MESHFREE.html">MESHFREE</a></li>
+<li><a href="#MESHFREE.GettingStarted.html">GettingStarted</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.html">SpecialCases</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterManagement.html">WaterManagement</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.html">RainOnSimplePlate</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 content">
+<div class="jumbotron">
+<h1>RainOnSimplePlate</h1><p> simple rain source </p>
+</div>
+<div class="description">
+  Study different aspects like volume control.  
+
+	      			</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top">
+<div class="border-vertical">
+<div class="row reference">
+<div class="col-md-12">
+<div class="table-responsive">
+<table class="table">
+<tr><th>List of members: </th><th></th></tr>
+<tr><td><a href="#MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.html">SophisticatedVolumeControl</a></td> <td>  study a rain source with sophisticated volume control </td></tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top footer">
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.fpmdocu">../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.fpmdocu</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-small visible-xs visible-sm">
+<div class="blank-class-outer">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#Index.html" target="_blank">Index</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#MESHFREE.Releases.html" target="_blank">Releases</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-left-right">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="http://itwm.fraunhofer.de" target="_blank">© 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="fh-wrapper">
+
+<div class="breadcrumbs" id="MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.html">
+<div class="row breadcrumb">
+<div class="col-md-12">
+<ul>
+<li><a href="#MESHFREE.html">MESHFREE</a></li>
+<li><a href="#MESHFREE.GettingStarted.html">GettingStarted</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.html">SpecialCases</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterManagement.html">WaterManagement</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.html">RainOnSimplePlate</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.html">SophisticatedVolumeControl</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 content">
+<div class="jumbotron">
+<h1>SophisticatedVolumeControl</h1><p> study a rain source with sophisticated volume control </p>
+</div>
+<div class="description">
+ No text given due to missing "\\" in definition string 
+ The key point here ist to study the volume correction in detail. <a href="#MESHFREE.InputFiles.USER_common_variables.DropletSource.html">DropletSource</a> geneerated droplets which fall on a plate. 
+ Then, the water slides down the plate and piles up at a sidewise wall, which acts as an obstacle for the water. 
+ <ul><li>
+</li><li> After collision with the wall, burst into isolated <a href="#MESHFREE.html">MESHFREE</a> points. Here, volume conservation is crucial. 
+ </li><li> At the dam, again volume conservation becomes crucial, as the water collides with the wall initially as a very thin layer. 
+ </li><li> The water flow is cut below the geometry by an <a href="#MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> statement, here another time volume conservation becomes crucial, because the volume packages of the <a href="#MESHFREE.html">MESHFREE</a> points deleted are weak, but fully go into the computation of the target volume. 
+ </li></ul> 
+   
+ So, volume correction is essential in this example. We study four cases: 
+ <ul><li>
+</li><li>  SLIP condition with classical point cloud organization along the walls 
+ </li><li>  NOSLIP condition with classical point cloud organization along the walls 
+ </li><li>  SLIP condition with EXTENDED point cloud organization along the walls 
+ </li><li>  NOSLIP condition with EXTENDED point cloud organization along the walls 
+ </li></ul> 
+   
+ EXTENDED point cloud organization is currently experimental and is invoked in common_variables.dat by the line 
+ <a href="#MESHFREE.InputFiles.common_variables.who_am_I.html">who_am_I</a> = 'FLSLIP' 
+   
+ The volume correction is based an a Ucv-implementation. The main file is <a href="#MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.Ucv_VolumeCorrection.html">Ucv_VolumeCorrection</a> . 
+ This procedure will perform the volume correction in a similar way as the parameters <a href="#MESHFREE.InputFiles.common_variables.VOLUME_correction.html">VOLUME_correction</a> and <a href="#MESHFREE.InputFiles.common_variables.VOLUME_correction_FreeSurface.html">VOLUME_correction_FreeSurface</a> would do. 
+   
+ The <a href="#MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.Ucv_VolumeCorrection.html">Ucv_VolumeCorrection</a> uses another procedure <a href="#MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.Ucv_ComputeAdaptedTargetVolume.html">Ucv_ComputeAdaptedTargetVolume</a>, which limits the volume per time the can be deleted by <a href="#MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> or METAPLANES and recomputes the adapted target volume. 
+
+	      			</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top">
+<div class="border-vertical">
+<div class="row reference">
+<div class="col-md-12">
+<div class="table-responsive">
+<table class="table">
+<tr><th>List of members: </th><th></th></tr>
+<tr><td><a href="#MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.Ucv_VolumeCorrection.html">Ucv_VolumeCorrection</a></td> <td>  implementation of the volume correction as a Ucv-procedure </td></tr>
+<tr><td><a href="#MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.Ucv_ComputeAdaptedTargetVolume.html">Ucv_ComputeAdaptedTargetVolume</a></td> <td>  recompute the target volume due to a given maximum volume flux </td></tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top footer">
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 comprehensive-example">
+<a href="../OnlineExamples/MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl">DOWNLOAD COMPREHENSIVE EXAMPLE</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top footer">
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.fpmdocu">../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.fpmdocu</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-small visible-xs visible-sm">
+<div class="blank-class-outer">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#Index.html" target="_blank">Index</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#MESHFREE.Releases.html" target="_blank">Releases</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-left-right">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="http://itwm.fraunhofer.de" target="_blank">© 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="fh-wrapper">
+
+<div class="breadcrumbs" id="MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.Ucv_ComputeAdaptedTargetVolume.html">
+<div class="row breadcrumb">
+<div class="col-md-12">
+<ul>
+<li><a href="#MESHFREE.html">MESHFREE</a></li>
+<li><a href="#MESHFREE.GettingStarted.html">GettingStarted</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.html">SpecialCases</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterManagement.html">WaterManagement</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.html">RainOnSimplePlate</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.html">SophisticatedVolumeControl</a></li>
+<li><a href="#MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.Ucv_ComputeAdaptedTargetVolume.html">Ucv_ComputeAdaptedTargetVolume</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 content">
+<div class="jumbotron">
+<h1>Ucv_ComputeAdaptedTargetVolume</h1><p> recompute the target volume due to a given maximum volume flux </p>
+</div>
+<div class="description">
+ No text given due to missing "\\" in definition string 
+ <div class="code">
+<span style="color:#FACC2E;"># adapt the target volume (for volume correction) due to a restriction of the volume per time that can be deleted by <a href="#MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> or METAPLANES </span>
+<span style="color:#FACC2E;">#-------------------------------------------------------------------------------- </span>
+<span style="color:#FACC2E;"># abbreviations: </span>
+<span style="color:#FACC2E;"># ATV = adapted target volume </span>
+<span style="color:#FACC2E;"># VDELAEMP = volume deleted at events and metaplanes </span>
+<span style="color:#FACC2E;">#----------------------------------------------------------------------- </span>
+<span style="color:#FACC2E;"># call: </span>
+<span style="color:#FACC2E;"># <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.include_Ucv{.html">include_Ucv{</a>Ucv_ComputeAdaptedTargetVolume.dat} <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.parameters{.html">parameters{</a> _Vdot_=_Vdot_, ... </span>
+<span style="color:#FACC2E;">#                                                             _CHAMBER_=1, ... </span>
+<span style="color:#FACC2E;">#                                                             _Ncheck_=100, ... </span>
+<span style="color:#FACC2E;">#                                                             _ATV_AdaptedTarget_=<span style="color:#0B6121;">$VtargetAdapted$</span> } </span>
+<span style="color:#FACC2E;">#------------------------------------------------------------------------ </span>
+<span style="color:#FACC2E;"># parameters: </span>
+<span style="color:#FACC2E;"># _Vdot_ = equation or constant value describing the limiting volume flux allowed at <a href="#MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> and/or <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.METAPLANE.html">METAPLANE</a> cut </span>
+<span style="color:#FACC2E;"># _CHAMBER_ = chamber index to apply this function to </span>
+<span style="color:#FACC2E;"># _Ncheck_ = benchmark the state of <a href="#MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a>-cut after _Ncheck_ time cycles, we balance the <a href="#MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a>- and METPLANE-cut over this period </span>
+<span style="color:#FACC2E;"># _ATV_AdaptedTarget_ = integration index where to put the adapted target volume </span>
+<span style="color:#FACC2E;">#----------------------------------------------------------------------- </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_timestepfile{.html">begin_timestepfile{</a>"adaptedTargetVolume_chamber=_CHAMBER_"} 
+    <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$ATV_CHAMBER__INT_Time_$</span>)                         = ( <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE%25.html">%PUBLICVALUE%</a>,     [real(<a href="#MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25RealTimeSimulation%25.html">%RealTimeSimulation%</a>)],                             %INTEGRATION_Header%, "time" ) 
+    <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$ATV_CHAMBER__INT_AllowedVDELAEMP_LastBenchmark$</span>) = ( <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE%25.html">%PUBLICVALUE%</a>,     [equn(<span style="color:#0B6121;">$ATV_CHAMBER__EQN_AllowedVDELAEMP_LastBenchmark$</span>)], %INTEGRATION_Header%, "allowed volume deleted by EVENT LastBenchmark" ) 
+    <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$ATV_CHAMBER__INT_Time_LastBenchmark$</span>)            = ( <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE%25.html">%PUBLICVALUE%</a>,     [equn(<span style="color:#0B6121;">$ATV_CHAMBER__EQN_Time_LastBenchmark$</span>)],            %INTEGRATION_Header%, "time LastBenchmark" ) 
+    <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$ATV_CHAMBER__INT_VDELAEMP$</span>)                      = ( <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE_SUM%25.html">%PUBLICVALUE_SUM%</a>, [real(<a href="#MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().TwoArguments.%25FPM_VOLUME_DeletedAtMetaplanes%25.html">%FPM_VOLUME_DeletedAtMetaplanes%</a>,_CHAMBER_)],       %INTEGRATION_Header%, "measured volume deleted by EVENT" ) 
+    <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$ATV_CHAMBER__INT_VDELAEMP_LastBenchmark$</span>)        = ( <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE%25.html">%PUBLICVALUE%</a>,     [equn(<span style="color:#0B6121;">$ATV_CHAMBER__EQN_VDELAEMP_LastBenchmark$</span>)],        %INTEGRATION_Header%, "measured volume deleted by EVENT LastBenchmark" ) 
+    <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(<span style="color:#0B6121;">$ATV_CHAMBER__INT_AllowedVDELAEMP$</span>)               = ( <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE%25.html">%PUBLICVALUE%</a>,     [equn(<span style="color:#0B6121;">$ATV_CHAMBER__EQN_AllowedVDELAEMP$</span>)],               %INTEGRATION_Header%, "allowed volume deleted by EVENT" ) 
+    <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>(_ATV_AdaptedTarget_)                              = ( <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE%25.html">%PUBLICVALUE%</a>,     [equn(<span style="color:#0B6121;">$ATV_CHAMBER__EQN_VTargetAdapted$</span>)],                %INTEGRATION_Header%, "adapted target volume" ) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_timestepfile.html">end_timestepfile</a>
+<span style="color:#FACC2E;"># simulation time at the last benchmark </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a><span style="color:#0B6121;">$ATV_CHAMBER__EQN_Time_LastBenchmark$</span>} 
+    if (mod(real(<a href="#MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25NumberTimeStepsExecuted%25.html">%NumberTimeStepsExecuted%</a>),_Ncheck_)=0) :: real(<a href="#MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25RealTimeSimulation%25.html">%RealTimeSimulation%</a>) 
+    else                                                 :: integ(<span style="color:#0B6121;">$ATV_CHAMBER__INT_Time_LastBenchmark$</span>) 
+    endif 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a>
+<span style="color:#FACC2E;"># truely measured outflow volume at the last benchmark </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a><span style="color:#0B6121;">$ATV_CHAMBER__EQN_VDELAEMP_LastBenchmark$</span>} 
+    if (mod(real(<a href="#MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25NumberTimeStepsExecuted%25.html">%NumberTimeStepsExecuted%</a>),_Ncheck_)=0) :: integ(<span style="color:#0B6121;">$ATV_CHAMBER__INT_VDELAEMP$</span>) 
+    else                                                 :: integ(<span style="color:#0B6121;">$ATV_CHAMBER__INT_VDELAEMP_LastBenchmark$</span>) 
+    endif 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a>
+<span style="color:#FACC2E;"># allowed outflow volume at the last benchmark </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a><span style="color:#0B6121;">$ATV_CHAMBER__EQN_AllowedVDELAEMP_LastBenchmark$</span>} 
+    if (mod(real(<a href="#MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25NumberTimeStepsExecuted%25.html">%NumberTimeStepsExecuted%</a>),_Ncheck_)=0) :: integ(<span style="color:#0B6121;">$ATV_CHAMBER__INT_AllowedVDELAEMP$</span>) 
+    else                                                 :: integ(<span style="color:#0B6121;">$ATV_CHAMBER__INT_AllowedVDELAEMP_LastBenchmark$</span>) 
+    endif 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a>
+<span style="color:#FACC2E;"># the allowed outflow volume (deleted by <a href="#MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> or <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.METAPLANE.html">METAPLANE</a>) is the minimum of the true outflow and the Vdot since last benchmark </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a><span style="color:#0B6121;">$ATV_CHAMBER__EQN_AllowedVDELAEMP$</span>} 
+    integ(<span style="color:#0B6121;">$ATV_CHAMBER__INT_AllowedVDELAEMP_LastBenchmark$</span>) + 
+         min( _Vdot_*(real(<a href="#MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25RealTimeSimulation%25.html">%RealTimeSimulation%</a>) - integ(<span style="color:#0B6121;">$ATV_CHAMBER__INT_Time_LastBenchmark$</span>)) , 
+              integ(<span style="color:#0B6121;">$ATV_CHAMBER__INT_VDELAEMP$</span>)-integ(<span style="color:#0B6121;">$ATV_CHAMBER__INT_VDELAEMP_LastBenchmark$</span>) 
+            ) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a>
+<span style="color:#FACC2E;"># from the target volume, subtract the truly measured outflow volume, and add the allowed outflow </span>
+<a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_equation{.html">begin_equation{</a><span style="color:#0B6121;">$ATV_CHAMBER__EQN_VTargetAdapted$</span>} 
+    real(<a href="#MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().TwoArguments.%25FPM_VOLUME_TARGET%25.html">%FPM_VOLUME_TARGET%</a>,_CHAMBER_) + integ(<span style="color:#0B6121;">$ATV_CHAMBER__INT_VDELAEMP$</span>) - integ(<span style="color:#0B6121;">$ATV_CHAMBER__INT_AllowedVDELAEMP$</span>) 
+ <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_equation.html">end_equation</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top footer">
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.fpmdocu">../../FPM_src/FPM_fpmdocu/FPM.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.fpmdocu</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-small visible-xs visible-sm">
+<div class="blank-class-outer">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#Index.html" target="_blank">Index</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#MESHFREE.Releases.html" target="_blank">Releases</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-left-right">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="http://itwm.fraunhofer.de" target="_blank">© 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="fh-wrapper">
+
+<div class="breadcrumbs" id="MESHFREE.Windows.html">
+<div class="row breadcrumb">
+<div class="col-md-12">
+<ul>
+<li><a href="#MESHFREE.html">MESHFREE</a></li>
+<li><a href="#MESHFREE.Windows.html">Windows</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 content">
+<div class="jumbotron">
+<h1>Windows</h1><p> collection of information on Windows version </p>
+</div>
+<div class="description">
+<h2 class="customh2"> General information </h2>
+<p> For the <a href="#MESHFREE.Windows.html">Windows</a> version to run correctly, there has to be an MPICH2 installation. Problems can occur, if there is e.g. 
+ another MPI installation on the machine. </p>
+<p> A simulation is launched by </p> <div class="note"> <div class="code"> 
+ \full\path\to\mpiexec -n N -localonly \path\to\MESHFREE.exe -nt M 
+ </div> </div>
+<p> N specifies the number of MPI processes and M the number of OpenMP threads. </p>
+<h2 class="customh2"> Sloshing tool (AZL) </h2>
+<p> In <a href="#MESHFREE.Windows.TankSloshingApplication.html">TankSloshingApplication</a>, a description of how to install and run a sloshing application in <a href="#MESHFREE.Windows.html">Windows</a> can be found. </p>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top">
+<div class="border-vertical">
+<div class="row reference">
+<div class="col-md-12">
+<div class="table-responsive">
+<table class="table">
+<tr><th>List of members: </th><th></th></tr>
+<tr><td><a href="#MESHFREE.Windows.TankSloshingApplication.html">TankSloshingApplication</a></td> <td>  how to install and run the MESHFREE sloshing tool in Windows </td></tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top footer">
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPM.Windows.fpmintdocu">../../FPM_src/FPM_fpmdocu/FPM.Windows.fpmintdocu</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-small visible-xs visible-sm">
+<div class="blank-class-outer">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#Index.html" target="_blank">Index</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#MESHFREE.Releases.html" target="_blank">Releases</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-left-right">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="http://itwm.fraunhofer.de" target="_blank">© 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="fh-wrapper">
+
+<div class="breadcrumbs" id="MESHFREE.Windows.TankSloshingApplication.html">
+<div class="row breadcrumb">
+<div class="col-md-12">
+<ul>
+<li><a href="#MESHFREE.html">MESHFREE</a></li>
+<li><a href="#MESHFREE.Windows.html">Windows</a></li>
+<li><a href="#MESHFREE.Windows.TankSloshingApplication.html">TankSloshingApplication</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 content">
+<div class="jumbotron">
+<h1>TankSloshingApplication</h1><p> how to install and run the MESHFREE sloshing tool in Windows </p>
+</div>
+<div class="description">
+<h2 class="customh2"> Installation </h2> 
+ 1.) Install the executable <em> FPM_IFC14_DBLPR_WINDOWS.exe </em> and the 
+ OMP-library <em> libiomp5md.dll </em> in one and the same directory, 
+ most preferably in "C:\Program Files\FPM\bin" 
+ 2.) Install the folder <em> FPMforSloshing </em> somewhere on your file system. 
+ 3.) If FPM_IFC14_DBLPR_WINDOWS.exe IS NOT installed in "C:\Program Files\FPM\bin", 
+ the files <em> 
+ FPMforSloshing\GeneralInputFolder_V3\runFPMforSloshing.bat 
+ FPMforSloshing\GeneralInputFolder_V3\runFPMforMESHING.bat 
+ FPMforSloshing\GeneralInputFolder_V3\runFPMforSIMULATION.bat </em> 
+ have to be adapted, in fact the installation path has to be added to the PATH-variable. 
+ <span style="color:green"> Alternatively: the installation path can be constantly added to the PATH-Variable in 
+ the <a href="#MESHFREE.Windows.html">Windows</a> system control. </span>
+<h2 class="customh2"> New sloshing project </h2> 
+ 1.) Copy the folder <em> FPMforSloshing\GeneralInputFolder_V3\ </em> somewhere, for example into 
+ <em> MyNewSloshingProject </em> 
+ 2.) Adapt the file 
+ <em> MyNewSloshingProject\Ucv_VW_SetInputParametersByHand </em> 
+ that means give the parameters 
+ "T_start"                := ... 
+ "T_end"                  := ... 
+ "Restart"                := ... 
+ "GeoFile_1"              := ... 
+ "ScaleGeo"               := ...   -&gt; here give the geometry concerned as iges-file 
+ "RelativeFillingLevel"   := ... 
+ "FillingLevelOverGround" := ... 
+ "H_MESH"                 := ... 
+ "H_Computation"          := ... 
+ "AccelerationVertical"   := ... 
+ "AccelerationRadial"     := ... 
+ "AccelerationTangential" := ... 
+ useful values. 
+   
+ <h2 class="customh2"> Execution </h2>
+<a href="#MESHFREE.html">MESHFREE</a> usually reads in a geometry, given as iges-file. It meshes (triangulates) the surface, and the starts 
+ the flow simulation using the parameters given (filling height, accelaration profile, point cloud refinement, etc.) 
+ 1.) In order to run MESHING and SIMULATION with one command, just execute 
+ <em> runFPMforSloshing.bat </em> 
+ 2.) To simply run MESHING, execute 
+ <em> runFPMforMESHING.bat </em> 
+ 3.) To simply run SIMULATION, execute 
+ <em> runFPMforSIMULATION.bat </em> 
+ This will fail, if MESHING was not executed before. 
+   
+ <h2 class="customh2"> Results </h2> 
+ The results of the FPM simulations are written to the folder defined in variables <a href="#MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_path.html">SAVE_path</a> in the USER_common_variables.dat input file. 
+ In many cases, this folder is within the project folder and starts with "results_". 
+ For the available output formats, see <a href="#MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.html">SAVE_format</a>. 
+ In order to view the results in <a href="#MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ENSIGHT6.html">ENSIGHT6</a>-format, install <a href=" http://www.paraview.org/download/ ">ParaView</a>. 
+
+	      			</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top footer">
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 comprehensive-example">
+<a href="../OnlineExamples/MESHFREE.Windows.TankSloshingApplication">DOWNLOAD COMPREHENSIVE EXAMPLE</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top footer">
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPM.Windows.fpmintdocu">../../FPM_src/FPM_fpmdocu/FPM.Windows.fpmintdocu</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-small visible-xs visible-sm">
+<div class="blank-class-outer">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#Index.html" target="_blank">Index</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#MESHFREE.Releases.html" target="_blank">Releases</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-left-right">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="http://itwm.fraunhofer.de" target="_blank">© 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="fh-wrapper">
+
+<div class="breadcrumbs" id="MESHFREE.Support.html">
+<div class="row breadcrumb">
+<div class="col-md-12">
+<ul>
+<li><a href="#MESHFREE.html">MESHFREE</a></li>
+<li><a href="#MESHFREE.Support.html">Support</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 content">
+<div class="jumbotron">
+<h1>Support</h1><p> How to contact the Support Team </p>
+</div>
+<div class="description">
+<h2 class="customh2"> <a href="#MESHFREE.Support.html">Support</a> Team </h2>
+<p> Our support team is available via </p> <ul><li>
+</li><li> Email: <a href="mailto:support@meshfree.eu">support@meshfree.eu</a>, 
+ </li><li> Phone: +49 (0) 631 316 00-1361. </li></ul> <p> 
+ Tickets can be in English or German. 
+ Please refer to the tips below. </p>
+<h2 class="customh2"> Tips  </h2>
+<p> To speed up the process of debugging and to avoid a lot of call backs, 
+ please give us as much information about your problem as possible up front. 
+ Besides an accurate description of your observed problem(s), including screenshots where suitable, 
+ a complete <b>minimal working example</b> showcasing the issue is most helpful. 
+ If you cannot provide a minimal working example, please upload the complete setup 
+ (USER_common_variables.dat, common_variables.dat, geometry and any other necessary files). </p>
+<p> The following questions should be answered as accurately as possible: </p>
+<ul><li>
+</li><li> Which version of <a href="#MESHFREE.html">MESHFREE</a> has been used? What is the name of the 
+ executable? 
+ </li><li> Were other versions also tested? If so, which versions did work and which did 
+ not work? 
+ </li><li> What is the error message? It would be ideal to provide the entire stdout and 
+ stderr output for at least the last time step. 
+ </li><li> What is written in the warnings file? 
+ </li><li>  How many MPI processes have been used overall? On how many nodes? 
+ </li><li>  How many openMP threads have been used? 
+ </li><li> For how long has the simulation been running before the error occured? 
+ </li><li> Can you send us the complete setup via the FileDrop below? 
+ Or at the very least the USER_common_variables.dat file? 
+ </li></ul>
+<p> For files that are too large for an email, you can use our 
+ <a href="https://owncloud.fraunhofer.de/index.php/s/ovMnA1mVa8rQTQ8">Support Ticket File Drop</a>. 
+ We recommend to upload data as a single (encrypted) archive. 
+ Please ensure to <b> add the ticket number to the name of each file</b>, 
+ for example Files_Ticket12345.zip. </p>
+<p> Tickets can be in English or German. </p>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top footer">
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPM.Support.fpmdocu">../../FPM_src/FPM_fpmdocu/FPM.Support.fpmdocu</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-small visible-xs visible-sm">
+<div class="blank-class-outer">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#Index.html" target="_blank">Index</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#MESHFREE.Releases.html" target="_blank">Releases</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-left-right">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="http://itwm.fraunhofer.de" target="_blank">© 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="fh-wrapper">
+
+<div class="breadcrumbs" id="MESHFREE.Releases.html">
+<div class="row breadcrumb">
+<div class="col-md-12">
+<ul>
+<li><a href="#MESHFREE.html">MESHFREE</a></li>
+<li><a href="#MESHFREE.Releases.html">Releases</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 content">
+<div class="jumbotron">
+<h1>Releases</h1><p> Information on the MESHFREE releases </p>
+</div>
+<div class="description">
+ No text given due to missing "\\" in definition string 
+  <h2 class="customh2"> Release Cycle (Plan) </h2>
+<ul><li> </li><li> <p> New beta version (format betaYYYY.MM.V) released by default every 2 months (01, 03, 05, 07, 09, 11). 
+  </p> </li><li> <p> Additional beta versions have to be negotiated. 
+  </p> </li><li> <p> New stable version released twice a year (format RYYYYa, RYYYYb; candidates start with betaYYYY.01.0 and betaYYYY.07.0). 
+  </p> </li></ul>
+<p> You find the corresponding release notes on the pages <a href="#MESHFREE.Releases.Beta.html">Beta</a> and <a href="#MESHFREE.Releases.Stable.html">Stable</a>. </p>
+<h2 class="customh2"> <a href="#MESHFREE.Download.html">Download</a> </h2>
+<p> Executables are available at: <br/>
+<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/MESHFREE/">https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/MESHFREE/</a> </p>
+<h2 class="customh2"> Mailing list </h2>
+<p> If you would like to be notified about new versions of <a href="#MESHFREE.html">MESHFREE</a>, please subscribe to the respective mailing list(s): 
+  <a href="https://listserv.itwm.fraunhofer.de/mailman/listinfo/meshfree-stable">MESHFREE-Stable</a> 
+  and/or 
+  <a href="https://listserv.itwm.fraunhofer.de/mailman/listinfo/meshfree-beta">MESHFREE-Beta</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top">
+<div class="border-vertical">
+<div class="row reference">
+<div class="col-md-12">
+<div class="table-responsive">
+<table class="table">
+<tr><th>List of members: </th><th></th></tr>
+<tr><td><a href="#MESHFREE.Releases.__DeprecatedItems__.html">__DeprecatedItems__</a></td> <td>  Deprecated items to be removed in the near future </td></tr>
+<tr><td><a href="#MESHFREE.Releases.Beta.html">Beta</a></td> <td>  Release notes for the MESHFREE beta executables </td></tr>
+<tr><td><a href="#MESHFREE.Releases.Stable.html">Stable</a></td> <td>  Release notes for the MESHFREE stable executables </td></tr>
+<tr><td><a href="#MESHFREE.Releases.TestManagement.html">TestManagement</a></td> <td>  Test Management Plan </td></tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top footer">
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPM.Releases.f90">../../FPM_src/FPM_fpmdocu/FPM.Releases.f90</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-small visible-xs visible-sm">
+<div class="blank-class-outer">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#Index.html" target="_blank">Index</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#MESHFREE.Releases.html" target="_blank">Releases</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-left-right">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="http://itwm.fraunhofer.de" target="_blank">© 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="fh-wrapper">
+
+<div class="breadcrumbs" id="MESHFREE.Releases.Stable.html">
+<div class="row breadcrumb">
+<div class="col-md-12">
+<ul>
+<li><a href="#MESHFREE.html">MESHFREE</a></li>
+<li><a href="#MESHFREE.Releases.html">Releases</a></li>
+<li><a href="#MESHFREE.Releases.Stable.html">Stable</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 content">
+<div class="jumbotron">
+<h1>Stable</h1><p> Release notes for the MESHFREE stable executables </p>
+</div>
+<div class="description">
+ No text given due to missing "\\" in definition string 
+  <p> Executables available at <br/><a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/MESHFREE/stable/release/">https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/MESHFREE/stable/release/</a> </p>
+<p> If you would like to be notified about new stable versions of <a href="#MESHFREE.html">MESHFREE</a>, please subscribe to the 
+  <a href="https://listserv.itwm.fraunhofer.de/mailman/listinfo/meshfree-stable">MESHFREE-Stable mailing list</a>. 
+  </p>
+<!-- start template 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> ... 
+  </li></ul> 
+  <span style="color:orange"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #<12345> ... 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> ... 
+  </li></ul> 
+  end Template -->
+<!--
+--> <div class="note"> Unpublished bugfixes for StableCandidate_R2018.1.(n+1) </div>
+<!--
+-->
+<div class="note"> R2019.1.0 </div>
+<p> This version is the same as beta19.10.1. For a detailed list of differences compared to R2018.1 (based on beta18.05.0), see <a href="#MESHFREE.Releases.Beta.html">Beta</a>. </p>
+<span style="color:green"><em>New: </em> </span>
+<ul><li>
+</li><li> improvements to <a href="#MESHFREE.Solvers.Numerics.GASDYN.html">GASDYN</a> solver. 
+    </li><li> Improvements to <a href="#MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> solver. 
+    </li><li> Redlich-Kwong Gas Law for modelling real gas behaviour (in <a href="#MESHFREE.AAA.Solvers.Numerics.LIQUID.html">LIQUID</a> solver, see <a href="#MESHFREE.InputFiles.USER_common_variables.PhysicalProperties.html">PhysicalProperties</a>). 
+    </li><li> New feature %HEAT_EQ_1D_BC% for using 1D heat equation as temperature boundary condition (see <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.HeatEquation1D___BC_T___.html">HeatEquation1D</a>). 
+    </li><li> New feature <a href="#MESHFREE.AAA.Solvers.Numerics.LIQUID.Algorithms___liquid___.RepresentativeMassAlgorithm.html">RepresentativeMassAlgorithm</a>. 
+    </li><li> Improved MPI Shared Memory support, e.g. for GEOTREE2 and <a href="#MESHFREE.InputFiles.USER_common_variables.MONITORPOINTS.html">MONITORPOINTS</a> (see <a href="#MESHFREE.InputFiles.common_variables.COMP_SharedMemoryForBE.html">COMP_SharedMemoryForBE</a>, <a href="#MESHFREE.InputFiles.common_variables.COMP_SharedMemoryForGT2.html">COMP_SharedMemoryForGT2</a>). 
+    </li><li> Improved support for <a href="#MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a>. 
+    </li><li> <a href="#MESHFREE.Support.html">Support</a> for version 4.1 .msh files for triangular 2D meshes from Gmsh. 
+    </li><li> Performance improvements for geometry operations, see <a href="#MESHFREE.PerformanceOptimization.GeometryOperations.html">GeometryOperations</a>. 
+    </li><li> new <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.manipulate{.html">manipulate{</a> - feature: <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.extrude{.html">extrude{</a>
+</li><li> <a href="#MESHFREE.Releases.__DeprecatedItems__.TWOSIDED.html">TWOSIDED</a> is now deprecated, use <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.include{.duplicate{.html">duplicate{</a> and <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.include{.thickenabs{.html">thickenabs{</a> instead 
+    </li><li> New option for <a href="#MESHFREE.InputFiles.USER_common_variables.ReadInPointCloud.html">ReadInPointCloud</a>: writeOut, see <a href="#MESHFREE.InputFiles.USER_common_variables.ReadInPointCloud.EnSight___RIPC___.WriteOutManipulations___RIPC___.html">WriteOutManipulations</a>
+</li><li> New <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> feature <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.Skip___integration___.html">Skip</a>. 
+    </li><li> New <a href="#MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> handles <a href="#MESHFREE.InputFiles.USER_common_variables.EVENT.%25EVENT_WriteResume%25.html">%EVENT_WriteResume%</a> and <a href="#MESHFREE.InputFiles.USER_common_variables.EVENT.%25EVENT_SaveResults%25.html">%EVENT_SaveResults%</a>
+</li><li> New <a href="#MESHFREE.InstallationGuide.Execute.CommandLine.html">CommandLine</a> option --exec-dir, -e. 
+    </li><li> New <a href="#MESHFREE.InstallationGuide.Execute.CommandLine.html">CommandLine</a> option --clparam, -clp to be used as system variable @CLPARAM@. 
+  </li></ul>
+<span style="color:red"><em>Bugfixes: </em> </span>
+<ul><li>
+</li><li> Multiple bugfixes and improvements for stability and performance. 
+  </li></ul>
+<div class="note"> R2018.1.1 </div>
+<span style="color:red"><em>Bugfixes: </em> </span>
+<ul><li>
+</li><li> Fix bug where <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> values were all zero when organization steps were skipped. 
+    </li><li> Clarify behavior for <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.CHAMBER.html">CHAMBER</a>. If no <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.CHAMBER.html">CHAMBER</a> in alias is given, then CHAMBER=MAT. 
+    </li><li> Fix compilation on HLRS Cray. 
+    </li><li> Pass SPM_N_Iterations to SAMG. 
+  </li></ul>
+<div class="note"> R2018.1.0 </div> 
+  This version is based on beta18.05.0 including important bug fixes up to beta18.06.0, see <a href="#MESHFREE.Releases.Beta.html">Beta</a>
+<span style="color:green"><em>New: </em> </span>
+<ul><li>
+</li><li> MPI shared memory for boundary elements, see <a href="#MESHFREE.InputFiles.common_variables.COMP_SharedMemoryForBE.html">COMP_SharedMemoryForBE</a>
+</li><li> <a href="#MESHFREE.InputFiles.USER_common_variables.MEMORIZE.html">MEMORIZE</a> functionality (Note: does not work with restart) 
+    </li><li> Improvements to <a href="#MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a>
+</li><li> <a href="#MESHFREE.Solvers.Numerics.STANDBY.html">STANDBY</a>-pointclouds, see <a href="#MESHFREE.InputFiles.USER_common_variables.ReadInPointCloud.EnSight___RIPC___.html">EnSight</a> . 
+    </li><li> New features in <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>: <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.SelectionFeatures.html">SelectionFeatures</a>, <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.SelectionFeatures.SelectByPercentileBounds.html">SelectByPercentileBounds</a>, <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25ASSIGN_FUNCTIONVALUE%25.html">%ASSIGN_FUNCTIONVALUE%</a>, <a href="#MESHFREE.InputFiles.USER_common_variables.INTEGRATION.SequentialFiltering.html">SequentialFiltering</a>
+</li><li> New features for <a href="#MESHFREE.InputFiles.USER_common_variables.MONITORPOINTS.BE_MONITOR_ITEM.html">BE_MONITOR_ITEM</a>, <a href="#MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_BE_MONITOR_ITEM.html">SAVE_BE_MONITOR_ITEM</a>: <a href="#MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_BE_MONITOR_ITEM.%25CUMU_ASSIGN%25.html">%CUMU_ASSIGN%</a>, <a href="#MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_BE_MONITOR_ITEM.%25CUMU_SMOOTH%25.html">%CUMU_SMOOTH%</a>, <a href="#MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_BE_MONITOR_ITEM.%25CUMU_SMOOTH_AreaBased%25.html">%CUMU_SMOOTH_AreaBased%</a>
+</li><li> New features for geometry: <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.removeBEonCondition{.html">removeBEonCondition{</a>, <a href="#MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.include{.coarsenGeometry{.html">coarsenGeometry{</a>, support for quads in <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.OBJ.html">OBJ</a> reader (see <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.html">include{</a>) 
+    </li><li> New feature for <a href="#MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a>: <a href="#MESHFREE.InputFiles.USER_common_variables.EVENT.%25EVENT_FunctionManipulation%25.html">%EVENT_FunctionManipulation%</a>
+</li><li> New checkpoint/resume feature (see <a href="#MESHFREE.RunTimeTools.ComputationalSteering.ParallelReadingOfSignalFile.checkpoint___CSpar___.html">checkpoint</a> ) 
+    </li><li> Fallback for <a href="#MESHFREE.InputFiles.USER_common_variables.RESTART.LaunchRestart.html">LaunchRestart</a>
+</li><li> Improvements for <a href="#MESHFREE.InputFiles.USER_common_variables.__GeneralRemarks__.Variables.html">Variables</a>: @SystemVariable@, alias-in-alias &amp;MMM(&amp;NNN&amp;)&amp; 
+    </li><li> <a href="#MESHFREE.InputFiles.USER_common_variables.__GeneralRemarks__.ContinuationLines.html">ContinuationLines</a>
+</li><li> New parameter <a href="#MESHFREE.InputFiles.common_variables.SAVE_PrecisionTimestepFile.html">SAVE_PrecisionTimestepFile</a>
+</li><li> New parameter <a href="#MESHFREE.InputFiles.USER_common_variables.RepeatCurrentTimeStep.RepeatCurrentTimeStep_AdditionalComputationsAfterDataTransfer.html">RepeatCurrentTimeStep_AdditionalComputationsAfterDataTransfer</a>
+</li><li> New Equations feature: modulo operation <a href="#MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.mod().html">mod()</a>
+</li><li> <a href="#MESHFREE.InputFiles.USER_common_variables.CODI.html">CODI</a>-execution order defined by appearance in the USER_common_variables.dat 
+    </li><li> <a href="#MESHFREE.RunTimeTools.ComputationalSteering.step-by-step-execution.html">step-by-step-execution</a>
+</li><li> New common variables: <a href="#MESHFREE.InputFiles.common_variables.TIMECHECK_Level.html">TIMECHECK_Level</a>, <a href="#MESHFREE.InputFiles.common_variables.IGES_HealCorruptFaces.html">IGES_HealCorruptFaces</a>, <a href="#MESHFREE.InputFiles.common_variables.ISOLATEDPOINTS_ClusterOnResultingVolume.html">ISOLATEDPOINTS_ClusterOnResultingVolume</a>, <a href="#MESHFREE.InputFiles.common_variables.BE_CleanUp_STL.html">BE_CleanUp_STL</a>, <a href="#MESHFREE.InputFiles.common_variables.ORGANIZE_FuzzyMPIFilling.html">ORGANIZE_FuzzyMPIFilling</a>, <a href="#MESHFREE.InputFiles.common_variables.GEOTREE2_BND_FinalBoxSize.html">GEOTREE2_BND_FinalBoxSize</a>, <a href="#MESHFREE.InputFiles.common_variables.GEOTREE2_BND_FinalBoxDimension.html">GEOTREE2_BND_FinalBoxDimension</a>, <a href="#MESHFREE.InputFiles.common_variables.delaunay_reduction.html">delaunay_reduction</a>, <a href="#MESHFREE.InputFiles.common_variables.iFPM_process_ID.html">iFPM_process_ID</a> (see also MESHFREE.ProgramExecution.Linux.Run.CommandLine), <a href="#MESHFREE.InputFiles.common_variables.SAVE_ASCII_split.html">SAVE_ASCII_split</a>
+</li><li> New options for <a href="#MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_Version.html">FLIQUID_ConsistentPressure_Version</a>
+</li><li> changed default values for <a href="#MESHFREE.InputFiles.common_variables.GEOTREE2_FinalBoxSize.html">GEOTREE2_FinalBoxSize</a>: 4-&gt;16, <a href="#MESHFREE.InputFiles.common_variables.GEOTREE2_MaximumBoxSize.html">GEOTREE2_MaximumBoxSize</a>: 8-&gt;20 
+  </li></ul>
+<span style="color:red"><em>Bugfixes: </em> </span>
+<ul><li>
+</li><li> Multiple bugfixes and improvements for stability and performance. 
+  </li></ul>
+<!--
+--> <div class="note"> Unpublished bugfixes for StableCandidate_R2017.1.(n+1) </div>
+<!--
+-->
+<div class="note"> R2017.1.4 </div>
+<span style="color:red"><em>Bugfix: </em> </span>
+<ul><li>
+</li><li> #62678/#63897: Fix bug in pressure computation at moving boundaries that lead to unphysical behavior. 
+  </li></ul>
+<div class="note"> R2017.1.3 </div>
+<span style="color:red"><em>Bugfix: </em> </span>
+<ul><li>
+</li><li> Bugfix in initialisation of <a href="#MESHFREE.Indices.General___indices___.%25ind_BC%25.html">%ind_BC%</a> flag 
+  </li></ul>
+<div class="note"> R2017.1.2 </div>
+<span style="color:red"><em>Bugfix: </em> </span>
+<ul><li>
+</li><li> Bugfix in <a href="#MESHFREE.InputFiles.USER_common_variables.DropletSource.html">DropletSource</a> that might have lead to breakdown of <a href="#MESHFREE.html">MESHFREE</a> when too many points/droplets are filled during one time cycle 
+    </li><li> Bugfix for reading of <a href="#MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.OBJ.html">OBJ</a> files 
+    </li><li> Bugfix for writeout of integration statements at restart 
+  </li></ul>
+<div class="note"> R2017.1.1 </div>
+<span style="color:orange"><em> Tickets: </em> </span>
+<ul><li>
+</li><li> #58546: Reduced MPI package size (for large simulations) 
+  </li></ul>
+<span style="color:red"><em>Bugfix: </em> </span>
+<ul><li>
+</li><li> explicit error message if <a href="#MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_path.html">SAVE_path</a> too long. 
+    </li><li> bugfix in preprocessing of double operators, e.g. [( 1 + -1 )*0.5], in <a href="#MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.html">Equations</a>
+</li><li> multiple bugfixes regarding memory access. 
+  </li></ul>
+<div class="note"> R2017.1 </div>
+<p> Same features as beta17.06.0 (see beta release notes). </p>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-top footer">
+<div class="border-vertical">
+<div class="row">
+<div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPMReleaseNotesSTABLE.f90">../../FPM_src/FPM_fpmdocu/FPMReleaseNotesSTABLE.f90</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-small visible-xs visible-sm">
+<div class="blank-class-outer">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#Index.html" target="_blank">Index</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="#MESHFREE.Releases.html" target="_blank">Releases</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-bottom">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+</div>
+</div>
+</div>
+</div>
+<div class="blank-class-outer-left-right">
+<div class="blank-class-inner">
+<div class="row">
+<div class="col-md-12">
+<a href="http://itwm.fraunhofer.de" target="_blank">© 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,12 @@
+ \documentclass{minimal}
+ \usepackage{amsmath,bm,amssymb}
+ \newcommand{\bf}[1]{\bm{{#1}}}
+ \begin{document}
+ \begin{align*}
+\begin{array}{*{35}{l}} 
+    \frac{p_{hyd,b}^{n+1} + p_{dyn,b}^n + c_{b}^{n+1} - p_b^n}{\Delta t} V_{b}^{{}}+\kappa p_{b}^{{}}\cdot \oint\limits_{\partial \Omega _{b}^{{}}}{\left( \mathbf{\tilde{v}}_{{}}^{n+1}-\frac{\Delta t_{virt}^{{}}}{\rho }\nabla c_{{}}^{n+1} \right)\cdot \mathbf{n}dA} & =V_{b}^{{}} \left \frac{dp_{b}^{}}{dt} \right|_{penalty}  \\ 
+    p_{hyd,b}^{n+1} + p_{dyn,b}^n + c_{b}^{n+1} - p_b^n + \Delta t \frac{ \kappa p_{b}^{{}}}{V_{b}^{{}}}\cdot \oint\limits_{\partial \Omega _{b}^{{}}}{\left( \mathbf{\tilde{v}}_{{}}^{n+1}-\frac{\Delta t_{virt}^{{}}}{\rho }\nabla c_{{}}^{n+1} \right)\cdot \mathbf{n}dA} & = \Delta t \left \frac{dp_{b}^{}}{dt} \right|_{penalty}  \\ 
+    c_{b}^{n+1}-\Delta t \frac{ \kappa p_{b}^{{}}}{V_{b}^{{}}}\cdot \oint\limits_{\partial \Omega _{b}^{{}}}{\frac{\Delta t_{virt}^{{}}}{\rho }\nabla c_{{}}^{n+1}\cdot \mathbf{n}dA} & = p_b^n - p_{hyd,b}^{n+1} - p_{dyn,b}^n - \Delta t \frac{ \kappa p_{b}^{{}}}{V_{b}^{{}}}\cdot \oint\limits_{\partial \Omega _{b}^{{}}}{\mathbf{\tilde{v}}_{{}}^{n+1}\cdot \mathbf{n}dA} + \Delta t \left \frac{dp_{b}^{}}{dt} \right|_{penalty} \\ 
+    \end{array}
+ \end{align*}
+ \end{document}

@@ -1,0 +1,90 @@
+ToDo List FPM Docu
+
+Features
+- Provide a table feature
+- Hierarchy Menu on the left
+- Apostroph 
+- Print View
+- Spell Check
+- Optimize Build Velocity
+- Optimize Search Function
+- Box for examples (Zur besseren Abgrenzung vom Text)
+
+
+
+
+Content:
+
+Rework:
+- PrepareGeometryBy_GMSH
+- More info on OBJ format
+- Special Cases need a rework and linking
+- Find a new place for Solvers.Geometry
+- Restructure Getting Started and Introduction.
+- Rename FPM to MESHFREE
+
+- INITDATA
+./FPM_liquid/USER_read_common_variables.f90:!$FPMINTDOCU TODO: Timo: INITDATA (list of important variables, especially start values different from zero. Special remark about ind_k and ind_eps. Also, set initial velocity if inflow prescribes some unique state.
+
+Create:
+- Latent Heat:
+  ./FPM_liquid/GT_mue_on_cons.f90:!$FPMINTDOCU #red TODO: Latentheat.  red#
+- Getting Started for raw beginners, RT #?????
+- GASDYN
+- BC_SUBSON, BC_SUPERSON
+
+
+
+Migrate:
+- Compilation of FPMDOCU to gitlab docu (FPM.FPMDOCU.Compile) (findet sonst kein Mensch)
+
+Deprecate:
+- begin_material{
+
+Unsorted Items:
+
+
+[roehrig@e120tv02 FPM_src]$ grep -ri todo . | grep DOCU
+
+./FPM_fortran/Core/PointcloudOrganization/ORGANIZE/ORGANIZE_IndependentQualityCheckOfPointCloud.f90:!$FPMINTDOCU #red TODO: Check and extend the description. red#
+./FPM_fortran/Core/PointcloudOrganization/ORGANIZE/ORGANIZE_OppositePointPriority.f90:!$FPMINTDOCU TODO: #red write a bit more red#
+./FPM_fortran/Misc/CHAMBER_InterpretAttributes.f90:!$FPMINTDOCU #red TODO: write Darcys law with an apostroph when this feature is available red#
+./FPM_fortran/Misc/assign_common_variables.f90:  !!$         ind_create      = provide_integer( 'ind_create ' )   !$FPMxINTDOCU   #h  .%ind_create% h#   #a #red TODO red# a#
+./FPM_fortran/Misc/read_common_variables.f90:!$FPMDOCU #item DEBUG_GeneralParameter(12) = 1.5 (default=1000)        :: DIFFOP_Version=9: safety threshold for interior points (TODO Tobias)
+./FPM_fortran/Misc/read_common_variables.f90:!$FPMINTDOCU #t #red TODO: what is this used for and do we need it in the future? red# t#
+./FPM_fortran/Misc/read_common_variables.f90:!$FPMINTDOCU #t #red TODO: what is this used for and do we need it in the future? red# t#
+./FPM_fortran/PreAndPostprocessing/FPMLOG/FPMDOCU.f90:            write(UN,'(a)') 'TODO: empty site';                                 if (UNAIO.gt.0) write(UNAIO,'(a)') 'TODO: empty site'; ! only fo rinternal use
+./FPM_fortran/PreAndPostprocessing/FPMLOG/FPMDOCU.f90:            write(UN,'(a)') 'TODO: empty site';                                 if (UNAIO.gt.0) write(UNAIO,'(a)') 'TODO: empty site'; ! only for internal use
+./FPM_fortran/PreAndPostprocessing/FPMLOG/FPMDOCU_BeforeSwitchToITWMCorporateIdentity.f90:            write(UN,'(a)') 'TODO: empty site';                                 if (UNAIO.gt.0) write(UNAIO,'(a)') 'TODO: empty site'; ! remove the encompassing blanks again
+./FPM_fortran/PreAndPostprocessing/Save/USER_save_data.f90:!$FPMINTDOCU #red TODO: Add explanation of ASCII_nnnn___BE.dat and ASCII_nnnn___BE_Elements.dat (Joerg?)
+./FPM_fortran/Solver/BasicSolver/DropletPhase/F_of_t_and_Y_DROPLETPHASE.f90:!$FPMINTDOCU #red TODO: to be continued red#
+./FPM_fortran/Solver/BasicSolver/Incompressible/FLIQUID_Phydrostatic.f90:!$FPMINTDOCU #red TODO: comments on boundary conditions red#
+./FPM_fortran/Solver/BasicSolver/Incompressible/MxV/MxV_3.f90:!$FPMINTDOCU #h FPMdevelopment.Coding.Refactoring.TODOs.MxV h# #a split MxV into several subroutines a# #t t#
+./FPM_fortran/Solver/BasicSolver/Incompressible/MxV/MxV_prepare.f90:!$FPMINTDOCU #h FPMdevelopment.Coding.Refactoring.TODOs.MxV_prepare h# #a split MxV_prepare into several subroutines and a# #t t#
+./FPM_liquid/ABAQUS_ProjectDataToMesh.f90:!$FPMINTDOCU #red TODO: Doku unverständlich: Was bedeutet der zweite Parameter? red#
+./FPM_liquid/GT_mue_on_cons.f90:!$FPMINTDOCU #red TODO: Latentheat.  red#
+./FPM_liquid/USER_BE_definitions_PerformActionSequenceToNP_V2.f90:!$FPMxINTDOCU #red TODO: Description of optional parameter correct? --> dont know. check. red#
+./FPM_liquid/USER_BE_definitions_PerformActionSequenceToNP_V2.f90:!$FPMINTDOCU #red TODO: complete description red#
+./FPM_liquid/USER_PerformIntegration.f90:!$FPMINTDOCU #red TODO: Add reference to KOP, where DROPLETPHASE should be explained. red# 
+./FPM_liquid/USER_PerformIntegration.f90:!$FPMINTDOCU #red TODO: Add reference to KOP, where DROPLETPHASE should be explained. red# 
+./FPM_liquid/USER_Ucv.f90:  !TODO-FPMDOCU: specify upper limit in FPMDOCU through some sort of macro that uses the actual value
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!$FPMINTDOCU #h FPMdevelopment.Coding.Refactoring.TODOs.USER_boundary_conditions_LIQUID_3 h# #a what can we do to make this more easy a# #b b#
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!$FPMINTDOCU #red TODO:
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!$FPMINTDOCU #red TODO Timo: ind_p_dyn red# siehe Unterseite
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!$FPMINTDOCU #red TODO Timo: ind_c red# siehe Unterseite
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!TODO-FPMDOCU: Finish description
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!$FPMINTDOCU #red TODO: %BND_INTERPHASE% red#
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!$FPMINTDOCU #red TODO Joerg: Elaborate what this is good for. red#
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!$FPMINTDOCU #red TODO red#
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!$FPMINTDOCU #red TODO: documentation of %BND_free_InContact_(explicit)%, %BND_Barodesy%, %BND_INTERPHASE%)
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!TODO-FPMDOCU: finish description
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!$FPMINTDOCU TODO: reimplement optional parameter for DIRICH and BND_inflow. 
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!$FPMINTDOCU #red TODO: complete documentation red#
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!$FPMINTDOCU #red TODO Timo red#
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!$FPMINTDOCU #red TODO Timo red# Text
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!$FPMINTDOCU #red TODO: explain: all the items, Joerg red#
+./FPM_liquid/USER_boundary_conditions_LIQUID_3.f90:!$FPMINTDOCU #red TODO: Joerg red#
+./FPM_liquid/USER_parse_Construct.f90:!$FPMINTDOCU #red TODO: Describe the parameters. Joerg red#
+./FPM_liquid/USER_read_GIF_line.f90:!$FPMINTDOCU #red TODO: Isabel(?): Test if METAPLANE1, METAPLANE2 etc. still works, then add to docu. red#
+./FPM_liquid/USER_read_GIF_line.f90:  !$FPMINTDOCU #red TODO: Im Beispiel fehlt die Spezifizierung der Attribute fuer die zweite Seite! red#
+./FPM_liquid/USER_read_common_variables.f90:!$FPMINTDOCU TODO: Simon: KOP

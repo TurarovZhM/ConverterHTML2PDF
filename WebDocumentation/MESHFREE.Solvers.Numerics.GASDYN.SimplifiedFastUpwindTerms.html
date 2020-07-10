@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="search/image/favicon.ico">
+<title>SimplifiedFastUpwindTerms</title>
+<link href="search/css/bootstrap.css" rel="stylesheet">
+<link href="search/css/fraunhofer.css" rel="stylesheet">
+<script type="text/javascript" src="search/js/jquery-1.12.0.js"></script>
+<script src="search/js/bootstrap.min.js"></script>
+<script src="search/js/custom.js"></script>
+</head>
+<body>
+	<div class="fh-wrapper">
+		<div class="header">
+			<div class="row visible-xs" id="main-menu-top">
+				    <div class="row search-nav-icon">
+					    <div class="col-md-12">
+					<!-- for search and navigation icon -->
+						  <div id="nav-top" class="nav-top-btn"></div>
+						  <div id="search-btn-index-top-icon" class="search-icon"></div>
+					    </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-md-12">
+					    <nav class="navbar navbar-inverse">
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						      </button>
+						    </div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					      </nav>
+					</div>
+				      <div class="search-top">
+					      <form id="search-form-index-top" >
+						  <input type="text" name="queryString" id="search-text-index-top" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						  <button type="submit" class="btn" id="search-btn-index-top"></button>
+					      </form>
+				    </div>
+				</div>
+			</div>
+			<div class="row header-row">
+				<div class="col-sm-4">
+					<div class="row">
+					   <a href="MESHFREE.html">
+						  <img class="logo img-responsive" alt="" src="search/image/MESHFREE_Logo.png"/>
+					   </a>
+					</div>
+					<div class= "row company_name">
+						Simulate with complex geometries and complex physics
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="row header-search-row hidden-xs">
+						<div class="search">
+						  <form id="search-form-index-header" >
+						      <input type="text" name="queryString" id="search-text-index-header" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						      <button type="submit" class="btn" id="search-btn-index-header"><i class="glyphicon glyphicon-search"></i></button>
+						  </form>
+						</div>
+					</div>
+					<div class="row main_menu hidden-xs" id="main-menu-bottom">
+					  <nav class="navbar navbar-inverse">
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						    <span class="sr-only">Toggle navigation</span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						  </button>
+						</div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					  </nav>
+					</div>
+				</div>
+			</div>
+		</div>
+     <div class="breadcrumbs">
+	  <div class="row breadcrumb">
+	    <div class="col-md-12">
+		<ul>
+<li><a href="MESHFREE.html">MESHFREE</a></li>
+<li><a href="MESHFREE.Solvers.html">Solvers</a></li>
+<li><a href="MESHFREE.Solvers.Numerics.html">Numerics</a></li>
+<li><a href="MESHFREE.Solvers.Numerics.GASDYN.html">GASDYN</a></li>
+<li><a href="MESHFREE.Solvers.Numerics.GASDYN.SimplifiedFastUpwindTerms.html">SimplifiedFastUpwindTerms</a></li>
+		</ul>
+	    </div>
+	  </div>
+	</div>
+		<div class="border-vertical">
+		  <div class="row">
+		    <div class="col-md-12 content">
+		    	<div class="jumbotron">
+<h1>SimplifiedFastUpwindTerms</h1><p> Simplified, fast way of computing upwind terms </p>
+		    	</div>
+			<div class="description">
+                                                                                                                        
+  The upwind scheme of section <a href="MESHFREE.Solvers.Numerics.GASDYN.ClassicalUpwindTerms.html">ClassicalUpwindTerms</a> has a major drawback: the evaluation of physical quantities at the locations <span lang="latex-inline"><img src="c2fc734ebbd300e2ee3b19ddaaf4a253.png" alt=" {\mathbf{x}}_{}^ +  = {\mathbf{x}} + \alpha h{\mathbf{n}}" class="latex" border="0"></span> and <span lang="latex-inline"><img src="14188ed9671c727276c49dbb04609443.png" alt=" {\mathbf{x}}_{}^ -  = {\mathbf{x}} - \alpha h{\mathbf{n}}" class="latex" border="0"></span>. Depending on the upwind direction <span lang="latex-inline"><img src="f09ff0e9ec9c7344a0bc7e8fd4bfabf0.png" alt=" {\mathbf{n}}" class="latex" border="0"></span>, these locations might be outside of the flow domain. The idea of the simplified scheme is to approximate the upwind values by first order Tylor series expansion. 
+  <div lang="latex"><img src="58010f367c13c9157b6da5d6044ba189.png" alt=" \begin{array}{l} 
+  \bar p = p - \rho cL\left( {{\mathbf{n}}_{}^T\tilde \nabla \left( {{\mathbf{v}}_{}^T{\mathbf{n}}} \right)} \right) = p - \rho cL\left( {n_x^2u_{\tilde x}^{} + n_y^2v_{\tilde y}^{} + n_z^2w_{\tilde z}^{} + \Phi _{mixed}^{}} \right)\\ 
+  {\mathbf{\bar v}} = {\mathbf{v}} - \frac{L}{{\rho c}}\tilde \nabla p 
+  \end{array}" class="latex" border="0"></div> 
+  where <ul><li> 
+  </li><li> <span lang="latex-inline"><img src="0baf40fab4f8c25f3ba8df9d68e59893.png" alt=" L = \alpha h" class="latex" border="0"></span>  is the upwind step size, 
+  </li><li> <span lang="latex-inline"><img src="b5086d428ceb194ee9cc1b286a4c96f5.png" alt=" \Phi _{mixed}^{} = n_x^{}n_y^{}v_{\tilde x}^{} + n_x^{}n_z^{}w_{\tilde x}^{}{\rm{        +    }}n_y^{}n_x^{}u_{\tilde y}^{}{\rm{ + }}n_y^{}n_z^{}w_{\tilde y}^{}{\rm{   }} + {\rm{  }}n_z^{}n_x^{}u_{\tilde z}^{} + n_z^{}n_y^{}v_{\tilde z}^{}" class="latex" border="0"></span> are mixed terms we assume to be of minor importance and therefore neglect them. 
+  </li></ul> 
+   
+  The derivatives of the upwind quantities are then 
+  <div lang="latex"><img src="6da6e5031fe62ad391840501560dee9c.png" alt=" \begin{array}{l} 
+  \tilde \nabla \bar p = \tilde \nabla p - \tilde \nabla \left( {\rho cL} \right)\left( {n_x^2u_{\tilde x}^{} + n_y^2v_{\tilde y}^{} + n_z^2w_{\tilde z}^{}} \right) - \left( {\rho cL} \right)\left( {n_x^2\left( {\begin{array}{*{20}{c}} 
+  {u_{\tilde x\tilde x}^{}}\\ 
+  {u_{\tilde x\tilde y}^{}}\\ 
+  {u_{\tilde x\tilde z}^{}} 
+  \end{array}} \right) + n_y^2\left( {\begin{array}{*{20}{c}} 
+  {v_{\tilde y\tilde x}^{}}\\ 
+  {v_{\tilde y\tilde y}^{}}\\ 
+  {v_{\tilde y\tilde z}^{}} 
+  \end{array}} \right) + n_z^2\left( {\begin{array}{*{20}{c}} 
+  {w_{\tilde z\tilde x}^{}}\\ 
+  {w_{\tilde z\tilde y}^{}}\\ 
+  {w_{\tilde z\tilde z}^{}} 
+  \end{array}} \right)} \right)\\ 
+  \tilde \nabla _{}^T{\mathbf{\bar v}} = \tilde \nabla _{}^T{\mathbf{v}} - \tilde \nabla _{}^T\left( {\frac{L}{{\rho c}}\tilde \nabla p} \right) 
+  \end{array}" class="latex" border="0"></div> 
+   
+  The even more simplified, fast upwind scheme comes now. In the equations above, the pressure formulation is difficult. However, one could further simplify 
+  <div lang="latex"><img src="b01d9254e1cb66eee14efb4d86688b1c.png" alt=" \begin{array}{l} 
+  \bar p = p - \rho cL\left( {\tilde \nabla _{}^T{\mathbf{v}}} \right)\\ 
+  {\mathbf{\bar v}} = {\mathbf{v}} - \frac{L}{{\rho c}}\tilde \nabla p 
+  \end{array}" class="latex" border="0"></div> 
+  With this we are on the safe side, the damping can only be bigger (never smaller!) than the one of the original equations on top of this page, never bigger. 
+  The derivatives of the upwind quantities are now 
+  <div lang="latex"><img src="9a9d74ed830e375b0e56cef2d748c2bb.png" alt=" \begin{array}{l} 
+  \tilde \nabla \bar p = \tilde \nabla p - \tilde \nabla \left( {q\left( {\tilde \nabla _{}^T{\mathbf{v}}} \right)} \right) = \tilde \nabla p - \tilde \nabla _{}^T\left( {q\left( {\tilde \nabla {\mathbf{v}}} \right)} \right) - \tilde \nabla  \times \left( {q\left( {\tilde \nabla  \times {\mathbf{v}}} \right)} \right) - \left( {\begin{array}{*{20}{c}} 
+  {q_x^{}v_y^{} - q_y^{}v_x^{} + q_x^{}w_z^{} - q_z^{}w_x^{}}\\ 
+  {q_y^{}u_x^{} - q_x^{}u_y^{} + q_y^{}w_z^{} - q_z^{}w_y^{}}\\ 
+  {q_z^{}u_x^{} - q_x^{}u_z^{} + q_z^{}v_y^{} - q_y^{}v_z^{}} 
+  \end{array}} \right)\\ 
+  \tilde \nabla _{}^T{\mathbf{\bar v}} = \tilde \nabla _{}^T{\mathbf{v}} - \tilde \nabla _{}^T\left( {\frac{L}{{\rho c}}\tilde \nabla p} \right) 
+  \end{array}" class="latex" border="0"></div> 
+  where <span lang="latex-inline"><img src="ae47f3d18a25d556776382a4e26b2062.png" alt=" q = \rho cL" class="latex" border="0"></span> is simply a shortcut for more compact writing. 
+  With this scheme we are able to prove/show the existence of mathematical damping in the upwind schemes. It is obvious that with the terms <span lang="latex-inline"><img src="d02f38a69069296607fdccb2a211324a.png" alt=" \tilde \nabla _{}^T\left( {\rho cL\left( {\tilde \nabla {\mathbf{v}}} \right)} \right)" class="latex" border="0"></span> and <span lang="latex-inline"><img src="6b638582d7c1f7dfe0e357bd98ee92ad.png" alt=" \tilde \nabla _{}^T\left( {\frac{L}{{\rho c}}\tilde \nabla p} \right)" class="latex" border="0"></span> we have mathematical damping for velocity and pressure, which act as stabilization of the scheme. 
+            
+	      			</div>
+	      		</div>
+		</div>
+	</div>
+	<div class="blank-class-outer-top footer">
+	  <div class="border-vertical">
+	    <div class="row">
+	      <div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fortran/Solver/BasicSolver/Compressible/FGASDYN_UpwindQuantities_PhdKuhnert.f90">../../FPM_src/FPM_fortran/Solver/BasicSolver/Compressible/FGASDYN_UpwindQuantities_PhdKuhnert.f90</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="blank-class-outer footer visible-md visible-lg">
+  <div class="border-vertical">
+    <div class="row">
+	      <div class="col-md-6">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-small visible-xs visible-sm">
+    <div class="blank-class-outer">
+      <div class="blank-class-inner">
+	<div class="row ">
+		<div class="col-md-12">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-left-right">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

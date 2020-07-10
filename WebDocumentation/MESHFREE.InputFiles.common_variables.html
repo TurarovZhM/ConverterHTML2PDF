@@ -1,0 +1,590 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="search/image/favicon.ico">
+<title>common_variables</title>
+<link href="search/css/bootstrap.css" rel="stylesheet">
+<link href="search/css/fraunhofer.css" rel="stylesheet">
+<script type="text/javascript" src="search/js/jquery-1.12.0.js"></script>
+<script src="search/js/bootstrap.min.js"></script>
+<script src="search/js/custom.js"></script>
+</head>
+<body>
+	<div class="fh-wrapper">
+		<div class="header">
+			<div class="row visible-xs" id="main-menu-top">
+				    <div class="row search-nav-icon">
+					    <div class="col-md-12">
+					<!-- for search and navigation icon -->
+						  <div id="nav-top" class="nav-top-btn"></div>
+						  <div id="search-btn-index-top-icon" class="search-icon"></div>
+					    </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-md-12">
+					    <nav class="navbar navbar-inverse">
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						      </button>
+						    </div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					      </nav>
+					</div>
+				      <div class="search-top">
+					      <form id="search-form-index-top" >
+						  <input type="text" name="queryString" id="search-text-index-top" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						  <button type="submit" class="btn" id="search-btn-index-top"></button>
+					      </form>
+				    </div>
+				</div>
+			</div>
+			<div class="row header-row">
+				<div class="col-sm-4">
+					<div class="row">
+					   <a href="MESHFREE.html">
+						  <img class="logo img-responsive" alt="" src="search/image/MESHFREE_Logo.png"/>
+					   </a>
+					</div>
+					<div class= "row company_name">
+						Simulate with complex geometries and complex physics
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="row header-search-row hidden-xs">
+						<div class="search">
+						  <form id="search-form-index-header" >
+						      <input type="text" name="queryString" id="search-text-index-header" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						      <button type="submit" class="btn" id="search-btn-index-header"><i class="glyphicon glyphicon-search"></i></button>
+						  </form>
+						</div>
+					</div>
+					<div class="row main_menu hidden-xs" id="main-menu-bottom">
+					  <nav class="navbar navbar-inverse">
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						    <span class="sr-only">Toggle navigation</span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						  </button>
+						</div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					  </nav>
+					</div>
+				</div>
+			</div>
+		</div>
+     <div class="breadcrumbs">
+	  <div class="row breadcrumb">
+	    <div class="col-md-12">
+		<ul>
+<li><a href="MESHFREE.html">MESHFREE</a></li>
+<li><a href="MESHFREE.InputFiles.html">InputFiles</a></li>
+<li><a href="MESHFREE.InputFiles.common_variables.html">common_variables</a></li>
+		</ul>
+	    </div>
+	  </div>
+	</div>
+		<div class="border-vertical">
+		  <div class="row">
+		    <div class="col-md-12 content">
+		    	<div class="jumbotron">
+<h1>common_variables</h1><p> input file for development and debugging purposes </p>
+		    	</div>
+			<div class="description">
+                                                                                                      
+  <p> The file common_variables.dat (CV) contains mostly numerical parameters that are used for development and debugging. 
+  Currently, efforts are made to reduce the number of mandatory parameters to a minimum (aim is none). </p> 
+  <span style="color:#f39200"> Note: </span> <ul><li> 
+  </li><li> <p> Some CV-parameters can also be set in <a href="MESHFREE.InputFiles.USER_common_variables.html">USER_common_variables</a> (UCV). The UCV-definition is dominant and overwrites the 
+  CV-definition (see warnings file in the simulation folder). 
+  </p> </li><li> <p> Some CV-parameters can be set chamberwise, which can be necessary for multi-phase simulations. If such a parameter is 
+  not set for specific chambers, it is automatically set according to the non-chamberwise definition for all chambers. </p> </li></ul> 
+
+	      			</div>
+	      		</div>
+		</div>
+	</div>
+<div class="blank-class-outer-top">
+	<div class="border-vertical">
+		<div class="row reference">
+	      		<div class="col-md-12">
+		 		<div class="table-responsive">
+			  		<table class="table">
+			  		<tr><th>List of members: </th><th></th></tr>
+<tr><td><a href="MESHFREE.InputFiles.common_variables.additionalPoint_approximation.html">additionalPoint_approximation</a></td> <td>  (experimental) in EULERIMPL and EULEREXPL setting </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.AdvancedFreeSurfaceAtTimeStep.html">AdvancedFreeSurfaceAtTimeStep</a></td> <td>  advanced checking of free surface point (Delaunay based) starting at which time cycle </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.alpha_O1.html">alpha_O1</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.AMFPMJ_CommonAdministrationDirectory.html">AMFPMJ_CommonAdministrationDirectory</a></td> <td>  define a directory that MESHFREE uses for synchronization of multiple MESHFREE jobs </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.APPROXIMATENEWPOINTS_HowToApproximateKEPS.html">APPROXIMATENEWPOINTS_HowToApproximateKEPS</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.APPROXIMATENEWPOINTS_SeparateInteriorAndBoundaryPoints.html">APPROXIMATENEWPOINTS_SeparateInteriorAndBoundaryPoints</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.APPROXIMATENEWPOINTS_SeparateInteriorBoundary.html">APPROXIMATENEWPOINTS_SeparateInteriorBoundary</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BCGSL_ell.html">BCGSL_ell</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BE_CleanUp_STL.html">BE_CleanUp_STL</a></td> <td>  choose whether and when to clean up STL geometries </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BE_COLLAPSE_collapsebeforeflip.html">BE_COLLAPSE_collapsebeforeflip</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BE_COLLAPSE_specifycollapse.html">BE_COLLAPSE_specifycollapse</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BE_COLLAPSE_tocollapse.html">BE_COLLAPSE_tocollapse</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BE_COLLAPSE_tolerance.html">BE_COLLAPSE_tolerance</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BETA_FOR_LIMITER.html">BETA_FOR_LIMITER</a></td> <td>  parameter for controlling the Sweby limiter </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BND_alpha.html">BND_alpha</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BND_beta.html">BND_beta</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BND_gamma.html">BND_gamma</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BND_SearchTreeAdministration_NbTimeStepsUntilFirstSkip.html">BND_SearchTreeAdministration_NbTimeStepsUntilFirstSkip</a></td> <td>  skip the construction of the boundary element search tree after this many time cycles </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BND_SearchTreeAdministration_RefreshTreeAfterHowManyCycles.html">BND_SearchTreeAdministration_RefreshTreeAfterHowManyCycles</a></td> <td>  refresh the boundary element search tree after this many time cycles </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BUBBLE_DoTheManagement___CV___.html">BUBBLE_DoTheManagement</a></td> <td>  (chamberwise) switch regarding bubble analysis (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BUBBLE_EdgeValue.html">BUBBLE_EdgeValue</a></td> <td>  (experimental) edge value limit for the detection of open edges </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BUBBLE_EnforceAveragePressure___CV___.html">BUBBLE_EnforceAveragePressure</a></td> <td>  fix average pressure for all bubbles (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BUBBLE_fac_pHydrostatic.html">BUBBLE_fac_pHydrostatic</a></td> <td>  (experimental) numerical relaxation parameter for pHydrostatic in case of bubbles </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BUBBLE_pOffset___CV___.html">BUBBLE_pOffset</a></td> <td>  define offset pressure for bubble pressure-on-volume analysis (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.BUBBLE_UseTopologyConstraint.html">BUBBLE_UseTopologyConstraint</a></td> <td>  (chamberwise) parameter to use topology analysis for bubble-volume computation </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.CLUSTER_Size.html">CLUSTER_Size</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.CoarsenGeometry.html">CoarsenGeometry</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COEFF_Abaqus_H.html">COEFF_Abaqus_H</a></td> <td>  factor for abaqus mesh interpolation </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COEFF_dt___CV___.html">COEFF_dt</a></td> <td>  factor for computation of time step size (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COEFF_dt_d30___CV___.html">COEFF_dt_d30</a></td> <td>  time step criterion depending on %ind_d30% (DROPLETPHASE only) (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COEFF_dt_Darcy___CV___.html">COEFF_dt_Darcy</a></td> <td>  define the virtual time step size for applications with Darcy (Brinkman) term (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COEFF_dt_free___CV___.html">COEFF_dt_free</a></td> <td>  (experimental) factor for exaggerated movement of the free surface (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COEFF_dt_SurfaceTension_A___CV___.html">COEFF_dt_SurfaceTension_A</a></td> <td>  time step criterion for surface tension, parameter A (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COEFF_dt_SurfaceTension_B___CV___.html">COEFF_dt_SurfaceTension_B</a></td> <td>  time step criterion for surface tension, parameter B (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COEFF_dt_SurfaceTension_C___CV___.html">COEFF_dt_SurfaceTension_C</a></td> <td>  (experimental) time step criterion for surface tension, parameter C (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COEFF_dt_virt___CV___.html">COEFF_dt_virt</a></td> <td>  (chamberwise) scaling factor for the virtual time step size (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COEFF_Iopp_Repair.html">COEFF_Iopp_Repair</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COEFF_mue___CV___.html">COEFF_mue</a></td> <td>  scaling factor for numerical viscosity (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COEFF_p_divV.html">COEFF_p_divV</a></td> <td>  factor to switch on and control the p*div(v) term in temperature equation </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COEFF_penalty.html">COEFF_penalty</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_AddBoundaryParticles.html">COMP_AddBoundaryParticles</a></td> <td>  this parameter rules how to add points at regular boundaryies (walls, inflow etc) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_AddInteriorParticles.html">COMP_AddInteriorParticles</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_AdjustEtaEff.html">COMP_AdjustEtaEff</a></td> <td>  invoke more stability by controlling the total viscosity </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_CheckConservationDuringOrganization.html">COMP_CheckConservationDuringOrganization</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_CosEdgeAngle___CV___.html">COMP_CosEdgeAngle</a></td> <td>  (chamberwise) parameter to identify edges in geometry (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_CosOpenEdge.html">COMP_CosOpenEdge</a></td> <td>  specify how the boundary continues at an open edge </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_DeflationLevel.html">COMP_DeflationLevel</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_DoOrganizeOnlyAfterHowManyCycles___CV___.html">COMP_DoOrganizeOnlyAfterHowManyCycles</a></td> <td>  do the point cloud organization only after how many time cycles (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_DoOrganizePointsUntil.html">COMP_DoOrganizePointsUntil</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_DropletphaseParcels___CV___.html">COMP_DropletphaseParcels</a></td> <td>  switch for parcelling (cluster particles together) in DROPLETPHASE (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_DropletphaseSubcycles___CV___.html">COMP_DropletphaseSubcycles</a></td> <td>  number of subcycles for DROPLETPHASE  (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_DropletphaseWithDisturbance___CV___.html">COMP_DropletphaseWithDisturbance</a></td> <td>  disturbance for DROPLETPHASE (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_dt_indep___CV___.html">COMP_dt_indep</a></td> <td>  parameter to switch on independent time stepping for two-phase LIQUID simulations with v-- and vp- (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_EtaGrad_Version.html">COMP_EtaGrad_Version</a></td> <td>  define the way of numerically modelling the property-times-gradient operator </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_evoid.html">COMP_evoid</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_facSmooth_Eta___CV___.html">COMP_facSmooth_Eta</a></td> <td>  parameter for weight kernel definition for smoothing of viscosity (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_FastBoundaryRefill.html">COMP_FastBoundaryRefill</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_FillEdges.html">COMP_FillEdges</a></td> <td>  fill additional points to the edges of an inflow area </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_GradtEtaGrad_Version.html">COMP_GradtEtaGrad_Version</a></td> <td>  define the way of numerically modelling the diffusion operator </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_HydrostaticPressure.html">COMP_HydrostaticPressure</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_IsolatedParticles_MinNbOfInteriorNeigh.html">COMP_IsolatedParticles_MinNbOfInteriorNeigh</a></td> <td>  minimum number of interior neighbors a points should have </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_IsolatedParticles_MinNbOfNeigh.html">COMP_IsolatedParticles_MinNbOfNeigh</a></td> <td>  (chamberwise) parameter for the minimum number of (total) neighbors a points should have </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_ManifoldContacts.html">COMP_ManifoldContacts</a></td> <td>  (Experimental) Determines whether or not contact should be checked (manifold phase only) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_MaxSubCycle.html">COMP_MaxSubCycle</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_MemCheck.html">COMP_MemCheck</a></td> <td>  switch on memory measurements </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_MinSubCycle.html">COMP_MinSubCycle</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_nbSmooth_Darcy.html">COMP_nbSmooth_Darcy</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_nbSmooth_Eta___CV___.html">COMP_nbSmooth_Eta</a></td> <td>  number of smoothing cycles for effective and total viscosity (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_nbSmooth_pCorr.html">COMP_nbSmooth_pCorr</a></td> <td>  smooth heat conductivity </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_OppositePoints_NoFreeSurface.html">COMP_OppositePoints_NoFreeSurface</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_RandomizedFilling.html">COMP_RandomizedFilling</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_ReduceSn.html">COMP_ReduceSn</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_RemeshBoundary___CV___.html">COMP_RemeshBoundary</a></td> <td>  parameter to control remeshing of IGES-files (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_RemoveBoundaryParticles.html">COMP_RemoveBoundaryParticles</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_RemoveInteriorParticles.html">COMP_RemoveInteriorParticles</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_SharedMemoryForBE.html">COMP_SharedMemoryForBE</a></td> <td>  turn on use of MPI shared memory for boundary geometry if available </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_SharedMemoryForGT2.html">COMP_SharedMemoryForGT2</a></td> <td>  turn on use of MPI shared memory for GEOTREE2 if available </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_SkipHighVelocities.html">COMP_SkipHighVelocities</a></td> <td>  for how many consecutive cycles a corrupt solution of velocity is accepted, before MESHFREE stops  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_SortBEintoBoxes_Version.html">COMP_SortBEintoBoxes_Version</a></td> <td>  version how to organize/prepare boundary elements for efficient computation </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_StressRelaxAtFreeAndSlipSurface.html">COMP_StressRelaxAtFreeAndSlipSurface</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_TimeCheck.html">COMP_TimeCheck</a></td> <td>  switch on time measurements for the main tasks of MESHFREE </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_TypeSmooth_Eta___CV___.html">COMP_TypeSmooth_Eta</a></td> <td>  type for smoothing of viscosity (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_TypeSmooth_Rho___CV___.html">COMP_TypeSmooth_Rho</a></td> <td>  type for smoothing of density (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_WettingAngleVariante.html">COMP_WettingAngleVariante</a></td> <td>  How to incorporate the contact angle between free surface and wall </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.COMP_WettingAngleWeight.html">COMP_WettingAngleWeight</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.CompDistToBoundary_Acc.html">CompDistToBoundary_Acc</a></td> <td>  threshold of distance until which the distance to different BE is treated as equal </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.CompDistToBoundary_EffectiveSearchRadius.html">CompDistToBoundary_EffectiveSearchRadius</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.compute_FS___CV___.html">compute_FS</a></td> <td>  (chamberwise) switch to compute free surfaces (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.compute_LAYER.html">compute_LAYER</a></td> <td>  (experimental) influence to Neighbor Filtering over Layers </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.compute_phase_boundary___CV___.html">compute_phase_boundary</a></td> <td>  (obsolete) invoke detection of interface connections (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.CONTROL_DirectTesting.html">CONTROL_DirectTesting</a></td> <td>  Instead of launching the computation, MESHFREE goes into a separate testing branch for different tasks </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.CONTROL_DirectTesting_Param1.html">CONTROL_DirectTesting_Param1</a></td> <td>  additional parameter for the testing environment </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.CONTROL_DirectTesting_Param2.html">CONTROL_DirectTesting_Param2</a></td> <td>  additional parameter for the testing environment </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.CONTROL_DirectTesting_Param3.html">CONTROL_DirectTesting_Param3</a></td> <td>  additional parameter for the testing environment </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.CONTROL_StopAfterReadingGeometry___CV___.html">CONTROL_StopAfterReadingGeometry</a></td> <td>  stops the MESHFREE program after geometry is read (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.CONTROL_writeUcvLines.html">CONTROL_writeUcvLines</a></td> <td>  write out the Ucv-lines read during startup (debugging feature) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.correct_CONS.html">correct_CONS</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.correction_pressure.html">correction_pressure</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.cv_DateCompiled.html">cv_DateCompiled</a></td> <td>  key to unlock MESHFREE versions that exceeded the compilation date limit </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.cv_DateCompiled_Seed.html">cv_DateCompiled_Seed</a></td> <td>  seed corresponding to the key to unlock MESHFREE versions that exceeded the compilation date limit </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.damping_p_corr___CV___.html">damping_p_corr</a></td> <td>  (chamberwise) parameter to reduce the dynamic pressure as initial guess for the next time level (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.Darcy_PrimaryDirection.html">Darcy_PrimaryDirection</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.Darcy_PrimaryDirectionFactor.html">Darcy_PrimaryDirectionFactor</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DBG_UpwindKernelWidth.html">DBG_UpwindKernelWidth</a></td> <td>   debugging variable for explicit integration of hyperbolic parts in CODI </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DBG_UpwindOffset.html">DBG_UpwindOffset</a></td> <td>  debugging variable for explicit integration of hyperbolic parts in CODI </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DEBUG_Check_CCOR.html">DEBUG_Check_CCOR</a></td> <td>  generate control writeout for correction pressure </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DEBUG_Check_PDYN.html">DEBUG_Check_PDYN</a></td> <td>  generate control writeout for dynamic pressure </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DEBUG_Check_PHYD.html">DEBUG_Check_PHYD</a></td> <td>  generate control writeout for hydrostatic pressure </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DEBUG_Check_VELO.html">DEBUG_Check_VELO</a></td> <td>  generate control writeout for velocity </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DEBUG_DefaultRescue.html">DEBUG_DefaultRescue</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DEBUG_GeneralParameter.html">DEBUG_GeneralParameter</a></td> <td>  General list of debug parameters at the developpers disposal </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DEBUG_SHM_MPIwindow.html">DEBUG_SHM_MPIwindow</a></td> <td>  GASDYN parameter for FPM2 </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DEL_rel_dist_shuffle.html">DEL_rel_dist_shuffle</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.delaunay_reduction.html">delaunay_reduction</a></td> <td>  switch for delaunay reduction procedure </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.delta_uw.html">delta_uw</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.delta_uw_bp.html">delta_uw_bp</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DGB_UpwindReconstructionMethod.html">DGB_UpwindReconstructionMethod</a></td> <td>  debugging variable for explicit integration of hyperbolic parts in CODI </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DIFFOP_ConsistentGradient___CV___.html">DIFFOP_ConsistentGradient</a></td> <td>  consistent gradient in the sense d/dn = n*grad (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DIFFOP_gradient.html">DIFFOP_gradient</a></td> <td>  type of least squares approximation stencils for gradients </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DIFFOP_kernel_Gradient___CV___.html">DIFFOP_kernel_Gradient</a></td> <td>  (chamberwise) factor for the weight kernel for the least squares approximation stencils for gradients (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DIFFOP_kernel_Laplace___CV___.html">DIFFOP_kernel_Laplace</a></td> <td>  (chamberwise) factor for the weight kernel for the least squares approximation stencils for the Laplacian (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DIFFOP_kernel_Neumann___CV___.html">DIFFOP_kernel_Neumann</a></td> <td>  (chamberwise) factor for the weight kernel for the least squares approximation stencils for Neumann operators (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DIFFOP_kernel_Transport___CV___.html">DIFFOP_kernel_Transport</a></td> <td>  (chamberwise) factor for the weight kernel for the least squares approximation stencils for the transport operators (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DIFFOP_laplace___CV___.html">DIFFOP_laplace</a></td> <td>  type of least squares approximation stencils for the Laplacian (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DIFFOP_Neumann_ExcludeBND___CV___.html">DIFFOP_Neumann_ExcludeBND</a></td> <td>  (chamberwise) parameter to exclude boundary points from the neighborhood for the computation of the Neumann operators (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DIFFOP_PPI_Gradient.html">DIFFOP_PPI_Gradient</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DIFFOP_PPI_Laplace.html">DIFFOP_PPI_Laplace</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DIFFOP_PPI_Neumann.html">DIFFOP_PPI_Neumann</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DIFFOP_Version.html">DIFFOP_Version</a></td> <td>  version of least squares operators </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DIFFOP_WeightReductionInCaseOfDeactivation___CV___.html">DIFFOP_WeightReductionInCaseOfDeactivation</a></td> <td>  (chamberwise) parameter to reduce the weight of a neighbor point in case of deactivation (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.dist_aip.html">dist_aip</a></td> <td>  initial relative distance to boundary of a newly injected MESHFREE point (aip = add injected points) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.dist_between_phases.html">dist_between_phases</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.dist_FS_from_BND.html">dist_FS_from_BND</a></td> <td>  define hole size for the free surface detection </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.dist_FS_new_part.html">dist_FS_new_part</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.dist_LayerThickness.html">dist_LayerThickness</a></td> <td>  minimal thickness for degenerated 3D phase </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.dist_merge_opp_face.html">dist_merge_opp_face</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.dist_parcelling.html">dist_parcelling</a></td> <td>  (experimental / Under development) Maximum relative distance to initiate parcelling </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.dist_rab.html">dist_rab</a></td> <td>  relative allowed minimum distance of MESHFREE points to boundary (rab = remove at boundary) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.dist_rip.html">dist_rip</a></td> <td>  relative allowed minimum distance between MESHFREE points (rip = remove interior points) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.DP_UseOnlyRepulsiveContactForce___CV___.html">DP_UseOnlyRepulsiveContactForce</a></td> <td>  switch regarding attractive forces in spring-damper model (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ELASTOPLASTIC_FadeOut_divS_gradP.html">ELASTOPLASTIC_FadeOut_divS_gradP</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.EPS_global.html">EPS_global</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.eps_p___CV___.html">eps_p</a></td> <td>  precision in the breaking criterion for the linear systems of pressure (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.eps_phyd___CV___.html">eps_phyd</a></td> <td>  precision in the breaking criterion for the linear systems of hydrostatic pressure (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.eps_T___CV___.html">eps_T</a></td> <td>  precision in the breaking criterion for the linear systems of temperature (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.eps_v___CV___.html">eps_v</a></td> <td>  precision in the breaking criterion for the linear systems of velocity (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.FLIQUID_AssignPenalties_EpsilonP.html">FLIQUID_AssignPenalties_EpsilonP</a></td> <td>  vp- coupled linear system: lower bound for ratio between pressure and velocity entries, PRESSURE EQUATION </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.FLIQUID_AssignPenalties_EpsilonV.html">FLIQUID_AssignPenalties_EpsilonV</a></td> <td>  vp- coupled linear system: upper bound for ratio between velocity and pressure entries, VELOCITY EQUATION </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_CoeffJOKER.html">FLIQUID_ConsistentPressure_CoeffJOKER</a></td> <td>  TEMPORARY: factor to study consistent pressure version 2 </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_CoeffMM.html">FLIQUID_ConsistentPressure_CoeffMM</a></td> <td>  TEMPORARY: factor to study consistent pressure version 2 </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_CoeffNN.html">FLIQUID_ConsistentPressure_CoeffNN</a></td> <td>  TEMPORARY: factor to study consistent pressure version 2 </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_CoeffTT.html">FLIQUID_ConsistentPressure_CoeffTT</a></td> <td>  TEMPORARY: factor to study consistent pressure version 2 </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_CoeffWEIGHT.html">FLIQUID_ConsistentPressure_CoeffWEIGHT</a></td> <td>  TEMPORARY: factor to study consistent pressure version 2 </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_UseDivV.html">FLIQUID_ConsistentPressure_UseDivV</a></td> <td>  (chamberwise) parameter to use numerical approximations of div(v) in direct computation of dynamic pressure (i.e. consistent pressure) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_Version___CV___.html">FLIQUID_ConsistentPressure_Version</a></td> <td>  version how to compute the consistent pressure (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.FOFTLIQUID_AdditionalCorrectionLoops___CV___.html">FOFTLIQUID_AdditionalCorrectionLoops</a></td> <td>  additional velocity correction loops (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.FPM_LICENSE_FILE___cv___.html">FPM_LICENSE_FILE</a></td> <td>  overwrite the environment variable </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GASDYN_CorrectEnergy.html">GASDYN_CorrectEnergy</a></td> <td>  correct total energy in GASDYN application </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GASDYN_CorrectMass.html">GASDYN_CorrectMass</a></td> <td>  correct mass in GASDYN application </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GASDYN_FPM2_alpha.html">GASDYN_FPM2_alpha</a></td> <td>  GASDYN parameter for FPM2 </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GASDYN_FPM2_beta.html">GASDYN_FPM2_beta</a></td> <td>  GASDYN parameter for FPM2 </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GASDYN_p_gain.html">GASDYN_p_gain</a></td> <td>  limit the pressure gain in GASDYN-applications </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GASDYN_p_loss.html">GASDYN_p_loss</a></td> <td>  limit the pressure drop in GASDYN-applications </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GASDYN_r_gain.html">GASDYN_r_gain</a></td> <td>  limit the density gain in GASDYN-applications </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GASDYN_r_loss.html">GASDYN_r_loss</a></td> <td>  limit the density drop in GASDYN-applications </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GASDYN_T_gain.html">GASDYN_T_gain</a></td> <td>  limit the temperature gain in GASDYN-applications </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GASDYN_T_loss.html">GASDYN_T_loss</a></td> <td>  limit the temperature drop in GASDYN-applications </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GASDYN_Upwind2ndOrder.html">GASDYN_Upwind2ndOrder</a></td> <td>  DEPRECATED!!! (GASDYN parameter for FPM1) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GASDYN_Upwind_Lbeta.html">GASDYN_Upwind_Lbeta</a></td> <td>  (chamberwise) GASDYN parameter for FPM1 and FPM3 </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GASDYN_Upwind_Lgamma.html">GASDYN_Upwind_Lgamma</a></td> <td>  (chamberwise) GASDYN parameter for FPM1 and FPM3 </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GASDYN_UpwindOffset.html">GASDYN_UpwindOffset</a></td> <td>  (chamberwise) GASDYN parameter for FPM1 </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GASDYN_Version.html">GASDYN_Version</a></td> <td>  (chamberwise) GASDYN parameter to choose FPM1 or FPM2 </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GEOTREE2_BND_FinalBoxDimension.html">GEOTREE2_BND_FinalBoxDimension</a></td> <td>  relative size extent of GEOTREE2 leaves </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GEOTREE2_BND_FinalBoxSize.html">GEOTREE2_BND_FinalBoxSize</a></td> <td>  number of triangles in a GEOTREE2 leave </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GEOTREE2_EstablishCON_Version.html">GEOTREE2_EstablishCON_Version</a></td> <td>  parameter for the bintree-search of the neighborhood of MESHFREE points </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GEOTREE2_FinalBoxSize.html">GEOTREE2_FinalBoxSize</a></td> <td>  parameter for the bintree-search of the neighborhood of MESHFREE points </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GEOTREE2_IntListMargin.html">GEOTREE2_IntListMargin</a></td> <td>  parameter for the bintree-search of the neighborhood of MESHFREE points </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GEOTREE2_MaximumBoxSize.html">GEOTREE2_MaximumBoxSize</a></td> <td>  parameter for the bintree-search of the neighborhood of MESHFREE points </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GEOTREE2_SizeOfSearchBox.html">GEOTREE2_SizeOfSearchBox</a></td> <td>  parameter for the bintree-search of the neighborhood of MESHFREE points </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GLOBAL_eps_mass.html">GLOBAL_eps_mass</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GLOBAL_eps_momentum.html">GLOBAL_eps_momentum</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.GLOBAL_N_iterations.html">GLOBAL_N_iterations</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.HowToTreatPause.html">HowToTreatPause</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.iFPM_process_ID.html">iFPM_process_ID</a></td> <td>  give a maximum 16-digit MESHFREE process ID </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.IGES_Accuracy___CV___.html">IGES_Accuracy</a></td> <td>  relative accuracy for consistency checks of IGES-faces (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.IGES_HealCorruptFaces___CV___.html">IGES_HealCorruptFaces</a></td> <td>  allow a certain depth of healing triangulation of IGES faces by refinement (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.initial_particles.html">initial_particles</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.int_BND_part_add.html">int_BND_part_add</a></td> <td>  boundary point addition interval </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.int_BND_part_remove.html">int_BND_part_remove</a></td> <td>  boundary point removal interval </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.int_part_add.html">int_part_add</a></td> <td>  interior point addition interval </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.int_part_cross_BND.html">int_part_cross_BND</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.int_part_remove.html">int_part_remove</a></td> <td>  interior point removal interval </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.int_part_smooth.html">int_part_smooth</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.INTEGRATION_ReopenTimestpFilesAfterHowManyCycles.html">INTEGRATION_ReopenTimestpFilesAfterHowManyCycles</a></td> <td>  *.timestep-Files close and reopen again after how many cycles (debug reasons) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.IS_GPU.html">IS_GPU</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ISOLATEDPOINTS_ClusterOnResultingVolume.html">ISOLATEDPOINTS_ClusterOnResultingVolume</a></td> <td>  threshold to cluster two isolated points into one </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ISOLATEDPOINTS_ProduceVolumePackage.html">ISOLATEDPOINTS_ProduceVolumePackage</a></td> <td>  threshold to turn isolated points into volume packages </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ITERATION_EstimatedFutureStressTensor.html">ITERATION_EstimatedFutureStressTensor</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ITERATION_evoid.html">ITERATION_evoid</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ITWMESI_PressureMapping_Filter.html">ITWMESI_PressureMapping_Filter</a></td> <td>  coupling ITWMESI filter for mapping the pressure solution to the boundary elements </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ITWMESI_PressureMapping_WeightPdyn.html">ITWMESI_PressureMapping_WeightPdyn</a></td> <td>  coupling ITWMESI weight for mapping dynamic pressure </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ITWMESI_PressureMapping_WeightPhyd.html">ITWMESI_PressureMapping_WeightPhyd</a></td> <td>  coupling ITWMESI weight for mapping hydrostatic pressure </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ITWMESI_ShearForceMapping_BasedOnStresses.html">ITWMESI_ShearForceMapping_BasedOnStresses</a></td> <td>  coupling ITWMESI: decide whether the shear forces be projected as stress values (N/m^2) or as forces (N) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ITWMESI_ShearForceMapping_Filter.html">ITWMESI_ShearForceMapping_Filter</a></td> <td>  coupling ITWMESI filter for mapping the shear force solution to the VPS boundary elements </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ITWMESI_ShearForceMapping_Weight.html">ITWMESI_ShearForceMapping_Weight</a></td> <td>  coupling ITWMESI weight for mapping the shear forces </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ITWMMpCCI_PressureMapping_WeightPdyn.html">ITWMMpCCI_PressureMapping_WeightPdyn</a></td> <td>  coupling ITWMESI weight for mapping dynamic pressure </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ITWMMpCCI_PressureMapping_WeightPhyd.html">ITWMMpCCI_PressureMapping_WeightPhyd</a></td> <td>  coupling ITWMESI weight for mapping hydrostatic pressure </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.kind_of_method.html">kind_of_method</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.LIMITER.html">LIMITER</a></td> <td>  slope limiter for controlling numerical diffusion in MUSCL-reconstruction scheme in EULERIMPL and EULEREXPL setting </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.LINEQN_scaling___CV___.html">LINEQN_scaling</a></td> <td>  choose the way how to scale/normalize the linear systems (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.LINEQN_solver___CV___.html">LINEQN_solver</a></td> <td>  linear solver to be used for the coupled vp- or v-- system (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.LINEQN_solver_ScalarSystems___CV___.html">LINEQN_solver_ScalarSystems</a></td> <td>  linear solver to be used for the scalar systems like pressure, temperature, etc. (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.LSDYNA_AbortIfTLDgreaterTMF___cv___.html">LSDYNA_AbortIfTLDgreaterTMF</a></td> <td>  Abort if LSDYNA timestep is larger than MESHFREE timestep (otherwise warning) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.LSDYNA_ConvertQuadToTria___cv___.html">LSDYNA_ConvertQuadToTria</a></td> <td>  convert quads into triangles upon read-in from LSDYNA </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.LSDYNA_ScaleForce___cv___.html">LSDYNA_ScaleForce</a></td> <td>  Scale incoming forces from LSDYNA with this factor in MESHFREE </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.LSDYNA_ScaleLength___cv___.html">LSDYNA_ScaleLength</a></td> <td>  Scale incoming lengths from LSDYNA with this factor in MESHFREE </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.LSDYNA_ScaleTime___cv___.html">LSDYNA_ScaleTime</a></td> <td>  Scale incoming time from LSDYNA with this factor in MESHFREE </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.LSDYNA_ShellElement_ThicknessOffset___cv___.html">LSDYNA_ShellElement_ThicknessOffset</a></td> <td>  Offset for thickening shell elements from LS-DYNA </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.LSDYNA_SkipPressureMapping___cv___.html">LSDYNA_SkipPressureMapping</a></td> <td>  Skip mapping pressure from FPM fluid to LSDYNA boundary </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.LSDYNA_UseExplicitVelocity___cv___.html">LSDYNA_UseExplicitVelocity</a></td> <td>  Use explicitly passed velocity from LS-DYNA instead of average computed from positions </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.MASS_correction_DivergenceVelocity.html">MASS_correction_DivergenceVelocity</a></td> <td>  Mass Correction for weakly compressible flow problems </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.max_N_stencil___CV___.html">max_N_stencil</a></td> <td>  maximum number of neighbor points accepted for stencil computation and numerics (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.max_N_stencil_INTERIOR.html">max_N_stencil_INTERIOR</a></td> <td>  max. number of neighbors accepted for stencil computation and numerics only for interior pooints </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.MaximumNumberOfPointsDuringComputation.html">MaximumNumberOfPointsDuringComputation</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.MEMORIZE_ResetReadFlag___CV___.html">MEMORIZE_ResetReadFlag</a></td> <td>  reset frequency for MEMORIZE_Read flag (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.MESHFREE_LICENSE_FILE___cv___.html">MESHFREE_LICENSE_FILE</a></td> <td>  overwrite the environment variable </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.MPI_CommunicationMethod.html">MPI_CommunicationMethod</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.MPI_ExcludeDirectionFromBisection.html">MPI_ExcludeDirectionFromBisection</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.MPI_WeightingMethodForBisection.html">MPI_WeightingMethodForBisection</a></td> <td>  how to give weights to points for the MPI-bisection process </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.MULTIGRID_CutOff.html">MULTIGRID_CutOff</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.N_addvar.html">N_addvar</a></td> <td>  definition of the number of %ind_addvar% to be used (legacy code) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.Nb_InflowLayers.html">Nb_InflowLayers</a></td> <td> Nb_InflowLayers</td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.NB_OF_ACCEPTED_REPETITIONS.html">NB_OF_ACCEPTED_REPETITIONS</a></td> <td>  number of permitted repetitions of substep in EULERIMPL setting </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.NB_POINTS_BC_HEAT_EQUATION_1D.html">NB_POINTS_BC_HEAT_EQUATION_1D</a></td> <td>  number of points for 1D heat equation for temperature boundary condition </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.NEIGHBOR_filter_level.html">NEIGHBOR_filter_level</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.NEIGHBOR_FilterMethod.html">NEIGHBOR_FilterMethod</a></td> <td>  choose how to exclude neighbors from MESHFREE points at critical geometry parts </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.nue.html">nue</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.OBJ_ConvertQuadToTria.html">OBJ_ConvertQuadToTria</a></td> <td>  convert quads into triangles upon read-in </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.OPTIMIZATION_InitialGuessOfVi_Fast.html">OPTIMIZATION_InitialGuessOfVi_Fast</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ord_eval___CV___.html">ord_eval</a></td> <td>  define approximation order for refill points (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ord_gradient___CV___.html">ord_gradient</a></td> <td>  (chamberwise) approximation order of the gradient operators (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ord_laplace___CV___.html">ord_laplace</a></td> <td>  define approximation order of the Laplace operators (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ActivateBNDpoints_Version.html">ORGANIZE_ActivateBNDpoints_Version</a></td> <td>  define version number for the boundary point activation </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_BE_ClusterNodesPoints_Version.html">ORGANIZE_BE_ClusterNodesPoints_Version</a></td> <td>  define version number for clusterig of geometry node points after geometry is read in from file (such as stl-files) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_BringNewPointToFreeSurface.html">ORGANIZE_BringNewPointToFreeSurface</a></td> <td>  define maximum distance a newly created point at the free surface can be moved in order to perfectly fit the free surface </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_CheckAllPointsForFreeSurfaceUntilTimeStep.html">ORGANIZE_CheckAllPointsForFreeSurfaceUntilTimeStep</a></td> <td>  consider all points as candidates for free surface until a given time step </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_CheckFreeSurface_Version.html">ORGANIZE_CheckFreeSurface_Version</a></td> <td>  define version number for the free-surface-check </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_CheckPointsAtFS_PerformPreCheck.html">ORGANIZE_CheckPointsAtFS_PerformPreCheck</a></td> <td>  invoke additional algorithm in order to find candidates for free surface detection </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_DevelopperCheck_Version.html">ORGANIZE_DevelopperCheck_Version</a></td> <td>  version of the debugging routine ORGANIZE_DevelopperCheck </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_DistanceToBoundary_Version.html">ORGANIZE_DistanceToBoundary_Version</a></td> <td>  define version number for distance-to-boundary computations </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ForceInsideCheckForAllParticles.html">ORGANIZE_ForceInsideCheckForAllParticles</a></td> <td>  inside-check for all MESHFREE points </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ForceInsideCheckForNewParticles.html">ORGANIZE_ForceInsideCheckForNewParticles</a></td> <td>  inside-check for new MESHFREE points </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ForceTouchCheckAtWalls.html">ORGANIZE_ForceTouchCheckAtWalls</a></td> <td>  touch-check for MESHFREE points at walls </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_FuzzyMPIFilling.html">ORGANIZE_FuzzyMPIFilling</a></td> <td>  (chamberwise) parameter to allow MPI processes to fill points outside their own domain </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_OppositePoints_Version.html">ORGANIZE_OppositePoints_Version</a></td> <td>  define version number for detecting points of the other phase to be coupled (opposite points) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_PreAllocationSize.html">ORGANIZE_PreAllocationSize</a></td> <td>  define version number for distance-to-boundary computations </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_PSTOneReductionStep_Version.html">ORGANIZE_PSTOneReductionStep_Version</a></td> <td>  version how to reduce MESHFREE points if they come to close to each other </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_PSTOneRefillStep3_UseFromWhichTime.html">ORGANIZE_PSTOneRefillStep3_UseFromWhichTime</a></td> <td>  use the new implementation of PST_OneRefillStep_3 from which time </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_PSTOneRefillStep3_UseFromWhichTimeStep.html">ORGANIZE_PSTOneRefillStep3_UseFromWhichTimeStep</a></td> <td>  use the new implementation of PST_OneRefillStep_3 from which time step </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_QualityCheck_ListNbOfNeighbors.html">ORGANIZE_QualityCheck_ListNbOfNeighbors</a></td> <td>  number of neighbors per point for which the quality check has to be performed </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ReducedFillingOfWalls.html">ORGANIZE_ReducedFillingOfWalls</a></td> <td>  (chamberwise) parameter for reduced filling of boundaries marked as walls </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ReducedFillingOfWallsIgnoreNofillForStartup.html">ORGANIZE_ReducedFillingOfWallsIgnoreNofillForStartup</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_RefillOnlyForActiveBoundaryParticles.html">ORGANIZE_RefillOnlyForActiveBoundaryParticles</a></td> <td>  (chamberwise) parameter to trigger the point refilling procedure along the boundary only for active boundary points </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ToleranceForGapAnalysisOfRegularBoundary.html">ORGANIZE_ToleranceForGapAnalysisOfRegularBoundary</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.ORGANIZE_USER_update_boundary_particles_Version.html">ORGANIZE_USER_update_boundary_particles_Version</a></td> <td>  version of USER_update_boundary_particles.f90 to be used </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.PARTPHASE_elasticity.html">PARTPHASE_elasticity</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.PARTPHASE_friction.html">PARTPHASE_friction</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.PARTPHASE_wall_friction.html">PARTPHASE_wall_friction</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.pBubble_Offset.html">pBubble_Offset</a></td> <td>  define offset pressure for bubble pressure-on-volume analysis </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.PHASE_distinction___CV___.html">PHASE_distinction</a></td> <td>  invoke detection of interface connections (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.PointDsplMethod___CV___.html">PointDsplMethod</a></td> <td>  (experimental) Choice among different ways to move points in Lagrangian framework (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.prec_seek_holes.html">prec_seek_holes</a></td> <td>  number of test points created for hole search </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.pure_TRANSPORT.html">pure_TRANSPORT</a></td> <td>  (experimental) choice of spatial discretization scheme for transport terms in EULERIMPL and EULEREXPL setting </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.QUICKVIEW_SaveHowOften.html">QUICKVIEW_SaveHowOften</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.QUICKVIEW_VariableList.html">QUICKVIEW_VariableList</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.QUICKVIEW_Version.html">QUICKVIEW_Version</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.QUICKVIEW_WhichParticles.html">QUICKVIEW_WhichParticles</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.radius_hole___CV___.html">radius_hole</a></td> <td>  relative allowed hole size (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.rel_dist_bound___CV___.html">rel_dist_bound</a></td> <td>  relative distance of neighboring points at boundaries (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.rel_dist_edge.html">rel_dist_edge</a></td> <td>  relative distance of neighboring points at edges of the geometry </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.RepairGeometry___CV___.html">RepairGeometry</a></td> <td>  enforce clustering of geometry nodes upon read-in (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.RepresentativeMass_iData___CV___.html">RepresentativeMass_iData</a></td> <td>  (chamberwise) parameter for the RepresentativeMass algorithm (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.RESTART_useSTREAMfile.html">RESTART_useSTREAMfile</a></td> <td>  use the STREAM inp/output for restart files </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.restartnewBE_filling___CV___.html">restartnewBE_filling</a></td> <td>  (chamberwise) parameter to control filling of new boundary elements upon restart (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.RIGIDBODY_TimeIntegrationDamping.html">RIGIDBODY_TimeIntegrationDamping</a></td> <td>  Numerically damping of the time integration </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.RIGIDBODY_TimeIntegrationPPI.html">RIGIDBODY_TimeIntegrationPPI</a></td> <td>  Tichonov-regularization parameter for rigid bodies with links or intersections </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.RIGIDBODY_TimeIntegrationVersion.html">RIGIDBODY_TimeIntegrationVersion</a></td> <td>  choose time integration version (still experimental) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.RIGIDBODY_UseCollisionModel.html">RIGIDBODY_UseCollisionModel</a></td> <td>   switch on the collision model for rigs bodies (rigid-wall and rigid-rigid) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SAMG_Setupreuse___CV___.html">SAMG_Setupreuse</a></td> <td>  accelerates SAMG solver for quasi-stationary point clouds (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SAVE_ASCII_split.html">SAVE_ASCII_split</a></td> <td>  splits ASCII output files if larger than 2GB </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SAVE_atEndOfTimestep___CV___.html">SAVE_atEndOfTimestep</a></td> <td>  choose to save data for visualization at the end of time steps instead of at the start (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SAVE_PrecisionTimestepFile___CV___.html">SAVE_PrecisionTimestepFile</a></td> <td>  choose the precision (number of digits) for values in the timestep file (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SAVE_QuickView.html">SAVE_QuickView</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SaveRestartOnInit.html">SaveRestartOnInit</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SCAN_ClustersOfConnectivity___CV___.html">SCAN_ClustersOfConnectivity</a></td> <td>  (chamberwise) switch on cluster checking of MESHFREE point cloud by neighborhood connectivity (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SIGNAL_LaunchComputationalSteering.html">SIGNAL_LaunchComputationalSteering</a></td> <td>  Switch between the two options of computational steering </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SimCut.html">SimCut</a></td> <td>  (chamberwise) parameter to stop filling of geometry by MESHFREE points after a certain number of filling cycles </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SimCutBoundary.html">SimCutBoundary</a></td> <td>  (chamberwise) parameter to stop filling of boundary by MESHFREE points after a certain number of filling cycles </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.smooth_BND_movement.html">smooth_BND_movement</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.smooth_BND_normal.html">smooth_BND_normal</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.smooth_FS.html">smooth_FS</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.smooth_FS_SurfaceTension.html">smooth_FS_SurfaceTension</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SOLVEV_N_iterations.html">SOLVEV_N_iterations</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SPAI_eps.html">SPAI_eps</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SPAI_first.html">SPAI_first</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SPAI_maxentries.html">SPAI_maxentries</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SPAI_maxiter.html">SPAI_maxiter</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SPAI_precond_method.html">SPAI_precond_method</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SPAI_precond_preparation.html">SPAI_precond_preparation</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SPAI_restart.html">SPAI_restart</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SPAI_smax.html">SPAI_smax</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SpecialBNDtreatmentEULERIMPL.html">SpecialBNDtreatmentEULERIMPL</a></td> <td>  (experimental) switch for special boundary treatment for MUSCL reconstruction in EULERIMPL scheme </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SPM_matrix_times_vector_Version.html">SPM_matrix_times_vector_Version</a></td> <td>  version for the matrix-times-verctor operations for sparse linear systems </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SPM_N_iterations.html">SPM_N_iterations</a></td> <td>  maximum number of iterations in linear system solver </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SPM_Regularization_Epsilon.html">SPM_Regularization_Epsilon</a></td> <td>  adjust numerical parameter epsilon for the matrix regularizations </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SPM_Regularization_Type.html">SPM_Regularization_Type</a></td> <td>  regularization type if all boundaries are Neumann-type </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.StencilOrderReductionNearBND_forEULERIMPL.html">StencilOrderReductionNearBND_forEULERIMPL</a></td> <td>  (experimental) switch for order reduction of x,y,z-derivative stencils in EULERIMPL setting </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.STRESSTENSOR_NumberSubcycles.html">STRESSTENSOR_NumberSubcycles</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.STRESSTENSOR_Variante___CV___.html">STRESSTENSOR_Variante</a></td> <td>  version of stress tensor time integration (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.STRESSTENSOR_Variante_Factor___CV___.html">STRESSTENSOR_Variante_Factor</a></td> <td>  factor in stress tensor time integration wrt the shear modulus (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.stretch_search.html">stretch_search</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SUBSTEPS_EXPL.html">SUBSTEPS_EXPL</a></td> <td>  number of explicit substeps for solving TRANSPORT part in EULEREXPL setting </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SUBSTEPS_IMPL.html">SUBSTEPS_IMPL</a></td> <td>  number of implicit substeps with constant time step size in EULERIMPL setting </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SURFACETENSION_FacSmooth.html">SURFACETENSION_FacSmooth</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SURFACETENSION_NbSmooth.html">SURFACETENSION_NbSmooth</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SurfaceTesselationActiveBoundary_cRadius.html">SurfaceTesselationActiveBoundary_cRadius</a></td> <td>  radius of the basic disc for the surface tesselation cells on active boundary, including free surface, excluding inactive points </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.SurfaceTesselationRegularBoundary_cRadius.html">SurfaceTesselationRegularBoundary_cRadius</a></td> <td>  radius of the basic disc for the surface tesselation cells on regular boundary </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.time_integration_expl.html">time_integration_expl</a></td> <td>  order of explicit time integration scheme in EULEREXPL setting </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.time_integration_impl.html">time_integration_impl</a></td> <td>  order of implicit time integration scheme in EULERIMPL setting </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.time_integration_impl_solve_v.html">time_integration_impl_solve_v</a></td> <td>  order of implicit time integration scheme for velocity only (EULERIMPL) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.time_step_gain.html">time_step_gain</a></td> <td>  relative amount by which new timestep size can increase at maximum compared to old timestep size </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.time_step_loss.html">time_step_loss</a></td> <td>  relative amount by which new timestep size can decrease at maximum compared to old timestep size (adaptive timestep size) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.TIMECHECK_Level.html">TIMECHECK_Level</a></td> <td>  time check only up to a given level </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.TOL_keps.html">TOL_keps</a></td> <td>  (control of time step size) error tolerance for computing the k-epsilon model using SDIRK2 method in EULERIMPL setting </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.TOL_T.html">TOL_T</a></td> <td>  (control of time step size) error tolerance for computing the temperature using SDIRK2 method in EULERIMPL setting </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.TOL_v.html">TOL_v</a></td> <td>  (control of time step size) error tolerance for computing the velocity using SDIRK2 method in EULERIMPL setting </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.TRANSPORT_ODE_fct_evaluation.html">TRANSPORT_ODE_fct_evaluation</a></td> <td>  (experimental) switch for additional function evaluation within the implicit time integration scheme in EULERIMPL setting </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.tryMaikesTriangulation.html">tryMaikesTriangulation</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.turn_down_BND_order.html">turn_down_BND_order</a></td> <td>  (chamberwise) parameter to automatically reduce the approximation order of a boundary point </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.use_BubbleManagement.html">use_BubbleManagement</a></td> <td>  (chamberwise) switch regarding bubble analysis </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.UseBoxSystemVersion.html">UseBoxSystemVersion</a></td> <td>  force MESHFREE to use a certain tree algorithm for the MESHFREE point neighbor search </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.USER_curve_interpol_cache.html">USER_curve_interpol_cache</a></td> <td>  turn on caching in USER_curve_interpol_3 </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.V00_SmoothDivV___CV___.html">V00_SmoothDivV</a></td> <td>  Chorin projection: smooth the local values of div(v) before going into the correction pressure computation (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.vel_dim.html">vel_dim</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.VOLUME_correction___CV___.html">VOLUME_correction</a></td> <td>  (chamberwise) parameter to correct volume by GLOBALLY adjusting the divergence of velocity term (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.VOLUME_correction_FreeSurface___CV___.html">VOLUME_correction_FreeSurface</a></td> <td>  (chamberwise) parameter to correct volume by tiny global lifting of the free surface (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.VOLUME_correction_local___CV___.html">VOLUME_correction_local</a></td> <td>  (chamberwise) parameter to correct volume by LOCALLY adjusting the divergence of velocity term due to representative mass balance (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.VOLUME_correction_ResetOnRestart.html">VOLUME_correction_ResetOnRestart</a></td> <td>  (experimental) resets the volume correction quantities of each chamber to the current values </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.VP0_VelocityCorrection___CV___.html">VP0_VelocityCorrection</a></td> <td>  invoke velocity correction based on correction pressure (%ind_c%) for vp- solver (CV) </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.WallLayer.html">WallLayer</a></td> <td>  Turbulent wall layer thickness </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.WARNINGS_BND_Integrate.html">WARNINGS_BND_Integrate</a></td> <td>  flag controlling the warnings in BND_Integrate </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.WARNINGS_USER_parse_IsConditionStringFulfilledByBE.html">WARNINGS_USER_parse_IsConditionStringFulfilledByBE</a></td> <td>  flag controlling the warnings in USER_parse_IsConditionStringFulfilledByBE </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.WARNINGS_USER_parse_IsConditionSubstringFulfilledByBE.html">WARNINGS_USER_parse_IsConditionSubstringFulfilledByBE</a></td> <td>  flag controlling the warnings in USER_parse_IsConditionSubstringFulfilledByBE </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.WhichIndexingMethod.html">WhichIndexingMethod</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.who_am_I.html">who_am_I</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.write_debug.html">write_debug</a></td> <td>  </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.common_variables.WRITEOUTPUT_Level_Organize.html">WRITEOUTPUT_Level_Organize</a></td> <td>  </td></tr>    
+		  			</table>
+				</div>
+	      		</div>
+		</div>
+	</div>
+</div>
+	<div class="blank-class-outer-top footer">
+	  <div class="border-vertical">
+	    <div class="row">
+	      <div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fortran/Misc/read_common_variables.f90">../../FPM_src/FPM_fortran/Misc/read_common_variables.f90</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="blank-class-outer footer visible-md visible-lg">
+  <div class="border-vertical">
+    <div class="row">
+	      <div class="col-md-6">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-small visible-xs visible-sm">
+    <div class="blank-class-outer">
+      <div class="blank-class-inner">
+	<div class="row ">
+		<div class="col-md-12">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-left-right">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

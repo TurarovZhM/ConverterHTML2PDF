@@ -1,0 +1,10 @@
+ \documentclass{minimal}
+ \usepackage{amsmath,bm,amssymb}
+ \newcommand{\bf}[1]{\bm{{#1}}}
+ \begin{document}
+ \begin{align*}
+\begin{matrix} 
+  c_{b}^{n+1}-\Delta t \frac{ \kappa p_{b}^{{}}}{V_{b}^{{}}}\cdot \sum\limits_{i\in \partial \Omega _{b}^{{}}}{\frac{\Delta t_{virt}^{{}}}{\rho }\nabla c_{i}^{n+1}\cdot \mathbf{n}_{i}^{{}}A_{i}^{{}}} & =p_b^n - p_{hyd,b}^{n+1} - p_{dyn,b}^n - \Delta t \frac{ \kappa p_{b}^{{}}}{V_{b}^{{}}}\cdot \sum\limits_{i\in \partial \Omega _{b}^{{}}}{\mathbf{\tilde{v}}_{{}}^{n+1}\cdot \mathbf{n}_{i}^{{}}A_{i}^{{}}} + \Delta t \cdot \left \frac{dp_{b}}{dt} \right|_{penalty} \\ 
+  \end{matrix}
+ \end{align*}
+ \end{document}

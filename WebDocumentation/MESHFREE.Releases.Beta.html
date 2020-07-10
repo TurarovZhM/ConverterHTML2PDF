@@ -1,0 +1,1701 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="search/image/favicon.ico">
+<title>Beta</title>
+<link href="search/css/bootstrap.css" rel="stylesheet">
+<link href="search/css/fraunhofer.css" rel="stylesheet">
+<script type="text/javascript" src="search/js/jquery-1.12.0.js"></script>
+<script src="search/js/bootstrap.min.js"></script>
+<script src="search/js/custom.js"></script>
+</head>
+<body>
+	<div class="fh-wrapper">
+		<div class="header">
+			<div class="row visible-xs" id="main-menu-top">
+				    <div class="row search-nav-icon">
+					    <div class="col-md-12">
+					<!-- for search and navigation icon -->
+						  <div id="nav-top" class="nav-top-btn"></div>
+						  <div id="search-btn-index-top-icon" class="search-icon"></div>
+					    </div>
+				    </div>
+				    <div class="row">
+				      <div class="col-md-12">
+					    <nav class="navbar navbar-inverse">
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						      </button>
+						    </div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					      </nav>
+					</div>
+				      <div class="search-top">
+					      <form id="search-form-index-top" >
+						  <input type="text" name="queryString" id="search-text-index-top" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						  <button type="submit" class="btn" id="search-btn-index-top"></button>
+					      </form>
+				    </div>
+				</div>
+			</div>
+			<div class="row header-row">
+				<div class="col-sm-4">
+					<div class="row">
+					   <a href="MESHFREE.html">
+						  <img class="logo img-responsive" alt="" src="search/image/MESHFREE_Logo.png"/>
+					   </a>
+					</div>
+					<div class= "row company_name">
+						Simulate with complex geometries and complex physics
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="row header-search-row hidden-xs">
+						<div class="search">
+						  <form id="search-form-index-header" >
+						      <input type="text" name="queryString" id="search-text-index-header" value="" autocomplete="off" placeholder="Search" class="query-string"/>
+						      <button type="submit" class="btn" id="search-btn-index-header"><i class="glyphicon glyphicon-search"></i></button>
+						  </form>
+						</div>
+					</div>
+					<div class="row main_menu hidden-xs" id="main-menu-bottom">
+					  <nav class="navbar navbar-inverse">
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						    <span class="sr-only">Toggle navigation</span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						  </button>
+						</div>
+							<div id="navbar" class="navbar navbar-light bg-faded collapse navbar-collapse">
+							  <ul class="nav navbar-nav">
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.InputFiles.html" target="_blank">Input Files</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Indices.html" target="_blank">Indices</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.GettingStarted.html" target="_blank">Getting Started</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Download.html" target="_blank">Download</a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" href="MESHFREE.Support.html" target="_blank">Support</a>
+								</li>
+							  </ul>
+							</div>
+					  </nav>
+					</div>
+				</div>
+			</div>
+		</div>
+     <div class="breadcrumbs">
+	  <div class="row breadcrumb">
+	    <div class="col-md-12">
+		<ul>
+<li><a href="MESHFREE.html">MESHFREE</a></li>
+<li><a href="MESHFREE.Releases.html">Releases</a></li>
+<li><a href="MESHFREE.Releases.Beta.html">Beta</a></li>
+		</ul>
+	    </div>
+	  </div>
+	</div>
+		<div class="border-vertical">
+		  <div class="row">
+		    <div class="col-md-12 content">
+		    	<div class="jumbotron">
+<h1>Beta</h1><p> Release notes for the MESHFREE beta executables </p>
+		    	</div>
+			<div class="description">
+   
+   
+  <span style="color:red"> WARNING: beta versions -- reduced test suite only </span> 
+   
+  <p> Executables available at <br><a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/MESHFREE/beta/release/">https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/MESHFREE/beta/release/</a> </p> 
+  <p> If you would like to be notified about new beta versions of <a href="MESHFREE.html">MESHFREE</a>, please subscribe to the 
+  <a href="https://listserv.itwm.fraunhofer.de/mailman/listinfo/meshfree-beta">MESHFREE-Beta mailing list</a>. 
+  </p> 
+  <!-- START TEMPLATE 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> ... 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #<12345> ... 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> ... 
+  </li></ul> 
+  END TEMPLATE --> 
+   
+  <div class="note"> beta2020.06.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> SCAN_ClustersOfConnectivity can be defined chamberwise. 
+    </li><li> Changed default for LINEQN_solver to 'BCX2'. 
+    </li><li> Changed default for LINEQN_solver_ScalarSystems to 'BCN2'. 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>: <a href="MESHFREE.Indices.General___indices___.%25ind_Vi%25.html">%ind_Vi%</a> now contains the particle volume for dropletphase chamber. 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>: Adhesive/cohesive potential for <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.DropletCollisions.html">DropletCollisions</a> is now wrt. particle mass. 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>: new Ucv/cv parameter DP_UseOnlyRepulsiveContactForce. 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>: <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.DROPLETPHASE__BC__.BC_v.%25BND_COLLISION%25.html">%BND_COLLISION%</a>: Parameter SplitFactor and new index ind_diss_BE for storing by the BE dissipated energy. 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>: <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.DROPLETPHASE__BC__.BC_v.%25BND_COLLISION%25.html">%BND_COLLISION%</a>: Parameter theta for modelling wall roughness. 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>: parameters COEFF_dt_d30, COMP_DropletphaseSubcycles also in Ucv. 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>: New example <a href="MESHFREE.GettingStarted.SpecialCases.BasicPhysics.CollidingDropletsInCone.html">CollidingDropletsInCone</a>. 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>: Adding <a href="MESHFREE.RunTimeTools.TIMECHECK.html">TIMECHECK</a> and general performance improvements. 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>: Extended testing for Dropletphase Subcycling, see <a href="MESHFREE.InputFiles.USER_common_variables.__Parameters__.COMP_DropletphaseSubcycles___UCV___.html">COMP_DropletphaseSubcycles</a>. 
+    </li><li> new cv/Ucv Parameter: <a href="MESHFREE.InputFiles.USER_common_variables.__Parameters__.COMP_TypeSmooth_Rho___UCV___.html">COMP_TypeSmooth_Rho</a>. 
+    </li><li> Changed default for cv Parameter <a href="MESHFREE.InputFiles.common_variables.rel_dist_edge.html">rel_dist_edge</a> to 0.15 (improves inflow areas in combination with <a href="MESHFREE.InputFiles.common_variables.COMP_FillEdges.html">COMP_FillEdges</a>). 
+    </li><li> Changed default for COEFF_mue to 1.0 (previous default was 2.0). 
+    </li><li> Allow soft variables for <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> definition (analogous to <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>). 
+    </li><li> SAMG multiphase context: Add a suffix for all scalar <a href="MESHFREE.html">MESHFREE</a> contexts to distinguish between <a href="MESHFREE.Solvers.Numerics.LIQUID.Scheme.v--.html">v--</a> and <a href="MESHFREE.Solvers.Numerics.LIQUID.Scheme.vp-.html">vp-</a> 
+    </li><li> approxY: Add further optional parameter to limit overshoots of the approximation. 
+    </li><li> Common variables <a href="MESHFREE.InputFiles.common_variables.prec_seek_holes.html">prec_seek_holes</a>, <a href="MESHFREE.Releases.__DeprecatedItems__.prec_act_BND.html">prec_act_BND</a> and prec_comp_FS are now deprecated and can be safely removed 
+  </li><li> LSDYNA: Add support for TShell elements (experimental). 
+  </li><li> LSDYNA: Add new NamesOfStopwatches for <a href="MESHFREE.RunTimeTools.TIMECHECK.html">TIMECHECK</a> (experimental). 
+  </li><li> <a href="MESHFREE.InputFiles.common_variables.COMP_MemCheck.html">COMP_MemCheck</a>: Memory information is total memory of the node with the highest workload. 
+  </li><li> <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_OppositePoints_Version.html">ORGANIZE_OppositePoints_Version</a>: Add option to switch off the kob comparison (experimental). 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #79104: enabling the usage of more <a href="MESHFREE.Indices.UserDefinedIndices.html">UserDefinedIndices</a>. 
+  </li></ul> 
+   
+  <div class="note"> beta2020.05.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> RepresentativeMass_iData can be defined chamberwise in cv/Ucv 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #77204: Allow separate deletion processes for restart files triggered by standard, <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a>, and SIGNAL (see <a href="MESHFREE.InputFiles.USER_common_variables.RESTART.RestartStepSize.%25RESTART_sequence%25___Restart___.html">%RESTART_sequence%</a>). 
+    </li><li> #78338: Enhance read-in of ASCII <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.STL.html">STL</a> files and add documentation on the details. 
+    </li><li> #77614: <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a>: fix bug regarding function <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.binA().html">binA()</a> with wildcards and large geometries read in with wildcard "*". 
+    </li><li> #78714: More robust implementation of Saving on Ensight6 for very large simulation models when saving tetras. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> fix bug concerning implicit handling of bubbles in the case of <a href="MESHFREE.Solvers.Numerics.LIQUID.Scheme.vp-.html">vp-</a> , now this works again, however (currently) only in the case of LINEQN_solver='BCG2' 
+    </li><li> bugfix for reading restart files. In version beta2020.04.0 , reading restart files, generated by older versions, was leading to hazardeous breakdowns during read-in. This is now fixed. 
+          HINT: restart files, produced with version beta2020.04.0, will probably fail if used in other versions. 
+    </li><li> fix bug regarding function <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.binA().html">binA()</a> with wildcards and large geometries read in with wildcard "*". 
+  </li></ul> 
+   
+  <div class="note"> beta2020.04.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> ERF-support for --T- added 
+    </li><li> ERF-support for integration data added 
+    </li><li> updated functionality of <a href="MESHFREE.InputFiles.common_variables.MPI_WeightingMethodForBisection.html">MPI_WeightingMethodForBisection</a> : it has now a second entry, that defines the weight of the <a href="MESHFREE.Solvers.Numerics.STANDBY.html">STANDBY</a> pointcloud for the MPI bisection 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #78533: Fix MPI problem during restart with new geometry. 
+    </li><li> #77614 (alias wildcard "*" does not work for geometries with a big number of entities): Bugfix by re-implementing some help arrays with fixed size to allocatable arrays 
+    </li><li> #77617: Function <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.binA().html">binA()</a> can now be used with wildcards. 
+    </li><li> #77433: Problem with reading in external airflow (<a href="MESHFREE.Solvers.Numerics.STANDBY.html">STANDBY</a> pointcloud) if using ensight data with nfaced or nsided elements fixed. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.ReadInPointCloud.EnSight___RIPC___.html">EnSight</a> : minimalistic bugfix for reading-in ensight pointclouds as <a href="MESHFREE.Solvers.Numerics.STANDBY.html">STANDBY</a> . Now, it also works with general elements like "nfaced" and "nsided" . In order to use them, tha data format has to be "scalar per node" or "vector per node". 
+          <span style="color:red"> important: </span> the per-element data will be irgnored and cannot be interpolated by the <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.approxY().html">approxY()</a> functionality. 
+  </li></ul> 
+   
+  <div class="note"> beta2020.02.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.eigen().html">eigen()</a> -> new function in <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.html">Equations</a> . 
+  </li><li> LSDYNA: First attempt at switching interface variables to MPI shared memory. 
+  </li><li> Developer steered exit, set export FPM_DEV=1 to use this, call FPM_exit_dev() in code. 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #63391: New volume algorithm behind <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.ConstructClause.%25CONSTRUCT_PointBasedOnAbsoluteVolume%25.html">%CONSTRUCT_PointBasedOnAbsoluteVolume%</a>, etc. 
+    </li><li> #74751: New UserDefinedColorIndices have been introduced to provide indices without interpolation. An example may be found in <a href="MESHFREE.GettingStarted.Tutorial.tut3d_08.html">tut3d_08</a>. 
+    </li><li> #76877: Clarify documentation on <a href="MESHFREE.InputFiles.common_variables.dist_LayerThickness.html">dist_LayerThickness</a>. 
+    </li><li> #77009: Fix bug regarding distance computation in case of <a href="MESHFREE.InputFiles.common_variables.dist_LayerThickness.html">dist_LayerThickness</a> > 0 for <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_DistanceToBoundary_Version.html">ORGANIZE_DistanceToBoundary_Version</a> = 3. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix for <a href="MESHFREE.InstallationGuide.Execute.CommandLine.Encryption.html">Encryption</a>. 
+    </li><li> Minor bugfixes. 
+  </li></ul> 
+   
+  <div class="note"> beta2020.01.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> statements <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25SUMMATION_INT%25.html">%SUMMATION_INT%</a> and <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25SUMMATION_BND%25.html">%SUMMATION_BND%</a>. 
+    </li><li> Completed <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.begin_save{.html">begin_save{</a>} environment. 
+    </li><li> New parameters restart_path and restart_file, see <a href="MESHFREE.InputFiles.USER_common_variables.RESTART.RestartPath.html">RestartPath</a>. 
+    </li><li> New <a href="MESHFREE.InstallationGuide.Execute.CommandLine.html">CommandLine</a> option -lcs, --check-license. 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.exportGeometry{.html">exportGeometry{</a>: Writing of <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.OBJ.html">OBJ</a> files by groups. 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>: Further extensions and improvements (e.g. second order displacement, friction). 
+    </li><li> Improvements to VOLUME_correction_local. 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #63391: Updated volume calculation algorithm for <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.ConstructClause.%25CONSTRUCT_PointBasedOnAbsoluteVolume%25.html">%CONSTRUCT_PointBasedOnAbsoluteVolume%</a>, etc. to be independent of geometry descritization. 
+    </li><li> #72690: New parameter <a href="MESHFREE.InputFiles.USER_common_variables.PhysicalProperties.ForchheimerConstant___PHYP___.html">ForchheimerConstant</a>. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.RIGIDBODY.html">RIGIDBODY</a>: Bug fixes for restart and link points. 
+    </li><li> Minor bugfixes. 
+  </li></ul> 
+   
+  <div class="note"> beta19.11.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>: <a href="MESHFREE.Indices.html">Indices</a> <a href="MESHFREE.Indices.LIQUID___indices___.%25ind_v_0(1)%25.html">%ind_v_0(1)%</a>, <a href="MESHFREE.Indices.LIQUID___indices___.%25ind_v_0(2)%25.html">%ind_v_0(2)%</a>, <a href="MESHFREE.Indices.LIQUID___indices___.%25ind_v_0(3)%25.html">%ind_v_0(3)%</a> for the velocity at the last time step now available for this solver. 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULERIMPL.html">EULERIMPL</a>: Add new parameter <a href="MESHFREE.InputFiles.common_variables.time_integration_impl_solve_v.html">time_integration_impl_solve_v</a> so that velocity can be solved with first order time integration independent of all other physical quantities. 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULERIMPL.html">EULERIMPL</a>: Add new parameter <a href="MESHFREE.InputFiles.common_variables.StencilOrderReductionNearBND_forEULERIMPL.html">StencilOrderReductionNearBND_forEULERIMPL</a> to switch off the order reduction of gradient stencils. 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULERIMPL.html">EULERIMPL</a>: Add new parameter <a href="MESHFREE.InputFiles.common_variables.SpecialBNDtreatmentEULERIMPL.html">SpecialBNDtreatmentEULERIMPL</a> for controlling the special boundary treatment for MUSCL reconstruction of temperature, velocity and k-epsilon. 
+    </li><li> New <a href="MESHFREE.InstallationGuide.Execute.CommandLine.Encryption.html">Encryption</a> functionality. 
+    </li><li> <a href="MESHFREE.Interfaces.LS-DYNA___interfaces___.html">LS-DYNA</a>: Merge geometry nodes at MPI borders of LS-DYNA geometry to avoid inner edges. 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #73822: Moving geometry does not freeze anymore when restarting. Boundary points receive the correct offset (but the problem remains that VisualViewer does not recognize the correct offset for the first timestep after restarting). 
+    </li><li> #75160: Prevent that the alias flags <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.BC.html">BC</a>, <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.ACTIVE.html">ACTIVE</a>, <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.IDENT.html">IDENT</a>, etc. are inherited during the <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.include{.duplicate{.html">duplicate{</a>}-operation. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix for <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_CheckFreeSurface_Version.html">ORGANIZE_CheckFreeSurface_Version</a> = 3: Identification of isolated points also if number of neighbors is too small. 
+    </li><li> Bugfix for <a href="MESHFREE.InputFiles.USER_common_variables.PhysicalProperties.eta___PHYP___.%25MED_JOHNSON_COOK%25.html">%MED_JOHNSON_COOK%</a>: Correct initialization of stress tensor. 
+    </li><li> Bugfix for <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULERIMPL.html">EULERIMPL</a>: Avoid crash in injection molding simulation. 
+    </li><li> Minor bugfixes 
+  </li></ul> 
+   
+  <div class="note"> beta19.10.2 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.LIQUID.Algorithms___liquid___.VolumeCorrection.RepresentativeMassAlgorithm.html">RepresentativeMassAlgorithm</a>: new functionality in RepresentativeMass_iData : with RepresentativeMass_iData(17) the user is able to provide an equation index for point filtering. 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.LIQUID.Algorithms___liquid___.VolumeCorrection.RepresentativeMassAlgorithm.html">RepresentativeMassAlgorithm</a>: new postprocessing options <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().TwoArguments.%25FPM_RepMass_DeletedAtMetaplanes%25.html">%FPM_RepMass_DeletedAtMetaplanes%</a> , <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().TwoArguments.%25FPM_RepMass_CreatedByDropletSource%25.html">%FPM_RepMass_CreatedByDropletSource%</a> , <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().TwoArguments.%25FPM_RepMass_CreatedByInflowOutflow%25.html">%FPM_RepMass_CreatedByInflowOutflow%</a>, see also VOLUME_correction_local. 
+    </li><li> New parameters for <a href="MESHFREE.Interfaces.LS-DYNA___interfaces___.html">LS-DYNA</a> interface: <a href="MESHFREE.Interfaces.LS-DYNA___interfaces___.LSDYNA_pressureToApplyOnBody.html">LSDYNA_pressureToApplyOnBody</a>, <a href="MESHFREE.Interfaces.LS-DYNA___interfaces___.LSDYNA_solidStressWeight.html">LSDYNA_solidStressWeight</a>, <a href="MESHFREE.Interfaces.LS-DYNA___interfaces___.LSDYNA_turbulentForceWeight.html">LSDYNA_turbulentForceWeight</a>. (ITWMESI_... parameters are no longer used.) 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix in the <a href="MESHFREE.Solvers.Numerics.LIQUID.Algorithms___liquid___.VolumeCorrection.RepresentativeMassAlgorithm.html">RepresentativeMassAlgorithm</a> that caused unexpected loss of representative mass in case of simulations with major formation of degenerated surfaces (rain water etc.). 
+    </li><li> Bugfix in the <a href="MESHFREE.Solvers.Numerics.LIQUID.Algorithms___liquid___.VolumeCorrection.RepresentativeMassAlgorithm.html">RepresentativeMassAlgorithm</a> that caused unexpected gain of representative mass in case of point cut by <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.METAPLANE.html">METAPLANE</a> (for <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> statements, it worked correctly). 
+  </li></ul> 
+   
+  <div class="note"> beta19.10.1 </div> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix in local quality check for DIFFOP_Version=9. 
+  </li></ul> 
+   
+  <div class="note"> beta19.10.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Use Group Names for alias instead of file name for <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.OBJ.html">OBJ</a> files. 
+    </li><li> New Public Values - FREEUnit, FREEUnit100. 
+    </li><li> New <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> feature <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.Skip___integration___.html">Skip</a>. 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>: Integrations <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_INT%25.html">%INTEGRATION_INT%</a> <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_INT_TIME%25.html">%INTEGRATION_INT_TIME%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25MINIMUM_INT%25.html">%MINIMUM_INT%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25MAXIMUM_INT%25.html">%MAXIMUM_INT%</a>, and <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25AVERAGE_INT%25.html">%AVERAGE_INT%</a> now available for this solver. 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #74784: Fixed bug regarding too many unit numbers for saving. 
+    </li><li> #73822: Fixed bug in combination of restart and <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a>. 
+    </li><li> #75119: Experimental new feature <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_filter.html">SAVE_filter</a> for <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.html">SAVE_format</a> 'ENSIGHT6 BINARY'. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fix usage of <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.include{.reorientation{.html">reorientation{</a>} in combination with <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.manipulate{.html">manipulate{</a>} for <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.html">BoundaryElements</a>. 
+    </li><li> Minor bugfixes. 
+  </li></ul> 
+   
+  <div class="note"> beta19.08.2 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New <a href="MESHFREE.InstallationGuide.Execute.CommandLine.html">CommandLine</a> option --clparam, -clp to be used as system variable @CLPARAM@. 
+    </li><li> New integration types wrt free surface points, <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_FS%25.html">%INTEGRATION_FS%</a> etc. 
+    </li><li> <a href="MESHFREE.Support.html">Support</a> for version 4.1 .msh files for triangular 2D meshes from Gmsh. 
+    </li><li> Version Number in a new log file 
+    </li><li> Shared Memory (<a href="MESHFREE.InputFiles.common_variables.COMP_SharedMemoryForBE.html">COMP_SharedMemoryForBE</a>, <a href="MESHFREE.InputFiles.common_variables.COMP_SharedMemoryForGT2.html">COMP_SharedMemoryForGT2</a>) now also supported for <a href="MESHFREE.InputFiles.USER_common_variables.MONITORPOINTS.html">MONITORPOINTS</a>. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>: Extend the list of saved PC-items for restart. 
+    </li><li> <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_DistanceToBoundary_Version.html">ORGANIZE_DistanceToBoundary_Version</a> = 3: 1) Include handling of TOUCH_reflection boundaries. 2) Set <a href="MESHFREE.Indices.General___indices___.%25ind_lastDTB_t%25.html">%ind_lastDTB_t%</a> and <a href="MESHFREE.Indices.General___indices___.%25ind_lastDTB_x(1)%25.html">%ind_lastDTB_x(1)%</a>, <a href="MESHFREE.Indices.General___indices___.%25ind_lastDTB_x(2)%25.html">%ind_lastDTB_x(2)%</a>, <a href="MESHFREE.Indices.General___indices___.%25ind_lastDTB_x(3)%25.html">%ind_lastDTB_x(3)%</a> at the end of the distance-to-boundary computation. 
+  </li></ul> 
+   
+  <div class="note"> beta19.08.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New feature <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.BEpos().html">BEpos()</a> 
+    </li><li> Allow to fully suppress writing of <a href="MESHFREE.InputFiles.USER_common_variables.RESTART.html">RESTART</a> files with <a href="MESHFREE.InputFiles.USER_common_variables.RESTART.RestartStepSize.html">RestartStepSize</a> = ( 0, ... ). 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #73890: Fix the determination of the volumes when using the <a href="MESHFREE.InputFiles.USER_common_variables.MEMORIZE.html">MEMORIZE</a>-functionality (necessary for VOLUME_correction and VOLUME_correction_FreeSurface). 
+    </li><li> #73822: <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a>: Fixed Restart option if there was no ERF-file present. 
+  </li></ul> 
+   
+  <div class="note"> beta19.08.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Removed limit to length of alias names and values. 
+    </li><li> FPM_external: new source folder for externally implementable functions such as material laws, numerical solvers, ... 
+  </li></ul> 
+   
+  <div class="note"> beta19.07.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Johnson-Cook: additional parameter for eta: eps_dot_0, see <a href="MESHFREE.InputFiles.USER_common_variables.PhysicalProperties.eta___PHYP___.%25MED_JOHNSON_COOK%25.html">%MED_JOHNSON_COOK%</a>. 
+    </li><li> Set default dimension <a href="MESHFREE.InputFiles.common_variables.nue.html">nue</a> to 3 (previously unassigned). 
+    </li><li> Add example on usage of <a href="MESHFREE.InputFiles.USER_common_variables.MEMORIZE.html">MEMORIZE</a>-functionality for simulation splitting in FPMDOCU, see <a href="MESHFREE.GettingStarted.SpecialCases.SimulationSplittingWithMEMORIZE.html">SimulationSplittingWithMEMORIZE</a>. 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #73694: Enhance documentation on <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_construct_atRestart{.html">begin_construct_atRestart{</a>. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.MEMORIZE.html">MEMORIZE</a>: reset of curve index to remove incorrect warning. 
+  </li></ul> 
+   
+  <div class="note"> beta19.07.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New common variable RepresentativeMass_iData (experimental). 
+    </li><li> unlimited number of Equations (previous limit 1000). 
+    </li><li> unlimited number of $...$-variables.(previous limit 1000). 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #73379: Changed compilation so that executables should now also work on non-Intel CPUs. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fix warnings/crashes when using msh geometry files or <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.BND_node.html">BND_node</a>. 
+    </li><li> Bugfix for <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BCON_CNTCT.html">BCON_CNTCT</a>. 
+  </li></ul> 
+   
+  <div class="note"> beta19.06.1 </div> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fix <a href="MESHFREE.InputFiles.USER_common_variables.RESTART.html">RESTART</a>. 
+  </li></ul> 
+   
+  <div class="note"> beta19.06.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> new <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.manipulate{.html">manipulate{</a> - feature: <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.extrude{.html">extrude{</a> 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #71526: Fix input files of tutorial 10. Fix <a href="MESHFREE.InputFiles.common_variables.COMP_SortBEintoBoxes_Version.html">COMP_SortBEintoBoxes_Version</a> = 21 in case of <a href="MESHFREE.InputFiles.common_variables.BND_SearchTreeAdministration_RefreshTreeAfterHowManyCycles.html">BND_SearchTreeAdministration_RefreshTreeAfterHowManyCycles</a> > 0. 
+    </li><li> #72617: <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a>: Fix problem with holes in the point cloud when inactive points are present. 
+    </li><li> #72989: Fix <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ActivateBNDpoints_Version.html">ORGANIZE_ActivateBNDpoints_Version</a> = 3, which before was still not consistent to version 2, but now is. 
+          <ul><li> 
+          </li><li> in order to provoke the behavior of Version 19.04.2 and before:  <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ActivateBNDpoints_Version.html">ORGANIZE_ActivateBNDpoints_Version</a> = (3,4,0,2,70,-70,1,1,60,0,0) 
+          </li><li> in order to provoke the behavior of Version 19.05.0 and 19.05.1: <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ActivateBNDpoints_Version.html">ORGANIZE_ActivateBNDpoints_Version</a> = (3,4,0,2,70,-70,1,1,60,0,1) 
+          </li><li> in order to provoke the behavior of ORGANIZE_ActivateBNDpoints_Version=2: 
+          <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ActivateBNDpoints_Version.html">ORGANIZE_ActivateBNDpoints_Version</a> = (3,4,0,2,70,-70,1,10,60,1,1) or 
+          <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ActivateBNDpoints_Version.html">ORGANIZE_ActivateBNDpoints_Version</a> = 3 
+          </li></ul> 
+    </li><li> #72995: 
+          <ul><li> 
+          </li><li> Fix ORGANIZE_DistanceToBoundary_Version=3. The ray-intersection algorithm was working properly only if COMP_DoOrganizeOnlyAfterHowManyCycles<2. Now, for COMP_DoOrganizeOnlyAfterHowManyCycles>1, the reference time and point have to be with respect to the last time the distance to boundary was measured. For this, new variables have been brought up: <a href="MESHFREE.Indices.General___indices___.%25ind_lastDTB_t%25.html">%ind_lastDTB_t%</a> and <a href="MESHFREE.Indices.General___indices___.%25ind_lastDTB_x(1)%25.html">%ind_lastDTB_x(1)%</a> ... 
+          </li><li> improve gap detection algorithm for the case that two geometry faces are exactly ontop of one another. The gap detection can be checked by checking Y<a href="MESHFREE.Indices.General___indices___.%25ind_OrganizeDTB%25.html">%ind_OrganizeDTB%</a> for <a href="MESHFREE.__Constants__.%25ORGANIZE_IsInGap%25___const___.html">%ORGANIZE_IsInGap%</a> 
+          </li></ul> 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fix <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_DistanceToBoundary_Version.html">ORGANIZE_DistanceToBoundary_Version</a> = 3 for 2D applications. 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a>: Fix segmentation faults that occur with very large geometries. 
+    </li><li> <a href="MESHFREE.Releases.__DeprecatedItems__.ExtendSmallGaps.html">ExtendSmallGaps</a> -> now deprecated! Accordingly, also the variables %ind_Thick% and %ind_nThick(1)% , %ind_nThick(2)% , %ind_nThick(3)% do not exist anymore. 
+    </li><li> Add <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.METAPLANE.html">METAPLANE</a> handling for <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_DistanceToBoundary_Version.html">ORGANIZE_DistanceToBoundary_Version</a> = 3. 
+  </li></ul> 
+   
+  <div class="note"> beta19.05.1 </div> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #72667: Fix reading of NTM-files in shared memory mode, see <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.include{.html">include{</a>. 
+    </li><li> #72756: Fixed segmentation fault for inactive points in <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.html">Equations</a>. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fix timer start location in code for ADMIN_TIME_INTEG.FLIQUID.PREPARATION, see <a href="MESHFREE.RunTimeTools.TIMECHECK.NamesOfStopWatches.html">NamesOfStopWatches</a>. 
+  </li></ul> 
+   
+  <div class="note"> beta19.05.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Improvements for <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>. 
+    </li><li> Improvements and Bugfixes for <a href="MESHFREE.InputFiles.common_variables.DIFFOP_Version.html">DIFFOP_Version</a>. 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #72530: Fix reading of <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.OBJ.html">OBJ</a>-files in shared memory mode, see <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.include{.html">include{</a>. 
+    </li><li> #72597: Clarify the documentation of <a href="MESHFREE.InputFiles.common_variables.TIMECHECK_Level.html">TIMECHECK_Level</a> and adapt the warning message for stop watches not covered by the chosen <a href="MESHFREE.InputFiles.common_variables.TIMECHECK_Level.html">TIMECHECK_Level</a>. 
+    </li><li> #72619: New <a href="MESHFREE.InstallationGuide.Execute.CommandLine.html">CommandLine</a> option --exec-dir, -e. 
+    </li><li> #72667: Fix reading of GMSH-, PAMCRASH-, and NASTRAN-files in shared memory mode, see <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.include{.html">include{</a>. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix for <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_USER_update_boundary_particles_Version.html">ORGANIZE_USER_update_boundary_particles_Version</a> = 2 works again with shared memory. 
+    </li><li> Bugfix for <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ActivateBNDpoints_Version.html">ORGANIZE_ActivateBNDpoints_Version</a> = 3 to make it consistent with version 2. 
+  </li></ul> 
+   
+  <div class="note"> beta19.04.2 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a>: New file space management strategy implemented in erfhdf5.cpp. Currently commented out, see <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.RestartIssues.html">RestartIssues</a>. 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.begin_save{.html">begin_save{</a>} environment (experimental). 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #71162: Bugfix for combination of shared memory and <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.BND_cube.html">BND_cube</a> or <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.BND_cylinder.html">BND_cylinder</a> 
+    </li><li> #72221: Bugfix for <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format_skip.html">SAVE_format_skip</a> 
+    </li><li> #72382: Bugfix for incorrect high velocity with <a href="MESHFREE.InputFiles.common_variables.DIFFOP_Version.html">DIFFOP_Version</a> = 9 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix for SAVE_type_arr_2D 
+  </li></ul> 
+   
+  <div class="note"> beta19.04.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Improvements for <a href="MESHFREE.InputFiles.common_variables.DIFFOP_Version.html">DIFFOP_Version</a> = 9, with new option <a href="MESHFREE.InputFiles.common_variables.DEBUG_GeneralParameter.html">DEBUG_GeneralParameter</a>(13) 
+    </li><li> <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>: add dynamic pressure due to curved surfaces 
+    </li><li> Updated HDF5 from version 1.8.15 to version 1.10.5, see <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a>. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfixes in common blocks to avoid segmentation faults 
+    </li><li> Bugfix for <a href="MESHFREE.InputFiles.common_variables.NEIGHBOR_FilterMethod.html">NEIGHBOR_FilterMethod</a> = 3 
+    </li><li> Bugfix for dynamic pressure with boundary condition <a href="MESHFREE.Releases.__DeprecatedItems__.%25BND_none%25.html">%BND_none%</a> 
+  </li></ul> 
+   
+  <div class="note"> beta19.04.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Improvements for stability in case of <a href="MESHFREE.InputFiles.common_variables.DIFFOP_Version.html">DIFFOP_Version</a> = 9 
+    </li><li> New option for <a href="MESHFREE.InputFiles.common_variables.NEIGHBOR_FilterMethod.html">NEIGHBOR_FilterMethod</a> 
+    </li><li> Improvements for <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.RIGIDBODY.html">RIGIDBODY</a>: allow explicit treatment of joints: RIGIDBODY_interaction(1) = (alias1, alias2, ElasticPartitionPerCycle, play, CycleTime, Impl/expl ), see <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_rigid%25.html">%MOVE_rigid%</a>. 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #71627: Remove limit for length of <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.html">Equations</a> 
+    </li><li> #71919: Multiple bugfixes against segmentation faults, memory overflow, and filling problems 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix for irreducible points near boundaries (see <a href="MESHFREE.InputFiles.USER_common_variables.MONITORPOINTS.MONITORPOINTS_CREATION.%25MONITORPOINTS_CREATION_IrreducibleFPMpoint%25.html">%MONITORPOINTS_CREATION_IrreducibleFPMpoint%</a>) 
+  </li></ul> 
+   
+  <div class="note"> beta19.03.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New feature %HEAT_EQ_1D_BC% for using 1D heat equation as temperature boundary condition (see <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.HeatEquation1D___BC_T___.html">HeatEquation1D</a>). 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #71581: Fix boundary element organization in case of activation only during initialization phase. 
+  </li></ul> 
+   
+  <div class="note"> beta19.03.0 </div> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #65262: fix <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.IDENT_PASSON.html">IDENT_PASSON</a> 
+    </li><li> #68187: comment debug output including MPI_pause() 
+    </li><li> #69144: fix <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_TranslationRotation%25.html">%MOVE_TranslationRotation%</a> with %MOVE_VirtualRotation% in case of zero rotation angle 
+    </li><li> #70660: fix floating overflow if some MPI processes have no points 
+    </li><li> #71234: add simple check for begin_... and end_... 
+    </li><li> #71524: add subtimer for <a href="MESHFREE.InputFiles.USER_common_variables.MONITORPOINTS.html">MONITORPOINTS</a>, <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a>, <a href="MESHFREE.InputFiles.USER_common_variables.MEMORIZE.html">MEMORIZE</a>, <a href="MESHFREE.Solvers.Numerics.STANDBY.html">STANDBY</a>, <a href="MESHFREE.InputFiles.USER_common_variables.DropletSource.html">DropletSource</a> (see <a href="MESHFREE.RunTimeTools.TIMECHECK.NamesOfStopWatches.html">NamesOfStopWatches</a>) 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix for <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.%25EVENT_PerformAfterHowManyTimeCycles%25.html">%EVENT_PerformAfterHowManyTimeCycles%</a>. 
+  </li></ul> 
+   
+  <div class="note"> beta19.02.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New event handles <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.%25EVENT_WriteResume%25.html">%EVENT_WriteResume%</a> and <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.%25EVENT_SaveResults%25.html">%EVENT_SaveResults%</a> 
+    </li><li> Keyword write_cv for sequential reading of signal file (<a href="MESHFREE.RunTimeTools.ComputationalSteering.html">ComputationalSteering</a>) 
+    </li><li> Negative values for <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_CheckPointsAtFS_PerformPreCheck.html">ORGANIZE_CheckPointsAtFS_PerformPreCheck</a> possible: precheck only in the vicinity of already existing free surfaces 
+    </li><li> <a href="MESHFREE.InputFiles.common_variables.COMP_WettingAngleVariante.html">COMP_WettingAngleVariante</a>: new default 2 
+    </li><li> <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ActivateBNDpoints_Version.html">ORGANIZE_ActivateBNDpoints_Version</a>: new defaults, so that version 3 and version 2 are equivalent 
+    </li><li> New velocity correction at free surfaces (see <a href="MESHFREE.InputFiles.common_variables.DEBUG_GeneralParameter.html">DEBUG_GeneralParameter</a>) 
+    </li><li> Improvements to Smagorinsky-Lilly-Model for thin layers/films (see <a href="MESHFREE.InputFiles.common_variables.DEBUG_GeneralParameter.html">DEBUG_GeneralParameter</a>) 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #68031: automatically define <a href="MESHFREE.Indices.General___indices___.%25ind_IN%25.html">%ind_IN%</a> in case of <a href="MESHFREE.InputFiles.USER_common_variables.ReadInPointCloud.html">ReadInPointCloud</a> / <a href="MESHFREE.Solvers.Numerics.STANDBY.html">STANDBY</a> point cloud 
+    </li><li> #55837: add positivity checks for material parameters 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fix <a href="MESHFREE.Indices.UserDefinedIndices.html">UserDefinedIndices</a> %indU_...% for <a href="MESHFREE.InputFiles.USER_common_variables.MONITORPOINTS.html">MONITORPOINTS</a> 
+    </li><li> Fix keyword plot for sequential/parallel reading of signal file (<a href="MESHFREE.RunTimeTools.ComputationalSteering.html">ComputationalSteering</a>) 
+    </li><li> Multiple small bugfixes and algorithmic improvements 
+  </li></ul> 
+   
+  <div class="note"> beta19.02.0 </div> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #70324: <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a>: Now Restarts work (albeit with poor memory management) 
+    </li><li> #70660: Fix abort due to too many symmetry faces 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Multiple small bugfixes and algorithmic improvements 
+  </li></ul> 
+   
+  <div class="note"> beta19.01.0 </div> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #70214: Metaplanes without <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.BC.html">BC</a> flag assume BC0 automatically. 
+    </li><li> #70324: <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a>: Avoid crash if output file already exists 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix in <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULERIMPL.html">EULERIMPL</a> pDivV computation 
+  </li></ul> 
+   
+  <div class="note"> beta18.12.2 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Redlich-Kwong Gas Law for modelling real gas behaviour (see <a href="MESHFREE.InputFiles.USER_common_variables.PhysicalProperties.html">PhysicalProperties</a>) 
+    </li><li> New parameter <a href="MESHFREE.InputFiles.common_variables.COEFF_p_divV.html">COEFF_p_divV</a> to control the p*div(v) term in temperature equation 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+  </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a>: A simulation no longer breaks down when its <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_path.html">SAVE_path</a> already existed. The old result file will now be overwritten 
+  </li></ul> 
+   
+  <div class="note"> beta18.12.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.common_variables.dist_aip.html">dist_aip</a> -> now also provides a force option 
+    </li><li> new common variable BUBBLE_Forbidden 
+    </li><li> improvements to <a href="MESHFREE.Solvers.Numerics.GASDYN.html">GASDYN</a> solver 
+    </li><li> New, more efficient option NEIGHBOR_FilterMethod=3 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+  </li><li> using alias-definitions with blanks might have caused problems. This is now fixed. Example: The following construct would have caused problems previously: 
+  <div class="note"> <div class="code"> 
+  <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.html">begin_alias{</a>} 
+    "Schnecke1_MidPoint" = "0.0, 0.0, -0.0498" 
+  <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_alias.html">end_alias</a>{} 
+  <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.MOVE.html">MOVE</a>(<span style="color:#0B6121;">$MOVE_Schnecke1$</span>) = ( <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_TranslationRotation%25.html">%MOVE_TranslationRotation%</a>, <span style="color:#8A0808;">&Schnecke1_MidPoint(1)&</span>, <span style="color:#8A0808;">&Schnecke1_MidPoint(2)&</span>, <span style="color:#8A0808;">&Schnecke1_MidPoint(3)&</span>, <span style="color:#0B6121;">$MOVE_Rotor$</span>, -<span style="color:#8A0808;">&RotSpeedSchnecke&</span>, 0.0, 0.0) 
+  
+ </div> </div> 
+   
+  It would have worked only if omitting the blanks from the alias definition, that is 
+  <div class="note"> <div class="code"> 
+  <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.html">begin_alias{</a>} 
+    "Schnecke1_MidPoint" = "0.0,0.0,-0.0498" 
+  <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_alias.html">end_alias</a>{} 
+  <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.MOVE.html">MOVE</a>(<span style="color:#0B6121;">$MOVE_Schnecke1$</span>) = ( <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_TranslationRotation%25.html">%MOVE_TranslationRotation%</a>, <span style="color:#8A0808;">&Schnecke1_MidPoint(1)&</span>, <span style="color:#8A0808;">&Schnecke1_MidPoint(2)&</span>, <span style="color:#8A0808;">&Schnecke1_MidPoint(3)&</span>, <span style="color:#0B6121;">$MOVE_Rotor$</span>, -<span style="color:#8A0808;">&RotSpeedSchnecke&</span>, 0.0, 0.0) 
+  
+ </div> </div> 
+  </li><li> Fixed Cray compilation for MKL library 
+  </li><li> fix to set ind_Vi to zero if point becomes inactive 
+  </li><li> fix ind_BE1 if negative upon reload: might be the case if point tore off an edge just when restart was saved 
+  </li><li> bugfixes for restart 
+  </li></ul> 
+   
+  <div class="note"> beta18.12.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New common variable <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_PreAllocationSize.html">ORGANIZE_PreAllocationSize</a> (active for Y, AAA arrays, not yet CON) 
+    </li><li> Improvements to <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULERIMPL.html">EULERIMPL</a> framework 
+  </li></ul> 
+   
+  <div class="note"> beta18.11.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Performance improvements for geometry operations, see <a href="MESHFREE.PerformanceOptimization.GeometryOperations.html">GeometryOperations</a>. 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #66756: Fixed openMP bug that could slow down simulations (esp. on Cray system) 
+    </li><li> #68146: Removed differences in MESHFREElite and <a href="MESHFREE.html">MESHFREE</a> when running without SAMG. 
+    </li><li> #68618: Fixed bug where <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> was not written out when <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a> saving format was chosen. 
+    </li><li> #69820: Bugfix for the writeOut() feature of <a href="MESHFREE.InputFiles.USER_common_variables.ReadInPointCloud.html">ReadInPointCloud</a>. 
+  </li></ul> 
+   
+  <div class="note"> beta18.11.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New index <a href="MESHFREE.Indices.General___indices___.%25ind_kinEnergy%25.html">%ind_kinEnergy%</a> 
+    </li><li> Improvements to Bubble algorithm 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #68618, #69795, #69813: Bugfixes for <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a> saving format 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> SmoothLengthHelp-array: now in shared memory mode 
+    </li><li> some of the geometry algorithms during initialization (BE_MinMax, BE_DeleteUnusedPoints, BE_Decouple, BE_ClusterNodePoints) are now set-up in shared memory mode 
+    </li><li> initial clustering of node points (BE_ClusterNodePoints, performed during initialization, for example during read-in of stl-files) has now a fast option: see <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_BE_ClusterNodesPoints_Version.html">ORGANIZE_BE_ClusterNodesPoints_Version</a> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.ExDom().html">ExDom()</a> works as 1-InDom() 
+  </li></ul> 
+   
+  <div class="note"> beta18.10.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Performance improvements (<a href="MESHFREE.InputFiles.common_variables.NEIGHBOR_FilterMethod.html">NEIGHBOR_FilterMethod</a>) 
+    </li><li> New index <a href="MESHFREE.Indices.LIQUID___indices___.%25ind_vn_n%25.html">%ind_vn_n%</a>: compute the normal gradient of the normal velocity directly for consistent results for pressure fields in the vicinity of inflow boundaries 
+    </li><li> Extended functionality of <a href="MESHFREE.InputFiles.common_variables.COMP_AddBoundaryParticles.html">COMP_AddBoundaryParticles</a> 
+    </li><li> New index <a href="MESHFREE.Indices.General___indices___.%25ind_kinEnergy%25.html">%ind_kinEnergy%</a> 
+  </li></ul> 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #68018: New option for <a href="MESHFREE.InputFiles.USER_common_variables.ReadInPointCloud.html">ReadInPointCloud</a>: writeOut, see <a href="MESHFREE.InputFiles.USER_common_variables.ReadInPointCloud.EnSight___RIPC___.WriteOutManipulations___RIPC___.html">WriteOutManipulations</a> 
+    </li><li> #68618: Add support for <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_CoordinateSystem.html">SAVE_CoordinateSystem</a> in HDF5ERF 
+    </li><li> #69085: ORGANIZE_CreateBoundaryPointsAtThinLayers: avoid adding points at concave edges in order to avoid uncontrolled generation of points 
+    </li><li> #69319: new event handle <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.%25EVENT_WriteRestart%25.html">%EVENT_WriteRestart%</a> 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix in BUBBLE algorithm regarding eigen volumes 
+  </li></ul> 
+   
+  <div class="note"> beta18.09.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Performance improvement, controlled by ORGANIZE_BE_ClusterNodePoints_Version 
+    </li><li> Improvements to BUBBLE algorithm: exclude bubbles if they join an open geometry edge 
+  </li></ul> 
+   
+  <div class="note"> beta18.09.0 </div> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #68607: Fixed compilation for <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a>. 
+    </li><li> #68839: Fixed restart with shared memory. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix for wildcard aliasses 
+    </li><li> Bugfix for combination of <a href="MESHFREE.InputFiles.USER_common_variables.RESTART.html">RESTART</a> and <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_TearOffCriterion.html">BC_TearOffCriterion</a> 
+  </li></ul> 
+   
+  <div class="note"> beta18.08.2 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_BringNewPointToFreeSurface.html">ORGANIZE_BringNewPointToFreeSurface</a> - a means to have some control on the spray droplets disrupting from car tyres going through water puddles 
+    </li><li> <a href="MESHFREE.Releases.__DeprecatedItems__.TWOSIDED.html">TWOSIDED</a> is now deprecated, use <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.include{.duplicate{.html">duplicate{</a> and <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.include{.thickenabs{.html">thickenabs{</a> instead 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #68615 - fix a problem with shared memory (SHM), that appeard with the new SHM-implementations of geometry search tree together with <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_TranslationRotation%25.html">%MOVE_TranslationRotation%</a> 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> pressure boundary condition (dynamic pressure) <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BCON.html">BCON</a>($iBC$,%ind_p_dyn%) = ( <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BCON.%25ind_p_dyn%25___BCON___.%25BND_wall%25___BC_p_corr___.html">%BND_wall%</a> ) and ( <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BCON.%25ind_p_dyn%25___BCON___.%25BND_wall_nosl%25___BC_p_corr___.html">%BND_wall_nosl%</a> ), are now consistent 
+    </li><li> relax some problems due to fortran impicit loops. Obviously <div class="code"> 
+       do i = 1,N 
+          A(i) = B(i) 
+       end do </div> 
+    and <div class="code"> 
+       A(1:N) = B(1:N) </div> 
+    are not the same, and the implicit loop might lead to breakdown of the programm if N becomes big (number of boundary elements!!!). 
+    Replacing the implicit loops containing the number of boundary elements by the classical loops. 
+  </li></ul> 
+   
+  <div class="note"> beta18.08.1 </div> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bug fixes for shared memory with large geometries 
+  </li></ul> 
+   
+  <div class="note"> beta18.08.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Shared memory also works for GEOTREE2 
+    </li><li> <a href="MESHFREE.Windows.html">Windows</a> compilation (contact our <a href="MESHFREE.Support.html">Support</a> team if you require a <a href="MESHFREE.Windows.html">Windows</a> executable) 
+    </li><li> INTERNAL: Joergs neues <a href="MESHFREE.Solvers.Numerics.GASDYN.html">GASDYN</a> ???? 
+    </li><li> INTERNAL: new common variable <a href="MESHFREE.InputFiles.common_variables.MASS_correction_DivergenceVelocity.html">MASS_correction_DivergenceVelocity</a> (experimental) 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #67844: Fix segmentation fault during point cloud initialisation. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.DROPLETPHASE__BC__.BC_v.html">BC_v</a> condition 'BND_none' marked as deprecated (will automatically switch to BND_outflow) 
+    </li><li> Multiple bug fixes under the hood. 
+  </li></ul> 
+   
+  <div class="note"> beta18.07.0 </div> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fix bug where <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> values were all zero when organization steps were skipped. 
+    </li><li> Clarify behavior for <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.CHAMBER.html">CHAMBER</a>. If no <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.CHAMBER.html">CHAMBER</a> in alias is given, then CHAMBER=MAT. 
+    </li><li> Fix compilation on HLRS Cray. 
+  </li></ul> 
+   
+  <div class="note"> beta18.06.0 </div> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix in reading FDNEUT files 
+    </li><li> Bugfixes in MPI communication 
+  </li></ul> 
+   
+  <div class="note"> beta18.05.2 </div> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #67198: Bugfix for cut events 
+    </li><li> #67210: Bugfix for restart with COMP_DoOrganizeOnlyAfterHowManyCycles 
+  </li></ul> 
+   
+  <div class="note"> beta18.05.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.common_variables.TIMECHECK_Level.html">TIMECHECK_Level</a> -> give a level for time check. The level is given by the point-separatores in the name of the <a href="MESHFREE.RunTimeTools.TIMECHECK.html">TIMECHECK</a>-item (see <a href="MESHFREE.RunTimeTools.TIMECHECK.NamesOfStopWatches.html">NamesOfStopWatches</a>) 
+    The stopwatch ADMIN_TIME_INTEG.ORGANIZE.NEIGHBORLISTREDUCTION.CC2 (for example) is level 4. 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #64541: <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a> saves at least one boundary element even for ONLY:PARTICLES 
+    </li><li> #67134: Fixed bug where <a href="MESHFREE.InputFiles.USER_common_variables.DropletSource.html">DropletSource</a> did not fill points in first time step 
+    </li><li> #67172: Fixed a bug in restart that might have lead to deletion of points after restart (if some <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> was given in the input file) 
+  </li></ul> 
+   
+  <div class="note"> beta18.05.0 </div> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #66900 Fixed a memory leak 
+  </li></ul> 
+   
+  <div class="note"> beta18.04.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_BE_MONITOR_ITEM.%25CUMU_ASSIGN%25.html">%CUMU_ASSIGN%</a> as a new feature for (SAVE_)BE_MONITOR_ITEM 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix in filling after restart 
+    </li><li> Bugfix in reading in of geometries 
+    </li><li> Multiple small bugfixes to improve overall stability 
+  </li></ul> 
+   
+  <div class="note"> beta18.04.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_BE_MONITOR_ITEM.%25CUMU_SMOOTH%25.html">%CUMU_SMOOTH%</a> and <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_BE_MONITOR_ITEM.%25CUMU_SMOOTH_AreaBased%25.html">%CUMU_SMOOTH_AreaBased%</a>: a means of smoothing <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_BE_MONITOR_ITEM.html">SAVE_BE_MONITOR_ITEM</a> or <a href="MESHFREE.InputFiles.USER_common_variables.MONITORPOINTS.BE_MONITOR_ITEM.html">BE_MONITOR_ITEM</a> 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> Ticket 65641: fixed shared memory issues 
+  </li></ul> 
+   
+  <div class="note"> beta18.03.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> new <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.manipulate{.html">manipulate{</a> - feature: <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryManipulations.removeBEonCondition{.html">removeBEonCondition{</a> 
+  </li></ul> 
+   
+  <div class="note"> beta18.03.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Introduce <a href="MESHFREE.InputFiles.USER_common_variables.MEMORIZE.html">MEMORIZE</a> functionality (Note: does not work with restart). 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #64457/65567 Fixed restart for <a href="MESHFREE.InputFiles.USER_common_variables.ReadInPointCloud.html">ReadInPointCloud</a>. 
+    </li><li> #65895 Increased possible number of Abaqus time steps to 100000 
+    </li><li> #64540 *-Wildcards now work with ERF 
+    </li><li> #64541 Workaround for only Particles option for ERF: If ONLY:PARTICLES, only one dummy boundary element is written to ERF. 
+  </li></ul> 
+   
+  <div class="note"> beta18.02.2 </div> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #65437 Fix writing of restart file for monitor point cloud. 
+    </li><li> #63634 Performance fix for shared memory. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fix the evaluation of 2D curves for the monitor point cloud. 
+    </li><li> Fix the distance to boundary computation for <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> points. 
+    </li><li> Fix the <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.SYMMETRYFACE.html">SYMMETRYFACE</a>-treatment in the distance to boundary computation. 
+  </li></ul> 
+   
+  <div class="note"> beta18.02.1 </div> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #64267: Fixed point cloud problems by reverting changes in geometry handling and point cloud organization. 
+  </li></ul> 
+   
+  <div class="note"> beta18.02.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> sequential filtering of writeoutput of <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> results into the .timestep files (filter by time or time step counter), see <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.SequentialFiltering.html">SequentialFiltering</a> 
+    </li><li> <a href="MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.html">SophisticatedVolumeControl</a> as an example how to limit the volume flux deleted by <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> and METAPLANES, see especially <a href="MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.Ucv_VolumeCorrection.html">Ucv_VolumeCorrection</a> and <a href="MESHFREE.GettingStarted.SpecialCases.WaterManagement.RainOnSimplePlate.SophisticatedVolumeControl.Ucv_ComputeAdaptedTargetVolume.html">Ucv_ComputeAdaptedTargetVolume</a> 
+    </li><li> MESHFREE.InputFiles.common_variables.IGES_HealCorruptFaces as a way to better get around difficulties with meshing quasi-degenerated <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.IGES.html">IGES</a>-faces 
+    </li><li> <a href="MESHFREE.InputFiles.common_variables.ISOLATEDPOINTS_ClusterOnResultingVolume.html">ISOLATEDPOINTS_ClusterOnResultingVolume</a> to allow clustering of isolated points based on resulting cluster volume 
+    </li><li> for the <a href="MESHFREE.InputFiles.USER_common_variables.__GeneralRemarks__.Variables.html">Variables</a> , we implement <b> @SystemVariable@ </b> as an additional variable type in <a href="MESHFREE.InputFiles.USER_common_variables.html">USER_common_variables</a> 
+    </li><li> fallback rule for restart, see <a href="MESHFREE.InputFiles.USER_common_variables.RESTART.LaunchRestart.html">LaunchRestart</a>. It enables the user to use restart files from outside <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_path.html">SAVE_path</a>. 
+    </li><li> possible to use alias-in-alias 
+         <div class="code"> 
+         <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.html">begin_alias{</a>} 
+            "NNN" = "5" 
+            "MMM" = "Mon,Tue,Wed,Thu,Fri,Sat,Sun" 
+         <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_alias.html">end_alias</a> 
+         <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_file.html">SAVE_file</a> = 'xyz___&MMM(&NNN&)&___' 
+         
+ </div> 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #64141: volume correction: improve volume consistency for droplet creation (implement radius correction) 
+    </li><li> #64141 (again): correct bug concerning real(<a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().TwoArguments.%25FPM_VOLUME_DeletedAtMetaplanes%25.html">%FPM_VOLUME_DeletedAtMetaplanes%</a>,...); improved volume consistency also for deletion of points by <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a>(n) = ( [expr], <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.%25EVENT_DeletePoint%25.html">%EVENT_DeletePoint%</a> ) or METAPLANES 
+    </li><li> #63628: <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> results filtering, see <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.SequentialFiltering.html">SequentialFiltering</a> 
+    </li><li> #64281: Fixed bug for combination of shared memory and <a href="MESHFREE.Solvers.Numerics.STANDBY.html">STANDBY</a>. 
+    </li><li> #64525: User <a href="MESHFREE.Indices.html">Indices</a> (<a href="MESHFREE.Indices.UserDefinedIndices.html">UserDefinedIndices</a>) Fail With Restart. 
+    </li><li> #65057: Fix .checkpoint/.resume for MPI. 
+    </li><li> #64539: fixed handling of empty mpi processes for erf writing 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> chaining the order of <a href="MESHFREE.InputFiles.USER_common_variables.CODI.html">CODI</a>-execution from <a href="MESHFREE.html">MESHFREE</a>-variable-order to order of appearance in the <a href="MESHFREE.InputFiles.USER_common_variables.html">USER_common_variables</a>, see also Ticket #64724 (<a href="MESHFREE.InputFiles.USER_common_variables.CODI.html">CODI</a>: ORDER OF EXECUTION) 
+    </li><li> warning appears for using clustering by volume of isolated points for chambers different from 1 
+  </li></ul> 
+   
+  <div class="note"> beta17.11.2 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Updated default value for <a href="MESHFREE.InputFiles.common_variables.BE_CleanUp_STL.html">BE_CleanUp_STL</a> to 2, to reproduce previous behaviour. 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #63634/#64080 Bug fix for crash during first time step (initialisation) 
+  </li></ul> 
+   
+  <div class="note"> beta17.11.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New common variable <a href="MESHFREE.InputFiles.common_variables.BE_CleanUp_STL.html">BE_CleanUp_STL</a> with default 1 
+    </li><li> New common variables <a href="MESHFREE.InputFiles.common_variables.GEOTREE2_BND_FinalBoxSize.html">GEOTREE2_BND_FinalBoxSize</a> and <a href="MESHFREE.InputFiles.common_variables.GEOTREE2_BND_FinalBoxDimension.html">GEOTREE2_BND_FinalBoxDimension</a> 
+    </li><li> Shared memory: improved memory consumption per node 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #63684: Turbine: Fatal error in quicksort_list_re_int (due to uninitialized variable, which was not detected by the -check all option 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix in <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a> when BE items without alias name are present. 
+  </li></ul> 
+   
+  <div class="note"> beta17.11.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New parameter SAVE_PrecisionTimestepFile 
+    </li><li> implemented erf part structure 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.__GeneralRemarks__.ContinuationLines.html">ContinuationLines</a> 
+    </li><li> automatic computation/estimation of smoothing length for <a href="MESHFREE.Solvers.Numerics.STANDBY.html">STANDBY</a>-pointclouds, see <a href="MESHFREE.InputFiles.USER_common_variables.ReadInPointCloud.EnSight___RIPC___.html">EnSight</a> . 
+    </li><li> geometry manipulations upon reading of EnSight-files, see <a href="MESHFREE.InputFiles.USER_common_variables.ReadInPointCloud.EnSight___RIPC___.GeometryManipulations___RIPC___.html">GeometryManipulations</a> 
+    </li><li> changed default values for <a href="MESHFREE.InputFiles.common_variables.GEOTREE2_FinalBoxSize.html">GEOTREE2_FinalBoxSize</a>: 4->16 
+    </li><li> changed default values for <a href="MESHFREE.InputFiles.common_variables.GEOTREE2_MaximumBoxSize.html">GEOTREE2_MaximumBoxSize</a>: 8->20 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #63784: Fix for points moving through boundary elements. 
+    </li><li> #63399: <a href="MESHFREE.InputFiles.USER_common_variables.ReadInPointCloud.html">ReadInPointCloud</a> - control smoothing length of <a href="MESHFREE.Solvers.Numerics.STANDBY.html">STANDBY</a>-pointcloud 
+  </li></ul> 
+   
+  <div class="note"> beta17.10.2 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Speed up the initialization of <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.MOVE.html">MOVE</a>-statements based on <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_ProjectionOfMovementOfAnotherPart%25.html">%MOVE_ProjectionOfMovementOfAnotherPart%</a> 
+    </li><li> Speed up the initial filling 
+    </li><li> Additional activation of points for free surface check in case of geometrical function manipulation <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> (see <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.%25EVENT_FunctionManipulation%25.html">%EVENT_FunctionManipulation%</a>) 
+    </li><li> <a href="MESHFREE.Support.html">Support</a> for quads in <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.OBJ.html">OBJ</a> reader 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #63562: Remove debugging output 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fixed bug in KOP parsing 
+  </li></ul> 
+   
+  <div class="note"> beta17.10.1 </div> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #62928: Fixed allocation problem 
+    </li><li> #63253: Fixed bug in restart of ERF format 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Compilation for Cray with shared memory 
+  </li></ul> 
+   
+  <div class="note"> beta17.10.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Added values of <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.SYMMETRYFACE.html">SYMMETRYFACE</a> to output for boundary elements 
+    </li><li> Shared Memory (experimental), see <a href="MESHFREE.InputFiles.common_variables.COMP_SharedMemoryForBE.html">COMP_SharedMemoryForBE</a> 
+    </li><li> new feature in <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>, see  <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25ASSIGN_FUNCTIONVALUE%25.html">%ASSIGN_FUNCTIONVALUE%</a> 
+    </li><li> new selection feature in <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>, see <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.SelectionFeatures.html">SelectionFeatures</a> and <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.SelectionFeatures.SelectByPercentileBounds.html">SelectByPercentileBounds</a> 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #63238: Fixed bug that could lead to a deadlock during refilling 
+    </li><li> #62192: Implemented checkpoint/resume feature (see <a href="MESHFREE.RunTimeTools.ComputationalSteering.ParallelReadingOfSignalFile.checkpoint___CSpar___.html">checkpoint</a> ) 
+  </li></ul> 
+   
+  <div class="note"> beta17.09.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_Version : implement version 3 for the reconstruction of the substantial acceleration (second digit) 
+    </li><li> <a href="MESHFREE.RunTimeTools.ComputationalSteering.step-by-step-execution.html">step-by-step-execution</a> : implement the <a href="MESHFREE.RunTimeTools.ComputationalSteering.SequentialReadingOfSignalFile.step=NNN___CSseq___.html">step=NNN</a> feature 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #63023:  Solved filling problem of 2d karman vortex street 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> initial point filling suffered from problems if in MPI-modus. This problem is now fixed (suppress saturation-flagging of point close to MPI-bounds), but is no guarantee that it now works in any case. 
+  </li></ul> 
+   
+  <div class="note"> beta17.09.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.RepeatCurrentTimeStep.RepeatCurrentTimeStep_AdditionalComputationsAfterDataTransfer.html">RepeatCurrentTimeStep_AdditionalComputationsAfterDataTransfer</a> -> a way to compute derived values from the results of the repeated time step. 
+    </li><li> warning in case of double-definitions of functional items, for example if <a href="MESHFREE.InputFiles.USER_common_variables.ODE.html">ODE</a>(11) = ( ... ) is defined more than once in the input procedure. Multiple definitions do not lead to stop-of-execution, but the warning might point to problems. 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #62823: Karman with %RepeatCurrentTimeStepOnSamePointCloud% does not work with v17.08.2 --> resolved. The problem came by the current implementation on the <a href="MESHFREE.Solvers.Numerics.STANDBY.html">STANDBY</a> pointclouds 
+    </li><li> #62810: Dropletsourcevolume_EventCut --> now providing additional option in <a href="MESHFREE.InputFiles.USER_common_variables.DropletSource.html">DropletSource</a> in order to preserve the volume flux even though the creation area of droplets is diminished by <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a>-cuts 
+    </li><li> #62812: documentation of <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.approxY().html">approxY()</a> --> better documentation, also references into <a href=" ../DifferentialOperators/DOCUMATH_DifferentialOperators.pdf ">DOCUMATH_DifferentialOperators.pdf</a> . 
+  </li></ul> 
+   
+  <div class="note"> beta17.08.2 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New common variable <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_FuzzyMPIFilling.html">ORGANIZE_FuzzyMPIFilling</a> 
+  </li><li> Write current version before initialisation ('EXECUTING VERSION =') 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #62678: Box_In_Channel_dows_not_work_with_V17.08.0: problem of computation of boundary acceleration in the case of <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_USER_update_boundary_particles_Version.html">ORGANIZE_USER_update_boundary_particles_Version</a> = 1. Better set this parameter to 2 for the previous versions. See MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.BCON.%ind_p_dyn%.%BND_wall% in particular. 
+    </li><li> #60337: Fix determination of ind_dA in 2D if <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ReducedFillingOfWalls.html">ORGANIZE_ReducedFillingOfWalls</a> = 1 is used. 
+    </li><li> #62783: Bugfix regarding only and ignore functionality for gmsh and fdneut reader. 
+  </li></ul> 
+   
+  <div class="note"> beta17.08.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.common_variables.delaunay_reduction.html">delaunay_reduction</a> feature implemented 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #62147: options in cv for splitting ASCII files larger than 2GB; see <a href="MESHFREE.InputFiles.common_variables.SAVE_ASCII_split.html">SAVE_ASCII_split</a> 
+  </li></ul> 
+  <div class="note"> beta17.08.0 </div> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #62514: Floating Point Exception solved for native scaling of linear systems solved 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix regarding missing output if <a href="MESHFREE.InputFiles.common_variables.SimCut.html">SimCut</a> > 0 and SAVE_atEndOfTimestep = 1. 
+    </li><li> Added warning+workaround for cases with dH/dr > 1 in <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.html">SmoothingLength</a> definition. 
+  </li></ul> 
+   
+  <div class="note"> beta17.07.3 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.RunTimeTools.ComputationalSteering.step-by-step-execution.html">step-by-step-execution</a> as a means of better debugging the point cloud generation at startup (later, this functionality will be enhanced) 
+    </li><li> the FPM proces ID can now be given in <a href="MESHFREE.InputFiles.common_variables.html">common_variables</a>, see <a href="MESHFREE.InputFiles.common_variables.iFPM_process_ID.html">iFPM_process_ID</a> 
+    </li><li> <a href="MESHFREE.InputFiles.common_variables.iFPM_process_ID.html">iFPM_process_ID</a> can also be given as command line argument (Linux), see MESHFREE.ProgramExecution.Linux.Run.CommandLine 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #60480: Add writeout to warnings file in case of wrong KOP-definition 
+    </li><li> #62176: proper writeout to warnings file AND to ".FPM_log___FPM_ID=xxxxxxxxxx/Error_In_InputFiles.log" in case of wrong %...%-variables 
+    </li><li> #62151: due to coupling with VPS, alias variables containing only numbers, such as "12345678901" might have caused trouble in standalone modus. This problem now is resolved (check number aliases only in case of VPS-coupling) 
+    </li><li> #59493 and #62100: Fixed bug regarding Cray 
+    </li><li> #61384: Fixed issue in mpi communication concerning <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a> 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix in <a href="MESHFREE.InputFiles.USER_common_variables.DropletSource.html">DropletSource</a> that might have lead to breakdown of <a href="MESHFREE.html">MESHFREE</a> when too many points/droplets are filled during one time cycle 
+  </li></ul> 
+   
+  <div class="note"> beta17.07.2 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> modulo operation <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.mod().html">mod()</a> 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #58546: Reduced MPI package size (for large simulations) 
+    </li><li> #62072: Fixed bug in geometry initialisation 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Removed defunct command line options --ComputationalSteering, -CS. Use <a href="MESHFREE.InputFiles.common_variables.SIGNAL_LaunchComputationalSteering.html">SIGNAL_LaunchComputationalSteering</a> instead. 
+  </li></ul> 
+   
+  <div class="note"> beta17.07.1 </div> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> bugfix in preprocessing of double operators, e.g. [( 1 + -1 )*0.5], in <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.html">Equations</a> 
+  </li></ul> 
+   
+  <div class="note"> beta17.07.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Now blanks are allowed in definition of GIF-geometry: <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.BND_point.html">BND_point</a> &aliasName& [ex press ion with blan ks] [alsonoblankisok] [atle astgiv esomet hing] 
+    </li><li> Integrations now also are allowed if CONTROL_StopAfterReadingGeometry is given 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Several bugfixes regarding MPI communication 
+  </li></ul> 
+   
+  <div class="note"> beta17.06.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.include{.coarsenGeometry{.html">coarsenGeometry{</a> as a new means to coarsen geometry with too many triangles 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fixed bug for large amounts of curve data and increased limit for number of curves 
+    </li><li> safety-/consistency-/plausibility-checks for correction pressure (<a href="MESHFREE.Indices.LIQUID___indices___.%25ind_c%25.html">%ind_c%</a>) were too sensitive. If these checks trigger, then 
+    <a href="MESHFREE.Indices.LIQUID___indices___.%25ind_c%25.html">%ind_c%</a> is set identically to zero and the Chorin correction is not performed for the current time cycle. 
+  </li></ul> 
+   
+  <div class="note"> beta17.06.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New default: <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_ForceInsideCheckForNewParticles.html">ORGANIZE_ForceInsideCheckForNewParticles</a> = 1 
+  </li></ul> 
+  <span style="color:#f39200"><em> Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #61492: Fix writing of BE_..._FN_VAL files in case of restart. 
+    </li><li> #61518: <a href="MESHFREE.InputFiles.USER_common_variables.COUPLING.BFT.html">BFT</a> now properly works, example provided 
+    </li><li> #61555: New options for <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().html">real()</a>: <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25TIME_StepStartTime%25.html">%TIME_StepStartTime%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25TIME_StepWallTime%25.html">%TIME_StepWallTime%</a> 
+    </li><li> #61567: Fix for <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25OMP_NbProcesses%25.html">%OMP_NbProcesses%</a> 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.vCOG().html">vCOG()</a> , <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.xCOG().html">xCOG()</a> , <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.omCOG().html">omCOG()</a> , <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.MCOG().html">MCOG()</a> , <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.FCOG().html">FCOG()</a> now work poperly (before, only one of them could by used in any equation) 
+    </li><li> Coupling <a href="MESHFREE.InputFiles.USER_common_variables.COUPLING.BFT.html">BFT</a> : there was a missing file-close-statement, which lead to hanging simulations after too many <a href="MESHFREE.InputFiles.USER_common_variables.COUPLING.BFT.html">BFT</a> communications (too many files open) 
+    </li><li> Fix bug with incorrectly initialised Y<a href="MESHFREE.Indices.General___indices___.%25ind_BC%25.html">%ind_BC%</a> 
+  </li></ul> 
+   
+  <div class="note"> beta17.05.2 </div> 
+  <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #61378: Fix restart for <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_TranslationRotation%25.html">%MOVE_TranslationRotation%</a> (also for %MOVE_Rigid%). 
+  </li></ul> 
+   
+  <div class="note"> beta17.05.1 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> new function <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.approxY().html">approxY()</a> 
+  </li></ul> 
+  <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #61314: clean way to provide approximation of function values, see <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.approxY().html">approxY()</a> 
+    </li><li> #59618: Subset of pointcloud in order to recompute the time step(s) for error analysis, see <a href="MESHFREE.InputFiles.USER_common_variables.RepeatCurrentTimeStep.html">RepeatCurrentTimeStep</a>, especially <a href="MESHFREE.InputFiles.USER_common_variables.RepeatCurrentTimeStep.%25RepeatCurrentTimeStep_BasedOnReducedPointCloud%25.html">%RepeatCurrentTimeStep_BasedOnReducedPointCloud%</a> 
+    </li><li> #61315: <a href="MESHFREE.InputFiles.USER_common_variables.RepeatCurrentTimeStep.html">RepeatCurrentTimeStep</a> now also works for <a href="MESHFREE.Solvers.Numerics.LIQUID.Scheme.vp-.html">vp-</a> (previously, it was active only for <a href="MESHFREE.Solvers.Numerics.LIQUID.Scheme.v--.html">v--</a> ) 
+    </li><li> #61138,61139: VOLUME_DeletedAtMetaplanes: real(<a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().TwoArguments.%25FPM_VOLUME_DeletedAtMetaplanes%25.html">%FPM_VOLUME_DeletedAtMetaplanes%</a>,1) now working again. 
+    </li><li> #61250: WALLTIME_fails_on_multiple_CPUs: real(<a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25TIME_WallTime%25.html">%TIME_WallTime%</a>) now works again 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix regarding MPI communication for temperature 
+    </li><li> Bugfix for integrations with <a href="MESHFREE.Solvers.Numerics.LIQUID.Algorithms___liquid___.BubbleAlgorithm.html">BubbleAlgorithm</a> 
+  </li></ul> 
+   
+  <div class="note"> beta17.05.0 </div> 
+  <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.common_variables.RIGIDBODY_UseCollisionModel.html">RIGIDBODY_UseCollisionModel</a> 
+    </li><li> Improvements to <a href="MESHFREE.Solvers.Numerics.LIQUID.EquationsToSolve.DerivePoissonEquationForPressure.DynamicPressure.html">DynamicPressure</a>, see <a href="MESHFREE.Solvers.Numerics.LIQUID.Algorithms___liquid___.DynamicPressureAlgorithm.ClassicalDPA.html">ClassicalDPA</a>, <a href="MESHFREE.Solvers.Numerics.LIQUID.Algorithms___liquid___.DynamicPressureAlgorithm.ClassicalDPA.ComputationOfPHI.html">ComputationOfPHI</a>, and <a href="MESHFREE.Solvers.Numerics.LIQUID.Algorithms___liquid___.DynamicPressureAlgorithm.ClassicalDPA.ComputationOfPSI.html">ComputationOfPSI</a> 
+    </li><li> New classification <a href="MESHFREE.Indices.LIQUID___indices___.%25ind_DarcyVersion%25.html">%ind_DarcyVersion%</a> of Darcy term, see also <a href="MESHFREE.Solvers.Numerics.LIQUID.Algorithms___liquid___.DynamicPressureAlgorithm.ClassicalDPA.ComputationOfTHETA.html">ComputationOfTHETA</a> 
+    </li><li> Ignore prefix for <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_path.html">SAVE_path</a>, if already included in <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_path.html">SAVE_path</a> 
+  </li></ul> 
+  <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #55114: Fixes and improvements to <a href="MESHFREE.Solvers.Numerics.LIQUID.EquationsToSolve.DerivePoissonEquationForPressure.DynamicPressure.html">DynamicPressure</a> 
+    </li><li> #59980: Revert DIFFOP_Version=5 back to behaviour from beta17.03.3, new <a href="MESHFREE.InputFiles.common_variables.DIFFOP_Version.html">DIFFOP_Version</a> 50 to fix oscillations in watercrossing. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix regarding MPI communication for temperature 
+    </li><li> Bugfix for integrations with <a href="MESHFREE.Solvers.Numerics.LIQUID.Algorithms___liquid___.BubbleAlgorithm.html">BubbleAlgorithm</a> 
+  </li></ul> 
+   
+  <div class="note"> beta17.04.1 </div> <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Exclude inactive points from integrations 
+  </li></ul> 
+   
+  <div class="note"> beta17.04.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Document all the most relevant features in FPMDOCU 
+    </li><li> Improved compiler optimization flags (single time steps might run up to 10% faster) 
+    </li><li> Specify a prefix to <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_path.html">SAVE_path</a> with the command line option -r or the environment variable FPM_RESULTDIR_PREFIX 
+    </li><li> <a href="MESHFREE.Releases.__DeprecatedItems__.%25BND_none%25.html">%BND_none%</a>: <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.BC.html">BC</a> for <a href="MESHFREE.Solvers.Numerics.LIQUID.Algorithms___liquid___.DynamicPressureAlgorithm.ClassicalDPA.html">ClassicalDPA</a> improved for compressible flows (see <a href=" MESHFREE.InputFiles.common_variables.FLIQUID_ConsistentPressure_Version.html ">FPMDOCU</a>) 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_rigid%25.html">%MOVE_rigid%</a>: use second order time integration 
+  </li></ul> 
+  <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #59914: Implementation of <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.USER_h_funct.ADDS___SL___.html">ADDS</a> for <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.USER_h_funct.html">USER_h_funct</a> as combination of <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.USER_h_funct.ADTV___SL___.html">ADTV</a> and <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.USER_h_funct.DSCR___SL___.html">DSCR</a> 
+    </li><li> #60336/#55114: fix correction pressure so that compressible flow in <a href="MESHFREE.Solvers.Numerics.LIQUID.html">LIQUID</a> works again 
+    </li><li> #59980: Improve stability of DIFFOP_version = 5 to prevent oscillations at water surface for watercrossing applications 
+    </li><li> #60584: Keep correct value of Y<a href="MESHFREE.Indices.General___indices___.%25ind_dt%25.html">%ind_dt%</a> for <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> statements 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> CONTROL_StopAfterReadingGeometry: suppress evaluation of <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> statements and updating the velocity in case of geometry movement checking 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_rigid%25.html">%MOVE_rigid%</a>: bugfix for MPI 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_rigid%25.html">%MOVE_rigid%</a>: remove inconsistencies that caused accumulation of numerical errors 
+  </li></ul> 
+   
+  <div class="note"> beta17.03.3 </div> <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #60325: Bugfix for <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_TranslationRotation%25.html">%MOVE_TranslationRotation%</a> 
+  </li></ul> 
+   
+  <div class="note"> beta17.03.2 </div> <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #56172: Bugfix for restart with moving geometry 
+  </li></ul> 
+   
+  <div class="note"> beta17.03.1 </div> <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #60167: Bugfix for initial point filling 
+  </li></ul> 
+   
+  <div class="note"> v17.03.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New Stopwatches: <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25TIME_StartTime%25.html">%TIME_StartTime%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25TIME_InitTime%25.html">%TIME_InitTime%</a>, and <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25TIME_WallTime%25.html">%TIME_WallTime%</a> as PUBLICVALUE 
+    </li><li> New <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> keywords: <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_FLUX_DROPLETPHASE%25.html">%INTEGRATION_FLUX_DROPLETPHASE%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25BE_INTEGRATION_DIRECT%25.html">%BE_INTEGRATION_DIRECT%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25BE_INTEGRATION_DIRECT_TIME%25.html">%BE_INTEGRATION_DIRECT_TIME%</a> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.ConsistencyChecksAtStartup.html">ConsistencyChecksAtStartup</a> 
+    </li><li> New optional parameter iReproducible for <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.rand().html">rand()</a> 
+    </li><li> New common variables: <a href="MESHFREE.InputFiles.common_variables.MPI_WeightingMethodForBisection.html">MPI_WeightingMethodForBisection</a>, <a href="MESHFREE.InputFiles.common_variables.SimCutBoundary.html">SimCutBoundary</a> 
+    </li><li> New common variables: <a href="MESHFREE.InputFiles.common_variables.GEOTREE2_FinalBoxSize.html">GEOTREE2_FinalBoxSize</a>, <a href="MESHFREE.InputFiles.common_variables.GEOTREE2_IntListMargin.html">GEOTREE2_IntListMargin</a>, <a href="MESHFREE.InputFiles.common_variables.GEOTREE2_MaximumBoxSize.html">GEOTREE2_MaximumBoxSize</a> 
+    </li><li> Improvements to initial point filling to avoid memory overhead for MPI 
+  </li></ul> 
+    </li><li> INTERNAL: ReducedModel (see <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_ReducedModel%25.html">%MOVE_ReducedModel%</a>, incomplete documentation) 
+    </li><li> INTERNAL: <a href="MESHFREE.InputFiles.USER_common_variables.COUPLING.html">COUPLING</a> <a href="MESHFREE.InputFiles.USER_common_variables.COUPLING.BFT.html">BFT</a>, incomplete documentation 
+  <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #59701: <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_FLUX_DROPLETPHASE%25.html">%INTEGRATION_FLUX_DROPLETPHASE%</a> 
+    </li><li> #59702: Documentation of COMP_DropletphaseWithDisturbance. 
+    </li><li> #59704: <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25BE_INTEGRATION_DIRECT%25.html">%BE_INTEGRATION_DIRECT%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25BE_INTEGRATION_DIRECT_TIME%25.html">%BE_INTEGRATION_DIRECT_TIME%</a> 
+    </li><li> #59797: Bugfixes <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a> 
+    </li><li> #59959: Backwards compatibility for <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_BND_DIRECT%25.html">%INTEGRATION_BND_DIRECT%</a> 
+    </li><li> #59971: Bugfix regarding <a href="MESHFREE.InputFiles.USER_common_variables.CODI.CODI_min_max.html">CODI_min_max</a> on many MPI processes. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfixes for <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a>. 
+    </li><li> Bugfix for TOUCH_reflection boundaries. 
+    </li><li> Increase the maximum number of <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a>-statements to 20. 
+    </li><li> Bugfix for integrations in case of multiphase simulations 
+    </li><li> Bugfix in USER_PerformIntegration for integration on BEs 
+    </li><li> Bugfix in Equations regarding chained operators (e.g. 5+-2) 
+  </li></ul> 
+   
+  <div class="note"> v17.01.2 </div> <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fixed bug concerning correct license files being recognized as invalid 
+  </li></ul> 
+   
+  <div class="note"> v17.01.1 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.IDENT.html">IDENT</a>-flag for metaplanes: <a href="MESHFREE.__Constants__.%25BND_cut%25___const___.html">%BND_cut%</a>. If this flag is used, points will be cut off/removed as soon as they reach a metaplane. 
+    </li><li> New common variables <a href="MESHFREE.InputFiles.common_variables.SimCutBoundary.html">SimCutBoundary</a>, <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_PSTOneRefillStep3_UseFromWhichTimeStep.html">ORGANIZE_PSTOneRefillStep3_UseFromWhichTimeStep</a> 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fixed bug that could lead to crash during writeout in <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a> 
+    </li><li> Fixed bug in <a href="MESHFREE.InputFiles.common_variables.NEIGHBOR_FilterMethod.html">NEIGHBOR_FilterMethod</a> 
+  </li></ul> 
+   
+  <div class="note"> v17.01.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New solver for ordinary differential equations (<a href="MESHFREE.InputFiles.USER_common_variables.ODE.html">ODE</a>) 
+    </li><li> <a href="MESHFREE.Indices.UserDefinedIndices.html">UserDefinedIndices</a> %indU_...% 
+    </li><li> New common variables to disable warnings: <a href="MESHFREE.InputFiles.common_variables.WARNINGS_BND_Integrate.html">WARNINGS_BND_Integrate</a>, <a href="MESHFREE.InputFiles.common_variables.WARNINGS_USER_parse_IsConditionStringFulfilledByBE.html">WARNINGS_USER_parse_IsConditionStringFulfilledByBE</a>, <a href="MESHFREE.InputFiles.common_variables.WARNINGS_USER_parse_IsConditionSubstringFulfilledByBE.html">WARNINGS_USER_parse_IsConditionSubstringFulfilledByBE</a>. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bug fix in <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.html">Equations</a> regarding double operators (e.g. 1+ -2) 
+  </li></ul> 
+   
+  <div class="note"> v16.12.1 </div> <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Reintroduce Ucv keyword 'DropletSource' which has accidentally been removed. (Ticket #58804) 
+  </li></ul> 
+   
+  <div class="note"> v16.12.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.MOVE.html">MOVE</a> option <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_concat%25.html">%MOVE_concat%</a> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_ProjectionOfMovementOfAnotherPart%25.html">%MOVE_ProjectionOfMovementOfAnotherPart%</a> extended to triangles 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.DropletSource.html">DropletSource</a> 
+    </li><li> exportFile, see <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.exportGeometry{.html">exportGeometry{</a>} 
+    </li><li> Improvements to reading of <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.STL.html">STL</a> geometry files, saving memory 
+  </li></ul> 
+  <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #54405: special workaround 
+    </li><li> #58159: <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> now also works with results from <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> (after first time step) 
+    </li><li> #57321/#57843/#58065: Problems with <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a> 
+    </li><li> #56360: water transport through thin walls 
+  </li></ul> 
+   
+  <div class="note"> v16.10.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Improvements to <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.include_Ucv{.html">include_Ucv{</a>}, see <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.parameters{.html">parameters{</a>}. 
+    </li><li> Improvements to <a href="MESHFREE.InputFiles.USER_common_variables.PhysicalProperties.mue___PHYP___.JohnsonCook.html">JohnsonCook</a> material model. 
+    </li><li> Allow <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> statements to append to existing file, see __HeaderInfoOrComments__. 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.PointCloudReduction.html">PointCloudReduction</a> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.DropletSource.html">DropletSource</a> 
+    </li><li> <a href="MESHFREE.html">MESHFREE</a> point configuration after <a href="MESHFREE.InputFiles.USER_common_variables.RESTART.html">RESTART</a> now exactly as at the time the restart file was written. 
+  </li></ul> 
+  <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #57095: Bugfix for <a href="MESHFREE.InputFiles.USER_common_variables.RESTART.html">RESTART</a> with moving geometries. 
+    </li><li> #57321: Bugfix in <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a>. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fixed bug that could lead to extremely small time steps. 
+    </li><li> Fixed bug regarding dynamic pressure and <a href="MESHFREE.Indices.LIQUID___indices___.%25ind_ETA_eff%25.html">%ind_ETA_eff%</a> 
+  </li></ul> 
+   
+  <div class="note"> v16.09.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Improvements to <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>, see __HeaderInfoOrComments__, <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25PUBLICVALUE_CLOCKstatistics%25.html">%PUBLICVALUE_CLOCKstatistics%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25MPI_NbProcesses%25.html">%MPI_NbProcesses%</a> 
+    </li><li> Improvements to <a href="MESHFREE.InputFiles.USER_common_variables.RESTART.html">RESTART</a> for (future) back compatibility 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.html">SAVE_format</a> version ASCII accepts <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_CoordinateSystem.html">SAVE_CoordinateSystem</a> 
+  </li></ul> 
+  <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #57095: Fixed bug regarding time dependent curves at restart 
+    </li><li> #56172: Fixed geometry moving at restart 
+    </li><li> #57182: Generalised format for read-in of Abaqus files 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bugfix to remove recursively created symlinks in results folder 
+    </li><li> Bugfix for sporadically occuring bug during boundary point activation 
+  </li></ul> 
+   
+  <div class="note"> v16.08.0 </div> <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> Add warning if geometry used in <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.InDom().html">InDom()</a> is not found. (Ticket #56277) 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Removed bug in geometry movement at restart (Ticket #56172) 
+    </li><li> Bugfix: Only first valid case{...}-statement in selection will be used. Previously, all valid case{...}-statement except for <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.case_else{.html">case_else{</a>} were executed. 
+    </li><li> Point cloud filling in MPI mode (with only a single openMP thread) is now deterministic for a given number of MPI processes (Ticket #56695) 
+    </li><li> Improved point organization for thin geometry parts (Tickets #56703, #56807) 
+    </li><li> Bugfix: Settings in cv had been able to overwrite settings in Ucv. Now Ucv is always final. 
+  </li></ul> 
+   
+  <div class="note"> v16.07.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Finished new <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.html">SAVE_format</a> option <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a> (ERF-HDF5 v2.1) 
+    </li><li> New option SAVE_atEndOfTimestep 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.USER_h_min.html">USER_h_min</a> can now be defined by equations 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.MONITORPOINTS.html">MONITORPOINTS</a>: interior <a href="MESHFREE.InputFiles.USER_common_variables.MONITORPOINTS.html">MONITORPOINTS</a> can move. New: <a href="MESHFREE.InputFiles.USER_common_variables.MONITORPOINTS.MONITORPOINTS_DELETION.html">MONITORPOINTS_DELETION</a> and <a href="MESHFREE.InputFiles.USER_common_variables.MONITORPOINTS.MONITORPOINTS_STOP.html">MONITORPOINTS_STOP</a> 
+    </li><li> New <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.MOVE.html">MOVE</a> statements <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_ElasticBeam%25.html">%MOVE_ElasticBeam%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_ProjectionOfMovementOfAnotherPart%25.html">%MOVE_ProjectionOfMovementOfAnotherPart%</a> 
+  </li></ul> 
+  <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #55401: Remove limit on number of aliases. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bug correction MONITOR-marker 
+    </li><li> Bug correction of INTEGRATION_FLUX connected with moving boundary elements 
+  </li></ul> 
+   
+  <div class="note"> v16.06.1 </div> <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #55648: Removing points from a degenerated 3D-phase (thin layer of <a href="MESHFREE.html">MESHFREE</a> points) in the vicinity of gaps or regular geometries is now 
+  </li></ul> 
+              suppressed, however checked only on this one particular example. 
+  <span style="color:red"><em> Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_FLUX%25.html">%INTEGRATION_FLUX%</a> now works even with moving boundary elements 
+    </li><li> <a href="MESHFREE.RunTimeTools.TIMECHECK.html">TIMECHECK</a>: bug correction that previously lead to breakdown of <a href="MESHFREE.html">MESHFREE</a> if <a href="MESHFREE.InputFiles.common_variables.COMP_TimeCheck.html">COMP_TimeCheck</a>:=1 and CONTROL_StopAfterReadingGeometry:=2 are both set 
+  </li></ul> 
+   
+  <div class="note"> v16.06.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Updated <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> treatment, new <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.EventMessage.html">EventMessage</a> capability. 
+    </li><li> <a href="./search/search.html">Search page</a> for FPMDOCU. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Improved formulation of boundary conditions at free surface in the <a href="MESHFREE.Solvers.Numerics.LIQUID.Scheme.vp-.html">vp-</a> case for compressible materials. 
+  </li></ul> 
+  <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> Removed bug in <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> along free surfaces. 
+  </li></ul> 
+   
+  <div class="note"> v16.05.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> each <a href="MESHFREE.html">MESHFREE</a>-simulation has now a proper process ID; the SIGNAL- and warning-files carry this unique process ID in their name, 
+  </li></ul> 
+      such that more than one simulation ran be run in on and the same project folder. 
+    </li><li> Compactified structure of <a href="MESHFREE.html">MESHFREE</a> output in the time step phase. 
+    </li><li> Provide a stop code for the <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a> handler 
+    </li><li> remove defects in kinetic energy in the organization part of <a href="MESHFREE.html">MESHFREE</a> 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> remove problem with <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.compareY().html">compareY()</a> (ticket 54883) -> problem of declaration sizes in fortran. Increaing the array sizes, future solution is an adaptive size array 
+    </li><li> remove FATAL-VALUE problems (ticket 53514) 
+  </li></ul> 
+   
+  <div class="note"> v16.04.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Enhancements in the documentation. 
+    </li><li> Call events every N time steps. 
+    </li><li> Use of INTEGRATION_FLUX over <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.BND_plane.html">BND_plane</a>. 
+    </li><li> Option for converting 6-node-triangles into regular triangles when reading in. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fix volume control at metaplanes in the MPI version. 
+  </li></ul> 
+   
+  <div class="note"> v16.03.1 </div> <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fixed compilation of Cray version. 
+  </li></ul> 
+   
+  <div class="note"> v16.03.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.Support.html">Support</a> for license server FITlm 
+    </li><li> Improve hierarchy of time check output, see <a href="MESHFREE.InputFiles.common_variables.COMP_TimeCheck.html">COMP_TimeCheck</a> 
+    </li><li> New function <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.compareY().html">compareY()</a> to compare function value between two chambers 
+    </li><li> ERF-HDF5 Pointcloud and boundary data can be viewed in ESI Visual-Environment (experimental) 
+  </li></ul> 
+  <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #52923: Make volume correction take metaplanes into account 
+    </li><li> #53706: Add access to first residuals (see <a href="MESHFREE.Indices.General___indices___.%25ind_v_residual(3)%25.html">%ind_v_residual(3)%</a>, <a href="MESHFREE.Indices.General___indices___.%25ind_r_residual%25.html">%ind_r_residual%</a>) 
+    </li><li> #54022: Bugfix for restart with large point cloud 
+    </li><li> #54220/54184/54308: Bugfix for Integration statements, columns in timestep file 
+    </li><li> #54472: Bugfix in regularisation for problems with all Neumann boundary conditions 
+    </li><li> #54468: Make kill on normal termination optional. Standard is no kill. To turn it back on provide '-k' or '--kill' as command line option to <a href="MESHFREE.html">MESHFREE</a>. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bug in the selection-environment in USER_common_variables.dat 
+  </li></ul> 
+   
+  <div class="note"> v16.02.0 </div> <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Bug fixes regarding multiple <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.IGES.html">IGES</a>-files and surface triangulation from <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.IGES.html">IGES</a> 
+  </li></ul> 
+   
+  <div class="note"> v16.01.1 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> New movement statement <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_vertuschka%25.html">%MOVE_vertuschka%</a> 
+    </li><li> Option to run point cloud quality check for externally given point clouds (e.g. by ascii files). 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ENSIGHT6.html">ENSIGHT6</a>: Split point cloud into different ENSIGHT PIDs, see <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_PID_ITEM.html">SAVE_PID_ITEM</a> 
+    </li><li> Improved neighbor selection for pressure evaluation in integrations. 
+  </li></ul> 
+  <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #54022: Fixed restart bug. 
+    </li><li> #53918: Corrected typo in description of ind_ETA. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fix restart bug for simulations containing automatic aliases. 
+  </li></ul> 
+   
+  <div class="note"> v16.01.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> ERF-HDF5: Pointcloud can be viewed in Animator4 or ESI Visual-Environment (experimental). 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.ConstructClause.%25CONSTRUCT_EstablishCurveVolumeVersusHeight%25.html">%CONSTRUCT_EstablishCurveVolumeVersusHeight%</a>. 
+    </li><li> Save construct variables on restart file, <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_construct_atRestart{.html">begin_construct_atRestart{</a>} in order to renew construct variables. 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_ABSFLUX%25.html">%INTEGRATION_ABSFLUX%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_ABSFLUX_TIME%25.html">%INTEGRATION_ABSFLUX_TIME%</a>. 
+    </li><li> Mathematical selection-clause in order to mimic if-then-elseif-else based on arithmetic expressions, see <a href="MESHFREE.InputFiles.USER_common_variables.Selection.html">Selection</a>. 
+    </li><li> <a href="MESHFREE.InputFiles.common_variables.AMFPMJ_CommonAdministrationDirectory.html">AMFPMJ_CommonAdministrationDirectory</a>. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fixed bug with timestep-files in conjunction with restart and reload. 
+    </li><li> Fixed bug with negative chamber indices. 
+    </li><li> Bug fix for <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_construct{.CONSTRUCT.html">CONSTRUCT</a>-statement with <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.ConstructClause.%25CONSTRUCT_BoxMidPoint%25.html">%CONSTRUCT_BoxMidPoint%</a>-keyword. 
+    </li><li> Bug fixes related to multiple geometry <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.IGES.html">IGES</a> files. 
+  </li></ul> 
+   
+  <b> Note: </b> This version is not fully backwards compatible. 
+  begin_boundary_elements and begin_construct blocks are now read sequentially. 
+  <a href="MESHFREE.Solvers.Geometry.html">Geometry</a> parts used in a construct statement need to be defined beforehand. 
+   
+  <div class="note"> v15.12.1 </div> <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fixed compilation error. 
+  </li></ul> 
+   
+  <div class="note"> v15.12.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> Various geometry manipulation options (<a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.manipulate{.html">manipulate{</a>}, <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.delete{.html">delete{</a>}), see <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.html">BoundaryElements</a> 
+    </li><li> Integration on BND_BlindAndEmpty boundary elements (passing <a href="MESHFREE.html">MESHFREE</a> points), see <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_FLUX%25.html">%INTEGRATION_FLUX%</a> 
+    </li><li> ERF-HDF5: write out first timestep (experimental) 
+    </li><li> New option for adaptive smoothing length, see <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.USER_h_funct.ADTV___SL___.html">ADTV</a> 
+    </li><li> <a href="MESHFREE.Support.html">Support</a> for multiple geometry <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.IGES.html">IGES</a> files, see <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.include{.html">include{</a>File} 
+    </li><li> New <a href="MESHFREE.html">MESHFREE</a>-neighborhood selection procedure for <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a> at <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.BND_point.html">BND_point</a>-objects 
+    </li><li> Creation of BND_points based on existing geometry, see <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_boundary_elements{.BNDpoints_ExtractFromNodes{.html">BNDpoints_ExtractFromNodes{</a>} 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.CuttingCurveCluster.html">CuttingCurveCluster</a> 
+    </li><li> Performance improvements in Delaunay tetrahedralization 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.ExDom().html">ExDom()</a> as opposite of <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.InDom().html">InDom()</a> in equation parser 
+  </li></ul> 
+  <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #53395: Fixed Bug in the abaqus pressure write-outs. 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> Fixed restart. 
+    </li><li> Bugfix in timestep-files for values less than 1.0e-99 
+  </li></ul> 
+   
+  <div class="note"> v15.11.1 </div> <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #53113: restart in case of bubbly inflow 
+  </li></ul> 
+   
+  <div class="note"> v15.11.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> point cloud quality check 
+    </li><li> <a href="MESHFREE.InputFiles.common_variables.COMP_TimeCheck.html">COMP_TimeCheck</a> = 3 writes the time statistics into the result directory after every time step 
+    </li><li> shorter version of status bar for BiCGstab solver 
+    </li><li> more time statistics for box sorting for boundary elements 
+    </li><li> adaptive smoothing length definition <a href="MESHFREE.InputFiles.USER_common_variables.SmoothingLength.USER_h_funct.html">USER_h_funct</a> = 'ADTV' 
+    </li><li> performance improvement for box sorting for boundary elements 
+    </li><li> writing 'ENSIGHT6 BINARY' results to more than one result path 
+    </li><li> sweeping function ensuring given slopes are not exceeded for dedicated functions (see <a href="MESHFREE.InputFiles.USER_common_variables.CODI.CODI_min_max.html">CODI_min_max</a>) 
+    </li><li> speedup for function <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.ChkNP().html">ChkNP()</a> 
+    </li><li> latex equations in FPMDOCU 
+  </li></ul> 
+  <span style="color:#f39200"><em>Tickets: </em> </span> 
+  <ul><li> 
+    </li><li> #52915: write outs for missing boundary conditions 
+    </li><li> #52913: comment writing of *.VOLUMES 
+    </li><li> #52912: total clock and cpu time available for integration (see <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25CLOCK_STATISTICS_TOTAL_ORGANIZE%25.html">%CLOCK_STATISTICS_TOTAL_ORGANIZE%</a>, <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.real().OneArgument.%25CPU_STATISTICS_TOTAL_ORGANIZE%25.html">%CPU_STATISTICS_TOTAL_ORGANIZE%</a>) 
+    </li><li> #52752: restart in case of saving in a given coordinate system 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> integration statements with keyword <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_INT%25.html">%INTEGRATION_INT%</a> 
+    </li><li> standard behavior for command line option '-nt nn' 
+    </li><li> memory leak for <a href="MESHFREE.InputFiles.common_variables.COMP_SortBEintoBoxes_Version.html">COMP_SortBEintoBoxes_Version</a> = 4 
+    </li><li> integration for planes 
+    </li><li> bubble volume computation 
+    </li><li> avoid termination of <a href="MESHFREE.html">MESHFREE</a> if result directory became non-existent 
+  </li></ul> 
+   
+  <div class="note"> v15.10.1 </div> <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> detection of free surface points 
+  </li></ul> 
+   
+  <div class="note"> v15.10.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> new function <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.ChkNP().html">ChkNP()</a> 
+    </li><li> option to restrict the projection for BND_points to neighboring points only via <a href="MESHFREE.Releases.__DeprecatedItems__.%25INTEGRATION_BND_DIRECT_Proj_BND%25.html">%INTEGRATION_BND_DIRECT_Proj_BND%</a> or %INTEGRATION_BND_DIRECT_TIME_proj_BND% (see <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.html">INTEGRATION</a>) 
+    </li><li> sharing of scalar variables for <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ENSIGHT6.html">ENSIGHT6</a> BINARY files via SAVE_ShareScalars 
+    </li><li> launch <a href=" MESHFREE.RunTimeTools.ComputationalSteering.html ">computational steering</a> by <a href="MESHFREE.InputFiles.common_variables.SIGNAL_LaunchComputationalSteering.html">SIGNAL_LaunchComputationalSteering</a> = true 
+    </li><li> flux equilibrium boundary conditions for k-epsilon-model 
+    </li><li> strong defintion for alias, i.e. "aliasName" := "..." overwrites the old alias definition instead of creating aliasName{2} 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> mapping of pressure for VPS shell elements 
+    </li><li> bubble volume computation 
+    </li><li> determination of opposite points for multiphase applications 
+  </li></ul> 
+   
+  <div class="note"> v15.9.1 </div> <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> tetrahedrization during saving of all points/nodes (see <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.html">SAVE_format</a>) 
+  </li></ul> 
+   
+  <div class="note"> v15.9.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.BOUNDARYFILLING.html">BOUNDARYFILLING</a>-flag for aliases corresponding to geometry parts 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+  - </li><li> save timestep file even without integration statements 
+    </li><li> termination of <a href="MESHFREE.html">MESHFREE</a> for incorrect use of derivatives in input file, e.g. for <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.dYdx().html">dYdx()</a> 
+  </li></ul> 
+   
+  <div class="note"> v15.8.0 </div> <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> remove free surface points if distance to boundary is exactly zero 
+  </li></ul> 
+   
+  <div class="note"> v15.7.3 </div> <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> free surface points hitting a <a href="MESHFREE.InputFiles.USER_common_variables.ALIAS.AliasForGeometryItems.TOUCH___alias___.%25TOUCH_reflection%25.html">%TOUCH_reflection%</a> boundary 
+  </li></ul> 
+   
+  <div class="note"> v15.7.2 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> pre-check for free surface points (see <a href="MESHFREE.InputFiles.common_variables.ORGANIZE_CheckPointsAtFS_PerformPreCheck.html">ORGANIZE_CheckPointsAtFS_PerformPreCheck</a>) 
+    </li><li> new function <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.lenA().html">lenA()</a> 
+    </li><li> enhancement of event handler (see <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a>) 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> handling of penetration of thin walls 
+  </li></ul> 
+   
+  <div class="note"> v15.7.1 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> improvement for boundary slip points 
+    </li><li> minor trivial performance improvements 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> reading of stl-files 
+    </li><li> handling of penetration of thin walls 
+    </li><li> handling of slight penetration of walls for free surface points 
+  </li></ul> 
+   
+  <div class="note"> v15.7.0 </div> <span style="color:green"><em>New: </em> </span> 
+  <ul><li> 
+    </li><li> time step criterion for moving metaplanes 
+    </li><li> new <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.IDENT.html">IDENT</a>-type %BND_wall_NoLayerThickness% (same behavior as BND_wall but ignores the given <a href="MESHFREE.InputFiles.common_variables.dist_LayerThickness.html">dist_LayerThickness</a> parameter) 
+    </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryElements.include{.GeometryRestrictions.sloppy{.html">sloppy{</a>} functionality also for GMSH-files 
+    </li><li> new function <a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.binA().html">binA()</a> 
+    </li><li> add boundary condition flag <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_v.%25BND_NEUMANN%25.html">%BND_NEUMANN%</a> with same behaviour as <a href="MESHFREE.Releases.__DeprecatedItems__.%25BND_VONNEU%25.html">%BND_VONNEU%</a> 
+    </li><li> add boundary condition flag <a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.LIQUID__BC__.BC_T.%25BND_ROBIN%25___BC_T___.html">%BND_ROBIN%</a> with same behavior as <a href="MESHFREE.Releases.__DeprecatedItems__.%25BND_CAUCHY%25___BC_T___.html">%BND_CAUCHY%</a> 
+  </li></ul> 
+  <span style="color:red"><em>Bugfixes: </em> </span> 
+  <ul><li> 
+    </li><li> non-boundary points with neighbors that have been close to a boundary in the previous time step are now explicitly checked for their boundary distance 
+    </li><li> check that displacement of free surface points is not exaggerated 
+    </li><li> mapping of pressure for VPS shell elements 
+  </li></ul> 
+   
+
+	      			</div>
+	      		</div>
+		</div>
+	</div>
+	<div class="blank-class-outer-top footer">
+	  <div class="border-vertical">
+	    <div class="row">
+	      <div class="col-md-12 comprehensive-example">
+Source file of this page: <a href="../../FPM_src/FPM_fpmdocu/FPMReleaseNotesBETA.f90">../../FPM_src/FPM_fpmdocu/FPMReleaseNotesBETA.f90</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<div class="blank-class-outer footer visible-md visible-lg">
+  <div class="border-vertical">
+    <div class="row">
+	      <div class="col-md-6">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	      <div class="col-md-2 footer-border-left">
+			<a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-small visible-xs visible-sm">
+    <div class="blank-class-outer">
+      <div class="blank-class-inner">
+	<div class="row ">
+		<div class="col-md-12">
+			<a href="Index.html" target="_blank">Index</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="MESHFREE.Releases.html" target="_blank">Releases</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-bottom">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="https://svn.itwm.fraunhofer.de/svn/MESHFREEdocu/Executables/" target="_blank">Executables</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+    <div class="blank-class-outer-left-right">
+      <div class="blank-class-inner">
+	<div class="row ">
+	      <div class="col-md-12">
+		      <a href="http://itwm.fraunhofer.de" target="_blank">&copy 2020 Fraunhofer Institute for Industrial Mathematics ITWM</a>
+	      </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

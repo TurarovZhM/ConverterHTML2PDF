@@ -1,0 +1,51 @@
+FPM Search
+
+FPM Search is a search application which 
+allows users to search term within the
+wiki documents present in the department.
+This application is based on searching mechanism 
+of lunr.js, which is used to find searched_term
+in index file.
+
+
+Installation
+There are two steps to setup search in
+the internal environment.
+1. Index file creation
+2. Placement of search application file and generated index file in specific path
+
+1. Index file creation
+    In this process, all the infromations(text) present in the html documents are
+    collected in index file(web.json file). For every documents this index file stores
+    -id: a unique identifier to the document, which is used to distinguish between multiple documents
+    -title: title of the document
+    -body: content of the html file in plane text format
+    -url: url of the html file which will be used to link html file in search result(relative path)
+
+    To create index file there is a python application file called 'read-html-files.py'
+    This application takes two parameters
+    -- input directory: absolute path of the folder where all the html documents are present
+    -- output directory: absolute path of the folder where index file(web.json) file will be generated.
+    e.g.
+   python read-html-files.py -i /p/tv/FPM_softwareF95/GIT_Dipesh/FPM_documentation/WebDocumentation -o /p/tv/FPM_softwareF95/GIT_Dipesh/FPM_documentation/WebDocumentation/search
+
+
+2. Placement of search application file and generated index file in specific path
+    All the required files can be found in search folder. This search folder should be placed 
+    inside the folder where all the html documents are present(It is required for accesseing 
+    html documents from searched page because relative path is set to link those documents)
+    
+    The main files that are needed to run the search application are
+    web.josn - index file
+    search.html - user interface for search
+    search-query.js - main backend file that links with lunr, search related documetns and display 
+		      matched words in user frindly manner.
+    lunr.js - javascript plugin file which handles core functionality of search
+    jquery.mark.js - jquery plugin file for highlighting the matched term
+    jquery-1.12.0.js - core jquery plugin file
+    
+	 
+    
+Note: Local copy of BeautifulSoup included in bs4, following installation guide on https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+Downloaded from https://www.crummy.com/software/BeautifulSoup/bs4/download/4.0/beautifulsoup4-4.1.0.tar.gz
+AEi 2016-05-13

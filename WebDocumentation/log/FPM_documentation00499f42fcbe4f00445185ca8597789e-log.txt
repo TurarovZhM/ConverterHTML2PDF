@@ -1,0 +1,190 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013)
+ restricted \write18 enabled.
+entering extended mode
+(./FPM_documentation-equation.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/minimal.cls
+Document Class: minimal 2001/05/25 Standard LaTeX minimal class
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+No file FPM_documentation-equation.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Undefined control sequence.
+<argument>  \begin {array}{l} {\textstyle {{\rm 
+                                                {d}} \over {{\rm {dt}}}}}\rh...
+l.11  \end{align*}
+                  
+
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 11.
+
+! Undefined control sequence.
+<argument> ... {\textstyle {{\rm {d}} \over {{\rm 
+                                                  {dt}}}}}\rho {\rm { + }}\r...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ... {d}} \over {{\rm {dt}}}}}\rho {\rm 
+                                                  { + }}\rho \cdot \nabla _{...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ... \nabla _{}^T{\mathbf {\bar v}}{\rm 
+                                                  { }} = {\rm { }}0\\ {\text...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...T{\mathbf {\bar v}}{\rm { }} = {\rm 
+                                                  { }}0\\ {\textstyle {{\rm ...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...}} = {\rm { }}0\\ {\textstyle {{\rm 
+                                                  {d}} \over {{\rm {dt}}}}}\...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ... {\textstyle {{\rm {d}} \over {{\rm 
+                                                  {dt}}}}}\left ( {\rho {\ma...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...( {\rho {\mathbf {v}}} \right ){\rm 
+                                                  { + }}\left ( {\rho {\math...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ... \nabla _{}^T{\mathbf {\bar v}}{\rm 
+                                                  { + }}\nabla \bar p{\rm { ...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...bar v}}{\rm { + }}\nabla \bar p{\rm 
+                                                  { = 0}}\\ {\textstyle {{\r...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...r p{\rm { = 0}}\\ {\textstyle {{\rm 
+                                                  {d}} \over {{\rm {dt}}}}}\...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ... {\textstyle {{\rm {d}} \over {{\rm 
+                                                  {dt}}}}}\left ( {\rho E} \...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...t}}}}}\left ( {\rho E} \right ){\rm 
+                                                  { + }}\left ( {\rho E} \ri...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ... \nabla _{}^T{\mathbf {\bar v}}{\rm 
+                                                  { + }}\nabla _{}^T\left ( ...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...ot {\mathbf {\bar v}}} \right ){\rm 
+                                                  { }} = {\rm { }}0 \end {ar...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...{\bar v}}} \right ){\rm { }} = {\rm 
+                                                  { }}0 \end {array} 
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument>  \begin {array}{l} {\textstyle {{\rm 
+                                                {d}} \over {{\rm {dt}}}}}\rh...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ... {\textstyle {{\rm {d}} \over {{\rm 
+                                                  {dt}}}}}\rho {\rm { + }}\r...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ... {d}} \over {{\rm {dt}}}}}\rho {\rm 
+                                                  { + }}\rho \cdot \nabla _{...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ... \nabla _{}^T{\mathbf {\bar v}}{\rm 
+                                                  { }} = {\rm { }}0\\ {\text...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...T{\mathbf {\bar v}}{\rm { }} = {\rm 
+                                                  { }}0\\ {\textstyle {{\rm ...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...}} = {\rm { }}0\\ {\textstyle {{\rm 
+                                                  {d}} \over {{\rm {dt}}}}}\...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ... {\textstyle {{\rm {d}} \over {{\rm 
+                                                  {dt}}}}}\left ( {\rho {\ma...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...( {\rho {\mathbf {v}}} \right ){\rm 
+                                                  { + }}\left ( {\rho {\math...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ... \nabla _{}^T{\mathbf {\bar v}}{\rm 
+                                                  { + }}\nabla \bar p{\rm { ...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...bar v}}{\rm { + }}\nabla \bar p{\rm 
+                                                  { = 0}}\\ {\textstyle {{\r...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...r p{\rm { = 0}}\\ {\textstyle {{\rm 
+                                                  {d}} \over {{\rm {dt}}}}}\...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ... {\textstyle {{\rm {d}} \over {{\rm 
+                                                  {dt}}}}}\left ( {\rho E} \...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...t}}}}}\left ( {\rho E} \right ){\rm 
+                                                  { + }}\left ( {\rho E} \ri...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ... \nabla _{}^T{\mathbf {\bar v}}{\rm 
+                                                  { + }}\nabla _{}^T\left ( ...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...ot {\mathbf {\bar v}}} \right ){\rm 
+                                                  { }} = {\rm { }}0 \end {ar...
+l.11  \end{align*}
+                  
+! Undefined control sequence.
+<argument> ...{\bar v}}} \right ){\rm { }} = {\rm 
+                                                  { }}0 \end {array} 
+l.11  \end{align*}
+                  
+[1] (./FPM_documentation-equation.aux) )
+(see the transcript file for additional information)
+Output written on FPM_documentation-equation.dvi (1 page, 948 bytes).
+Transcript written on FPM_documentation-equation.log.
