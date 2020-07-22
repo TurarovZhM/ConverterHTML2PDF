@@ -175,8 +175,6 @@
   entity IDs. The file "FPMNODE" contains the absolute coordinates of the <a href="MESHFREE.html">MESHFREE</a> points and their vector-valued velocities. 
   "SHELL" and "NODE" are the equivalents of "FPM" and "FPMNODE" for the boundary elements. "NODE" does not contain the absolute 
   coordiantes of the boundary elements but their relative coordinates compared to the ones at timestep 0. </p> 
-  <p> <span style="color:#f39200"> Internal </span>: Although "res" is a multidimensional array, the writing routine for this block expects a 1D array and converts this to the desired 
-  multidimensional array. </p> 
    
   <p> Distinguish between boundary parts: In "PART" the aliases for different parts of the boundary are saved in the dataset "title" and IDs for 
   these parts are stored in "pid". This would be needed, if one wants to make some parts of the boundary invisible for visualization purposes. </p> 
@@ -184,15 +182,6 @@
 	      			</div>
 	      		</div>
 		</div>
-	</div>
-	<div class="blank-class-outer-top footer">
-	  <div class="border-vertical">
-	    <div class="row">
-	      <div class="col-md-12 comprehensive-example">
-Source file of this page: <a href="../../FPM_src/FPM_fortran/PreAndPostprocessing/Save/USER_save_data.f90">../../FPM_src/FPM_fortran/PreAndPostprocessing/Save/USER_save_data.f90</a>
-	      </div>
-	    </div>
-	  </div>
 	</div>
 <div class="blank-class-outer footer visible-md visible-lg">
   <div class="border-vertical">

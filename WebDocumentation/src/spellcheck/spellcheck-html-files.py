@@ -39,13 +39,10 @@ def main(argv):
 	file2.close()
 	file3 = open(path3,'w')
 	file3.close()
-	word_path=os.getcwd()+'/src/spellcheck/aspell_wordlist.txt'
-	with open(word_path, "r") as a_file:
-  		for line in a_file:
-			if(line!='\n' and line!=""):
-				#print("line",line)
-				os.system("echo '*{}\n#' | aspell -a".format(line))
-	a_file.close()
+	aspell_wordlist=['MESHFREEdocu','MESHFREE','BND','CTRL','FPMDOCu','Fraunhofer','ITWM','LaTeX','executables','fpmdocu','html','indices']
+	for word in aspell_wordlist:
+			if(word!='\n' and word!=""):
+				os.system("echo '*{}\n#' | /p/tv/local/MESHFREEdocu_aspell-0.60.8/bin/aspell -a".format(word))
 	
 	for file in os.listdir(input_directory_path):
 		if (file.endswith(".html") and file!="MESHFREEdocu_AllInOne.html"):
@@ -68,7 +65,7 @@ def main(argv):
 				for item in lines:
 					file1.write("%s\n" % item)
 			linestemp=[]
-			os.system("aspell list <$(pwd)/spellcheck/temp1.txt > $(pwd)/spellcheck/temp2.txt")
+			os.system(" /p/tv/local/MESHFREEdocu_aspell-0.60.8/bin/aspell list <$(pwd)/spellcheck/temp1.txt > $(pwd)/spellcheck/temp2.txt")
 			file1.close()
 			if(os.stat(path3).st_size != 0):
 				with open(path3) as file3:

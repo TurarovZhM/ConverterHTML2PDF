@@ -137,7 +137,7 @@
 		  <div class="row">
 		    <div class="col-md-12 content">
 		    	<div class="jumbotron">
-<h1>SlidingThroughCorners</h1><p> DROPLETPHASE - Modeling of liquid layers - modelling the slip of points through cornera </p>
+<h1>SlidingThroughCorners</h1><p> DROPLETPHASE - Modeling of liquid layers - modelling the slip of points through corners </p>
 		    	</div>
 			<div class="description">
                                                                                                                                                                                      
@@ -146,13 +146,21 @@
   at the surface of the rigid geometry, so actually, points will always get stuck in certain situations, regardless of the modelled height of the water film. 
   In order to prevent this, we allow, that points keep a partition of their kinetic energy (or all), if they go through corners. 
    
+  If one doe a momentum balance of a lump of liquid, going through a sharp corner, then the exit-velocity correlates with the entry-velocity by the factor <span lang="latex-inline"><img src="cd310d3d898278e816dc58903b55ffe3.png" alt=" \Phi" class="latex" border="0"></span>, i.e. <span lang="latex-inline"><img src="7859c66d29322d9ccc8bee44816b0101.png" alt=" \| {\mathbf v}_{\text{afterCorner}} \| =  \| {\mathbf v}_{\text{beforeCorner}} \| \cdot \Phi" class="latex" border="0"></span> 
+  The factor is, at some ideal assumptions, given analytically by 
+  <div lang="latex"><img src="c60f60f7e7a192fcd0be9037d592034e.png" alt=" 
+  \Phi = \frac{1+cos(\alpha)}{2} \cdot \frac{1}{sin(\alpha)^2 + cos(\alpha)\frac{1+cos(\alpha)}{2} } 
+" class="latex" border="0"></div> 
+  In this analysis, no surface tension is going into account. 
+   
   Variants: <ul><li> 
-  </li><li> Variante 0: the default! <span lang="latex-inline"><img src="95f283299bd797c318e451cb51f1a575.png" alt=" \| {\mathbf v}_{\text{afterCorner}} \| =  \| {\mathbf v}_{\text{beforeCorner}} \| \cdot cos(\alpha)" class="latex" border="0"></span> where <span lang="latex-inline"><img src="15f38edb45ceeda8a4ce10f931c8d6a0.png" alt=" \alpha" class="latex" border="0"></span> is the angle of the bend/corner 
-  </li><li> Variante 1: <span lang="latex-inline"><img src="30894d3d7743305b13902d012a3bcff1.png" alt=" \| {\mathbf v}_{\text{afterCorner}} \| =  \| {\mathbf v}_{\text{beforeCorner}} \| max( \cdot cos(\alpha) , \beta )" class="latex" border="0"></span> where <span lang="latex-inline"><img src="c70d1c3aedac246950c6956bffd52945.png" alt=" \beta" class="latex" border="0"></span> is a factor taking into account the ratio of waterfilm height / smoothing length . 
-  </li><li> Variante 2: <span lang="latex-inline"><img src="00cb73308219ce71b82acb4042f9ec9a.png" alt=" \| {\mathbf v}_{\text{afterCorner}} \| =  \| {\mathbf v}_{\text{beforeCorner}} \| max( \cdot cos(\alpha) , \gamma )" class="latex" border="0"></span> where <span lang="latex-inline"><img src="eb7d5d337d95f0b49f27ae2773601c36.png" alt=" \gamma" class="latex" border="0"></span> is a factor taking into account the ratio of waterfilm height / original droplet size . 
+  </li><li> Variante 0: the default! <span lang="latex-inline"><img src="7859c66d29322d9ccc8bee44816b0101.png" alt=" \| {\mathbf v}_{\text{afterCorner}} \| =  \| {\mathbf v}_{\text{beforeCorner}} \| \cdot \Phi" class="latex" border="0"></span> where <span lang="latex-inline"><img src="15f38edb45ceeda8a4ce10f931c8d6a0.png" alt=" \alpha" class="latex" border="0"></span> is the angle of the bend/corner 
+  </li><li> Variante 1: <span lang="latex-inline"><img src="ec249d88be1c7b6988c0a5b205427ec0.png" alt=" \| {\mathbf v}_{\text{afterCorner}} \| =  \| {\mathbf v}_{\text{beforeCorner}} \| \cdot min( \Phi \cdot \beta , 1 ) )" class="latex" border="0"></span> where <span lang="latex-inline"><img src="c70d1c3aedac246950c6956bffd52945.png" alt=" \beta" class="latex" border="0"></span> is the ratio of waterfilm height / smoothing length . 
+  </li><li> Variante 2: <span lang="latex-inline"><img src="9680bd3340d458d9eed5faf35c78e0cc.png" alt=" \| {\mathbf v}_{\text{afterCorner}} \| =  \| {\mathbf v}_{\text{beforeCorner}} \| \cdot min( \Phi \cdot \gamma , 1 ) )" class="latex" border="0"></span> where <span lang="latex-inline"><img src="eb7d5d337d95f0b49f27ae2773601c36.png" alt=" \gamma" class="latex" border="0"></span> is the ratio of waterfilm height / original droplet size . 
+        if <span lang="latex-inline"><img src="91795e0c589c6181b0164722c74459bf.png" alt=" \gamma << 1" class="latex" border="0"></span>, then we have scattered droplets on the surface, surface tension will make droplets slow down (or getting stuck) in corners faster. If <span lang="latex-inline"><img src="f103bee3bc30bde578d23b11c6218b1a.png" alt=" \gamma > 1" class="latex" border="0"></span>, then we have an evolved liquid layer, the momentum loss around the corner will be less. 
   </li><li> Variante 3: <span lang="latex-inline"><img src="e1b85250192aa9387de79690c81e6048.png" alt=" \| {\mathbf v}_{\text{afterCorner}} \| =  \| {\mathbf v}_{\text{beforeCorner}} \|" class="latex" border="0"></span> , that is no reduction of the kinetic energy of a point if sliding through a bend/corner 
   </li></ul> 
-       
+             
 	      			</div>
 	      		</div>
 		</div>
@@ -170,15 +178,6 @@
 		</div>
 	</div>
 </div>
-	<div class="blank-class-outer-top footer">
-	  <div class="border-vertical">
-	    <div class="row">
-	      <div class="col-md-12 comprehensive-example">
-Source file of this page: <a href="../../FPM_src/FPM_fortran/Solver/BasicSolver/DropletPhase/F_of_t_and_Y_DROPLETPHASE.f90">../../FPM_src/FPM_fortran/Solver/BasicSolver/DropletPhase/F_of_t_and_Y_DROPLETPHASE.f90</a>
-	      </div>
-	    </div>
-	  </div>
-	</div>
 <div class="blank-class-outer footer visible-md visible-lg">
   <div class="border-vertical">
     <div class="row">

@@ -145,13 +145,13 @@
   </div> 
   Default: <a href="MESHFREE.InputFiles.USER_common_variables.__Parameters__.LINEQN_solver___UCV___.html">LINEQN_solver</a> = 'BCX2' 
    
-  <table id="customTable"><tr><th>  option </th><th> description</th></tr><tr><td>'BiCG' </td><td> BiCGstab, using matrix-times-vector emulation for the big system (i.e. do not construct the linear system explicitly, but provide a subroutine that computes the result of the matrix-vector-operation) </td></tr>  <tr><td>'BCG2' </td><td> BiCGstab(2), using matrix-times-vector-emulation </td></tr>  <tr><td>'BCX1' </td><td> BiCGstab, explicitly construct the matrix (takes more memory) </td></tr>  <tr><td>'BCX2' </td><td> BiCGstab(2), explicitly construct the matrix (faster, but takes more memory), <b> default </b> </td></tr>  <tr><td>'SAMG' </td><td> Algebraic Multigrid method from the SAMG-solver library, Fraunhofer SCAI </td></tr>  <tr><td>'SAMB' </td><td> BiCGstab(2) from the SAMG-solver library, Fraunhofer SCAI </td></tr>  <tr><td>'SAMA' </td><td> Automatic solver control via the SAMG-solver library, Fraunhofer SCAI </td></tr>  <tr><td>'GMRE' </td><td> GMRES <span style="color:red"> experimental (not touched for years) </span> </td></tr>  <tr><td>'PETS' </td><td> PetSC <span style="color:red"> experimental (not touched for years) </span> </td></tr>  <tr><td>'BCGL' </td><td> BiCGstab(l), using matrix-times-vector emulation, <span style="color:red"> experimental </span>, see also <a href="MESHFREE.InputFiles.common_variables.BCGSL_ell.html">BCGSL_ell</a> </td> </tr> </table> 
+  <table id="customTable"><tr><th>  option </th><th> description</th></tr><tr><td>'BiCG' </td><td> BiCGstab, using matrix-times-vector emulation for the big system (i.e. do not construct the linear system explicitly, but provide a subroutine that computes the result of the matrix-vector-operation) </td></tr>  <tr><td>'BCG2' </td><td> BiCGstab(2), using matrix-times-vector-emulation </td></tr>  <tr><td>'BCX1' </td><td> BiCGstab, explicitly construct the matrix (takes more memory) </td></tr>  <tr><td>'BCX2' </td><td> BiCGstab(2), explicitly construct the matrix (faster, but takes more memory), <b> default </b> </td></tr>  <tr><td>'SAMG' </td><td> Algebraic Multigrid method from the SAMG-solver library, Fraunhofer SCAI </td></tr>  <tr><td>'BCGL' </td><td> BiCGstab(l), using matrix-times-vector emulation, <span style="color:red"> experimental </span>, see also <a href="MESHFREE.InputFiles.common_variables.BCGSL_ell.html">BCGSL_ell</a> </td> </tr> </table> 
    
   <b>Expert option:</b> auto-chooser 
   'AUTO:xxxx:yyyy:n' -> automatically choose between 2 solvers xxxx and yyyy from the list above every n time steps. 
    
   More information: <a href=" https://en.wikipedia.org/wiki/Biconjugate_gradient_stabilized_method ">BiCGstab</a>, <a href=" https://en.wikipedia.org/wiki/Biconjugate_gradient_stabilized_method#Generalization ">BiCGstab(2) and BiCGstab(l)</a>, <a href=" http://www.scai.fraunhofer.de/samg">SAMG</a>. 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 	      			</div>
 	      		</div>
 		</div>
@@ -211,15 +211,6 @@
 		</div>
 	</div>
 </div>
-	<div class="blank-class-outer-top footer">
-	  <div class="border-vertical">
-	    <div class="row">
-	      <div class="col-md-12 comprehensive-example">
-Source file of this page: <a href="../../FPM_src/FPM_liquid/USER_read_common_variables.f90">../../FPM_src/FPM_liquid/USER_read_common_variables.f90</a>
-	      </div>
-	    </div>
-	  </div>
-	</div>
 <div class="blank-class-outer footer visible-md visible-lg">
   <div class="border-vertical">
     <div class="row">

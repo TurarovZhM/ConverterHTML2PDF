@@ -135,9 +135,39 @@ do
   end if
   
   !call RemoveLeadingSpaces(Str, lenStr)   !  just to cleanup
+
+! now serach for occurence of !$FPMDOCU
+  iFPMDOCU = index( Str(1:lenStr),'!$FPMDOCU' )
+  if ( iFPMDOCU .le. 0 ) then  ! if no !$FPMDOCU is in the line, we assume that the line stems from a .fpmdocu file where all !$FPMDOCU are dropped or we have !$FPMINTDOCU
+     iFPMDOCU = index( Str(1:lenStr),'!$FPMINTDOCU' )
+     if ( iFPMDOCU .le. 0 ) then
+        Str = Str(1:lenStr)
+        lenStr = len_trimf77(Str,1024)
+     else
+        if (UsersOnly .gt. 0) cycle !remove FPMINTDOCU lines from .fpmdocu files
+        Str = Str(iFPMDOCU+12:lenStr)
+        lenStr = len_trimf77(Str,1024)
+     end if
+  else
+     Str = Str(iFPMDOCU+9:lenStr)
+     lenStr = len_trimf77(Str,1024)
+  end if
+!  call RemoveLeadingSpaces(Str, lenStr)
+  write(*,'(a)') 'read: Str = >>>' // Str(1:lenStr) // '<<<'
+
+  
+  
+  
+  Dstr = Str(1:lenStr)
+  lenDstr = lenStr
+  call RemoveLeadingSpaces(Dstr, lenDstr)
   
 ! check include file definitions
-  if ( Str(1:15) .eq. '#FPMDOCUINCLUDE' ) then
+  if ( Dstr(1:15) .eq. '#FPMDOCUINCLUDE' ) then
+     Str = Dstr(1:lenDstr)
+     lenStr = lenDstr
+     
+     write(*,'(a)') 'StrContainingFPMDOCUINCLUDE = >>>' // Str(1:lenStr) // '<<<' 
      if ( Str(16:16) .eq. '{' ) then
         iOPEN_beg = 17
         iOPEN_end = index(Str(17:lenStr),'}')-1+17-1
@@ -201,26 +231,13 @@ do
   end if
   
 
-
-! now serach for occurence of !$FPMDOCU
-  iFPMDOCU = index( Str(1:lenStr),'!$FPMDOCU' )
-  if ( iFPMDOCU .le. 0 ) then  ! if no !$FPMDOCU is in the line, we assume that the line stems from a .fpmdocu file where all !$FPMDOCU are dropped or we have !$FPMINTDOCU
-     iFPMDOCU = index( Str(1:lenStr),'!$FPMINTDOCU' )
-     if ( iFPMDOCU .le. 0 ) then
-        Str = Str(1:lenStr)
-        lenStr = len_trimf77(Str,1024)
-     else
-        if (UsersOnly .gt. 0) cycle !remove FPMINTDOCU lines from .fpmdocu files
-        Str = Str(iFPMDOCU+12:lenStr)
-        lenStr = len_trimf77(Str,1024)
-     end if
-  else
-     Str = Str(iFPMDOCU+9:lenStr)
-     lenStr = len_trimf77(Str,1024)
-  end if
-!  call RemoveLeadingSpaces(Str, lenStr)
-  write(*,'(a)') 'read: Str = >>>' // Str(1:lenStr) // '<<<'
-
+  
+  
+  
+  
+  
+  
+  
   if ( lenStr .le. 0 ) then  ! be able to also print empty lines in case we are in a block
      Str = ' '
      lenStr = 1

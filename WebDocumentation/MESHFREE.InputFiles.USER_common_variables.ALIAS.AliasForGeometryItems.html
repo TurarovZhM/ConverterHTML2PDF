@@ -172,8 +172,8 @@
   </li><li> Automatical choice of properties based on patterns 
    
      <ul><li> 
-     </li><li> Similar to 1, but matching multiple names with a wildcard. In this case 
-        each of the matched names is available in postprocessing. 
+     </li><li> Similar to 1, but matching multiple names with a wildcard. The wildcard-option is tried ONLY, if no direct match with the given aliasses 
+           can be stablished. In this case, each of the matched names is available in postprocessing. 
    
         <b>Example:</b> 
         Names in geometry file: WheelFrontLeft, WheelFrontRight, WheelBackLeft, WheelBackRight 
@@ -185,7 +185,21 @@
         <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_alias.html">end_alias</a> 
  </div> 
         </div> 
-     </li><li> Using default properties for any names not specified via the options above. All these 
+   
+     </li><li> Using the DEFAULT properties for any group of names not specified via the options above. The alias-name-definition has to 
+        contain "_DEFAULT" at the end. See also <a href="MESHFREE.InputFiles.USER_common_variables.__DEFAULT_configuration_file__.html">__DEFAULT_configuration_file__</a> . 
+        <b>Example:</b> <div class="note"> 
+        <div class="code"> 
+        <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.begin_alias{.html">begin_alias{</a>} 
+        "in*_DEFAULT" = "&car&"   <span style="color:#FACC2E;"># reference to previously defined alias car </span>
+        <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_alias.html">end_alias</a> 
+ </div> 
+        </div> 
+        For all those matching a DEFAULT-item, <a href="MESHFREE.html">MESHFREE</a> attaches "_DEFAULT" as a suffix 
+        to the given name from the geometry input, such that it can be recognized easily as DEFAULT-defined. The geomtry item "inflow1", matching the 
+        alias "in*_DEFAULT", will be named "inflow1_DEFAULT" for postprocessing. 
+   
+     </li><li> <span style="color:red"> DEPRECATED: Using default properties for any names not specified via the options above. All these 
         names will be replaced by 'default'. 
    
         <b>Example:</b> <div class="note"> 
@@ -195,6 +209,8 @@
         <a href="MESHFREE.InputFiles.USER_common_variables.__overview_of_syntax_elements__.end_alias.html">end_alias</a> 
  </div> 
         </div> 
+        Instead of "default", use "*_DEFAULT" in order to have a general default definition, that matches ALL geoemtry. 
+        </span> 
      </li></ul> 
   </li></ol> 
 
@@ -209,7 +225,6 @@
 		 		<div class="table-responsive">
 			  		<table class="table">
 			  		<tr><th>List of members: </th><th></th></tr>
-<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.ALIAS.AliasForGeometryItems.(CLUSTER)___alias___.html">(CLUSTER)</a></td> <td>  cluster index of topologically connected boundary detected by FPM </td></tr>    
 <tr><td><a href="MESHFREE.InputFiles.USER_common_variables.ALIAS.AliasForGeometryItems.ACTIVE___alias___.html">ACTIVE</a></td> <td>  (required) define the activation behavior of the boundary elements of this part </td></tr>    
 <tr><td><a href="MESHFREE.InputFiles.USER_common_variables.ALIAS.AliasForGeometryItems.BC___alias___.html">BC</a></td> <td>  (required) define flag for boundary conditions </td></tr>    
 <tr><td><a href="MESHFREE.InputFiles.USER_common_variables.ALIAS.AliasForGeometryItems.BC_PASSON___alias___.html">BC_PASSON</a></td> <td>  (optional) for deactivated/disappearing boundary elements: give BC-flag to released MESHFREE points </td></tr>    
@@ -238,15 +253,6 @@
 		</div>
 	</div>
 </div>
-	<div class="blank-class-outer-top footer">
-	  <div class="border-vertical">
-	    <div class="row">
-	      <div class="col-md-12 comprehensive-example">
-Source file of this page: <a href="../../FPM_src/FPM_liquid/USER_read_GIF_line.f90">../../FPM_src/FPM_liquid/USER_read_GIF_line.f90</a>
-	      </div>
-	    </div>
-	  </div>
-	</div>
 <div class="blank-class-outer footer visible-md visible-lg">
   <div class="border-vertical">
     <div class="row">

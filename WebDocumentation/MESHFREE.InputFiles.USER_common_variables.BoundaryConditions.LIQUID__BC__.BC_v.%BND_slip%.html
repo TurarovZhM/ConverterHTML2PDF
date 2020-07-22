@@ -157,7 +157,7 @@
   </p> <ul><li> </li><li> <p> the point is marked as tear-off-point (see <a href="MESHFREE.Indices.General___indices___.%25ind_TearOff%25.html">%ind_TearOff%</a>). 
   </p> </li><li> <p> the point is in a local suction regime (pressure decreases from the free surface towards the interior). </p> 
   </li></ul> <p> This additional pressure component might provoke tear-off, as it forces the tear-off-point to move away from the free surface. </p> </span> 
-  <p> <span style="color:red"> Make sure to set the ControlThicknessMomentum to ZERO if using <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULER.html">EULER</a>, <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULERIMPL.html">EULERIMPL</a> or <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULEREXPL.html">EULEREXPL</a>! </span> </p> 
+  <p> <span style="color:red"> Make sure to set the ControlThicknessMomentum to ZERO if using <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULER.html">EULER</a>, <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULERIMPL.html">EULERIMPL</a> or EULEREXPL! </span> </p> 
    
   <h2 class="customh2"> vPenetration </h2> <p> Force the normal component of the flow to penetrate through the wall, i.e. 
   </p> <div lang="latex"><img src="18e047d679deef7ea38490a447729ec1.png" alt=" v_\text{Penetration} = ( {\bf v}^{n+1} - {\bf v}_0 ) \cdot {\bf n}." class="latex" border="0"></div> 
@@ -167,7 +167,6 @@
   Note however, that turbulence effects on <span lang="latex-inline"><img src="15f38edb45ceeda8a4ce10f931c8d6a0.png" alt="\alpha" class="latex" border="0"></span> due to this movement are neglected in this case. </p> 
   <p> An alternative approach for simulations with turbulence is to instead directly define the relative wall movement via an <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a>. 
   This works essentially in the same way as %MOVE_VirtualRotation% in <a href="MESHFREE.InputFiles.USER_common_variables.MOVE.%25MOVE_TranslationRotation%25.html">%MOVE_TranslationRotation%</a>. 
-  </p> <p> See also <a href=" ticket #76740 ">https://rt.itwm.fhg.de/Ticket/Display.html?id=76740</a>: <a href="MESHFREE.InputFiles.USER_common_variables.CODI.CODI_eq.html">CODI_eq</a> and <a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25ASSIGN_FUNCTIONVALUE%25.html">%ASSIGN_FUNCTIONVALUE%</a> do not work for this case. 
   </p> <p> Example: </p> <div class="note"> <div class="code"> 
   <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.html">EVENT</a>(1) = ( [binA("MovedWallAlias")], <a href="MESHFREE.InputFiles.USER_common_variables.EVENT.%25EVENT_FunctionManipulation%25.html">%EVENT_FunctionManipulation%</a>, ... 
            <a href="MESHFREE.Indices.General___indices___.%25ind_v_p(1)%25.html">%ind_v_p(1)%</a>, [Y<a href="MESHFREE.Indices.General___indices___.%25ind_v_p(1)%25.html">%ind_v_p(1)%</a> + <span style="color:#8A0808;">&relativeWallMovementX&</span> ], ... 
@@ -179,15 +178,6 @@
 	      			</div>
 	      		</div>
 		</div>
-	</div>
-	<div class="blank-class-outer-top footer">
-	  <div class="border-vertical">
-	    <div class="row">
-	      <div class="col-md-12 comprehensive-example">
-Source file of this page: <a href="../../FPM_src/FPM_liquid/USER_boundary_conditions_LIQUID_3.f90">../../FPM_src/FPM_liquid/USER_boundary_conditions_LIQUID_3.f90</a>
-	      </div>
-	    </div>
-	  </div>
 	</div>
 <div class="blank-class-outer footer visible-md visible-lg">
   <div class="border-vertical">

@@ -146,11 +146,8 @@
   This is currently done by default when building <a href="MESHFREE.html">MESHFREE</a>. </p> 
     <ul><li> 
       </li><li> The HDF5 library: libhdf5.a 
-       <span style="color:#f39200"> Internal </span>: Found in FPMsoftwareF95/FPM_libs/hdf5/rhel7.4/gcc7.3.0/lib 
       </li><li> C routines from ESI: erfhdf5.cpp 
-       <span style="color:#f39200"> Internal </span>: Found in FPMsoftwareF95/FPM_src/FPM_cpp/src/ERF_src 
       </li><li> Fortran bindings: erf_api.h 
-       <span style="color:#f39200"> Internal </span>: Found in FPMsoftwareF95/FPM_src/FPM_include/ERF 
     </li></ul> 
   <p> The general structure of HDF5 is simple: It consists of so-called HDF5 groups (which are files), 
   their properties and attributes (also together referred to as metadata) and the raw data (e.g. simulation results). The metadata and 
@@ -161,7 +158,6 @@
   simply because these programs expect optional blocks that are not needed for <a href="MESHFREE.html">MESHFREE</a>. 
   It should also be noted that <a href="MESHFREE.html">MESHFREE</a> always writes at least one boundary element out, even if "ONLY:PARTICLES" is selected, 
   just to make its ERF files processable for more visualization programs. </p> 
-  <p> <span style="color:#f39200"> Internal </span>: This is important to consider when making offers to companies which use the ERF format. </p> 
    
   Here are some useful links to delve further into the matter: 
   <ul><li> 
@@ -169,7 +165,6 @@
   <a href=" https://myesi.esi-group.com/ERF-HDF5/ ">https://myesi.esi-group.com/ERF-HDF5/</a> 
   <p> Besides the documentation a handy program called HDF-View can also be downloaded here. It allows to read and write 
   HDF5 files and visualizes the hierarchical structure of such a file. </p> 
-  <p> <span style="color:#f39200"> Internal </span>: HDF-View is already installed on our servers (module add tv/hdf5view/2.11) </p> 
   </li><li> HDF5 tutorials from the HDF group: 
   <a href=" https://support.hdfgroup.org/HDF5/Tutor/ ">https://support.hdfgroup.org/HDF5/Tutor/</a> 
   </li></ul> 
@@ -177,25 +172,10 @@
   take a look at an actual ERF file or to change some of the SAVE_Items and see how this affects the produced ERF file. </p> 
   <a href=" ../../FPM_documentation/OnlineExamples/MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5/ ">EXAMPLE</a> 
    
-  <p> <span style="color:#f39200"> Internal </span>: Timos old testsuite can be found under GIT/Timo/FPM_VW/ReferenceFiles_ERFHDF5. The routines in the code 
-  that write HDF5 files are called save_on_file_HDF5_ERF and save_BE_on_file_HDF5_ERF21 respectively. </p> 
-   
-  <p> <span style="color:#f39200"> Internal </span>: I once encountered the problem of not being able to generate ERF files due to mismatching 
-  versions of the ERF header file and the ERF library. It can be solved by downloading a newer version of HDF5 and 
-  replacing the old one with it. </p> 
 
 	      			</div>
 	      		</div>
 		</div>
-	</div>
-	<div class="blank-class-outer-top footer">
-	  <div class="border-vertical">
-	    <div class="row">
-	      <div class="col-md-12 comprehensive-example">
-Source file of this page: <a href="../../FPM_src/FPM_fortran/PreAndPostprocessing/Save/USER_save_data.f90">../../FPM_src/FPM_fortran/PreAndPostprocessing/Save/USER_save_data.f90</a>
-	      </div>
-	    </div>
-	  </div>
 	</div>
 <div class="blank-class-outer footer visible-md visible-lg">
   <div class="border-vertical">

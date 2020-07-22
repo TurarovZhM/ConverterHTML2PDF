@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0cc3e464-250d-4720-87ba-872a11db1b45" name="Default Changelist" comment="" />
+    <list default="true" id="0cc3e464-250d-4720-87ba-872a11db1b45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MESHFREE.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/MESHFREE.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TESTMESHFREE.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebDocumentation/MESHFREE.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/WebDocumentation/MESHFREE.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebDocumentation/TEMP_MESHFREE.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebDocumentation/TEMP_MESHFREE.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main2.py" beforeDir="false" afterPath="$PROJECT_DIR$/main2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testMeshfree.html" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,13 +22,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/html2latex" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dxmHoDQVcE5Q2lCCT0bOYU2cC3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

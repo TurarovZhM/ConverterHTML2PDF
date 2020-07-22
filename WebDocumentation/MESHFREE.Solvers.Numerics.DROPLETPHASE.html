@@ -148,11 +148,10 @@
   at the same place. This can prevent an extreme increase in the number of neighbor points, which contributes to a significantly improved performance 
   in such situations. The default value is 1, which means that H is not changed. 
    
-  The item of CORNER_TREATMENT_VERSION:<span style="color:green">N</span> addresses only those points collecting as thin layer on a rigid surface. The value of <span style="color:green">N</span> can be chosen between 0 and 3, see 
+  The item of CORNER_TREATMENT_VERSION:<span style="color:green">N</span> addresses only those points collecting as thin layer on a rigid surface (<a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.LiquidLayer.html">LiquidLayer</a>). The value of <span style="color:green">N</span> can be chosen between 0 and 3, see 
    
   Each point represents a volume of material. We assume droplet form, the volume is given with respect to the given diameter <a href="MESHFREE.Indices.DROPLETPHASE___indices___.%25ind_d30%25.html">%ind_d30%</a>. 
   Since points in the <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> represent discrete physical entities rather than numerical discretization points, they are not subject to the same point organization as, for example, the <a href="MESHFREE.Solvers.Numerics.LIQUID.html">LIQUID</a> phase. 
-  In particular, droplets should not be added or deleted automatically outside of parceling mechanisms. 
    
   <h2 class="customh2"> Solver capabilities </h2> 
   There are several types of droplet dynamics which can be modeled within the <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.html">DROPLETPHASE</a> solver: 
@@ -165,9 +164,6 @@
    
   </li><li> <b>Collisions between droplets</b> 
   See <a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.DropletCollisions.html">DropletCollisions</a> 
-   
-  </li><li> <b>Parceling</b> 
-  See ? 
   </li></ul> 
    
   <h2 class="customh2"> Boundary conditions </h2> 
@@ -177,7 +173,6 @@
   </li></ul> 
    
   <h2 class="customh2"> Online Examples </h2> 
-  <span style="color:red"> DISCUSS: Move examples into solver capability pages or gather here? </span> 
   <ul><li> 
   </li><li> <b> (Non-interacting) <a href="MESHFREE.GettingStarted.SpecialCases.BasicPhysics.Sand.html">Sand</a> particles in water jet with one-way coupling</b> 
   See <a href="MESHFREE.GettingStarted.SpecialCases.MultiPhaseCoupling.WaterSand.html">WaterSand</a> 
@@ -197,8 +192,8 @@
 		 		<div class="table-responsive">
 			  		<table class="table">
 			  		<tr><th>List of members: </th><th></th></tr>
-<tr><td><a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.FreeFlight.html">FreeFlight</a></td> <td>  DROPLETPHASE - Modeling of free flight droplets </td></tr>    
 <tr><td><a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.LiquidLayer.html">LiquidLayer</a></td> <td>  DROPLETPHASE - Modeling of liquid layers </td></tr>    
+<tr><td><a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.FreeFlight.html">FreeFlight</a></td> <td>  DROPLETPHASE - Modeling of free flight droplets </td></tr>    
 <tr><td><a href="MESHFREE.Solvers.Numerics.DROPLETPHASE.DropletCollisions.html">DropletCollisions</a></td> <td>  DROPLETPHASE - Modeling of collisions between droplets </td></tr>    
 		  			</table>
 				</div>
@@ -224,7 +219,7 @@
 <tr><td><a href="MESHFREE.InputFiles.USER_common_variables.__Parameters__.COMP_DropletphaseWithDisturbance___UCV___.html">COMP_DropletphaseWithDisturbance</a></td> <td>  disturbance for DROPLETPHASE (UCV) </td></tr>    
 <tr><td><a href="MESHFREE.InputFiles.USER_common_variables.__Parameters__.DP_UseOnlyRepulsiveContactForce___UCV___.html">DP_UseOnlyRepulsiveContactForce</a></td> <td>  switch regarding attractive forces in spring-damper model (UCV) </td></tr>    
 <tr><td><a href="MESHFREE.InputFiles.USER_common_variables.BoundaryConditions.DROPLETPHASE__BC__.BC_v.%25BND_COLLISION%25.html">%BND_COLLISION%</a></td> <td>  velocity boundary condition to represent collisions </td></tr>    
-<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.COMP_DropletphaseParcels.html">COMP_DropletphaseParcels</a></td> <td>  (experimental / Under development) cluster particles together in DROPLETPHASE </td></tr>    
+<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.Equations___Ucv___.Functions.nbsum().html">nbsum()</a></td> <td>  sum over points in neighbor list </td></tr>    
 <tr><td><a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25INTEGRATION_FLUX_DROPLETPHASE%25.html">%INTEGRATION_FLUX_DROPLETPHASE%</a></td> <td>  flux integration of a functional by counting the DROPLETPHASE points that slip over a given control surface </td></tr>    
 <tr><td><a href="MESHFREE.InputFiles.USER_common_variables.INTEGRATION.%25MASSFLOW_DROPLETPHASE%25.html">%MASSFLOW_DROPLETPHASE%</a></td> <td>  mass flux integration of a functional by counting the DROPLETPHASE points that are injected at all inflow surfaces </td></tr>    
 <tr><td><a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.Solvers___KOP___.html">Solvers</a></td> <td>  Select the solver base on a physical model </td></tr>    
@@ -244,15 +239,6 @@
 		</div>
 	</div>
 </div>
-	<div class="blank-class-outer-top footer">
-	  <div class="border-vertical">
-	    <div class="row">
-	      <div class="col-md-12 comprehensive-example">
-Source file of this page: <a href="../../FPM_src/FPM_fortran/Solver/BasicSolver/DropletPhase/F_of_t_and_Y_DROPLETPHASE.f90">../../FPM_src/FPM_fortran/Solver/BasicSolver/DropletPhase/F_of_t_and_Y_DROPLETPHASE.f90</a>
-	      </div>
-	    </div>
-	  </div>
-	</div>
 <div class="blank-class-outer footer visible-md visible-lg">
   <div class="border-vertical">
     <div class="row">

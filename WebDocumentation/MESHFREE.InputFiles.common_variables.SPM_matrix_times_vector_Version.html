@@ -141,7 +141,7 @@
                                                                                                                                                                     
   version 1: -> automatically switch to version 2 
   version 2: classical loop over all matrix lines: do i = 1,nMatrixLines) 
-  version 3: vectorize the loop over all matrix lines: do i = 1,nMatrixLines,i4 :: <a href="MESHFREEdevelopment.Coding.Refactoring.TODOs.MxV.html">MxV</a>(i:i+i4-1) = sum{ (MMM(i:i+i4-1,.) * X(.) } assuming that the intrinsic sum() function of INTEL-fortran is also perfectly vectorized. 
+  version 3: vectorize the loop over all matrix lines: do i = 1,nMatrixLines,i4 :: MxV(i:i+i4-1) = sum{ (MMM(i:i+i4-1,.) * X(.) } assuming that the intrinsic sum() function of INTEL-fortran is also perfectly vectorized. 
   <div class="note"> 
   <a href="MESHFREE.InputFiles.common_variables.SPM_matrix_times_vector_Version.html">SPM_matrix_times_vector_Version</a> = 3   # supposed to be faster as vectorizing some loops 
   </div> 
@@ -166,15 +166,6 @@
 		</div>
 	</div>
 </div>
-	<div class="blank-class-outer-top footer">
-	  <div class="border-vertical">
-	    <div class="row">
-	      <div class="col-md-12 comprehensive-example">
-Source file of this page: <a href="../../FPM_src/FPM_fortran/Misc/read_common_variables.f90">../../FPM_src/FPM_fortran/Misc/read_common_variables.f90</a>
-	      </div>
-	    </div>
-	  </div>
-	</div>
 <div class="blank-class-outer footer visible-md visible-lg">
   <div class="border-vertical">
     <div class="row">

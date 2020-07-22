@@ -201,11 +201,8 @@
   possible to combine a <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.ERFHDF5.html">ERFHDF5</a> <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.begin_save{.html">begin_save{</a> environment with save_environments that use different formats. 
   Also not all options of <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.begin_save{.SAVE_type.html">SAVE_type</a> are supported; one may only use 'PointCloud', 'TimeStep', 'None' or the default value. If 'Boundary' 
   or 'Monitor' are chosen, <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.begin_save{.SAVE_type.html">SAVE_type</a> is set to default. </p> 
-  <p> <span style="color:#f39200"> Internal </span>: Elsewise the routine save_on_file_HDF5_ERF21 is never entered and thus the .erfh5 
-  file not generated. This leads to an error in save_BE_HDF5_ERF21 when calling the routine HDF5ERF4FPM_Read_write_Filename. </p> 
   </li><li> ASCII: <p> Several ASCII environments are possible, but the <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.begin_save{.SAVE_type.html">SAVE_type</a> feature is not supported within this format, except for 
   'TimeStep'. </p> 
-  </li><li> <a href="MESHFREE.InputFiles.USER_common_variables.SAVE.SAVE_format.TECPLOT.html">TECPLOT</a>: Not supported. 
   </li></ul> 
 
 	      			</div>
@@ -226,15 +223,6 @@
 		</div>
 	</div>
 </div>
-	<div class="blank-class-outer-top footer">
-	  <div class="border-vertical">
-	    <div class="row">
-	      <div class="col-md-12 comprehensive-example">
-Source file of this page: <a href="../../FPM_src/FPM_fortran/PreAndPostprocessing/Save/USER_save_data.f90">../../FPM_src/FPM_fortran/PreAndPostprocessing/Save/USER_save_data.f90</a>
-	      </div>
-	    </div>
-	  </div>
-	</div>
 <div class="blank-class-outer footer visible-md visible-lg">
   <div class="border-vertical">
     <div class="row">

@@ -144,7 +144,7 @@
   </div> 
   Default: <a href="MESHFREE.InputFiles.common_variables.pure_TRANSPORT.html">pure_TRANSPORT</a> = 1 
    
-  There are two different methods for discretizing transport terms within the <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULERIMPL.html">EULERIMPL</a> and <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULEREXPL.html">EULEREXPL</a> setting: 
+  There are two different methods for discretizing transport terms within the <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULERIMPL.html">EULERIMPL</a> and EULEREXPL setting: 
    
   <ol><li> 
   </li><li> Cutting method for efficient solving of transport terms <span lang="latex-inline"><img src="6da50040047e86adec4dcdb014be9f12.png" alt=" \mathbf{v}\cdot \nabla u" class="latex" border="0"></span>. Designed for incompressible solver <a href="MESHFREE.Solvers.Numerics.LIQUID.html">LIQUID</a> . 
@@ -176,7 +176,7 @@
   </li><li> <a href="MESHFREE.InputFiles.common_variables.pure_TRANSPORT.html">pure_TRANSPORT</a> = 2 -> transport terms <span lang="latex-inline"><img src="6da50040047e86adec4dcdb014be9f12.png" alt=" \mathbf{v}\cdot \nabla u" class="latex" border="0"></span> are discretized by rotational method. <span style="color:red"> Only for experimental purposes! <span style="color:red"> 
   </li><li> <a href="MESHFREE.InputFiles.common_variables.pure_TRANSPORT.html">pure_TRANSPORT</a> = 3 -> flux function <span lang="latex-inline"><img src="9cbae36ca48947b52756c3a0b672a306.png" alt=" \mathbf{Q}(u)" class="latex" border="0"></span> is approximated by cutting method. This works only for scalar hyperbolic equations! 
   <span style="color:red"> Only for experimental purposes! <span style="color:red"> 
-  </li><li> <a href="MESHFREE.InputFiles.common_variables.pure_TRANSPORT.html">pure_TRANSPORT</a> = 4 -> flux function <span lang="latex-inline"><img src="9cbae36ca48947b52756c3a0b672a306.png" alt=" \mathbf{Q}(u)" class="latex" border="0"></span> is approximated by rotational method. This method is only implemented for scalar hyperbolic equations in the <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULEREXPL.html">EULEREXPL</a> setting so far. But it is also being implemented for hyperbolic systems like shallow water or gas dynamic equations. 
+  </li><li> <a href="MESHFREE.InputFiles.common_variables.pure_TRANSPORT.html">pure_TRANSPORT</a> = 4 -> flux function <span lang="latex-inline"><img src="9cbae36ca48947b52756c3a0b672a306.png" alt=" \mathbf{Q}(u)" class="latex" border="0"></span> is approximated by rotational method. This method is only implemented for scalar hyperbolic equations in the EULEREXPL setting so far. But it is also being implemented for hyperbolic systems like shallow water or gas dynamic equations. 
      For the scalar equation <span lang="latex-inline"><img src="c725107dcc4de2ebce16ac87a894ec65.png" alt=" \partial_{t}u + \nabla \cdot \mathbf{Q}(u) = 0" class="latex" border="0"></span> the discretization scheme for an interior point <span lang="latex-inline"><img src="683fea6409e64dd2c16d1e97bfd48ad2.png" alt=" \mathbf{x}_i" class="latex" border="0"></span> is 
    
      <div lang="latex"><img src="7e03a85bd340918e3347227b3ef1a1af.png" alt=" 
@@ -220,7 +220,7 @@
   <span style="color:red"> <b>Remark:</b> 
   The <a href="MESHFREE.InputFiles.common_variables.pure_TRANSPORT.html">pure_TRANSPORT</a> parameter is intended for experimental purposes only! Better do not touch! 
   At the moment only <a href="MESHFREE.InputFiles.common_variables.pure_TRANSPORT.html">pure_TRANSPORT</a> = 1 is used in the <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULERIMPL.html">EULERIMPL</a> setting because it is specially developed for the <a href="MESHFREE.Solvers.Numerics.LIQUID.html">LIQUID</a> solver. 
-  <a href="MESHFREE.InputFiles.common_variables.pure_TRANSPORT.html">pure_TRANSPORT</a> = 2-4 only works in the <a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULEREXPL.html">EULEREXPL</a> setting because these spatial discretization schemes are not linearized yet for implicit solving. 
+  <a href="MESHFREE.InputFiles.common_variables.pure_TRANSPORT.html">pure_TRANSPORT</a> = 2-4 only works in the EULEREXPL setting because these spatial discretization schemes are not linearized yet for implicit solving. 
   </span> 
                                                               
 	      			</div>
@@ -237,22 +237,12 @@
 <tr><td><a href="MESHFREE.InputFiles.common_variables.additionalPoint_approximation.html">additionalPoint_approximation</a></td> <td>  (experimental) in EULERIMPL and EULEREXPL setting </td></tr>    
 <tr><td><a href="MESHFREE.InputFiles.common_variables.pure_TRANSPORT.html">pure_TRANSPORT</a></td> <td>  (experimental) choice of spatial discretization scheme for transport terms in EULERIMPL and EULEREXPL setting </td></tr>    
 <tr><td><a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULERIMPL.html">EULERIMPL</a></td> <td>  Higher order implicit Eulerian or ALE motion (recommended among the Euler implementations) </td></tr>    
-<tr><td><a href="MESHFREE.InputFiles.USER_common_variables.KindOfProblem.MotionOfPointcloud.EULEREXPL.html">EULEREXPL</a></td> <td>  (experimental) Semi-explicit Eulerian or ALE motion </td></tr>    
 		  			</table>
 				</div>
 	      		</div>
 		</div>
 	</div>
 </div>
-	<div class="blank-class-outer-top footer">
-	  <div class="border-vertical">
-	    <div class="row">
-	      <div class="col-md-12 comprehensive-example">
-Source file of this page: <a href="../../FPM_src/FPM_fortran/Misc/read_common_variables.f90">../../FPM_src/FPM_fortran/Misc/read_common_variables.f90</a>
-	      </div>
-	    </div>
-	  </div>
-	</div>
 <div class="blank-class-outer footer visible-md visible-lg">
   <div class="border-vertical">
     <div class="row">

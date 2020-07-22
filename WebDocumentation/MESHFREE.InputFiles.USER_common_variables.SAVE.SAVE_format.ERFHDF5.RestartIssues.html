@@ -150,39 +150,10 @@
   <em> rm FileName.erfh5 </em> 
   <em> mv placeholder.erfh5 FileName.erfh5 </em> 
   </div> 
-  <p> <span style="color:#f39200"> Internal: </span> Restarts work for singlestate files, but not yet for multistate files. 
-   
-  <p> <span style="color:#f39200"> Internal: </span> HDF5-Version 1.10.1 or newer provides routines that allow a change of the 
-  default file space management strategy. This has already been implemented in erfhdf5.cpp, but is currently 
-  commented out. Yes, the strategy allows for a better space management, this has been tested, but at the same time 
-  some viewers and editors for ERF data may not work anymore. HDFView 2.11 is, for example, no longer able 
-  to open .erfh5 files. Also the program that Steffen Hagmann is using at the moment is not able to read .erfh5 
-  files with tracked free space. Another thing is that the HDF command line tools are also not able to open these 
-  new files.  There might be solutions to this: </p> 
-  <ul><li> 
-  </li><li> <p> Hagmann uses Meta Post  v19.1.0. Maybe there are newer version of this that support newer versions 
-  of HDF </p> 
-  </li><li> <p> A newer version of HDFView, say version 3.1.0, can open the different files just fine (can be downloaded from 
-  the HDF website, choose pre-build binary distribution. An account at HDF is needed for the download.) </p> 
-  </li><li> <p> The command line tools are located at Root/lib64. They are compiled with an old HDF version and should be updated. </p> 
-  </li></ul> 
-  <p> At the moment the need for a better file space management is not big, so everything is left as it is, aside from 
-  the commented routines and an update of the HDF version. See also 
-  <br><a href="https://support.hdfgroup.org/HDF5/doc/Advanced/FileSpaceManagement/FileSpaceManagement.pdf">https://support.hdfgroup.org/HDF5/doc/Advanced/FileSpaceManagement/FileSpaceManagement.pdf</a> 
-  for more info on the file space management.  </p> 
 
 	      			</div>
 	      		</div>
 		</div>
-	</div>
-	<div class="blank-class-outer-top footer">
-	  <div class="border-vertical">
-	    <div class="row">
-	      <div class="col-md-12 comprehensive-example">
-Source file of this page: <a href="../../FPM_src/FPM_fortran/PreAndPostprocessing/Save/USER_save_data.f90">../../FPM_src/FPM_fortran/PreAndPostprocessing/Save/USER_save_data.f90</a>
-	      </div>
-	    </div>
-	  </div>
 	</div>
 <div class="blank-class-outer footer visible-md visible-lg">
   <div class="border-vertical">
